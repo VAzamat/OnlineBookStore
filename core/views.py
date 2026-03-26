@@ -1,8 +1,11 @@
 from django.shortcuts import render
+from django.conf import settings
+
+used_skin = settings.USED_SKIN
 
 # Create your views here.
 def home(request):
     return render(request, 'test_home.html')
 
 def index(request):
-    return render(request, 'skin1/index.html')
+    return render(request, f'{used_skin}/index.html')

@@ -91,6 +91,7 @@ DATABASES = {
 }
 
 
+
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
 
@@ -142,3 +143,4 @@ STATICFILES_DIRS = [
     BASE_DIR / 'static'
 ]
 
+USED_SKIN="skin1" # skin1 skin2 or skin3
