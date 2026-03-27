@@ -1,0 +1,559 @@
+{% extends "skin3/base.html" %}
+
+{% load static %}
+
+{% block titlekeywords %}
+    <meta name="keywords" content="цены на книги, купить книги со скидкой, корзина заказов, магазин литературы, оплата книг онлайн, библиотека книг, поиск книг по автору.">
+    <title>Digital Book Sales</title>
+{% endblock %}
+
+{% block customstyle %}
+{% endblock %}
+
+{% block bodycustomclass %}
+shopify
+{% endblock %}
+
+{% block content %}
+<main>
+  <section class="hero-section jarallax position-relative">
+
+    <div class="hero-content d-flex justify-content-center text-center align-items-center">
+      <div class="container">
+        <div class="row">
+          <div class="content-light text-center">
+            <h1 class="page-title">Shop</h1>
+            <div class="breadcrumbs">
+              <span class="item">
+                <a href="/index.html">Home &gt;</a>
+              </span>
+              <span class="item">Shop</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <div id="jarallax-container-0" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; z-index: -100; clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0px 100%);"><img src="{% static 'skin3/images/hero-image1.jpg' %}" class="hero-image jarallax-img" style="object-fit: cover; object-position: 50% 50%; max-width: none; position: fixed; top: 0px; left: 0px; width: 1905px; height: 649.5px; overflow: hidden; pointer-events: none; transform-style: preserve-3d; backface-visibility: hidden; will-change: transform, opacity; margin-top: 149.75px; transform: translate3d(0px, -100.75px, 0px);"></div></section>
+  <div class="shopify-grid padding-large">
+    <div class="container">
+      <div class="row">
+        <main class="col-md-9 p-0">
+          <div class="">
+            <div class="row">
+              <div class="filter-shop d-md-flex justify-content-between align-items-center">
+                <div class="showing-product">
+                  <p>Showing 1–9 of 55 results</p>
+                </div>
+                <div class="input-group sort-by">
+                  <select id="input-sort" class="form-control" data-filter-sort="" data-filter-order="">
+                    <option value="">Default sorting ▾ </option>
+                    <option value="">Name (A - Z)</option>
+                    <option value="">Name (Z - A)</option>
+                    <option value="">Price (Low-High)</option>
+                    <option value="">Price (High-Low)</option>
+                    <option value="">Rating (Highest)</option>
+                    <option value="">Rating (Lowest)</option>
+                    <option value="">Model (A - Z)</option>
+                    <option value="">Model (Z - A)</option>
+                  </select>
+                </div>
+              </div>
+              <div class="product-element d-flex justify-content-between flex-wrap p-0">
+                <div class="col-md-4 mt-4 product-item element-item position-relative">
+                  <div class="image-holder">
+                    <img src="{% static 'skin3/images/product-item1.jpg' %}" alt="product-item" class="product-image">
+                  </div>
+                  <div class="cart-concern ms-2">
+                    <div class="cart-button d-flex flex-wrap">
+                      <div class="btn-left">
+                        <a href="/shop.html#" class="btn btn-medium btn-light">Add to Cart</a>
+                      </div>
+                      <button type="button" class="btn btn-light wishlist-btn">
+                        <i class="icon icon-like"></i>
+                      </button>
+                      <button type="button" class="btn btn-light view-btn
+                            d-flex">
+                        <i class="icon icon-crop"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="product-detail text-center">
+                    <h3 class="product-title">
+                      <a href="/single-product.html">Orange Beanie</a>
+                    </h3>
+                    <span class="item-price text-primary">$12.00</span>
+                  </div>
+                </div>
+                <div class="col-md-4 mt-4 product-item element-item position-relative">
+                  <div class="image-holder">
+                    <img src="{% static 'skin3/images/product-item2.jpg' %}" alt="product-item" class="product-image">
+                  </div>
+                  <div class="cart-concern ms-2">
+                    <div class="cart-button d-flex flex-wrap">
+                      <div class="btn-left">
+                        <a href="/shop.html#" class="btn btn-medium btn-light">Add to Cart</a>
+                      </div>
+                      <button type="button" class="btn btn-light wishlist-btn">
+                        <i class="icon icon-like"></i>
+                      </button>
+                      <button type="button" class="btn btn-light view-btn
+                            d-flex">
+                        <i class="icon icon-crop"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="product-detail text-center">
+                    <h3 class="product-title">
+                      <a href="/single-product.html">Leather Coat</a>
+                    </h3>
+                    <span class="item-price text-primary">$14.00</span>
+                  </div>
+                </div>
+                <div class="col-md-4 mt-4 product-item element-item position-relative">
+                  <div class="image-holder">
+                    <img src="{% static 'skin3/images/product-item3.jpg' %}" alt="product-item" class="product-image">
+                  </div>
+                  <div class="cart-concern ms-2">
+                    <div class="cart-button d-flex flex-wrap">
+                      <div class="btn-left">
+                        <a href="/shop.html#" class="btn btn-medium btn-light">Add to Cart</a>
+                      </div>
+                      <button type="button" class="btn btn-light wishlist-btn">
+                        <i class="icon icon-like"></i>
+                      </button>
+                      <button type="button" class="btn btn-light view-btn
+                            d-flex">
+                        <i class="icon icon-crop"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="product-detail text-center">
+                    <h3 class="product-title">
+                      <a href="/single-product.html">Oversize shirt</a>
+                    </h3>
+                    <span class="item-price text-primary">$12.00</span>
+                  </div>
+                </div>
+                <div class="col-md-4 mt-4 product-item element-item position-relative">
+                  <div class="image-holder">
+                    <img src="{% static 'skin3/images/product-item4.jpg' %}" alt="product-item" class="product-image">
+                  </div>
+                  <div class="cart-concern ms-2">
+                    <div class="cart-button d-flex flex-wrap">
+                      <div class="btn-left">
+                        <a href="/shop.html#" class="btn btn-medium btn-light">Add to Cart</a>
+                      </div>
+                      <button type="button" class="btn btn-light wishlist-btn">
+                        <i class="icon icon-like"></i>
+                      </button>
+                      <button type="button" class="btn btn-light view-btn
+                            d-flex">
+                        <i class="icon icon-crop"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="product-detail text-center">
+                    <h3 class="product-title">
+                      <a href="/single-product.html">Flora Print Dress</a>
+                    </h3>
+                    <span class="item-price text-primary">$14.00</span>
+                  </div>
+                </div>
+                <div class="col-md-4 mt-4 product-item element-item position-relative">
+                  <div class="image-holder">
+                    <img src="{% static 'skin3/images/product-item5.jpg' %}" alt="product-item" class="product-image">
+                  </div>
+                  <div class="cart-concern ms-2">
+                    <div class="cart-button d-flex flex-wrap">
+                      <div class="btn-left">
+                        <a href="/shop.html#" class="btn btn-medium btn-light">Add to Cart</a>
+                      </div>
+                      <button type="button" class="btn btn-light wishlist-btn">
+                        <i class="icon icon-like"></i>
+                      </button>
+                      <button type="button" class="btn btn-light view-btn
+                            d-flex">
+                        <i class="icon icon-crop"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="product-detail text-center">
+                    <h3 class="product-title">
+                      <a href="/single-product.html">Green Outer</a>
+                    </h3>
+                    <span class="item-price text-primary">$14.00</span>
+                  </div>
+                </div>
+                <div class="col-md-4 mt-4 product-item element-item position-relative">
+                  <div class="image-holder">
+                    <img src="{% static 'skin3/images/product-item6.jpg' %}" alt="product-item" class="product-image">
+                  </div>
+                  <div class="cart-concern ms-2">
+                    <div class="cart-button d-flex flex-wrap">
+                      <div class="btn-left">
+                        <a href="/shop.html#" class="btn btn-medium btn-light">Add to Cart</a>
+                      </div>
+                      <button type="button" class="btn btn-light wishlist-btn">
+                        <i class="icon icon-like"></i>
+                      </button>
+                      <button type="button" class="btn btn-light view-btn
+                            d-flex">
+                        <i class="icon icon-crop"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="product-detail text-center">
+                    <h3 class="product-title">
+                      <a href="/single-product.html">Dark Flower Onepiece</a>
+                    </h3>
+                    <span class="item-price text-primary">$14.00</span>
+                  </div>
+                </div>
+                <div class="col-md-4 mt-4 product-item element-item position-relative">
+                  <div class="image-holder">
+                    <img src="{% static 'skin3/images/product-item7.jpg' %}" alt="product-item" class="product-image">
+                  </div>
+                  <div class="cart-concern ms-2">
+                    <div class="cart-button d-flex flex-wrap">
+                      <div class="btn-left">
+                        <a href="/shop.html#" class="btn btn-medium btn-light">Add to Cart</a>
+                      </div>
+                      <button type="button" class="btn btn-light wishlist-btn">
+                        <i class="icon icon-like"></i>
+                      </button>
+                      <button type="button" class="btn btn-light view-btn
+                            d-flex">
+                        <i class="icon icon-crop"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="product-detail text-center">
+                    <h3 class="product-title">
+                      <a href="/single-product.html">Cloche Men</a>
+                    </h3>
+                    <span class="item-price text-primary">$14.00</span>
+                  </div>
+                </div>
+                <div class="col-md-4 mt-4 product-item element-item position-relative">
+                  <div class="image-holder">
+                    <img src="{% static 'skin3/images/product-item8.jpg' %}" alt="product-item" class="product-image">
+                  </div>
+                  <div class="cart-concern ms-2">
+                    <div class="cart-button d-flex flex-wrap">
+                      <div class="btn-left">
+                        <a href="/shop.html#" class="btn btn-medium btn-light">Add to Cart</a>
+                      </div>
+                      <button type="button" class="btn btn-light wishlist-btn">
+                        <i class="icon icon-like"></i>
+                      </button>
+                      <button type="button" class="btn btn-light view-btn
+                            d-flex">
+                        <i class="icon icon-crop"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="product-detail text-center">
+                    <h3 class="product-title">
+                      <a href="/single-product.html">Rawcut Outer</a>
+                    </h3>
+                    <span class="item-price text-primary">$14.00</span>
+                  </div>
+                </div>
+                <div class="col-md-4 mt-4 product-item element-item position-relative">
+                  <div class="image-holder">
+                    <img src="{% static 'skin3/images/product-item9.jpg' %}" alt="product-item" class="product-image">
+                  </div>
+                  <div class="cart-concern ms-2">
+                    <div class="cart-button d-flex flex-wrap">
+                      <div class="btn-left">
+                        <a href="/shop.html#" class="btn btn-medium btn-light">Add to Cart</a>
+                      </div>
+                      <button type="button" class="btn btn-light wishlist-btn">
+                        <i class="icon icon-like"></i>
+                      </button>
+                      <button type="button" class="btn btn-light view-btn
+                            d-flex">
+                        <i class="icon icon-crop"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="product-detail text-center">
+                    <h3 class="product-title">
+                      <a href="/single-product.html">Soft Jeans Jacket</a>
+                    </h3>
+                    <span class="item-price text-primary">$14.00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <nav class="navigation paging-navigation text-center padding-medium" role="navigation">
+              <div class="pagination loop-pagination d-flex justify-content-center align-items-center">
+                <a href="/shop.html#">
+                  <i class="icon icon-angle-left"></i>
+                </a>
+                <span aria-current="page" class="page-numbers current">1</span>
+                <a class="page-numbers" href="/shop.html#">2</a>
+                <a class="page-numbers" href="/shop.html#">3</a>
+                <a class="page-numbers" href="/shop.html#">4</a>
+                <a class="page-numbers" href="/shop.html#">5</a>
+                <a href="/shop.html#">
+                  <i class="icon icon-angle-right"></i>
+                </a>
+              </div>
+            </nav>
+          </div>
+        </main>
+        <aside class="col-md-2 offset-md-1">
+          <div class="sidebar">
+
+            <div class="widget-menu border-bottom">
+              <div class="search-bar">
+                <form role="search" method="get" class="search-box">
+                  <input class="search-field text search-input" placeholder="Search Here..." type="search">
+                  <a href="/shop.html#" class="search-button search-toggle" data-selector="#header-wrap">
+                    <i class="icon icon-search"></i>
+                  </a>
+                </form>
+              </div>
+            </div>
+
+            <div class="widget-product-categories mt-4">
+              <h5 class="widget-title">Categories</h5>
+              <ul class="product-categories sidebar-list list-unstyled">
+                <li class="cat-item">
+                  <a href="https://demo.templatesjungle.com/collections/categories">All</a>
+                </li>
+                <li class="cat-item">
+                  <a href="/shop.html">Popular</a>
+                </li>
+                <li class="cat-item">
+                  <a href="/shop.html">Accessories</a>
+                </li>
+                <li class="cat-item">
+                  <a href="/shop.html">New arrivals</a>
+                </li>
+                <li class="cat-item">
+                  <a href="/shop.html">Trending</a>
+                </li>
+              </ul>
+            </div>
+            <div class="widget-product-tags">
+              <h5 class="widget-title">Tags</h5>
+              <ul class="product-tags sidebar-list list-unstyled">
+                <li class="tags-item">
+                  <a href="/shop.html">Classic</a>
+                </li>
+                <li class="tags-item">
+                  <a href="/shop.html">Tees</a>
+                </li>
+                <li class="tags-item">
+                  <a href="/shop.html">Leather coat</a>
+                </li>
+                <li class="tags-item">
+                  <a href="/shop.html">Winter</a>
+                </li>
+                <li class="tags-item">
+                  <a href="/shop.html">Summer</a>
+                </li>
+                <li class="tags-item no-border-bottom">
+                  <a href="/shop.html">Modern</a>
+                </li>
+              </ul>
+            </div>
+            <div class="widget-color-filter">
+              <h5 class="widget-title">Filter By Color</h5>
+              <ul class="product-tags sidebar-list list-unstyled">
+                <li class="tags-item">
+                  <a href="/shop.html">Red</a>
+                </li>
+                <li class="tags-item">
+                  <a href="/shop.html">Orange</a>
+                </li>
+                <li class="tags-item">
+                  <a href="/shop.html">Green</a>
+                </li>
+                <li class="tags-item">
+                  <a href="/shop.html">Blue</a>
+                </li>
+              </ul>
+            </div>
+            <div class="widget-size-filter">
+              <h5 class="widget-title">Filter By Size</h5>
+              <ul class="product-tags sidebar-list list-unstyled">
+                <li class="tags-item">
+                  <a href="/shop.html">XL</a>
+                </li>
+                <li class="tags-item">
+                  <a href="/shop.html">L</a>
+                </li>
+                <li class="tags-item">
+                  <a href="/shop.html">M</a>
+                </li>
+                <li class="tags-item">
+                  <a href="/shop.html">S</a>
+                </li>
+                <li class="tags-item">
+                  <a href="/shop.html">XS</a>
+                </li>
+              </ul>
+            </div>
+            <div class="widget-price-filter">
+              <h5 class="widget-title">Filter By Price</h5>
+              <ul class="product-tags sidebar-list list-unstyled">
+                <li class="tags-item">
+                  <a href="/shop.html">Less than $10</a>
+                </li>
+                <li class="tags-item">
+                  <a href="/shop.html">$10- $20</a>
+                </li>
+                <li class="tags-item">
+                  <a href="/shop.html">$20- $30</a>
+                </li>
+                <li class="tags-item">
+                  <a href="/shop.html">$30- $40</a>
+                </li>
+                <li class="tags-item">
+                  <a href="/shop.html">$40- $50</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+      </aside></div>
+    </div>
+
+  </div>
+
+
+  <section id="testimonials" class="position-relative padding-large">
+    <div class="container">
+      <div class="row">
+        <div class="review-content">
+          <i class="icon-arrow icon-arrow-left" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-fbce34d14e8efc44"></i>
+          <div class="swiper testimonial-swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
+            <div class="swiper-wrapper" id="swiper-wrapper-fbce34d14e8efc44" aria-live="polite">
+              <div class="swiper-slide text-center d-flex justify-content-center swiper-slide-active" role="group" aria-label="1 / 2" data-swiper-slide-index="0" style="width: 1306px;">
+                <div class="review-item col-md-8">
+                  <i class="icon icon-review"></i>
+                  <blockquote>“Tempus oncu enim pellen tesque este pretium in neque, elit morbi sagittis lorem habi
+                    mattis Pellen tesque pretium feugiat vel morbi suspen dise sagittis lorem habi tasse morbi sagittis
+                    loreus oncu enim cursus.”</blockquote>
+                  <div class="rating-star">
+                    <i class="icon icon-star"></i>
+                    <i class="icon icon-star"></i>
+                    <i class="icon icon-star"></i>
+                    <i class="icon icon-star"></i>
+                    <i class="icon icon-star-line"></i>
+                  </div>
+                  <div class="author-detail">
+                    <div class="name text-primary">Emma Chamberlin</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide text-center d-flex justify-content-center swiper-slide-next" role="group" aria-label="2 / 2" data-swiper-slide-index="1" style="width: 1306px;">
+                <div class="review-item col-md-8">
+                  <i class="icon icon-review"></i>
+                  <blockquote>“Tempus oncu enim pellen tesque este pretium in neque, elit morbi sagittis lorem habi
+                    mattis Pellen tesque pretium feugiat vel morbi suspen dise sagittis lorem habi tasse morbi sagittis
+                    loreus oncu enim cursus.”</blockquote>
+                  <div class="rating-star">
+                    <i class="icon icon-star"></i>
+                    <i class="icon icon-star"></i>
+                    <i class="icon icon-star"></i>
+                    <i class="icon icon-star"></i>
+                    <i class="icon icon-star-line"></i>
+                  </div>
+                  <div class="author-detail">
+                    <div class="name text-primary">Joey Kimberland</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+          <i class="icon-arrow icon-arrow-right" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-fbce34d14e8efc44"></i>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1" aria-current="true"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span></div>
+  </section>
+  <section id="brand-collection" class="padding-small border-top border-bottom overflow-hidden my-5">
+    <div class="container">
+      <div class="row d-flex flex-wrap justify-content-between align-items-center py-3">
+        <div class="col">
+          <i class="icon icon-brand-item1"></i>
+        </div>
+        <div class="col">
+          <i class="icon icon-brand-item2"></i>
+        </div>
+        <div class="col">
+          <i class="icon icon-brand-item3"></i>
+        </div>
+        <div class="col">
+          <i class="icon icon-brand-item4"></i>
+        </div>
+        <div class="col">
+          <i class="icon icon-brand-item5"></i>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section id="instagram" class="padding-large overflow-hidden">
+    <div class="container">
+      <div class="row">
+        <div class="section-header text-center">
+          <h2 class="section-title">Shop our insta</h2>
+        </div>
+        <div class="row d-flex flex-wrap">
+          <figure class=" col instagram-item magnific position-relative">
+            <a href="/shop.html#" class="">
+              <img src="{% static 'skin3/images/insta-item1.jpg' %}" alt="instagram" class="insta-image">
+              <div class="icon-overlay d-flex justify-content-center">
+                <i class="icon icon-instagram1"></i>
+              </div>
+            </a>
+          </figure>
+          <figure class=" col instagram-item magnific position-relative">
+            <a href="/shop.html#" class="">
+              <img src="{% static 'skin3/images/insta-item2.JPG' %}" alt="instagram" class="insta-image">
+              <div class="icon-overlay d-flex justify-content-center">
+                <i class="icon icon-instagram1"></i>
+              </div>
+            </a>
+          </figure>
+          <figure class=" col instagram-item magnific position-relative">
+            <a href="/shop.html#" class="">
+              <img src="{% static 'skin3/images/insta-item3.jpg' %}" alt="instagram" class="insta-image">
+              <div class="icon-overlay d-flex justify-content-center">
+                <i class="icon icon-instagram1"></i>
+              </div>
+            </a>
+          </figure>
+          <figure class=" col instagram-item magnific position-relative">
+            <a href="/shop.html#" class="">
+              <img src="{% static 'skin3/images/insta-item4.jpg' %}" alt="instagram" class="insta-image">
+              <div class="icon-overlay d-flex justify-content-center">
+                <i class="icon icon-instagram1"></i>
+              </div>
+            </a>
+          </figure>
+          <figure class=" col instagram-item magnific position-relative">
+            <a href="/shop.html#" class="">
+              <img src="{% static 'skin3/images/insta-item5.jpg' %}" alt="instagram" class="insta-image">
+              <div class="icon-overlay d-flex justify-content-center">
+                <i class="icon icon-instagram1"></i>
+              </div>
+            </a>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+{% endblock %}
+
+
+{% block scripts %}
+{% endblock %}
+
+
