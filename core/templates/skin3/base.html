@@ -44,36 +44,36 @@
             <div class="main-menu">
               <ul class="menu-list list-unstyled d-flex m-0 ">
                 <li class="menu-item dropdown">
-                  <a class="text-uppercase item-anchor dropdown-toggle" href="/home-v2.html#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Home </a>
+                  <a class="text-uppercase item-anchor dropdown-toggle" href="{% url 'core:index' %}" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Home </a>
                   <ul class="dropdown-menu">
-                    <li class="sub-page pe-0"><a class="text-black text-uppercase dropdown-item" href="/index.html">Home</a></li>
-                    <li class="sub-page pe-0"><a class="text-black text-uppercase dropdown-item" href="/index.html">Home</a></li>
+                    <li class="sub-page pe-0"><a class="text-black text-uppercase dropdown-item" href="{% url 'core:index' %}">Home</a></li>
+                    <li class="sub-page pe-0"><a class="text-black text-uppercase dropdown-item" href="{% url 'core:index' %}">Home</a></li>
                   </ul>
                 </li>
                 <li class="menu-item">
                   <a href="/about-us.html" class="text-uppercase item-anchor">About</a>
                 </li>
                 <li class="menu-item dropdown">
-                  <a class="text-uppercase item-anchor dropdown-toggle" href="/home-v2.html#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Shop </a>
+                  <a class="text-uppercase item-anchor dropdown-toggle" href="{% url 'core:index' %}" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Shop </a>
                   <ul class="dropdown-menu">
-                    <li class="sub-page pe-0"><a class="text-black text-uppercase dropdown-item" href="/shop.html">Shop
+                    <li class="sub-page pe-0"><a class="text-black text-uppercase dropdown-item" href="{% url 'core:shop' %}">Shop
                         sidebar </a></li>
-                    <li class="sub-page pe-0"><a class="text-black text-uppercase dropdown-item" href="/single-product.html">Single product </a>
+                    <li class="sub-page pe-0"><a class="text-black text-uppercase dropdown-item" href="{% url 'core:single_product' %}">Single product </a>
                     </li>
                   </ul>
                 </li>
                 <li class="menu-item dropdown">
-                  <a class="text-uppercase item-anchor dropdown-toggle" href="/home-v2.html#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> blog </a>
+                  <a class="text-uppercase item-anchor dropdown-toggle" href="{% url 'core:index' %}" role="button" data-bs-toggle="dropdown" aria-expanded="false"> blog </a>
                   <ul class="dropdown-menu">
-                    <li class="sub-page pe-0"><a class="text-black text-uppercase dropdown-item" href="/blog.html">blog
+                    <li class="sub-page pe-0"><a class="text-black text-uppercase dropdown-item" href="{% url 'core:blog' %}">blog
                         classic </a></li>
-                    <li class="sub-page pe-0"><a class="text-black text-uppercase dropdown-item" href="/blog-with-sidebar.html">Blog sidebar </a>
+                    <li class="sub-page pe-0"><a class="text-black text-uppercase dropdown-item" href="{% url 'core:blog_with_sidebar' %}">Blog sidebar </a>
                     </li>
-                    <li class="sub-page pe-0"><a class="text-black text-uppercase dropdown-item" href="/single-post.html">Single post </a></li>
+                    <li class="sub-page pe-0"><a class="text-black text-uppercase dropdown-item" href="{% url 'core:single_post' %}">Single post </a></li>
                   </ul>
                 </li>
                 <li class="menu-item dropdown">
-                  <a class="text-uppercase item-anchor dropdown-toggle" href="/home-v2.html#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Pages </a>
+                  <a class="text-uppercase item-anchor dropdown-toggle" href="{% url 'core:index' %}" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Pages </a>
                   <ul class="dropdown-menu">
                     <li class="sub-page pe-0"><a class="text-black text-uppercase dropdown-item" href="/contact.html">contact </a></li>
                     <li class="sub-page pe-0"><a class="text-black text-uppercase dropdown-item" href="/cart.html">cart </a></li>
@@ -92,7 +92,7 @@
         </div>
         <div class="col-md-2 col-sm-4 brand-block ">
           <div class="main-logo text-lg-center">
-            <a href="/index.html">
+            <a href="{% url 'core:index' %}">
               <img src="{% static 'skin3/images/dark-logo.png' %}" alt="logo" class="brand-image">
             </a>
           </div>
@@ -114,13 +114,13 @@
                   </div>
                 </li>
                 <li>
-                  <a href="/home-v2.html#" class="like">
+                  <a href="{% url 'core:index' %}" class="like">
                     <i class="icon icon-like"></i>
                     <span>(0)</span>
                   </a>
                 </li>
                 <li>
-                  <a href="/home-v2.html#" class="cart for-buy">
+                  <a href="{% url 'core:index' %}" class="cart for-buy">
                     <i class="icon icon-shopping-cart"></i>
                     <span>(0)</span>
                   </a>
@@ -148,34 +148,34 @@
                   erat nullam fringilla.</p>
                 <div class="newsletter-button d-flex flex-wrap align-items-center justify-content-between border-bottom widget-menu">
                   <input type="text" name="Subscribe" placeholder="Enter your email address...">
-                  <a href="/single-post.html">
+                  <a href="{% url 'core:single_post' %}">
                     <i class="icon icon-send"></i>
                   </a>
                 </div>
                 <div class="social-links">
                   <ul class="d-flex list-unstyled">
                     <li>
-                      <a href="/home-v2.html#">
+                      <a href="{% url 'core:index' %}">
                         <i class="icon icon-facebook"></i>
                       </a>
                     </li>
                     <li>
-                      <a href="/home-v2.html#">
+                      <a href="{% url 'core:index' %}">
                         <i class="icon icon-twitter"></i>
                       </a>
                     </li>
                     <li>
-                      <a href="/home-v2.html#">
+                      <a href="{% url 'core:index' %}">
                         <i class="icon icon-instagram1"></i>
                       </a>
                     </li>
                     <li>
-                      <a href="/home-v2.html#">
+                      <a href="{% url 'core:index' %}">
                         <i class="icon icon-youtube"></i>
                       </a>
                     </li>
                     <li>
-                      <a href="/home-v2.html#">
+                      <a href="{% url 'core:index' %}">
                         <i class="icon icon-behance"></i>
                       </a>
                     </li>
@@ -188,19 +188,19 @@
                 <h5 class="widget-title">Quick Links</h5>
                 <ul class="menu-list list-unstyled text-uppercase">
                   <li class="menu-item">
-                    <a href="/home-v2.html#">Home</a>
+                    <a href="{% url 'core:index' %}">Home</a>
                   </li>
                   <li class="menu-item">
-                    <a href="/home-v2.html#">About</a>
+                    <a href="{% url 'core:index' %}">About</a>
                   </li>
                   <li class="menu-item">
-                    <a href="/home-v2.html#">Shop</a>
+                    <a href="{% url 'core:index' %}">Shop</a>
                   </li>
                   <li class="menu-item">
-                    <a href="/home-v2.html#">Blogs</a>
+                    <a href="{% url 'core:index' %}">Blogs</a>
                   </li>
                   <li class="menu-item">
-                    <a href="/home-v2.html#">Contact</a>
+                    <a href="{% url 'core:index' %}">Contact</a>
                   </li>
                 </ul>
               </div>
@@ -210,19 +210,19 @@
                 <h5 class="widget-title">Help &amp; Info</h5>
                 <ul class="menu-list list-unstyled">
                   <li class="menu-item">
-                    <a href="/home-v2.html#">Track Your Order</a>
+                    <a href="{% url 'core:index' %}">Track Your Order</a>
                   </li>
                   <li class="menu-item">
-                    <a href="/home-v2.html#">Returns Policies</a>
+                    <a href="{% url 'core:index' %}">Returns Policies</a>
                   </li>
                   <li class="menu-item">
-                    <a href="/home-v2.html#">Shipping + Delivery</a>
+                    <a href="{% url 'core:index' %}">Shipping + Delivery</a>
                   </li>
                   <li class="menu-item">
-                    <a href="/home-v2.html#">Contact Us</a>
+                    <a href="{% url 'core:index' %}">Contact Us</a>
                   </li>
                   <li class="menu-item">
-                    <a href="/home-v2.html#">Faqs</a>
+                    <a href="{% url 'core:index' %}">Faqs</a>
                   </li>
                 </ul>
               </div>
@@ -232,7 +232,7 @@
                 <h5 class="widget-title">Contact Us</h5>
                 <p>Do you have any queries or suggestions? <a href="mailto:">yourinfo@gmail.com</a>
                 </p>
-                <p>If you need support? Just give us a call. <a href="/home-v2.html">+55 111 222 333 44</a>
+                <p>If you need support? Just give us a call. <a href="{% url 'core:index' %}">+55 111 222 333 44</a>
                 </p>
               </div>
             </div>

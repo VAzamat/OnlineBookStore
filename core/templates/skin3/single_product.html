@@ -24,10 +24,10 @@ single-page shop-single
             <h1 class="page-title">Shop Single</h1>
             <div class="breadcrumbs">
               <span class="item">
-                <a href="/index.html">Home &gt;</a>
+                <a href="{% url 'core:index' %}">Home &gt;</a>
               </span>
               <span class="item">
-                <a href="/shop.html">Shop &gt;</a>
+                <a href="{% url 'core:shop' %}">Shop &gt;</a>
               </span>
               <span class="item">Shop Single</span>
             </div>
@@ -107,13 +107,13 @@ single-page shop-single
                   <h4 class="item-title no-margin">Color:</h4>
                   <ul class="select-list list-unstyled d-flex">
                     <li class="select-item" data-val="Green" title="Green">
-                      <a href="/single-product.html#">Green</a>
+                      <a href="{% url 'core:single_product' %}">Green</a>
                     </li>
                     <li class="select-item" data-val="Orange" title="Orange">
-                      <a href="/single-product.html#">Orange</a>
+                      <a href="{% url 'core:single_product' %}">Orange</a>
                     </li>
                     <li class="select-item" data-val="Red" title="Red">
-                      <a href="/single-product.html#">Red</a>
+                      <a href="{% url 'core:single_product' %}">Red</a>
                     </li>
                   </ul>
                 </div>
@@ -122,16 +122,16 @@ single-page shop-single
                 <h4 class="item-title no-margin">Size:</h4>
                 <ul class="select-list list-unstyled d-flex">
                   <li data-value="XL" class="select-item">
-                    <a href="/single-product.html#">XL</a>
+                    <a href="{% url 'core:single_product' %}">XL</a>
                   </li>
                   <li data-value="L" class="select-item">
-                    <a href="/single-product.html#">L</a>
+                    <a href="{% url 'core:single_product' %}">L</a>
                   </li>
                   <li data-value="M" class="select-item">
-                    <a href="/single-product.html#">M</a>
+                    <a href="{% url 'core:single_product' %}">M</a>
                   </li>
                   <li data-value="S" class="select-item">
-                    <a href="/single-product.html#">S</a>
+                    <a href="{% url 'core:single_product' %}">S</a>
                   </li>
 
                 </ul>
@@ -153,7 +153,7 @@ single-page shop-single
                   </div>
                   <button type="submit" name="add-to-cart" value="1269" class="btn btn-black btn-medium text-uppercase no-margin">Add to cart</button>
                   <div class="like-button bg-dark">
-                    <a href="/single-product.html#" class="light d-flex">
+                    <a href="{% url 'core:single_product' %}" class="light d-flex">
                       <i class="icon icon-like-outline"></i>
                     </a>
                   </div>
@@ -171,13 +171,13 @@ single-page shop-single
                 <h4 class="item-title no-margin">Category:</h4>
                 <ul class="select-list list-unstyled d-flex">
                   <li data-value="S" class="select-item">
-                    <a href="/single-product.html#">Women</a>,
+                    <a href="{% url 'core:single_product' %}">Women</a>,
                   </li>
                   <li data-value="S" class="select-item">
-                    <a href="/single-product.html#">Popular</a>,
+                    <a href="{% url 'core:single_product' %}">Popular</a>,
                   </li>
                   <li data-value="S" class="select-item">
-                    <a href="/single-product.html#">Orange</a>
+                    <a href="{% url 'core:single_product' %}">Orange</a>
                   </li>
                 </ul>
               </div>
@@ -185,13 +185,13 @@ single-page shop-single
                 <h4 class="item-title no-margin">Tags:</h4>
                 <ul class="select-list list-unstyled d-flex">
                   <li data-value="S" class="select-item">
-                    <a href="/single-product.html#">Classic</a>,
+                    <a href="{% url 'core:single_product' %}">Classic</a>,
                   </li>
                   <li data-value="S" class="select-item">
-                    <a href="/single-product.html#">Winter</a>,
+                    <a href="{% url 'core:single_product' %}">Winter</a>,
                   </li>
                   <li data-value="S" class="select-item">
-                    <a href="/single-product.html#">Modern</a>
+                    <a href="{% url 'core:single_product' %}">Modern</a>
                   </li>
                 </ul>
               </div>
@@ -339,7 +339,7 @@ single-page shop-single
                 <div class="cart-concern">
                   <div class="cart-button d-flex flex-wrap">
                     <div class="btn-left">
-                      <a href="/single-product.html#" class="btn btn-medium btn-light">Add to Cart</a>
+                      <a href="{% url 'core:single_product' %}" class="btn btn-medium btn-light">Add to Cart</a>
                     </div>
                     <button type="button" class="btn btn-light wishlist-btn">
                       <i class="icon icon-like"></i>
@@ -352,7 +352,7 @@ single-page shop-single
                 </div>
                 <div class="product-detail text-center">
                   <h3 class="product-title">
-                    <a href="/single-product.html#">Orange beanie</a>
+                    <a href="{% url 'core:single_product' %}">Orange beanie</a>
                   </h3>
                   <span class="item-price text-primary">$12.00</span>
                 </div>
@@ -366,7 +366,7 @@ single-page shop-single
                 <div class="cart-concern">
                   <div class="cart-button d-flex flex-wrap">
                     <div class="btn-left">
-                      <a href="/single-product.html#" class="btn btn-medium btn-light">Add to Cart</a>
+                      <a href="{% url 'core:single_product' %}" class="btn btn-medium btn-light">Add to Cart</a>
                     </div>
                     <button type="button" class="btn btn-light wishlist-btn">
                       <i class="icon icon-like"></i>
@@ -379,7 +379,7 @@ single-page shop-single
                 </div>
                 <div class="product-detail text-center">
                   <h3 class="product-title">
-                    <a href="/single-product.html#">leather coat</a>
+                    <a href="{% url 'core:single_product' %}">leather coat</a>
                   </h3>
                   <span class="item-price text-primary">$14.00</span>
                 </div>
@@ -393,7 +393,7 @@ single-page shop-single
                 <div class="cart-concern">
                   <div class="cart-button d-flex flex-wrap">
                     <div class="btn-left">
-                      <a href="/single-product.html#" class="btn btn-medium btn-light">Add to Cart</a>
+                      <a href="{% url 'core:single_product' %}" class="btn btn-medium btn-light">Add to Cart</a>
                     </div>
                     <button type="button" class="btn btn-light wishlist-btn">
                       <i class="icon icon-like"></i>
@@ -406,7 +406,7 @@ single-page shop-single
                 </div>
                 <div class="product-detail text-center">
                   <h3 class="product-title">
-                    <a href="/single-product.html#">Oversize shirt</a>
+                    <a href="{% url 'core:single_product' %}">Oversize shirt</a>
                   </h3>
                   <span class="item-price text-primary">$12.00</span>
                 </div>
@@ -420,7 +420,7 @@ single-page shop-single
                 <div class="cart-concern">
                   <div class="cart-button d-flex flex-wrap">
                     <div class="btn-left">
-                      <a href="/single-product.html#" class="btn btn-medium btn-light">Add to Cart</a>
+                      <a href="{% url 'core:single_product' %}" class="btn btn-medium btn-light">Add to Cart</a>
                     </div>
                     <button type="button" class="btn btn-light wishlist-btn">
                       <i class="icon icon-like"></i>
@@ -433,7 +433,7 @@ single-page shop-single
                 </div>
                 <div class="product-detail text-center">
                   <h3 class="product-title">
-                    <a href="/single-product.html#">Flora print dress</a>
+                    <a href="{% url 'core:single_product' %}">Flora print dress</a>
                   </h3>
                   <span class="item-price text-primary">$14.00</span>
                 </div>
@@ -447,7 +447,7 @@ single-page shop-single
                 <div class="cart-concern">
                   <div class="cart-button d-flex flex-wrap">
                     <div class="btn-left">
-                      <a href="/single-product.html#" class="btn btn-medium btn-light">Add to Cart</a>
+                      <a href="{% url 'core:single_product' %}" class="btn btn-medium btn-light">Add to Cart</a>
                     </div>
                     <button type="button" class="btn btn-light wishlist-btn">
                       <i class="icon icon-like"></i>
@@ -460,7 +460,7 @@ single-page shop-single
                 </div>
                 <div class="product-detail text-center">
                   <h3 class="product-title">
-                    <a href="/single-product.html#">Green outer</a>
+                    <a href="{% url 'core:single_product' %}">Green outer</a>
                   </h3>
                   <span class="item-price text-primary">$16.00</span>
                 </div>
@@ -471,7 +471,7 @@ single-page shop-single
         <div class="swiper-button swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-c5c57ab810a822b3" aria-disabled="false"><svg class="swiper-navigation-icon" width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.38296 20.0762C0.111788 19.805 0.111788 19.3654 0.38296 19.0942L9.19758 10.2796L0.38296 1.46497C0.111788 1.19379 0.111788 0.754138 0.38296 0.482966C0.654131 0.211794 1.09379 0.211794 1.36496 0.482966L10.4341 9.55214C10.8359 9.9539 10.8359 10.6053 10.4341 11.007L1.36496 20.0762C1.09379 20.3474 0.654131 20.3474 0.38296 20.0762Z" fill="currentColor"></path></svg></div>
         <div class="swiper-button swiper-button-prev swiper-button-disabled" tabindex="-1" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-c5c57ab810a822b3" aria-disabled="true"><svg class="swiper-navigation-icon" width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.38296 20.0762C0.111788 19.805 0.111788 19.3654 0.38296 19.0942L9.19758 10.2796L0.38296 1.46497C0.111788 1.19379 0.111788 0.754138 0.38296 0.482966C0.654131 0.211794 1.09379 0.211794 1.36496 0.482966L10.4341 9.55214C10.8359 9.9539 10.8359 10.6053 10.4341 11.007L1.36496 20.0762C1.09379 20.3474 0.654131 20.3474 0.38296 20.0762Z" fill="currentColor"></path></svg></div>
         <div class="btn-center">
-          <a href="/single-product.html#" class="btn btn-medium btn-black">Shop All</a>
+          <a href="{% url 'core:single_product' %}" class="btn btn-medium btn-black">Shop All</a>
         </div>
       </div>
     </div>
@@ -507,7 +507,7 @@ single-page shop-single
         </div>
         <div class="row d-flex flex-wrap">
           <figure class=" col instagram-item magnific position-relative">
-            <a href="/single-product.html#" class="">
+            <a href="{% url 'core:single_product' %}" class="">
               <img src="{% static 'skin3/images/insta-item1.jpg' %}" alt="instagram" class="insta-image">
               <div class="icon-overlay d-flex justify-content-center">
                 <i class="icon icon-instagram1"></i>
@@ -515,7 +515,7 @@ single-page shop-single
             </a>
           </figure>
           <figure class=" col instagram-item magnific position-relative">
-            <a href="/single-product.html#" class="">
+            <a href="{% url 'core:single_product' %}" class="">
               <img src="{% static 'skin3/images/insta-item2.JPG' %}" alt="instagram" class="insta-image">
               <div class="icon-overlay d-flex justify-content-center">
                 <i class="icon icon-instagram1"></i>
@@ -523,7 +523,7 @@ single-page shop-single
             </a>
           </figure>
           <figure class=" col instagram-item magnific position-relative">
-            <a href="/single-product.html#" class="">
+            <a href="{% url 'core:single_product' %}" class="">
               <img src="{% static 'skin3/images/insta-item3.jpg' %}" alt="instagram" class="insta-image">
               <div class="icon-overlay d-flex justify-content-center">
                 <i class="icon icon-instagram1"></i>
@@ -531,7 +531,7 @@ single-page shop-single
             </a>
           </figure>
           <figure class=" col instagram-item magnific position-relative">
-            <a href="/single-product.html#" class="">
+            <a href="{% url 'core:single_product' %}" class="">
               <img src="{% static 'skin3/images/insta-item4.jpg' %}" alt="instagram" class="insta-image">
               <div class="icon-overlay d-flex justify-content-center">
                 <i class="icon icon-instagram1"></i>
@@ -539,7 +539,7 @@ single-page shop-single
             </a>
           </figure>
           <figure class=" col instagram-item magnific position-relative">
-            <a href="/single-product.html#" class="">
+            <a href="{% url 'core:single_product' %}" class="">
               <img src="{% static 'skin3/images/insta-item5.jpg' %}" alt="instagram" class="insta-image">
               <div class="icon-overlay d-flex justify-content-center">
                 <i class="icon icon-instagram1"></i>

@@ -24,10 +24,10 @@ blog-page single-post
             <h1 class="page-title">Blog detail</h1>
             <div class="breadcrumbs">
               <span class="item">
-                <a href="/index.html">Home &gt;</a>
+                <a href="{% url 'core:index' %}">Home &gt;</a>
               </span>
               <span class="item">
-                <a href="/blog.html">Blog &gt;</a>
+                <a href="{% url 'core:blog' %}">Blog &gt;</a>
               </span>
               <span class="item">Blog Detail</span>
             </div>
@@ -115,13 +115,13 @@ blog-page single-post
                     <div class="block-tag">
                       <ul class="list-unstyled d-flex">
                         <li>
-                          <a href="/single-post.html#" class="fs-5">Denim</a>
+                          <a href="{% url 'core:single_post' %}" class="fs-5">Denim</a>
                         </li>
                         <li>
-                          <a href="/single-post.html#" class="fs-5">Trending</a>
+                          <a href="{% url 'core:single_post' %}" class="fs-5">Trending</a>
                         </li>
                         <li>
-                          <a href="/single-post.html#" class="fs-5">Clothing</a>
+                          <a href="{% url 'core:single_post' %}" class="fs-5">Clothing</a>
                         </li>
                       </ul>
                     </div>
@@ -129,22 +129,22 @@ blog-page single-post
                       <div class="element-title fs-5 pe-3 ">Share:</div>
                       <ul class="list-unstyled d-flex">
                         <li>
-                          <a href="/single-post.html#">
+                          <a href="{% url 'core:single_post' %}">
                             <i class="icon icon-facebook"></i>
                           </a>
                         </li>
                         <li>
-                          <a href="/single-post.html#">
+                          <a href="{% url 'core:single_post' %}">
                             <i class="icon icon-instagram1"></i>
                           </a>
                         </li>
                         <li>
-                          <a href="/single-post.html#">
+                          <a href="{% url 'core:single_post' %}">
                             <i class="icon icon-twitter"></i>
                           </a>
                         </li>
                         <li>
-                          <a href="/single-post.html#">
+                          <a href="{% url 'core:single_post' %}">
                             <i class="icon icon-youtube"></i>
                           </a>
                         </li>
@@ -154,11 +154,11 @@ blog-page single-post
                 </div>
                 <div id="single-post-navigation">
                   <div class="post-navigation d-flex flex-wrap align-items-center justify-content-between">
-                    <a itemprop="url" class="post-prev d-flex align-items-center" href="/single-post.html">
+                    <a itemprop="url" class="post-prev d-flex align-items-center" href="{% url 'core:single_post' %}">
                       <i class="icon icon-angle-left"></i>
                       <span class="page-nav-title text-capitalize">Fashion is like nature’s beauty</span>
                     </a>
-                    <a itemprop="url" class="post-next d-flex align-items-center" href="/single-post.html">
+                    <a itemprop="url" class="post-next d-flex align-items-center" href="{% url 'core:single_post' %}">
                       <span class="page-nav-title text-capitalize">The main purpose of aesthetic</span>
                       <i class="icon icon-angle-right"></i>
                     </a>
@@ -170,7 +170,7 @@ blog-page single-post
               <div class="row d-flex flex-wrap align-items-center">
                 <div class="col-md-2 col-sm-3">
                   <div class="image-holder">
-                    <a itemprop="url" href="/single-post.html">
+                    <a itemprop="url" href="{% url 'core:single_post' %}">
                       <img src="{% static 'skin3/images/author-image.jpg' %}" class="commentor-image">
                     </a>
                   </div>
@@ -213,7 +213,7 @@ blog-page single-post
                                 Nascetur libero elementum adipiscing mauris maecenas et magna. Etiam nec, rutrum a diam
                                 lacus, nunc integer etiam.</p>
                               <div class="comments-reply">
-                                <a href="/single-post.html#">
+                                <a href="{% url 'core:single_post' %}">
                                   <i class="icon icon-mail-reply"></i>Reply Now </a>
                               </div>
                             </div>
@@ -233,7 +233,7 @@ blog-page single-post
                                 consequert.Tristique tempis condimentum diam done ullancomroer sit element henddg sit he
                                 consequert.</p>
                               <div class="comments-reply">
-                                <a href="/single-post.html#">
+                                <a href="{% url 'core:single_post' %}">
                                   <i class="icon icon-mail-reply"></i>Reply Now </a>
                               </div>
                             </div>
@@ -253,7 +253,7 @@ blog-page single-post
                                 consequert.Tristique tempis condimentum diam done ullancomroer sit element henddg sit he
                                 consequert.</p>
                               <div class="comments-reply">
-                                <a href="/single-post.html#">
+                                <a href="{% url 'core:single_post' %}">
                                   <i class="icon icon-mail-reply"></i>Reply Now </a>
                               </div>
                             </div>
@@ -309,13 +309,13 @@ blog-page single-post
           <div class="col-md-4">
             <article class="post-item">
               <div class="post-image">
-                <a href="/single-post.html">
+                <a href="{% url 'core:single_post' %}">
                   <img src="{% static 'skin3/images/post-item1.jpg' %}" alt="image" class="post-image">
                 </a>
               </div>
               <div class="post-content text-center">
                 <h3 class="post-title">
-                  <a href="/single-post.html">Best comfortable clothes ideas</a>
+                  <a href="{% url 'core:single_post' %}">Best comfortable clothes ideas</a>
                 </h3>
                 <p>Justo maecenas facilisi cursus fermentum enim viverra.</p>
               </div>
@@ -324,13 +324,13 @@ blog-page single-post
           <div class="col-md-4">
             <article class="post-item">
               <div class="post-image">
-                <a href="/single-post.html">
+                <a href="{% url 'core:single_post' %}">
                   <img src="{% static 'skin3/images/post-item2.jpg' %}" alt="image" class="post-image">
                 </a>
               </div>
               <div class="post-content text-center">
                 <h3 class="post-title">
-                  <a href="/single-post.html">Best poses for fashion photo</a>
+                  <a href="{% url 'core:single_post' %}">Best poses for fashion photo</a>
                 </h3>
                 <p>Viverra fringilla amet quis sollicitudin scelerisque nibh.</p>
               </div>
@@ -339,13 +339,13 @@ blog-page single-post
           <div class="col-md-4">
             <article class="post-item">
               <div class="post-image">
-                <a href="/single-post.html">
+                <a href="{% url 'core:single_post' %}">
                   <img src="{% static 'skin3/images/post-item3.jpg' %}" alt="image" class="post-image">
                 </a>
               </div>
               <div class="post-content text-center">
                 <h3 class="post-title">
-                  <a href="/single-post.html">casual denim clothing for women</a>
+                  <a href="{% url 'core:single_post' %}">casual denim clothing for women</a>
                 </h3>
                 <p>Sed sed eleifend vel sed elementum pharetra quam.</p>
               </div>
@@ -385,7 +385,7 @@ blog-page single-post
         </div>
         <div class="row d-flex flex-wrap">
           <figure class=" col instagram-item magnific position-relative">
-            <a href="/single-post.html#" class="">
+            <a href="{% url 'core:single_post' %}" class="">
               <img src="{% static 'skin3/images/insta-item1.jpg' %}" alt="instagram" class="insta-image">
               <div class="icon-overlay d-flex justify-content-center">
                 <i class="icon icon-instagram1"></i>
@@ -393,7 +393,7 @@ blog-page single-post
             </a>
           </figure>
           <figure class=" col instagram-item magnific position-relative">
-            <a href="/single-post.html#" class="">
+            <a href="{% url 'core:single_post' %}" class="">
               <img src="{% static 'skin3/images/insta-item2.JPG' %}" alt="instagram" class="insta-image">
               <div class="icon-overlay d-flex justify-content-center">
                 <i class="icon icon-instagram1"></i>
@@ -401,7 +401,7 @@ blog-page single-post
             </a>
           </figure>
           <figure class=" col instagram-item magnific position-relative">
-            <a href="/single-post.html#" class="">
+            <a href="{% url 'core:single_post' %}" class="">
               <img src="{% static 'skin3/images/insta-item3.jpg' %}" alt="instagram" class="insta-image">
               <div class="icon-overlay d-flex justify-content-center">
                 <i class="icon icon-instagram1"></i>
@@ -409,7 +409,7 @@ blog-page single-post
             </a>
           </figure>
           <figure class=" col instagram-item magnific position-relative">
-            <a href="/single-post.html#" class="">
+            <a href="{% url 'core:single_post' %}" class="">
               <img src="{% static 'skin3/images/insta-item4.jpg' %}" alt="instagram" class="insta-image">
               <div class="icon-overlay d-flex justify-content-center">
                 <i class="icon icon-instagram1"></i>
@@ -417,7 +417,7 @@ blog-page single-post
             </a>
           </figure>
           <figure class=" col instagram-item magnific position-relative">
-            <a href="/single-post.html#" class="">
+            <a href="{% url 'core:single_post' %}" class="">
               <img src="{% static 'skin3/images/insta-item5.jpg' %}" alt="instagram" class="insta-image">
               <div class="icon-overlay d-flex justify-content-center">
                 <i class="icon icon-instagram1"></i>
