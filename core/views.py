@@ -36,3 +36,6 @@ def my_account(request):
 
 def cart(request):
     return render(request, f'{used_skin}/cart.html')
+
+def checkout(request):
+    return render(request, f'{used_skin}/checkout.html')
