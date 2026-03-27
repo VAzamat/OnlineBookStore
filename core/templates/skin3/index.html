@@ -1,143 +1,18 @@
+{% extends "skin3/base.html" %}
+
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
+{% block titlekeywords %}
+    <meta name="keywords" content="купить книги онлайн, интернет-магазин книг, digital book sales, каталог книг, книжный маркетплейс, заказать книги с доставкой.">
+    <title>Digital Book Sales</title>
+{% endblock %}
 
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="format-detection" content="telephone=no">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="author" content="Valeev Azamat">
-  <meta name="description" content="Digital Book Sales: библиотека, экспертный блог и онлайн-магазин книг в одном месте. Удобный поиск, честные обзоры и быстрая покупка литературы в пару кликов.">
-  <meta name="keywords" content="">
-  <title>Digital Book Sales</title>
+{% block customstyle %}
+{% endblock %}
 
-  <link rel="stylesheet" type="text/css" href="{% static 'skin3/css/normalize.css' %}">
-  <link rel="stylesheet" type="text/css" href="{% static 'skin3/css/icomoon.css' %}">
-  <link rel="stylesheet" type="text/css" href="{% static 'skin3/css/vendor.css' %}">
-  <link rel="stylesheet" type="text/css" href="{% static 'skin3/css/style.css' %}">
-  <!--Bootstrap ================================================== -->
-  <link rel="stylesheet" type="text/css" href="{% static 'common/css/bootstrap.min.css' %}">
-  <link rel="stylesheet" type="text/css" href="{% static 'common/css/swiper-bundle.min.css' %}">
-  <link rel="stylesheet" type="text/css" href="{% static 'skin3/css/google-fonts.css' %}">
 
-</head>
-
-<body class="homepage bg-accent-light">
-
-  <header id="header" class=" content-light ">
-    <div class="header-wrap container py-3">
-      <div class="row align-items-center">
-        <div class="primary-nav col-md-5 col-sm-2">
-          <nav class="navbar">
-            <div class="main-menu">
-              <ul class="menu-list  list-unstyled d-flex m-0 ">
-                <li class="menu-itemhome1 dropdown">
-                  <a class="text-uppercase item-anchor dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false"> Home </a>
-                  <ul class="dropdown-menu">
-                    <li class="sub-page pe-0"><a class="text-black text-uppercase dropdown-item" href="index.html">
-                        Home version 1</a></li>
-                    <li class="sub-page pe-0"><a class="text-black text-uppercase dropdown-item"
-                        href="home-v2.html">Home version 2 &nbsp; </a></li>
-                  </ul>
-                </li>
-                <li class="menu-itemhome1">
-                  <a href="about-us.html" class="text-uppercase item-anchor">About</a>
-                </li>
-                <li class="menu-itemhome1 dropdown">
-                  <a class="text-uppercase item-anchor dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false"> Shop </a>
-                  <ul class="dropdown-menu">
-                    <li class="sub-page pe-0"><a class="text-black text-uppercase dropdown-item" href="shop.html">Shop
-                        sidebar &nbsp; </a></li>
-                    <li class="sub-page pe-0"><a class="text-black text-uppercase dropdown-item"
-                        href="single-product.html">Single product &nbsp; </a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="menu-itemhome1 dropdown">
-                  <a class="text-uppercase item-anchor dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false"> blog </a>
-                  <ul class="dropdown-menu">
-                    <li class="sub-page pe-0"><a class="text-black text-uppercase dropdown-item" href="blog.html">blog
-                        classic&nbsp; </a></li>
-                    <li class="sub-page pe-0"><a class="text-black text-uppercase dropdown-item"
-                        href="blog-with-sidebar.html">Blog sidebar&nbsp; </a>
-                    </li>
-                    <li class="sub-page pe-0"><a class="text-black text-uppercase dropdown-item"
-                        href="single-post.html">Single post&nbsp; </a></li>
-                  </ul>
-                </li>
-                <li class="menu-itemhome1 dropdown">
-                  <a class="text-uppercase item-anchor dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false"> Pages </a>
-                  <ul class="dropdown-menu">
-                    <li class="sub-page pe-0"><a class="text-black text-uppercase dropdown-item"
-                        href="contact.html">contact&nbsp; </a></li>
-                    <li class="sub-page pe-0"><a class="text-black text-uppercase dropdown-item"
-                        href="cart.html">cart&nbsp; </a></li>
-                    <li class="sub-page pe-0"><a class="text-black text-uppercase dropdown-item"
-                        href="checkout.html">checkout&nbsp; </a></li>
-                    <li class="sub-page pe-0"><a class="text-black text-uppercase dropdown-item"
-                        href="my-account.html">account&nbsp; </a></li>
-                  </ul>
-                </li>
-
-              </ul>
-              <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-              </div>
-            </div>
-          </nav>
-        </div>
-        <div class="col-md-2 col-sm-4 brand-block ">
-          <div class="main-logo text-lg-center">
-            <a href="index.html">
-              <img src="{% static 'skin3/images/main-logo.png' %}" alt="logo" class="brand-image">
-            </a>
-          </div>
-        </div>
-        <div class="right-block col-md-5 col-sm-4">
-          <nav class="navbar justify-content-end">
-            <div class="user-items">
-              <ul class="list-unstyled content-light d-flex align-items-center m-0">
-                <li>
-                  <i class="icon icon-user"></i>
-                  <a href="my-account.html" class="text-uppercase item-anchor">Login</a>
-                </li>
-                <li class="search-item">
-                  <div class="search-bar">
-                    <form action="/action_page.php" class="search-form d-flex no-margin">
-                      <i class="icon icon-search"></i>
-                      <input type="text" placeholder="SEARCH.." name="search"
-                        class="title-placeholder no-margin text-light ">
-                    </form>
-                  </div>
-                </li>
-                <li>
-                  <a href="#" class="like">
-                    <i class="icon icon-like"></i>
-                    <span>(0)</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="cart for-buy">
-                    <i class="icon icon-shopping-cart"></i>
-                    <span>(0)</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </div>
-      </div>
-    </div>
-  </header>
+{% block content %}
+<main>
   <section id="billboard" class="padding-large no-padding-top position-relative">
     <div class="image-holder">
       <img src="{% static 'skin3/images/banner-image.jpg' %}" alt="banner" class="banner-image">
@@ -425,7 +300,7 @@
                     <button type="button" class="btn btn-light wishlist-btn">
                       <i class="icon icon-like"></i>
                     </button>
-                    <button type="button" class="btn btn-light view-btn 
+                    <button type="button" class="btn btn-light view-btn
                           d-flex">
                       <i class="icon icon-crop"></i>
                     </button>
@@ -452,7 +327,7 @@
                     <button type="button" class="btn btn-light wishlist-btn">
                       <i class="icon icon-like"></i>
                     </button>
-                    <button type="button" class="btn btn-light view-btn 
+                    <button type="button" class="btn btn-light view-btn
                           d-flex">
                       <i class="icon icon-crop"></i>
                     </button>
@@ -479,7 +354,7 @@
                     <button type="button" class="btn btn-light wishlist-btn">
                       <i class="icon icon-like"></i>
                     </button>
-                    <button type="button" class="btn btn-light view-btn 
+                    <button type="button" class="btn btn-light view-btn
                           d-flex">
                       <i class="icon icon-crop"></i>
                     </button>
@@ -506,7 +381,7 @@
                     <button type="button" class="btn btn-light wishlist-btn">
                       <i class="icon icon-like"></i>
                     </button>
-                    <button type="button" class="btn btn-light view-btn 
+                    <button type="button" class="btn btn-light view-btn
                           d-flex">
                       <i class="icon icon-crop"></i>
                     </button>
@@ -533,7 +408,7 @@
                     <button type="button" class="btn btn-light wishlist-btn">
                       <i class="icon icon-like"></i>
                     </button>
-                    <button type="button" class="btn btn-light view-btn 
+                    <button type="button" class="btn btn-light view-btn
                           d-flex">
                       <i class="icon icon-crop"></i>
                     </button>
@@ -729,157 +604,10 @@
       </div>
     </div>
   </section>
-  <footer id="footer" class="overflow-hidden">
-    <div class="container mt-5">
-      <div class="row">
-        <div class="footer-top-area">
-          <div class="row d-flex flex-wrap justify-content-between">
-            <div class="col-lg-3 col-sm-6">
-              <div class="footer-menu menu-001">
-                <img src="{% static 'skin3/images/dark-logo.png' %}" alt="logo">
-                <p>Nisi, purus vitae, ultrices nunc. Sit ac sit suscipit hendrerit. Gravida massa volutpat aenean odio
-                  erat nullam fringilla.</p>
-                <div
-                  class="newsletter-button d-flex flex-wrap align-items-center justify-content-between border-bottom widget-menu">
-                  <input type="text" name="Subscribe" placeholder="Enter your email address...">
-                  <a href="#">
-                    <i class="icon icon-send"></i>
-                  </a>
-                </div>
-                <div class="social-links">
-                  <ul class="d-flex list-unstyled">
-                    <li>
-                      <a href="#">
-                        <i class="icon icon-facebook"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i class="icon icon-twitter"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i class="icon icon-instagram1"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i class="icon icon-youtube"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i class="icon icon-behance"></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-2 col-sm-6">
-              <div class="footer-menu menu-002">
-                <h5 class="widget-title">Quick Links</h5>
-                <ul class="menu-list list-unstyled text-uppercase">
-                  <li class="menu-item">
-                    <a href="#">Home</a>
-                  </li>
-                  <li class="menu-item">
-                    <a href="#">About</a>
-                  </li>
-                  <li class="menu-item">
-                    <a href="#">Shop</a>
-                  </li>
-                  <li class="menu-item">
-                    <a href="#">Blogs</a>
-                  </li>
-                  <li class="menu-item">
-                    <a href="#">Contact</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-              <div class="footer-menu text-uppercase menu-003">
-                <h5 class="widget-title">Help & Info</h5>
-                <ul class="menu-list list-unstyled">
-                  <li class="menu-item">
-                    <a href="#">Track Your Order</a>
-                  </li>
-                  <li class="menu-item">
-                    <a href="#">Returns Policies</a>
-                  </li>
-                  <li class="menu-item">
-                    <a href="#">Shipping + Delivery</a>
-                  </li>
-                  <li class="menu-item">
-                    <a href="#">Contact Us</a>
-                  </li>
-                  <li class="menu-item">
-                    <a href="#">Faqs</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-              <div class="footer-menu contact-item menu-004">
-                <h5 class="widget-title">Contact Us</h5>
-                <p>Do you have any queries or suggestions? <a href="mailto:">yourinfo@gmail.com</a>
-                </p>
-                <p>If you need support? Just give us a call. <a href="">+55 111 222 333 44</a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <hr>
-  </footer>
-  <div id="footer-bottom">
-    <div class="container">
-      <div class="row d-flex flex-wrap justify-content-between mb-3">
-        <div class="col-md-4 col-sm-6">
-          <div class="Shipping d-flex">
-            <p>We ship with:</p>
-            <div class="card-wrap">
-              <img src="{% static 'skin3/images/dhl.png' %}" alt="visa">
-              <img src="{% static 'skin3/images/shippingcard.png' %}" alt="mastercard">
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6">
-          <div class="payment-method d-flex justify-content-md-center">
-            <p>Payment options:</p>
-            <div class="card-wrap">
-              <img src="{% static 'skin3/images/visa.jpg' %}" alt="visa">
-              <img src="{% static 'skin3/images/mastercard.jpg' %}" alt="mastercard">
-              <img src="{% static 'skin3/images/paypal.jpg' %}" alt="paypal">
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6">
-          <div class="copyright text-md-end">
-            <p>Freebies
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+
+</main>
+{% endblock %}
 
 
-  <!-- script ================================================== -->
-  <script src="{% static 'common/js/jquery-1.11.0.min.js' %}"></script>
-  <script src="{% static 'skin3/js/plugins.js' %}"></script>
-  <script src="{% static 'skin3/js/script.js' %}"></script>
-
-  <!-- Bootstarp script ================================================== -->
-  <script type="text/javascript" src="{% static 'common/js/bootstrap.bundle.min.js' %}"></script>
-  <script type="text/javascript" src="{% static 'common/js/swiper-bundle.min.js' %}"></script>
-
-
-
-</body>
-
-</html>
+{% block scripts %}
+{% endblock %}
