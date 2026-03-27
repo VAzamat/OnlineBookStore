@@ -1,0 +1,264 @@
+{% extends "skin4/base.html" %}
+
+{% load static %}
+
+{% block titlekeywords %}
+    <title>Fitzone - Список желаний</title>
+    <meta name="keywords" content="electronics gadget">
+{% endblock %}
+
+{% block customstyle %}
+{% endblock %}
+
+{% block bodycustomclass %}
+{% endblock %}
+
+{% block content %}
+    <main id="banner">
+      <div class="position-relative" style="background: url({% static 'skin4/images/banner1.jpg' %}); background-size: cover; background-repeat: no-repeat; background-position: center; height: 60vh;">
+        <div class="container-fluid ">
+          <div class="hero-content text-center position-absolute start-50 top-50 translate-middle">
+            <h2 class="display-2 text-uppercase text-white mb-0 fw-medium">Wishlist</h2>
+
+            <nav class="breadcrumb d-flex justify-content-center mt-3 me-1 text-white">
+              <a class="breadcrumb-item breadcrumb-light text-white" href="/index.html">Home</a>
+              <a class="breadcrumb-item breadcrumb-light text-white" href="/wishlist.html#">Pages</a>
+              <a class="breadcrumb-item breadcrumb-light active text-white" aria-current="page">Wishlist</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <section id="wishlist">
+      <div class="container padding-medium pb-0">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col" class="card-title text-uppercase">Product</th>
+              <th scope="col" class="card-title text-uppercase">Unit Price</th>
+              <th scope="col" class="card-title text-uppercase">Stock Status</th>
+              <th scope="col" class="card-title text-uppercase"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="py-4">
+                <div class="cart-info d-flex flex-wrap align-items-center ">
+                  <div class="col-lg-3">
+                    <div class="card-image">
+                      <img src="{% static 'skin4/images/item9.jpg' %}" alt="cloth" class="img-fluid">
+                    </div>
+                  </div>
+                  <div class="col-lg-9">
+                    <div class="card-detail ps-3">
+                      <h5 class="card-title">
+                        <a href="/wishlist.html#" class="text-decoration-none">Wishlist Item Name</a>
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td class="py-4 align-middle">
+                <div class="total-price">
+                  <span class="secondary-font fw-medium">$130.00</span>
+                </div>
+              </td>
+              <td class="py-4 align-middle">
+                <div class="total-price">
+                  <span class="secondary-font fw-medium">In Stock</span>
+                </div>
+              </td>
+              <td class="py-4 align-middle">
+                <div class="d-flex align-items-center">
+                  <div class="me-4"><button class="btn btn-dark p-3 text-uppercase fs-6 btn-rounded-none w-100">Add to
+                      cart</button></div>
+                  <div class="cart-remove">
+                    <a href="/wishlist.html#">
+                      <svg width="24" height="24">
+                        <use xlink:href="#trash"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="py-4">
+                <div class="cart-info d-flex flex-wrap align-items-center ">
+                  <div class="col-lg-3">
+                    <div class="card-image">
+                      <img src="{% static 'skin4/images/item7.jpg' %}" alt="cloth" class="img-fluid">
+                    </div>
+                  </div>
+                  <div class="col-lg-9">
+                    <div class="card-detail ps-3">
+                      <h5 class="card-title">
+                        <a href="/wishlist.html#" class="text-decoration-none">Wishlist Item Name</a>
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td class="py-4 align-middle">
+                <div class="total-price">
+                  <span class="secondary-font fw-medium">$100.00</span>
+                </div>
+              </td>
+              <td class="py-4 align-middle">
+                <div class="total-price">
+                  <span class="secondary-font fw-medium">In Stock</span>
+                </div>
+              </td>
+              <td class="py-4 align-middle">
+                <div class="d-flex align-items-center">
+                  <div class="me-4"><button class="btn btn-dark p-3 text-uppercase fs-6 btn-rounded-none w-100">Add to
+                      cart</button></div>
+                  <div class="cart-remove">
+                    <a href="/wishlist.html#">
+                      <svg width="24" height="24">
+                        <use xlink:href="#trash"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="py-4">
+                <div class="cart-info d-flex flex-wrap align-items-center ">
+                  <div class="col-lg-3">
+                    <div class="card-image">
+                      <img src="{% static 'skin4/images/item3.jpg' %}" alt="cloth" class="img-fluid">
+                    </div>
+                  </div>
+                  <div class="col-lg-9">
+                    <div class="card-detail ps-3">
+                      <h5 class="card-title">
+                        <a href="/wishlist.html#" class="text-decoration-none">Wishlist Item Name</a>
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td class="py-4 align-middle">
+                <div class="total-price">
+                  <span class="secondary-font fw-medium">$190.00</span>
+                </div>
+              </td>
+              <td class="py-4 align-middle">
+                <div class="total-price">
+                  <span class="secondary-font fw-medium">Out of Stock</span>
+                </div>
+              </td>
+              <td class="py-4 align-middle">
+                <div class="d-flex align-items-center">
+                  <div class="me-4"><button class="btn btn-dark p-3 text-uppercase fs-6 btn-rounded-none w-100">Add to
+                      cart</button></div>
+                  <div class="cart-remove">
+                    <a href="/wishlist.html#">
+                      <svg width="24" height="24">
+                        <use xlink:href="#trash"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="py-4">
+                <div class="cart-info d-flex flex-wrap align-items-center ">
+                  <div class="col-lg-3">
+                    <div class="card-image">
+                      <img src="{% static 'skin4/images/item8.jpg' %}" alt="cloth" class="img-fluid">
+                    </div>
+                  </div>
+                  <div class="col-lg-9">
+                    <div class="card-detail ps-3">
+                      <h5 class="card-title">
+                        <a href="/wishlist.html#" class="text-decoration-none">Wishlist Item Name</a>
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td class="py-4 align-middle">
+                <div class="total-price">
+                  <span class="secondary-font fw-medium">$250.00</span>
+                </div>
+              </td>
+              <td class="py-4 align-middle">
+                <div class="total-price">
+                  <span class="secondary-font fw-medium">In Stock</span>
+                </div>
+              </td>
+              <td class="py-4 align-middle">
+                <div class="d-flex align-items-center">
+                  <div class="me-4"><button class="btn btn-dark p-3 text-uppercase fs-6 btn-rounded-none w-100">Add to
+                      cart</button></div>
+                  <div class="cart-remove">
+                    <a href="/wishlist.html#">
+                      <svg width="24" height="24">
+                        <use xlink:href="#trash"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="contact" class="padding-medium pb-0">
+        <div class="container text-center">
+            <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <h3 class="display-3 fw-medium">Sign up newsletter</h3>
+                <p>Subscribe to our newsletter for discounts and updates.</p>
+                <form class="d-flex justify-content-between border rounded-pill w-100 mt-5">
+                <input type="email" name="email" placeholder="Write your email address here..." class="w-100 px-4 border-0 bg-transparent">
+                <button type="button" class="btn btn-dark rounded-end-pill">Subscribe</button>
+                </form>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blogs" class="padding-medium">
+        <div class="container-fluid">
+            <div class="d-block d-md-flex justify-content-between align-items-center mb-4">
+                <h3 class="display-3 fw-medium">News Articles</h3>
+                <div><a href="/wishlist.html#" class="btn btn-dark border-start border-4 border-primary">Read All</a></div>
+            </div>
+            <div class="article">
+                <div class="row">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <a href="/single-post.html"> <img src="{% static 'skin4/images/article1.jpg' %}" class="img-fluid" alt="blog-img">
+                        </a>
+                        <h5 class="fs-3 mt-2"><a href="/single-post.html" class="article-names">10 Essential Workout Tips to Maximize Your Gym Sessions</a></h5>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <a href="/single-post.html"> <img src="{% static 'skin4/images/article2.jpg' %}" class="img-fluid" alt="blog-img">
+                        </a>
+                        <h5 class="fs-3 mt-2"><a href="/single-post.html" class="article-names">Strength vs. Cardio: Which Workout is Best for You?</a></h5>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <a href="/single-post.html"> <img src="{% static 'skin4/images/article5.jpg' %}" class="img-fluid" alt="blog-img">
+                        </a>
+                        <h5 class="fs-3 mt-2"><a href="/single-post.html" class="article-names">How to Stay Motivated on Your Fitness Journey</a>
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+{% endblock %}
+
+
+{% block scripts %}
+{% endblock %}

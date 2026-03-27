@@ -48,3 +48,6 @@ def class_detail(request):
 
 def pricing(request):
     return render(request, f'{used_skin}/pricing.html')
+
+def wishlist(request):
+    return render(request, f'{used_skin}/wishlist.html')
