@@ -18,3 +18,6 @@ def single_product(request):
 
 def blog(request):
     return render(request, f'{used_skin}/blog.html')
+
+def blog_with_sidebar(request):
+    return render(request, f'{used_skin}/blog_with_sidebar.html')
