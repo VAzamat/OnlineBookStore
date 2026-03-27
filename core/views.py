@@ -27,3 +27,6 @@ def blog_single_post(request):
 
 def contacts(request):
     return render(request, f'{used_skin}/contact.html')
+
+def about_us(request):
+    return render(request, f'{used_skin}/about_us.html')

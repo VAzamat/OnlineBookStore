@@ -1,5 +1,5 @@
 from django.urls import path
-from core.views import index, shop, single_product, blog, blog_with_sidebar, blog_single_post, contacts
+from core.views import index, shop, single_product, blog, blog_with_sidebar, blog_single_post, contacts, about_us
 
 from core.apps import CoreConfig
 
@@ -13,4 +13,5 @@ urlpatterns = [
     path("blog_with_sidebar.html", blog_with_sidebar, name='blog_with_sidebar'),
     path("single_post.html", blog_single_post, name='single_post'),
     path("contacts.html", contacts, name='contacts'),
+    path("about_us.html", about_us, name='about_us'),
 ]
