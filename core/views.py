@@ -45,3 +45,6 @@ def classes(request):
 
 def class_detail(request):
     return render(request, f'{used_skin}/class_detail.html')
+
+def pricing(request):
+    return render(request, f'{used_skin}/pricing.html')
