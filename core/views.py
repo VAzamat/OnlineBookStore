@@ -21,3 +21,6 @@ def blog(request):
 
 def blog_with_sidebar(request):
     return render(request, f'{used_skin}/blog_with_sidebar.html')
+
+def blog_single_post(request):
+    return render(request, f'{used_skin}/single_post.html')

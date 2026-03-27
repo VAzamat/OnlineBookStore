@@ -1,0 +1,439 @@
+{% extends "skin3/base.html" %}
+
+{% load static %}
+
+{% block titlekeywords %}
+    <meta name="keywords" content="обзоры новинок литературы, рецензии на книги, что почитать, книжный блог, новости литературы, статьи о писателях.">
+    <title>Книжные новости</title>
+{% endblock %}
+
+{% block customstyle %}
+{% endblock %}
+
+{% block bodycustomclass %}
+blog-page single-post
+{% endblock %}
+
+{% block content %}
+<main>
+    <section class="hero-section jarallax position-relative">
+    <div class="hero-content bg-accent">
+      <div class="container">
+        <div class="row pt-4">
+          <div class="text-center padding-medium">
+            <h1 class="page-title">Blog detail</h1>
+            <div class="breadcrumbs">
+              <span class="item">
+                <a href="/index.html">Home &gt;</a>
+              </span>
+              <span class="item">
+                <a href="/blog.html">Blog &gt;</a>
+              </span>
+              <span class="item">Blog Detail</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="post-wrap padding-large overflow-hidden">
+    <div class="container">
+      <div class="row">
+        <main class="post-grid m-0">
+          <div class="row">
+            <article class="post-item">
+              <div class="post-content">
+                <div class="post-meta">
+                  <span class="post-category">Fashion</span> / <span class="meta-date">Jul 11, 2022</span>
+                </div>
+                <h1 class="post-title">Feel cool while walking in streets</h1>
+                <div class="hero-image">
+                  <img src="{% static 'skin3/images/single-post.jpg' %}" alt="single-post">
+                </div>
+                <div class="post-description padding-medium">
+                  <p>
+                    <strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur facilisis vivamus massa
+                      magna. Blandit mauris libero condimentum commodo morbi consectetur sociis convallis sit. Magna
+                      diam amet justo sed vel dolor et volutpat integer. Iaculis sit sapien hac odio elementum egestas
+                      neque. Adipiscing purus euismod orci sem amet, et. Turpis erat ornare nisi laoreet est
+                      euismod.</strong>
+                  </p>
+                  <p>Sit suscipit tortor turpis sed fringilla lectus facilisis amet. Ipsum, amet dolor curabitur non
+                    aliquet orci urna volutpat. Id aliquam neque, ut vivamus sit imperdiet enim, lacus, vel. Morbi arcu
+                    amet, nulla fermentum vitae mattis arcu mi convallis. Urna in sollicitudin in vestibulum erat.
+                    Turpis faucibus augue ipsum, at aliquam. Cras sagittis tellus nunc integer vitae neque bibendum
+                    eget. Tempus malesuada et pellentesque maecenas. Sociis porttitor elit tincidunt tellus sit ornare.
+                    Purus ut quis sed venenatis eget ut ipsum, enim lacus. Praesent imperdiet vitae eu, eu tincidunt
+                    nunc integer sit.</p>
+                  <blockquote>“Sit suscipit tortor turpis sed fringilla lectus facilisis amet. Ipsum, amet dolor
+                    curabitur non aliquet orci urna volutpat. Id aliquam neque, ut vivamus sit imperdiet enim, lacus,
+                    vel.</blockquote>
+                  <p>
+                    <strong>Consectetur Facilisis Vivamus</strong>
+                  </p>
+                  <ul style="list-style-type:disc;" class="inner-list">
+                    <li>Blandit mauris libero condimentum commodo sociis convallis sit.</li>
+                    <li>Magna diam amet justo sed vel dolor et volutpat integer.</li>
+                    <li>Laculis sit sapien hac odio elementum egestas neque.</li>
+                  </ul>
+                  <p>Morbi arcu amet, nulla fermentum vitae mattis arcu mi convallis. Urna in sollicitudin in vestibulum
+                    erat. Turpis faucibus augue ipsum, at aliquam. Cras sagittis tellus nunc integer vitae neque
+                    bibendum eget. Tempus malesuada et pellentesque maecenas. Sociis porttitor elit tincidunt tellus sit
+                    ornare. Purus ut ipsum, enim lacus. Praesent imperdiet vitae eu, eu tincidunt nunc integer sit.</p>
+                  <p>Tortor diam dignissim amet, in interdum aliquet. Magnis dictum et eros purus fermentum, massa
+                    ullamcorper sit sollicitudin. Nascetur libero elementum adipiscing mauris maecenas et magna. Etiam
+                    nec, rutrum a diam lacus, nunc integer etiam. Mattis pulvinar non viverra donec pellentesque. Odio
+                    mi consequat libero dolor. Porta ut diam lobortis eget leo, lectus. Nunc tempus feugiat massa
+                    laoreet ultrices diam magna quam. Congue auctor auctor luctus neque. Enim lorem ultrices diam donec.
+                    Sed id placerat consectetur faucibus.</p>
+                  <img src="{% static 'skin3/images/post-image.jpg' %}" alt="post-image" class="align-left">
+                  <p>
+                    <strong>Velit, praesent pharetra malesuada</strong>
+                  </p>
+                  <p>Id pulvinar amet. Consequat potenti mollis massa iaculis et, dolor, eget lectus. Aliquam
+                    pellentesque molestie felis fames sed eget non euismod eget. Et eget ullamcorper urna, elit ac diam
+                    tellus viverra lacus.</p>
+                  <p>Tortor diam dignissim amet, in interdum aliquet. Magnis dictum et eros purus fermentum, massa
+                    ullamcorper sit sollicitudin. Nascetur libero elementum adipiscing mauris maecenas et magna. Etiam
+                    nec, rutrum a diam lacus, nunc integer etiam. Mattis pulvinar non viverra donec pellentesque. Odio
+                    mi consequat libero dolor. Porta ut diam lobortis eget leo, lectus.</p>
+                  <p>Velit, praesent pharetra malesuada id pulvinar amet. Consequat potenti mollis massa iaculis et,
+                    dolor, eget lectus. Aliquam pellentesque molestie felis fames sed eget non euismod eget. Et eget
+                    ullamcorper urna, elit ac diam tellus viverra lacus.</p>
+                  <p>Tortor diam dignissim amet, in interdum aliquet. Magnis dictum et eros purus fermentum, massa
+                    ullamcorper sit sollicitudin. Nascetur libero elementum adipiscing mauris maecenas et magna. Etiam
+                    nec, rutrum a diam lacus, nunc integer etiam. Mattis pulvinar non viverra donec pellentesque. Odio
+                    mi consequat libero dolor. Porta ut diam lobortis eget leo, lectus.</p>
+                  <p>Praesent pharetra malesuada id pulvinar amet. Consequat potenti mollis massa iaculis et, dolor,
+                    eget lectus. Aliquam pellentesque molestie felis fames sed eget non euismod eget. Et eget
+                    ullamcorper urna, elit ac diam tellus viverra lacus.</p>
+                  <p>Tortor diam dignissim amet, in interdum aliquet. Magnis dictum et eros purus fermentum, massa
+                    ullamcorper sit sollicitudin. Nascetur libero elementum adipiscing mauris maecenas et magna. Etiam
+                    nec, rutrum a diam lacus, nunc integer etiam. Mattis pulvinar non viverra donec pellentesque. Odio
+                    mi consequat libero dolor. Porta ut diam lobortis eget leo, lectus.</p>
+                  <div class="post-bottom-link d-md-flex justify-content-between">
+                    <div class="block-tag">
+                      <ul class="list-unstyled d-flex">
+                        <li>
+                          <a href="/single-post.html#" class="fs-5">Denim</a>
+                        </li>
+                        <li>
+                          <a href="/single-post.html#" class="fs-5">Trending</a>
+                        </li>
+                        <li>
+                          <a href="/single-post.html#" class="fs-5">Clothing</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="block-social-links d-flex align-items-baseline">
+                      <div class="element-title fs-5 pe-3 ">Share:</div>
+                      <ul class="list-unstyled d-flex">
+                        <li>
+                          <a href="/single-post.html#">
+                            <i class="icon icon-facebook"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="/single-post.html#">
+                            <i class="icon icon-instagram1"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="/single-post.html#">
+                            <i class="icon icon-twitter"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="/single-post.html#">
+                            <i class="icon icon-youtube"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div id="single-post-navigation">
+                  <div class="post-navigation d-flex flex-wrap align-items-center justify-content-between">
+                    <a itemprop="url" class="post-prev d-flex align-items-center" href="/single-post.html">
+                      <i class="icon icon-angle-left"></i>
+                      <span class="page-nav-title text-capitalize">Fashion is like nature’s beauty</span>
+                    </a>
+                    <a itemprop="url" class="post-next d-flex align-items-center" href="/single-post.html">
+                      <span class="page-nav-title text-capitalize">The main purpose of aesthetic</span>
+                      <i class="icon icon-angle-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <div id="post-author-info" class="border-top border-bottom padding-medium margin-medium">
+              <div class="row d-flex flex-wrap align-items-center">
+                <div class="col-md-2 col-sm-3">
+                  <div class="image-holder">
+                    <a itemprop="url" href="/single-post.html">
+                      <img src="{% static 'skin3/images/author-image.jpg' %}" class="commentor-image">
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-10 col-sm-9">
+                  <div class="author-wrap">
+                    <div class="author-post">
+                      <div class="author-name">Marie Wilson</div>
+                      <span class="author-position text-primary">Model</span>
+                      <p>Nascetur libero elementum adipiscing mauris maecenas et magna. Etiam nec, rutrum a diam lacus,
+                        nunc integer etiam. Mattis pulvinar non viverra donec pellentesque. Odio mi consequat libero
+                        dolor. Porta ut diam lobortis eget leo, lectus. Tortor diam dignissim amet, in interdum aliquet.
+                        Magnis dictum et eros purus fermentum, massa ullamcorper sit sollicitudin.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <section id="post-comment">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-9">
+                    <div class="comments-wrap">
+                      <h2 class="section-title">
+                        <span class="count">3</span> Comments
+                      </h2>
+                      <div class="comment-list padding-small">
+                        <article class="comment-item flex-wrap">
+                          <div class="col-md-2 col-sm-3">
+                            <img src="{% static 'skin3/images/commentor-item1.jpg' %}" alt="default" class="commentor-image">
+                          </div>
+                          <div class="col-md-10 col-sm-9 author-wrap">
+                            <div class="author-post">
+                              <div class="comment-meta">
+                                <div class="author-name">Sam Smith</div>
+                                <span class="meta-date">Jul 10</span>
+                              </div>
+                              <p>Mattis pulvinar non viverra donec pellentesque. Odio mi consequat libero dolor. Porta
+                                ut diam lobortis eget leo, lectus. Tortor diam dignissim amet, in interdum aliquet.
+                                Nascetur libero elementum adipiscing mauris maecenas et magna. Etiam nec, rutrum a diam
+                                lacus, nunc integer etiam.</p>
+                              <div class="comments-reply">
+                                <a href="/single-post.html#">
+                                  <i class="icon icon-mail-reply"></i>Reply Now </a>
+                              </div>
+                            </div>
+                          </div>
+                        </article>
+                        <article class="comment-item child-comments flex-wrap">
+                          <div class="col-md-2 col-sm-3">
+                            <img src="{% static 'skin3/images/commentor-item2.jpg' %}" alt="default" class="commentor-image">
+                          </div>
+                          <div class="col-md-10 col-sm-9 author-wrap">
+                            <div class="author-post">
+                              <div class="comment-meta">
+                                <div class="author-name">Santie Mary</div>
+                                <span class="meta-date">Jul 10</span>
+                              </div>
+                              <p>Tristique tempis condimentum diam done ullancomroer sit element henddg sit he
+                                consequert.Tristique tempis condimentum diam done ullancomroer sit element henddg sit he
+                                consequert.</p>
+                              <div class="comments-reply">
+                                <a href="/single-post.html#">
+                                  <i class="icon icon-mail-reply"></i>Reply Now </a>
+                              </div>
+                            </div>
+                          </div>
+                        </article>
+                        <article class="comment-item flex-wrap">
+                          <div class="col-md-2 col-sm-3">
+                            <img src="{% static 'skin3/images/commentor-item3.jpg' %}" alt="default" class="commentor-image">
+                          </div>
+                          <div class="col-md-10 col-sm-9 author-wrap">
+                            <div class="author-post">
+                              <div class="comment-meta">
+                                <div class="author-name">Analisa Nora</div>
+                                <span class="meta-date">Jul 10</span>
+                              </div>
+                              <p>Tristique tempis condimentum diam done ullancomroer sit element henddg sit he
+                                consequert.Tristique tempis condimentum diam done ullancomroer sit element henddg sit he
+                                consequert.</p>
+                              <div class="comments-reply">
+                                <a href="/single-post.html#">
+                                  <i class="icon icon-mail-reply"></i>Reply Now </a>
+                              </div>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                    </div>
+                    <div class="comment-respond mt-5">
+                      <h2 class="section-title">Leave a Comment</h2>
+                      <p>Your email address will not be published. Required fields are marked *</p>
+                      <form method="post" class="form-group">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <textarea class="u-full-width" id="comment" name="comment" placeholder="Write your comment here *" rows="20" height="80"></textarea>
+                          </div>
+                          <div class="col-md-6">
+                            <input class="u-full-width" type="text" name="author" id="author" placeholder="Write your full name here *">
+                          </div>
+                          <div class="col-md-6">
+                            <input class="u-full-width" type="email" name="email" id="email" placeholder="Write your e-mail address *">
+                          </div>
+                          <div class="col-md-12">
+                            <label>
+                              <input type="checkbox" class="checked-box">
+                              <span class="label-body">Save my name, email, and website in this browser for the next
+                                time.</span>
+                            </label>
+                          </div>
+                          <div class="col-md-12">
+                            <button class="btn btn-medium btn-black text-uppercase" type="submit">Post a comment
+                            </button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </main>
+      </div>
+    </div>
+  </div>
+  <section class="related-post post-wrap pb-5">
+    <div class="container pb-5">
+      <div class="section-header text-center">
+        <h2 class="section-title">Related Posts</h2>
+        <p>These blog posts are recommended with post you are reading.</p>
+      </div>
+      <div class="row">
+        <div class="post-list post-card-small">
+          <div class="col-md-4">
+            <article class="post-item">
+              <div class="post-image">
+                <a href="/single-post.html">
+                  <img src="{% static 'skin3/images/post-item1.jpg' %}" alt="image" class="post-image">
+                </a>
+              </div>
+              <div class="post-content text-center">
+                <h3 class="post-title">
+                  <a href="/single-post.html">Best comfortable clothes ideas</a>
+                </h3>
+                <p>Justo maecenas facilisi cursus fermentum enim viverra.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4">
+            <article class="post-item">
+              <div class="post-image">
+                <a href="/single-post.html">
+                  <img src="{% static 'skin3/images/post-item2.jpg' %}" alt="image" class="post-image">
+                </a>
+              </div>
+              <div class="post-content text-center">
+                <h3 class="post-title">
+                  <a href="/single-post.html">Best poses for fashion photo</a>
+                </h3>
+                <p>Viverra fringilla amet quis sollicitudin scelerisque nibh.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4">
+            <article class="post-item">
+              <div class="post-image">
+                <a href="/single-post.html">
+                  <img src="{% static 'skin3/images/post-item3.jpg' %}" alt="image" class="post-image">
+                </a>
+              </div>
+              <div class="post-content text-center">
+                <h3 class="post-title">
+                  <a href="/single-post.html">casual denim clothing for women</a>
+                </h3>
+                <p>Sed sed eleifend vel sed elementum pharetra quam.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="brand-collection" class="padding-small border-top border-bottom overflow-hidden my-5">
+    <div class="container">
+      <div class="row d-flex flex-wrap justify-content-between align-items-center py-3">
+        <div class="col">
+          <i class="icon icon-brand-item1"></i>
+        </div>
+        <div class="col">
+          <i class="icon icon-brand-item2"></i>
+        </div>
+        <div class="col">
+          <i class="icon icon-brand-item3"></i>
+        </div>
+        <div class="col">
+          <i class="icon icon-brand-item4"></i>
+        </div>
+        <div class="col">
+          <i class="icon icon-brand-item5"></i>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section id="instagram" class="padding-large overflow-hidden">
+    <div class="container">
+      <div class="row">
+        <div class="section-header text-center">
+          <h2 class="section-title">Shop our insta</h2>
+        </div>
+        <div class="row d-flex flex-wrap">
+          <figure class=" col instagram-item magnific position-relative">
+            <a href="/single-post.html#" class="">
+              <img src="{% static 'skin3/images/insta-item1.jpg' %}" alt="instagram" class="insta-image">
+              <div class="icon-overlay d-flex justify-content-center">
+                <i class="icon icon-instagram1"></i>
+              </div>
+            </a>
+          </figure>
+          <figure class=" col instagram-item magnific position-relative">
+            <a href="/single-post.html#" class="">
+              <img src="{% static 'skin3/images/insta-item2.JPG' %}" alt="instagram" class="insta-image">
+              <div class="icon-overlay d-flex justify-content-center">
+                <i class="icon icon-instagram1"></i>
+              </div>
+            </a>
+          </figure>
+          <figure class=" col instagram-item magnific position-relative">
+            <a href="/single-post.html#" class="">
+              <img src="{% static 'skin3/images/insta-item3.jpg' %}" alt="instagram" class="insta-image">
+              <div class="icon-overlay d-flex justify-content-center">
+                <i class="icon icon-instagram1"></i>
+              </div>
+            </a>
+          </figure>
+          <figure class=" col instagram-item magnific position-relative">
+            <a href="/single-post.html#" class="">
+              <img src="{% static 'skin3/images/insta-item4.jpg' %}" alt="instagram" class="insta-image">
+              <div class="icon-overlay d-flex justify-content-center">
+                <i class="icon icon-instagram1"></i>
+              </div>
+            </a>
+          </figure>
+          <figure class=" col instagram-item magnific position-relative">
+            <a href="/single-post.html#" class="">
+              <img src="{% static 'skin3/images/insta-item5.jpg' %}" alt="instagram" class="insta-image">
+              <div class="icon-overlay d-flex justify-content-center">
+                <i class="icon icon-instagram1"></i>
+              </div>
+            </a>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+{% endblock %}
+
+
+{% block scripts %}
+{% endblock %}
+
+
