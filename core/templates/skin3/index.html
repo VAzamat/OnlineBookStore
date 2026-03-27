@@ -10,231 +10,789 @@
 {% block customstyle %}
 {% endblock %}
 
+{% block bodycustomclass %}
+home-v2
+{% endblock %}
 
 {% block content %}
 <main>
-  <section id="billboard" class="padding-large no-padding-top position-relative">
-    <div class="image-holder">
-      <img src="{% static 'skin3/images/banner-image.jpg' %}" alt="banner" class="banner-image">
+   <section id="billboard" class="position-relative bg-accent style2 overflow-hidden">
+    <div class="swiper main-swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
+      <div class="swiper-wrapper" id="swiper-wrapper-d987a03710fb16cb" aria-live="off" style="transition-duration: 1500ms; transform: translate3d(-3810px, 0px, 0px);">
+
+        <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 3" data-swiper-slide-index="1" style="width: 1905px;">
+          <div class="row d-flex flex-wrap">
+            <div class="col-md-6 col-sm-12">
+              <div class="image-holder">
+                <img src="{% static 'skin3/images/banner-image4.png' %}" class="banner-image" alt="banner">
+              </div>
+            </div>
+            <div class="col-md-5 col-sm-12">
+              <div class="banner-content style2">
+                <h2 class="banner-title">Fur Jacket</h2>
+                <p>Erat consequat aliquet semper rhoncus tincidunt non faucibus. Tristique in vitae aliquam consequat
+                  massa nunc massa nulla. Commodo quam dis nisi ultrices a ac. Augue purus pretium in lectus. Etiam at
+                  nunc lacus vulputate eget elit.</p>
+                <div class="btn-wrap">
+                  <a href="/home-v2.html#" class="btn btn-dark btn-medium" tabindex="0">Shop it now <i class="icon icon-arrow-io"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide swiper-slide-prev" role="group" aria-label="3 / 3" data-swiper-slide-index="2" style="width: 1905px;">
+          <div class="row d-flex flex-wrap">
+            <div class="col-md-6 col-sm-12">
+              <div class="image-holder">
+                <img src="{% static 'skin3/images/banner-image2.png' %}" class="banner-image" alt="banner">
+              </div>
+            </div>
+            <div class="col-md-5 col-sm-12">
+              <div class="banner-content style2">
+                <h2 class="banner-title">Floral Print</h2>
+                <p>Erat consequat aliquet semper rhoncus tincidunt non faucibus. Tristique in vitae aliquam consequat
+                  massa nunc massa nulla. Commodo quam dis nisi ultrices a ac. Augue purus pretium in lectus. Etiam at
+                  nunc lacus vulputate eget elit.</p>
+                <div class="btn-wrap">
+                  <a href="/home-v2.html#" class="btn btn-dark btn-medium" tabindex="0">Shop it now <i class="icon icon-arrow-io"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 3" data-swiper-slide-index="0" style="width: 1905px;">
+          <div class="row d-flex flex-wrap">
+            <div class="col-md-6 col-sm-12">
+              <div class="image-holder">
+                <img src="{% static 'skin3/images/banner-image1.png' %}" class="banner-image" alt="banner">
+              </div>
+            </div>
+            <div class="col-md-5 col-sm-12">
+              <div class="banner-content style2">
+                <h2 class="banner-title">Orange Beanie</h2>
+                <p>Erat consequat aliquet semper rhoncus tincidunt non faucibus. Tristique in vitae aliquam consequat
+                  massa nunc massa nulla. Commodo quam dis nisi ultrices a ac. Augue purus pretium in lectus. Etiam at
+                  nunc lacus vulputate eget elit.</p>
+                <div class="btn-wrap">
+                  <a href="/home-v2.html#" class="btn btn-dark btn-medium" tabindex="0">Shop it now <i class="icon icon-arrow-io"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div></div>
+    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+    <div class="swiper-button swiper-arrow-prev" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-d987a03710fb16cb">
+      <i class="icon icon-chevron-left"></i>
     </div>
-    <div class="banner-content content-light style1 text-center col-md-6">
-      <h2 class="banner-title">
-        Make your fashion look swanky.
-      </h2>
-      <div class="btn-center">
-        <a href="#" class="btn btn-medium btn-light">Shop Now</a>
-      </div>
+    <div class="swiper-button swiper-arrow-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-d987a03710fb16cb">
+      <i class="icon icon-chevron-right"></i>
     </div>
+    <div class="swiper-pagination1 d-flex justify-content-center align-items-center swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1" aria-current="true"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span></div>
   </section>
-  <section id="company-services">
-    <div class="container my-5">
+  <section id="products-tabs" class="product-store position-relative padding-large overflow-hidden">
+    <div class="container">
       <div class="row">
-        <div class="icon-box-wrapper d-flex flex-wrap justify-content-between">
-          <div class="icon-box text-center col-md-3 col-sm-12">
-            <div class="content-box border-top border-bottom">
-              <div class="icon-box-icon">
-                <i class="icon icon-shipping"></i>
-              </div>
-              <div class="icon-content">
-                <h3 class="no-margin">Quick delivery</h3>
-                <p>Inside City delivery within 5 days</p>
+        <div class="section-header text-center">
+          <h2 class="section-title">Our products</h2>
+        </div>
+        <div class="tabs-listing">
+          <nav>
+            <div class="nav nav-tabs d-flex flex-wrap justify-content-center" id="nav-tab" role="tablist">
+              <button class="nav-link active text-capitalize" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#trending" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Trending Now</button>
+              <button class="nav-link text-capitalize" id="nav-information-tab" data-bs-toggle="tab" data-bs-target="#arrivals" type="button" role="tab" aria-controls="nav-information" aria-selected="false" tabindex="-1">New Arrivals</button>
+              <button class="nav-link text-capitalize" id="nav-review-tab" data-bs-toggle="tab" data-bs-target="#sellers" type="button" role="tab" aria-controls="nav-review" aria-selected="false" tabindex="-1">Best
+                Sellers</button>
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active padding-small" id="trending" role="tabpanel" aria-labelledby="nav-home-tab">
+              <div class="swiper product-swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
+                <div class="swiper-wrapper" id="swiper-wrapper-ba0c2e96593341b2" aria-live="polite">
+                  <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 5" style="width: 340.25px; margin-right: 5px;">
+                    <div class="product-item position-relative">
+                      <div class="image-holder">
+                        <img src="{% static 'skin3/images/product-item1.jpg' %}" alt="product-item" class="product-image">
+                      </div>
+                      <div class="cart-concern">
+                        <div class="cart-button d-flex flex-wrap">
+                          <div class="btn-left">
+                            <a href="/home-v2.html#" class="btn btn-medium btn-light">Add to Cart</a>
+                          </div>
+                          <button type="button" class="btn btn-light wishlist-btn">
+                            <i class="icon icon-like"></i>
+                          </button>
+                          <button type="button" class="btn btn-light view-btn
+                                d-flex">
+                            <i class="icon icon-crop"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="product-detail text-center">
+                        <h3 class="product-title">
+                          <a href="/home-v2.html#">Orange beanie</a>
+                        </h3>
+                        <span class="item-price text-primary">$12.00</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 5" style="width: 340.25px; margin-right: 5px;">
+                    <div class="product-item position-relative">
+                      <div class="image-holder">
+                        <img src="{% static 'skin3/images/product-item2.jpg' %}" alt="product-item" class="product-image">
+                      </div>
+                      <div class="cart-concern">
+                        <div class="cart-button d-flex flex-wrap">
+                          <div class="btn-left">
+                            <a href="/home-v2.html#" class="btn btn-medium btn-light">Add to Cart</a>
+                          </div>
+                          <button type="button" class="btn btn-light wishlist-btn">
+                            <i class="icon icon-like"></i>
+                          </button>
+                          <button type="button" class="btn btn-light view-btn
+                                d-flex">
+                            <i class="icon icon-crop"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="product-detail text-center">
+                        <h3 class="product-title">
+                          <a href="/home-v2.html#">leather coat</a>
+                        </h3>
+                        <span class="item-price text-primary">$14.00</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide" role="group" aria-label="3 / 5" style="width: 340.25px; margin-right: 5px;">
+                    <div class="product-item position-relative">
+                      <div class="image-holder">
+                        <img src="{% static 'skin3/images/product-item3.jpg' %}" alt="product-item" class="product-image">
+                      </div>
+                      <div class="cart-concern">
+                        <div class="cart-button d-flex flex-wrap">
+                          <div class="btn-left">
+                            <a href="/home-v2.html#" class="btn btn-medium btn-light">Add to Cart</a>
+                          </div>
+                          <button type="button" class="btn btn-light wishlist-btn">
+                            <i class="icon icon-like"></i>
+                          </button>
+                          <button type="button" class="btn btn-light view-btn
+                                d-flex">
+                            <i class="icon icon-crop"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="product-detail text-center">
+                        <h3 class="product-title">
+                          <a href="/home-v2.html#">Oversize shirt</a>
+                        </h3>
+                        <span class="item-price text-primary">$12.00</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide" role="group" aria-label="4 / 5" style="width: 340.25px; margin-right: 5px;">
+                    <div class="product-item position-relative">
+                      <div class="image-holder">
+                        <img src="{% static 'skin3/images/product-item4.jpg' %}" alt="product-item" class="product-image">
+                      </div>
+                      <div class="cart-concern">
+                        <div class="cart-button d-flex flex-wrap">
+                          <div class="btn-left">
+                            <a href="/home-v2.html#" class="btn btn-medium btn-light">Add to Cart</a>
+                          </div>
+                          <button type="button" class="btn btn-light wishlist-btn">
+                            <i class="icon icon-like"></i>
+                          </button>
+                          <button type="button" class="btn btn-light view-btn
+                                d-flex">
+                            <i class="icon icon-crop"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="product-detail text-center">
+                        <h3 class="product-title">
+                          <a href="/home-v2.html#">Flora print dress</a>
+                        </h3>
+                        <span class="item-price text-primary">$14.00</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide" role="group" aria-label="5 / 5" style="width: 340.25px; margin-right: 5px;">
+                    <div class="product-item position-relative">
+                      <div class="image-holder">
+                        <img src="{% static 'skin3/images/product-item5.jpg' %}" alt="product-item" class="product-image">
+                      </div>
+                      <div class="cart-concern">
+                        <div class="cart-button d-flex flex-wrap">
+                          <div class="btn-left">
+                            <a href="/home-v2.html#" class="btn btn-medium btn-light">Add to Cart</a>
+                          </div>
+                          <button type="button" class="btn btn-light wishlist-btn">
+                            <i class="icon icon-like"></i>
+                          </button>
+                          <button type="button" class="btn btn-light view-btn
+                                d-flex">
+                            <i class="icon icon-crop"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="product-detail text-center">
+                        <h3 class="product-title">
+                          <a href="/home-v2.html#">Green outer</a>
+                        </h3>
+                        <span class="item-price text-primary">$16.00</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+              <div class="btn-center">
+                <a href="/home-v2.html#" class="btn btn-medium btn-black">Shop All</a>
               </div>
             </div>
-          </div>
-          <div class="icon-box text-center col-md-3 col-sm-12">
-            <div class="content-box border-top border-bottom">
-              <div class="icon-box-icon">
-                <i class="icon icon-store"></i>
-              </div>
-              <div class="icon-content">
-                <h3 class="no-margin">Pick up in store</h3>
-                <p>We have option of pick up in store.</p>
+            <div class="tab-pane fade padding-small" id="arrivals" role="tabpanel" aria-labelledby="nav-information-tab">
+
+              <div class="swiper product-swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
+                <div class="swiper-wrapper" id="swiper-wrapper-7d521a7b642c2661" aria-live="polite">
+                  <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 5" style="margin-right: 5px;">
+                    <div class="product-item position-relative">
+                      <div class="image-holder">
+                        <img src="{% static 'skin3/images/product-item1.jpg' %}" alt="product-item" class="product-image">
+                      </div>
+                      <div class="cart-concern">
+                        <div class="cart-button d-flex flex-wrap">
+                          <div class="btn-left">
+                            <a href="/home-v2.html#" class="btn btn-medium btn-light">Add to Cart</a>
+                          </div>
+                          <button type="button" class="btn btn-light wishlist-btn">
+                            <i class="icon icon-like"></i>
+                          </button>
+                          <button type="button" class="btn btn-light view-btn
+                                d-flex">
+                            <i class="icon icon-crop"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="product-detail text-center">
+                        <h3 class="product-title">
+                          <a href="/home-v2.html#">Orange beanie</a>
+                        </h3>
+                        <span class="item-price text-primary">$12.00</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 5" style="margin-right: 5px;">
+                    <div class="product-item position-relative">
+                      <div class="image-holder">
+                        <img src="{% static 'skin3/images/product-item2.jpg' %}" alt="product-item" class="product-image">
+                      </div>
+                      <div class="cart-concern">
+                        <div class="cart-button d-flex flex-wrap">
+                          <div class="btn-left">
+                            <a href="/home-v2.html#" class="btn btn-medium btn-light">Add to Cart</a>
+                          </div>
+                          <button type="button" class="btn btn-light wishlist-btn">
+                            <i class="icon icon-like"></i>
+                          </button>
+                          <button type="button" class="btn btn-light view-btn
+                                d-flex">
+                            <i class="icon icon-crop"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="product-detail text-center">
+                        <h3 class="product-title">
+                          <a href="/home-v2.html#">leather coat</a>
+                        </h3>
+                        <span class="item-price text-primary">$14.00</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide" role="group" aria-label="3 / 5" style="margin-right: 5px;">
+                    <div class="product-item position-relative">
+                      <div class="image-holder">
+                        <img src="{% static 'skin3/images/product-item3.jpg' %}" alt="product-item" class="product-image">
+                      </div>
+                      <div class="cart-concern">
+                        <div class="cart-button d-flex flex-wrap">
+                          <div class="btn-left">
+                            <a href="/home-v2.html#" class="btn btn-medium btn-light">Add to Cart</a>
+                          </div>
+                          <button type="button" class="btn btn-light wishlist-btn">
+                            <i class="icon icon-like"></i>
+                          </button>
+                          <button type="button" class="btn btn-light view-btn
+                                d-flex">
+                            <i class="icon icon-crop"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="product-detail text-center">
+                        <h3 class="product-title">
+                          <a href="/home-v2.html#">Oversize shirt</a>
+                        </h3>
+                        <span class="item-price text-primary">$12.00</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide" role="group" aria-label="4 / 5" style="margin-right: 5px;">
+                    <div class="product-item position-relative">
+                      <div class="image-holder">
+                        <img src="{% static 'skin3/images/product-item4.jpg' %}" alt="product-item" class="product-image">
+                      </div>
+                      <div class="cart-concern">
+                        <div class="cart-button d-flex flex-wrap">
+                          <div class="btn-left">
+                            <a href="/home-v2.html#" class="btn btn-medium btn-light">Add to Cart</a>
+                          </div>
+                          <button type="button" class="btn btn-light wishlist-btn">
+                            <i class="icon icon-like"></i>
+                          </button>
+                          <button type="button" class="btn btn-light view-btn
+                                d-flex">
+                            <i class="icon icon-crop"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="product-detail text-center">
+                        <h3 class="product-title">
+                          <a href="/home-v2.html#">Flora print dress</a>
+                        </h3>
+                        <span class="item-price text-primary">$14.00</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide" role="group" aria-label="5 / 5" style="margin-right: 5px;">
+                    <div class="product-item position-relative">
+                      <div class="image-holder">
+                        <img src="{% static 'skin3/images/product-item5.jpg' %}" alt="product-item" class="product-image">
+                      </div>
+                      <div class="cart-concern">
+                        <div class="cart-button d-flex flex-wrap">
+                          <div class="btn-left">
+                            <a href="/home-v2.html#" class="btn btn-medium btn-light">Add to Cart</a>
+                          </div>
+                          <button type="button" class="btn btn-light wishlist-btn">
+                            <i class="icon icon-like"></i>
+                          </button>
+                          <button type="button" class="btn btn-light view-btn
+                                d-flex">
+                            <i class="icon icon-crop"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="product-detail text-center">
+                        <h3 class="product-title">
+                          <a href="/home-v2.html#">Green outer</a>
+                        </h3>
+                        <span class="item-price text-primary">$16.00</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+              <div class="btn-center">
+                <a href="/home-v2.html#" class="btn btn-medium btn-black">Shop All</a>
               </div>
             </div>
-          </div>
-          <div class="icon-box text-center col-md-3 col-sm-12">
-            <div class="content-box border-top border-bottom">
-              <div class="icon-box-icon">
-                <i class="icon icon-package"></i>
-              </div>
-              <div class="icon-content">
-                <h3 class="no-margin">Special packaging</h3>
-                <p>Our packaging is best for products.</p>
+            <div class="tab-pane fade padding-small" id="sellers" role="tabpanel" aria-labelledby="nav-review-tab">
+
+              <div class="swiper product-swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
+                <div class="swiper-wrapper" id="swiper-wrapper-de910f1010b573aeb8d" aria-live="polite">
+                  <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 5" style="margin-right: 5px;">
+                    <div class="product-item position-relative">
+                      <div class="image-holder">
+                        <img src="{% static 'skin3/images/product-item1.jpg' %}" alt="product-item" class="product-image">
+                      </div>
+                      <div class="cart-concern">
+                        <div class="cart-button d-flex flex-wrap">
+                          <div class="btn-left">
+                            <a href="/home-v2.html#" class="btn btn-medium btn-light">Add to Cart</a>
+                          </div>
+                          <button type="button" class="btn btn-light wishlist-btn">
+                            <i class="icon icon-like"></i>
+                          </button>
+                          <button type="button" class="btn btn-light view-btn
+                                d-flex">
+                            <i class="icon icon-crop"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="product-detail text-center">
+                        <h3 class="product-title">
+                          <a href="/home-v2.html#">Orange beanie</a>
+                        </h3>
+                        <span class="item-price text-primary">$12.00</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 5" style="margin-right: 5px;">
+                    <div class="product-item position-relative">
+                      <div class="image-holder">
+                        <img src="{% static 'skin3/images/product-item2.jpg' %}" alt="product-item" class="product-image">
+                      </div>
+                      <div class="cart-concern">
+                        <div class="cart-button d-flex flex-wrap">
+                          <div class="btn-left">
+                            <a href="/home-v2.html#" class="btn btn-medium btn-light">Add to Cart</a>
+                          </div>
+                          <button type="button" class="btn btn-light wishlist-btn">
+                            <i class="icon icon-like"></i>
+                          </button>
+                          <button type="button" class="btn btn-light view-btn
+                                d-flex">
+                            <i class="icon icon-crop"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="product-detail text-center">
+                        <h3 class="product-title">
+                          <a href="/home-v2.html#">leather coat</a>
+                        </h3>
+                        <span class="item-price text-primary">$14.00</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide" role="group" aria-label="3 / 5" style="margin-right: 5px;">
+                    <div class="product-item position-relative">
+                      <div class="image-holder">
+                        <img src="{% static 'skin3/images/product-item3.jpg' %}" alt="product-item" class="product-image">
+                      </div>
+                      <div class="cart-concern">
+                        <div class="cart-button d-flex flex-wrap">
+                          <div class="btn-left">
+                            <a href="/home-v2.html#" class="btn btn-medium btn-light">Add to Cart</a>
+                          </div>
+                          <button type="button" class="btn btn-light wishlist-btn">
+                            <i class="icon icon-like"></i>
+                          </button>
+                          <button type="button" class="btn btn-light view-btn
+                                d-flex">
+                            <i class="icon icon-crop"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="product-detail text-center">
+                        <h3 class="product-title">
+                          <a href="/home-v2.html#">Oversize shirt</a>
+                        </h3>
+                        <span class="item-price text-primary">$12.00</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide" role="group" aria-label="4 / 5" style="margin-right: 5px;">
+                    <div class="product-item position-relative">
+                      <div class="image-holder">
+                        <img src="{% static 'skin3/images/product-item4.jpg' %}" alt="product-item" class="product-image">
+                      </div>
+                      <div class="cart-concern">
+                        <div class="cart-button d-flex flex-wrap">
+                          <div class="btn-left">
+                            <a href="/home-v2.html#" class="btn btn-medium btn-light">Add to Cart</a>
+                          </div>
+                          <button type="button" class="btn btn-light wishlist-btn">
+                            <i class="icon icon-like"></i>
+                          </button>
+                          <button type="button" class="btn btn-light view-btn
+                                d-flex">
+                            <i class="icon icon-crop"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="product-detail text-center">
+                        <h3 class="product-title">
+                          <a href="/home-v2.html#">Flora print dress</a>
+                        </h3>
+                        <span class="item-price text-primary">$14.00</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide" role="group" aria-label="5 / 5" style="margin-right: 5px;">
+                    <div class="product-item position-relative">
+                      <div class="image-holder">
+                        <img src="{% static 'skin3/images/product-item5.jpg' %}" alt="product-item" class="product-image">
+                      </div>
+                      <div class="cart-concern">
+                        <div class="cart-button d-flex flex-wrap">
+                          <div class="btn-left">
+                            <a href="/home-v2.html#" class="btn btn-medium btn-light">Add to Cart</a>
+                          </div>
+                          <button type="button" class="btn btn-light wishlist-btn">
+                            <i class="icon icon-like"></i>
+                          </button>
+                          <button type="button" class="btn btn-light view-btn
+                                d-flex">
+                            <i class="icon icon-crop"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="product-detail text-center">
+                        <h3 class="product-title">
+                          <a href="/home-v2.html#">Green outer</a>
+                        </h3>
+                        <span class="item-price text-primary">$16.00</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+              <div class="btn-center">
+                <a href="/home-v2.html#" class="btn btn-medium btn-black">Shop All</a>
               </div>
             </div>
           </div>
         </div>
+
+
+        <div class="swiper-button swiper-button-next swiper-button-disabled swiper-button-lock" tabindex="-1" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-de910f1010b573aeb8d" aria-disabled="true"><svg class="swiper-navigation-icon" width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.38296 20.0762C0.111788 19.805 0.111788 19.3654 0.38296 19.0942L9.19758 10.2796L0.38296 1.46497C0.111788 1.19379 0.111788 0.754138 0.38296 0.482966C0.654131 0.211794 1.09379 0.211794 1.36496 0.482966L10.4341 9.55214C10.8359 9.9539 10.8359 10.6053 10.4341 11.007L1.36496 20.0762C1.09379 20.3474 0.654131 20.3474 0.38296 20.0762Z" fill="currentColor"></path></svg></div>
+        <div class="swiper-button swiper-button-prev swiper-button-disabled swiper-button-lock" tabindex="-1" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-de910f1010b573aeb8d" aria-disabled="true"><svg class="swiper-navigation-icon" width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.38296 20.0762C0.111788 19.805 0.111788 19.3654 0.38296 19.0942L9.19758 10.2796L0.38296 1.46497C0.111788 1.19379 0.111788 0.754138 0.38296 0.482966C0.654131 0.211794 1.09379 0.211794 1.36496 0.482966L10.4341 9.55214C10.8359 9.9539 10.8359 10.6053 10.4341 11.007L1.36496 20.0762C1.09379 20.3474 0.654131 20.3474 0.38296 20.0762Z" fill="currentColor"></path></svg></div>
+
       </div>
+
     </div>
-  </section>
-  <section id="fashion-trending" class="product-store padding-large position-relative overflow-hidden">
-    <div class="container mb-5">
-      <div class="section-header text-center">
-        <h2 class="section-title">What’s trending</h2>
-        <p>These are the products that are trending now.</p>
-      </div>
-      <div class="row">
-        <div class="swiper product-swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="product-item position-relative">
-                <div class="image-holder">
-                  <img src="{% static 'skin3/images/product-item1.jpg' %}" alt="product-item" class="product-image">
-                </div>
-                <div class="cart-concern">
-                  <div class="cart-button d-flex flex-wrap">
-                    <div class="btn-left">
-                      <a href="#" class="btn btn-medium btn-light">Add to Cart</a>
-                    </div>
-                    <button type="button" class="btn btn-light wishlist-btn">
-                      <i class="icon icon-like"></i>
-                    </button>
-                    <button type="button" class="btn btn-light view-btn d-flex">
-                      <i class="icon icon-crop"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="product-detail text-center">
-                  <h3 class="product-title">
-                    <a href="#">Orange beanie</a>
-                  </h3>
-                  <span class="item-price text-primary">$12.00</span>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="product-item position-relative">
-                <div class="image-holder">
-                  <img src="{% static 'skin3/images/product-item2.jpg' %}" alt="product-item" class="product-image">
-                </div>
-                <div class="cart-concern">
-                  <div class="cart-button d-flex flex-wrap">
-                    <div class="btn-left">
-                      <a href="#" class="btn btn-medium btn-light">Add to Cart</a>
-                    </div>
-                    <button type="button" class="btn btn-light wishlist-btn">
-                      <i class="icon icon-like"></i>
-                    </button>
-                    <button type="button" class="btn btn-light view-btn d-flex">
-                      <i class="icon icon-crop"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="product-detail text-center">
-                  <h3 class="product-title">
-                    <a href="#">leather coat</a>
-                  </h3>
-                  <span class="item-price text-primary">$14.00</span>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="product-item position-relative">
-                <div class="image-holder">
-                  <img src="{% static 'skin3/images/product-item3.jpg' %}" alt="product-item" class="product-image">
-                </div>
-                <div class="cart-concern">
-                  <div class="cart-button d-flex flex-wrap">
-                    <div class="btn-left">
-                      <a href="#" class="btn btn-medium btn-light">Add to Cart</a>
-                    </div>
-                    <button type="button" class="btn btn-light wishlist-btn">
-                      <i class="icon icon-like"></i>
-                    </button>
-                    <button type="button" class="btn btn-light view-btn d-flex">
-                      <i class="icon icon-crop"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="product-detail text-center">
-                  <h3 class="product-title">
-                    <a href="#">Oversize shirt</a>
-                  </h3>
-                  <span class="item-price text-primary">$12.00</span>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="product-item position-relative">
-                <div class="image-holder">
-                  <img src="{% static 'skin3/images/product-item4.jpg' %}" alt="product-item" class="product-image">
-                </div>
-                <div class="cart-concern">
-                  <div class="cart-button d-flex flex-wrap">
-                    <div class="btn-left">
-                      <a href="#" class="btn btn-medium btn-light">Add to Cart</a>
-                    </div>
-                    <button type="button" class="btn btn-light wishlist-btn">
-                      <i class="icon icon-like"></i>
-                    </button>
-                    <button type="button" class="btn btn-light view-btn d-flex">
-                      <i class="icon icon-crop"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="product-detail text-center">
-                  <h3 class="product-title">
-                    <a href="#">Flora print dress</a>
-                  </h3>
-                  <span class="item-price text-primary">$14.00</span>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="product-item position-relative">
-                <div class="image-holder">
-                  <img src="{% static 'skin3/images/product-item5.jpg' %}" alt="product-item" class="product-image">
-                </div>
-                <div class="cart-concern">
-                  <div class="cart-button d-flex flex-wrap">
-                    <div class="btn-left">
-                      <a href="#" class="btn btn-medium btn-light">Add to Cart</a>
-                    </div>
-                    <button type="button" class="btn btn-light wishlist-btn">
-                      <i class="icon icon-like"></i>
-                    </button>
-                    <button type="button" class="btn btn-light view-btn d-flex">
-                      <i class="icon icon-crop"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="product-detail text-center">
-                  <h3 class="product-title">
-                    <a href="#">Green outer</a>
-                  </h3>
-                  <span class="item-price text-primary">$16.00</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-button swiper-button-next"></div>
-        <div class="swiper-button swiper-button-prev"></div>
-        <div class="btn-center">
-          <a href="shop.html" class="btn btn-medium btn-black">Shop All</a>
-        </div>
-      </div>
-    </div>
+
     <div class="swiper-pagination"></div>
   </section>
-  <section id="videos">
-    <div class="video-item position-relative">
-      <div class="video-player">
-        <img src="{% static 'skin3/images/video-item.jpg' %}" alt="video" class="video-image">
-        <a href="{% static 'common/images/video-image.mp4' %}">
-          <i class="icon icon-play"></i>
-        </a>
+  <section class="padding-large">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+          <div id="videos">
+            <div class="video-item style2 position-relative">
+              <div class="video-player">
+                <img src="{% static 'skin3/images/video-item-md.jpg' %}" alt="video" class="video-image">
+                <a href="https://www.youtube.com/embed/rhcjYIPgpt8">
+                  <i class="icon icon-play"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div id="company-services">
+            <div class="section-header">
+              <h2 class="section-title">How was swanky started?</h2>
+              <p>Risus augue curabitur diam senectus congue velit et. Sed vitae metus nibh sit era. Nulla adipiscing
+                pharetra pellentesque maecenas odio eros at. Et libero vulputate amet duis erat volutpat vitae eget.
+                Quam libero etiam et in ac at quis.</p>
+            </div>
+            <div class="icon-box-wrapper">
+              <div class="icon-box vertical">
+                <div class="content-box d-flex">
+                  <div class="icon-box-icon">
+                    <i class="icon icon-shipping text-primary"></i>
+                  </div>
+                  <div class="icon-content">
+                    <h3 class="no-margin">Quick delivery</h3>
+                    <p>Inside City delivery within 5 days</p>
+                  </div>
+                </div>
+              </div>
+              <div class="icon-box vertical">
+                <div class="content-box d-flex">
+                  <div class="icon-box-icon">
+                    <i class="icon icon-store text-primary"></i>
+                  </div>
+                  <div class="icon-content">
+                    <h3 class="no-margin">Pick up in store</h3>
+                    <p>We have option of pick up in store.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="icon-box vertical">
+                <div class="content-box d-flex">
+                  <div class="icon-box-icon">
+                    <i class="icon icon-package text-primary"></i>
+                  </div>
+                  <div class="icon-content">
+                    <h3 class="no-margin">Special packaging</h3>
+                    <p>Our packaging is best for products.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
-  <section id="testimonials" class="position-relative padding-large">
-    <div class="container mt-5">
-      <div class="row pt-5">
+  <section id="selling-product" class="single-product padding-large bg-accent overflow-hidden my-5">
+    <div class="container ">
+      <div class="row ">
+        <div class="section-header text-center">
+          <h2 class="section-title">Best selling product of the month</h2>
+        </div>
+        <div class="col-md-6">
+          <div class="product-preview">
+            <div thumbsslider="" class="swiper thumb-swiper col-md-2 col-sm-2 swiper-initialized swiper-horizontal swiper-backface-hidden swiper-thumbs">
+              <div class="swiper-wrapper d-flex flex-wrap" id="swiper-wrapper-76aac8bcc1561f22" aria-live="polite" style="transform: translate3d(0px, 0px, 0px);">
+                <div class="swiper-slide swiper-slide-active swiper-slide-visible swiper-slide-fully-visible swiper-slide-thumb-active" role="group" aria-label="1 / 3" style="width: 113px;">
+                  <img src="{% static 'skin3/images/single-product-thumb1.jpg' %}" alt="" class="thumb-image">
+                </div>
+                <div class="swiper-slide swiper-slide-next swiper-slide-visible swiper-slide-fully-visible" role="group" aria-label="2 / 3" style="width: 113px;">
+                  <img src="{% static 'skin3/images/single-product-thumb2.jpg' %}" alt="" class="thumb-image">
+                </div>
+                <div class="swiper-slide swiper-slide-visible swiper-slide-fully-visible" role="group" aria-label="3 / 3" style="width: 113px;">
+                  <img src="{% static 'skin3/images/single-product-thumb3.jpg' %}" alt="" class="thumb-image">
+                </div>
+              </div>
+            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+            <div class="swiper large-swiper overflow-hidden col-md-10 col-sm-10 swiper-fade swiper-initialized swiper-horizontal swiper-watch-progress swiper-backface-hidden">
+              <div class="swiper-wrapper" id="swiper-wrapper-94438775ffde4ea9" aria-live="polite">
+                <div class="swiper-slide swiper-slide-visible swiper-slide-fully-visible swiper-slide-active" role="group" aria-label="1 / 3" style="width: 563px; opacity: 1; transform: translate3d(0px, 0px, 0px);">
+                  <img src="{% static 'skin3/images/single-product1.jpg' %}" alt="single-product">
+                </div>
+                <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 3" style="width: 563px; opacity: 0; transform: translate3d(-563px, 0px, 0px);">
+                  <img src="{% static 'skin3/images/single-product2.jpg' %}" alt="single-product">
+                </div>
+                <div class="swiper-slide" role="group" aria-label="3 / 3" style="width: 563px; opacity: 0; transform: translate3d(-1126px, 0px, 0px);">
+                  <img src="{% static 'skin3/images/single-product3.jpg' %}" alt="single-product">
+                </div>
+              </div>
+            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+          </div>
+
+
+
+        </div>
+        <div class="col-md-5">
+          <div class="product-info">
+            <div class="element-header">
+              <h3 itemprop="name" class="product-title no-margin">Baggy Jacket</h3>
+              <div class="rating-container d-flex align-items-center">
+                <div class="rating" data-rating="1" onclick="rate(1)">
+                  <i class="icon icon-star"></i>
+                </div>
+                <div class="rating" data-rating="2" onclick="rate(1)">
+                  <i class="icon icon-star"></i>
+                </div>
+                <div class="rating" data-rating="3" onclick="rate(1)">
+                  <i class="icon icon-star"></i>
+                </div>
+                <div class="rating" data-rating="4" onclick="rate(1)">
+                  <i class="icon icon-star"></i>
+                </div>
+                <div class="rating" data-rating="5" onclick="rate(1)">
+                  <i class="icon icon-star-line"></i>
+                </div>
+              </div>
+            </div>
+            <div class="product-price">
+              <strong class="text-primary">$36.00</strong>
+              <del>$54.00</del>
+            </div>
+            <p>Justo, cum feugiat imperdiet nulla molestie ac vulputate scelerisque amet. Bibendum adipiscing platea
+              blandit sit sed quam semper rhoncus. Diam ultrices maecenas consequat eu tortor orci, cras lectus mauris,
+              cras egestas quam venenatis neque.</p>
+            <div class="cart-wrap border-top border-bottom padding-small">
+              <div class="color-options product-select">
+                <div class="color-toggle" data-option-index="0">
+                  <h4 class="item-title no-margin">Color:</h4>
+                  <ul class="select-list list-unstyled d-flex">
+                    <li class="select-item" data-val="Green" title="Green">
+                      <a href="/home-v2.html#">Green</a>
+                    </li>
+                    <li class="select-item" data-val="Orange" title="Orange">
+                      <a href="/home-v2.html#">Orange</a>
+                    </li>
+                    <li class="select-item" data-val="Red" title="Red">
+                      <a href="/home-v2.html#">Red</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="swatch product-select" data-option-index="1">
+                <h4 class="item-title no-margin">Size:</h4>
+                <ul class="select-list list-unstyled d-flex">
+                  <li data-value="XL" class="select-item">
+                    <a href="/home-v2.html#">XL</a>
+                  </li>
+                  <li data-value="L" class="select-item">
+                    <a href="/home-v2.html#">L</a>
+                  </li>
+                  <li data-value="M" class="select-item">
+                    <a href="/home-v2.html#">M</a>
+                  </li>
+                  <li data-value="S" class="select-item">
+                    <a href="/home-v2.html#">S</a>
+                  </li>
+
+                </ul>
+              </div>
+              <div class="product-quantity">
+                <div class="item-title">
+                  <strong>2 in stock</strong>
+                </div>
+                <div class="stock-button-wrap d-flex flex-wrap">
+                  <div class="qty-field">
+                    <div class="qty-number d-flex">
+                      <div class="quntity-button decriment-button">-</div>
+                      <input class="spin-number-output bg-light no-margin" type="text" readonly="" value="0">
+                      <div class="quntity-button incriment-button">+</div>
+                    </div>
+                    <div class="regular-price"></div>
+                    <div class="quantity-output text-center bg-primary"></div>
+                  </div>
+                  <button type="submit" name="add" id="add-to-cart" class="btn btn-black btn-medium text-uppercase no-margin">Add to cart</button>
+                  <div class="like-button bg-dark">
+                    <a href="/home-v2.html#" class="light d-flex">
+                      <i class="icon icon-like-outline"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="meta-product padding-small">
+              <div class="meta-item d-flex align-items-baseline">
+                <h4 class="item-title no-margin">SKU:</h4>
+                <ul class="select-list list-unstyled d-flex">
+                  <li data-value="S" class="select-item">1223</li>
+                </ul>
+              </div>
+              <div class="meta-item d-flex align-items-baseline">
+                <h4 class="item-title no-margin">Category:</h4>
+                <ul class="select-list list-unstyled d-flex">
+                  <li data-value="S" class="select-item">
+                    <a href="/home-v2.html#">Women</a>,
+                  </li>
+                  <li data-value="S" class="select-item">
+                    <a href="/home-v2.html#">Popular</a>,
+                  </li>
+                  <li data-value="S" class="select-item">
+                    <a href="/home-v2.html#">Orange</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="meta-item d-flex align-items-baseline">
+                <h4 class="item-title no-margin">Tags:</h4>
+                <ul class="select-list list-unstyled d-flex">
+                  <li data-value="S" class="select-item">
+                    <a href="/home-v2.html#">Classic</a>,
+                  </li>
+                  <li data-value="S" class="select-item">
+                    <a href="/home-v2.html#">Winter</a>,
+                  </li>
+                  <li data-value="S" class="select-item">
+                    <a href="/home-v2.html#">Modern</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="testimonials" class="position-relative padding-large my-5">
+    <div class="container">
+      <div class="row">
         <div class="review-content">
-          <i class="icon-arrow icon-arrow-left"></i>
-          <div class="swiper testimonial-swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide text-center d-flex justify-content-center">
+          <i class="icon-arrow icon-arrow-left" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-da2a5ce0ec6ff1048"></i>
+          <div class="swiper testimonial-swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
+            <div class="swiper-wrapper" id="swiper-wrapper-da2a5ce0ec6ff1048" aria-live="polite">
+              <div class="swiper-slide text-center d-flex justify-content-center swiper-slide-active" role="group" aria-label="1 / 2" data-swiper-slide-index="0" style="width: 1306px;">
                 <div class="review-item col-md-8">
                   <i class="icon icon-review"></i>
                   <blockquote>“Tempus oncu enim pellen tesque este pretium in neque, elit morbi sagittis lorem habi
@@ -252,7 +810,7 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide text-center d-flex justify-content-center">
+              <div class="swiper-slide text-center d-flex justify-content-center swiper-slide-next" role="group" aria-label="2 / 2" data-swiper-slide-index="1" style="width: 1306px;">
                 <div class="review-item col-md-8">
                   <i class="icon icon-review"></i>
                   <blockquote>“Tempus oncu enim pellen tesque este pretium in neque, elit morbi sagittis lorem habi
@@ -271,201 +829,39 @@
                 </div>
               </div>
             </div>
-          </div>
-          <i class="icon-arrow icon-arrow-right"></i>
+          <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+          <i class="icon-arrow icon-arrow-right" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-da2a5ce0ec6ff1048"></i>
         </div>
       </div>
     </div>
-    <div class="swiper-pagination"></div>
-  </section>
-  <section id="new-arrivals" class="product-store padding-large position-relative overflow-hidden">
-    <div class="container mb-5">
-      <div class="section-header text-center">
-        <h2 class="section-title">New Arrivals</h2>
-        <p>These are the products that are new.</p>
-      </div>
-      <div class="row">
-        <div class="swiper product-swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="product-item position-relative">
-                <div class="image-holder">
-                  <img src="{% static 'skin3/images/product-item5.jpg' %}" alt="product-item" class="product-image">
-                </div>
-                <div class="cart-concern">
-                  <div class="cart-button d-flex flex-wrap">
-                    <div class="btn-left">
-                      <a href="#" class="btn btn-medium btn-light">Add to Cart</a>
-                    </div>
-                    <button type="button" class="btn btn-light wishlist-btn">
-                      <i class="icon icon-like"></i>
-                    </button>
-                    <button type="button" class="btn btn-light view-btn
-                          d-flex">
-                      <i class="icon icon-crop"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="product-detail text-center">
-                  <h3 class="product-title">
-                    <a href="#">Green Outer</a>
-                  </h3>
-                  <span class="item-price text-primary">$12.00</span>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="product-item position-relative">
-                <div class="image-holder">
-                  <img src="{% static 'skin3/images/product-item6.jpg' %}" alt="product-item" class="product-image">
-                </div>
-                <div class="cart-concern">
-                  <div class="cart-button d-flex flex-wrap">
-                    <div class="btn-left">
-                      <a href="#" class="btn btn-medium btn-light">Add to Cart</a>
-                    </div>
-                    <button type="button" class="btn btn-light wishlist-btn">
-                      <i class="icon icon-like"></i>
-                    </button>
-                    <button type="button" class="btn btn-light view-btn
-                          d-flex">
-                      <i class="icon icon-crop"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="product-detail text-center">
-                  <h3 class="product-title">
-                    <a href="#">Dark Flower Onepiece</a>
-                  </h3>
-                  <span class="item-price text-primary">$14.00</span>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="product-item position-relative">
-                <div class="image-holder">
-                  <img src="{% static 'skin3/images/product-item7.jpg' %}" alt="product-item" class="product-image">
-                </div>
-                <div class="cart-concern">
-                  <div class="cart-button d-flex flex-wrap">
-                    <div class="btn-left">
-                      <a href="#" class="btn btn-medium btn-light">Add to Cart</a>
-                    </div>
-                    <button type="button" class="btn btn-light wishlist-btn">
-                      <i class="icon icon-like"></i>
-                    </button>
-                    <button type="button" class="btn btn-light view-btn
-                          d-flex">
-                      <i class="icon icon-crop"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="product-detail text-center">
-                  <h3 class="product-title">
-                    <a href="#">Cloche Men</a>
-                  </h3>
-                  <span class="item-price text-primary">$12.00</span>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="product-item position-relative">
-                <div class="image-holder">
-                  <img src="{% static 'skin3/images/product-item8.jpg' %}" alt="product-item" class="product-image">
-                </div>
-                <div class="cart-concern">
-                  <div class="cart-button d-flex flex-wrap">
-                    <div class="btn-left">
-                      <a href="#" class="btn btn-medium btn-light">Add to Cart</a>
-                    </div>
-                    <button type="button" class="btn btn-light wishlist-btn">
-                      <i class="icon icon-like"></i>
-                    </button>
-                    <button type="button" class="btn btn-light view-btn
-                          d-flex">
-                      <i class="icon icon-crop"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="product-detail text-center">
-                  <h3 class="product-title">
-                    <a href="#">Rawcut Outer</a>
-                  </h3>
-                  <span class="item-price text-primary">$14.00</span>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="product-item position-relative">
-                <div class="image-holder">
-                  <img src="{% static 'skin3/images/product-item5.jpg' %}" alt="product-item" class="product-image">
-                </div>
-                <div class="cart-concern">
-                  <div class="cart-button d-flex flex-wrap">
-                    <div class="btn-left">
-                      <a href="#" class="btn btn-medium btn-light">Add to Cart</a>
-                    </div>
-                    <button type="button" class="btn btn-light wishlist-btn">
-                      <i class="icon icon-like"></i>
-                    </button>
-                    <button type="button" class="btn btn-light view-btn
-                          d-flex">
-                      <i class="icon icon-crop"></i>
-                    </button>
-                  </div>
-                </div>
-                <div class="product-detail text-center">
-                  <h3 class="product-title">
-                    <a href="#">Green outer</a>
-                  </h3>
-                  <span class="item-price text-primary">$16.00</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-button swiper-button-next"></div>
-        <div class="swiper-button swiper-button-prev"></div>
-        <div class="btn-center">
-          <a href="#" class="btn btn-medium btn-black">Shop All</a>
-        </div>
-      </div>
-    </div>
-    <div class="swiper-pagination1"></div>
+    <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1" aria-current="true"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span></div>
   </section>
   <section id="categories" class="overflow-hidden">
     <div class="full-width-container d-flex flex-wrap">
-      <div class="category-item left-block col-md-6 col-sm-12 no-padding-left position-relative">
+      <div class="category-item style2 left-block col-md-6 col-sm-12 no-padding-left position-relative">
         <div class="image-holder">
           <img src="{% static 'skin3/images/category-item1.jpg' %}" alt="fashion">
         </div>
-        <div class="category-content content-light">
+        <div class="category-content col-md-7 content-light d-flex flex-direction-column">
           <h3 class="category-title">Summer Outfits</h3>
+          <p class="no-margin">Commodo quam dis nisi ultrices a ac. Augue purus pretium in lectus etiam at nunc lacus.
+          </p>
           <div class="btn-left">
-            <a href="#" class="btn btn-medium btn-light">Shop Collections</a>
+            <a href="/home-v2.html#" class="btn btn-medium btn-light">Shop Collections</a>
           </div>
         </div>
       </div>
       <div class="right-block col-md-6 col-sm-12 no-padding-right">
-        <div class="category-item top-block position-relative">
+        <div class="category-item style2 position-relative">
           <div class="image-holder">
-            <img src="{% static 'skin3/images/category-item2.jpg' %}" alt="fashion">
+            <img src="{% static 'skin3/images/category-item4.jpg' %}" alt="fashion">
           </div>
-          <div class="category-content content-light">
-            <h3 class="category-title">Guggles</h3>
-            <div class="btn-left">
-              <a href="#" class="btn btn-medium btn-outline-light">Shop it now</a>
-            </div>
-          </div>
-        </div>
-        <div class="category-item bottom-block position-relative">
-          <div class="image-holder">
-            <img src="{% static 'skin3/images/category-item3.jpg' %}" alt="fashion">
-          </div>
-          <div class="category-content content-light">
+          <div class="category-content col-md-7 content-light d-flex flex-direction-column">
             <h3 class="category-title">Accessories</h3>
+            <p class="no-margin">Commodo quam dis nisi ultrices a ac. Augue purus pretium in lectus etiam at nunc lacus.
+            </p>
             <div class="btn-left">
-              <a href="#" class="btn btn-medium btn-outline-light">Shop it now</a>
+              <a href="/home-v2.html#" class="btn btn-medium btn-outline-light">Shop it now</a>
             </div>
           </div>
         </div>
@@ -477,19 +873,19 @@
       <div class="row">
         <div class="section-header text-center">
           <h2 class="section-title">Recent Blogs</h2>
-          <p>Read Our News & articles about updates</p>
+          <p>Read Our News &amp; articles about updates</p>
         </div>
         <div class="row d-flex flex-wrap">
           <article class="col-md-4 post-item">
             <div class="image-holder">
-              <a href="single-post.html">
+              <a href="/single-post.html">
                 <img src="{% static 'skin3/images/post-item1.jpg' %}" alt="post" class="post-image">
               </a>
             </div>
             <div class="post-content">
               <div class="post-header text-center">
                 <h3 class="post-title">
-                  <a href="single-post.html">Best Comfortable Clothes Ideas</a>
+                  <a href="/single-post.html">Best Comfortable Clothes Ideas</a>
                 </h3>
                 <p>Justo maecenas facilisi cursus fermentum enim vivirra.</p>
               </div>
@@ -497,14 +893,14 @@
           </article>
           <article class="col-md-4 post-item">
             <div class="image-holder">
-              <a href="single-post.html">
+              <a href="/single-post.html">
                 <img src="{% static 'skin3/images/post-item2.jpg' %}" alt="post" class="post-image">
               </a>
             </div>
             <div class="post-content">
               <div class="post-header text-center">
                 <h3 class="post-title">
-                  <a href="single-post.html">Casual Denim Clothing for women</a>
+                  <a href="/single-post.html">Casual Denim Clothing for women</a>
                 </h3>
                 <p>Justo maecenas facilisi cursus fermentum enim vivirra.</p>
               </div>
@@ -512,14 +908,14 @@
           </article>
           <article class="col-md-4 post-item">
             <div class="image-holder">
-              <a href="single-post.html">
+              <a href="/single-post.html">
                 <img src="{% static 'skin3/images/post-item3.jpg' %}" alt="post" class="post-image">
               </a>
             </div>
             <div class="post-content">
               <div class="post-header text-center">
                 <h3 class="post-title">
-                  <a href="single-post.html">Best Poses for fashion photo</a>
+                  <a href="/single-post.html">Best Poses for fashion photo</a>
                 </h3>
                 <p>Justo maecenas facilisi cursus fermentum enim vivirra.</p>
               </div>
@@ -527,12 +923,29 @@
           </article>
         </div>
         <div class="btn-center">
-          <a href="#" class="btn btn-medium btn-black">Read All</a>
+          <a href="/blog.html" class="btn btn-medium btn-black">Read All</a>
         </div>
       </div>
     </div>
   </section>
-  <section id="brand-collection" class="padding-small border-top border-bottom overflow-hidden my-5">
+  <section class="subscribe home-page2-subscribe bg-accent my-5">
+    <div class="background pattern-bg"></div>
+    <div class="container">
+      <div class="row">
+        <div class="subscribe-content padding-large">
+          <div class="subscribe-header text-center">
+            <h2 class="section-title">Subscribe to our newsletter</h2>
+            <p>Subscribe to our newsletter now to get updates about discount &amp; offers from us.</p>
+          </div>
+          <form id="form">
+            <input type="text" name="email" placeholder="Enter Your Email Addresss" class="btn btn-full bg-light no-border">
+            <button class="btn btn-full btn-black text-uppercase">Subscribe it</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="brand-collection" class=" home-v2-brand-collection padding-small border-top border-bottom overflow-hidden ">
     <div class="container">
       <div class="row d-flex flex-wrap justify-content-between align-items-center py-3">
         <div class="col">
@@ -553,7 +966,7 @@
       </div>
     </div>
   </section>
-  <section id="instagram" class="padding-large overflow-hidden">
+  <section id="instagram" class="padding-large overflow-hidden my-5">
     <div class="container">
       <div class="row">
         <div class="section-header text-center">
@@ -561,7 +974,7 @@
         </div>
         <div class="row d-flex flex-wrap">
           <figure class=" col instagram-item magnific position-relative">
-            <a href="#" class="">
+            <a href="/home-v2.html#" class="">
               <img src="{% static 'skin3/images/insta-item1.jpg' %}" alt="instagram" class="insta-image">
               <div class="icon-overlay d-flex justify-content-center">
                 <i class="icon icon-instagram1"></i>
@@ -569,7 +982,7 @@
             </a>
           </figure>
           <figure class=" col instagram-item magnific position-relative">
-            <a href="#" class="">
+            <a href="/home-v2.html#" class="">
               <img src="{% static 'skin3/images/insta-item2.JPG' %}" alt="instagram" class="insta-image">
               <div class="icon-overlay d-flex justify-content-center">
                 <i class="icon icon-instagram1"></i>
@@ -577,7 +990,7 @@
             </a>
           </figure>
           <figure class=" col instagram-item magnific position-relative">
-            <a href="#" class="">
+            <a href="/home-v2.html#" class="">
               <img src="{% static 'skin3/images/insta-item3.jpg' %}" alt="instagram" class="insta-image">
               <div class="icon-overlay d-flex justify-content-center">
                 <i class="icon icon-instagram1"></i>
@@ -585,7 +998,7 @@
             </a>
           </figure>
           <figure class=" col instagram-item magnific position-relative">
-            <a href="#" class="">
+            <a href="/home-v2.html#" class="">
               <img src="{% static 'skin3/images/insta-item4.jpg' %}" alt="instagram" class="insta-image">
               <div class="icon-overlay d-flex justify-content-center">
                 <i class="icon icon-instagram1"></i>
@@ -593,7 +1006,7 @@
             </a>
           </figure>
           <figure class=" col instagram-item magnific position-relative">
-            <a href="#" class="">
+            <a href="/home-v2.html#" class="">
               <img src="{% static 'skin3/images/insta-item5.jpg' %}" alt="instagram" class="insta-image">
               <div class="icon-overlay d-flex justify-content-center">
                 <i class="icon icon-instagram1"></i>

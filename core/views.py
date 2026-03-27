@@ -9,3 +9,6 @@ def home(request):
 
 def index(request):
     return render(request, f'{used_skin}/index.html')
+
+def shop(request):
+    return render(request, f'{used_skin}/shop.html')
