@@ -42,3 +42,6 @@ def checkout(request):
 
 def classes(request):
     return render(request, f'{used_skin}/class.html')
+
+def class_detail(request):
+    return render(request, f'{used_skin}/class_detail.html')
