@@ -43,12 +43,8 @@
           <nav class="navbar">
             <div class="main-menu">
               <ul class="menu-list list-unstyled d-flex m-0 ">
-                <li class="menu-item dropdown">
-                  <a class="text-uppercase item-anchor dropdown-toggle" href="{% url 'core:index' %}" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Home </a>
-                  <ul class="dropdown-menu">
-                    <li class="sub-page pe-0"><a class="text-black text-uppercase dropdown-item" href="{% url 'core:index' %}">Home</a></li>
-                    <li class="sub-page pe-0"><a class="text-black text-uppercase dropdown-item" href="{% url 'core:index' %}">Home</a></li>
-                  </ul>
+                <li class="menu-item">
+                  <a href="{% url 'core:index' %}" class="text-uppercase item-anchor"> Home </a>
                 </li>
                 <li class="menu-item">
                   <a href="/about-us.html" class="text-uppercase item-anchor">About</a>
@@ -75,7 +71,7 @@
                 <li class="menu-item dropdown">
                   <a class="text-uppercase item-anchor dropdown-toggle" href="{% url 'core:index' %}" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Pages </a>
                   <ul class="dropdown-menu">
-                    <li class="sub-page pe-0"><a class="text-black text-uppercase dropdown-item" href="/contact.html">contact </a></li>
+                    <li class="sub-page pe-0"><a class="text-black text-uppercase dropdown-item" href="{% url 'core:contacts' %}">contact </a></li>
                     <li class="sub-page pe-0"><a class="text-black text-uppercase dropdown-item" href="/cart.html">cart </a></li>
                     <li class="sub-page pe-0"><a class="text-black text-uppercase dropdown-item" href="/checkout.html">checkout </a></li>
                     <li class="sub-page pe-0"><a class="text-black text-uppercase dropdown-item" href="/my-account.html">account </a></li>

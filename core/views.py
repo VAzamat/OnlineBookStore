@@ -24,3 +24,6 @@ def blog_with_sidebar(request):
 
 def blog_single_post(request):
     return render(request, f'{used_skin}/single_post.html')
+
+def contacts(request):
+    return render(request, f'{used_skin}/contact.html')
