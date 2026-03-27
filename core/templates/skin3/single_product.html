@@ -1,0 +1,561 @@
+{% extends "skin3/base.html" %}
+
+{% load static %}
+
+{% block titlekeywords %}
+    <meta name="keywords" content="библиотека книг, поиск книг по автору, жанры литературы, реестр изданий, аннотации к книгам, электронный каталог книг">
+    <title>Digital Book Sales</title>
+{% endblock %}
+
+{% block customstyle %}
+{% endblock %}
+
+{% block bodycustomclass %}
+single-page shop-single
+{% endblock %}
+
+{% block content %}
+<main>
+  <section class="hero-section style2 bg-accent padding-medium">
+    <div class="hero-content d-flex justify-content-center text-center align-items-center">
+      <div class="container">
+        <div class="row pb-4">
+          <div class="text-center">
+            <h1 class="page-title">Shop Single</h1>
+            <div class="breadcrumbs">
+              <span class="item">
+                <a href="/index.html">Home &gt;</a>
+              </span>
+              <span class="item">
+                <a href="/shop.html">Shop &gt;</a>
+              </span>
+              <span class="item">Shop Single</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="selling-product" class="single-product overflow-hidden padding-large">
+    <div class="container">
+      <div class="row">
+        <div class="section-header text-center">
+          <h2 class="section-title">Best selling product of the month</h2>
+        </div>
+        <div class="col-md-6">
+          <div class="product-preview">
+            <div thumbsslider="" class="swiper thumb-swiper col-md-2 col-sm-2 swiper-initialized swiper-horizontal swiper-backface-hidden swiper-thumbs">
+              <div class="swiper-wrapper d-flex flex-wrap" id="swiper-wrapper-367d5192f6848aa4" aria-live="polite" style="transform: translate3d(0px, 0px, 0px);">
+                <div class="swiper-slide swiper-slide-active swiper-slide-visible swiper-slide-fully-visible swiper-slide-thumb-active" role="group" aria-label="1 / 3" style="width: 113px;">
+                  <img src="{% static 'skin3/images/single-product-thumb1.jpg' %}" alt="" class="thumb-image">
+                </div>
+                <div class="swiper-slide swiper-slide-next swiper-slide-visible swiper-slide-fully-visible" role="group" aria-label="2 / 3" style="width: 113px;">
+                  <img src="{% static 'skin3/images/single-product-thumb2.jpg' %}" alt="" class="thumb-image">
+                </div>
+                <div class="swiper-slide swiper-slide-visible swiper-slide-fully-visible" role="group" aria-label="3 / 3" style="width: 113px;">
+                  <img src="{% static 'skin3/images/single-product-thumb3.jpg' %}" alt="" class="thumb-image">
+                </div>
+              </div>
+            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+            <div class="swiper large-swiper overflow-hidden col-md-10 col-sm-10 swiper-fade swiper-initialized swiper-horizontal swiper-watch-progress swiper-backface-hidden">
+              <div class="swiper-wrapper" id="swiper-wrapper-cdedb960b8f49cfe" aria-live="polite">
+                <div class="swiper-slide swiper-slide-visible swiper-slide-fully-visible swiper-slide-active" role="group" aria-label="1 / 3" style="width: 563px; opacity: 1; transform: translate3d(0px, 0px, 0px);">
+                  <img src="{% static 'skin3/images/single-product1.jpg' %}" alt="single-product">
+                </div>
+                <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 3" style="width: 563px; opacity: 0; transform: translate3d(-563px, 0px, 0px);">
+                  <img src="{% static 'skin3/images/single-product2.jpg' %}" alt="single-product">
+                </div>
+                <div class="swiper-slide" role="group" aria-label="3 / 3" style="width: 563px; opacity: 0; transform: translate3d(-1126px, 0px, 0px);">
+                  <img src="{% static 'skin3/images/single-product3.jpg' %}" alt="single-product">
+                </div>
+              </div>
+            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="product-info">
+            <div class="element-header">
+              <h3 itemprop="name" class="product-title no-margin">Baggy Jacket</h3>
+              <div class="rating-container d-flex align-items-center">
+                <div class="rating" data-rating="1" onclick="rate(1)">
+                  <i class="icon icon-star"></i>
+                </div>
+                <div class="rating" data-rating="2" onclick="rate(1)">
+                  <i class="icon icon-star"></i>
+                </div>
+                <div class="rating" data-rating="3" onclick="rate(1)">
+                  <i class="icon icon-star"></i>
+                </div>
+                <div class="rating" data-rating="4" onclick="rate(1)">
+                  <i class="icon icon-star"></i>
+                </div>
+                <div class="rating" data-rating="5" onclick="rate(1)">
+                  <i class="icon icon-star-line"></i>
+                </div>
+              </div>
+            </div>
+            <div class="product-price">
+              <strong class="text-primary">$36.00</strong>
+              <del>$54.00</del>
+            </div>
+            <p>Justo, cum feugiat imperdiet nulla molestie ac vulputate scelerisque amet. Bibendum adipiscing platea
+              blandit sit sed quam semper rhoncus. Diam ultrices maecenas consequat eu tortor orci, cras lectus mauris,
+              cras egestas quam venenatis neque.</p>
+            <div class="cart-wrap border-top border-bottom padding-small">
+              <div class="color-options product-select">
+                <div class="color-toggle" data-option-index="0">
+                  <h4 class="item-title no-margin">Color:</h4>
+                  <ul class="select-list list-unstyled d-flex">
+                    <li class="select-item" data-val="Green" title="Green">
+                      <a href="/single-product.html#">Green</a>
+                    </li>
+                    <li class="select-item" data-val="Orange" title="Orange">
+                      <a href="/single-product.html#">Orange</a>
+                    </li>
+                    <li class="select-item" data-val="Red" title="Red">
+                      <a href="/single-product.html#">Red</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="swatch product-select" data-option-index="1">
+                <h4 class="item-title no-margin">Size:</h4>
+                <ul class="select-list list-unstyled d-flex">
+                  <li data-value="XL" class="select-item">
+                    <a href="/single-product.html#">XL</a>
+                  </li>
+                  <li data-value="L" class="select-item">
+                    <a href="/single-product.html#">L</a>
+                  </li>
+                  <li data-value="M" class="select-item">
+                    <a href="/single-product.html#">M</a>
+                  </li>
+                  <li data-value="S" class="select-item">
+                    <a href="/single-product.html#">S</a>
+                  </li>
+
+                </ul>
+              </div>
+              <div class="product-quantity">
+                <div class="item-title">
+                  <strong>2 in stock</strong>
+                </div>
+                <div class="stock-button-wrap d-flex flex-wrap">
+                  <div class="qty-field">
+                    <div class="qty-number d-flex">
+                      <div class="quntity-button decriment-button">-</div>
+                      <input class="spin-number-output bg-light no-margin" type="text" readonly="" value="0">
+                      <div class="quntity-button incriment-button">+</div>
+                    </div>
+
+                    <div class="regular-price"></div>
+                    <div class="quantity-output text-center bg-primary"></div>
+                  </div>
+                  <button type="submit" name="add-to-cart" value="1269" class="btn btn-black btn-medium text-uppercase no-margin">Add to cart</button>
+                  <div class="like-button bg-dark">
+                    <a href="/single-product.html#" class="light d-flex">
+                      <i class="icon icon-like-outline"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="meta-product padding-small">
+              <div class="meta-item d-flex align-items-baseline">
+                <h4 class="item-title no-margin">SKU:</h4>
+                <ul class="select-list list-unstyled d-flex">
+                  <li data-value="S" class="select-item">1223</li>
+                </ul>
+              </div>
+              <div class="meta-item d-flex align-items-baseline">
+                <h4 class="item-title no-margin">Category:</h4>
+                <ul class="select-list list-unstyled d-flex">
+                  <li data-value="S" class="select-item">
+                    <a href="/single-product.html#">Women</a>,
+                  </li>
+                  <li data-value="S" class="select-item">
+                    <a href="/single-product.html#">Popular</a>,
+                  </li>
+                  <li data-value="S" class="select-item">
+                    <a href="/single-product.html#">Orange</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="meta-item d-flex align-items-baseline">
+                <h4 class="item-title no-margin">Tags:</h4>
+                <ul class="select-list list-unstyled d-flex">
+                  <li data-value="S" class="select-item">
+                    <a href="/single-product.html#">Classic</a>,
+                  </li>
+                  <li data-value="S" class="select-item">
+                    <a href="/single-product.html#">Winter</a>,
+                  </li>
+                  <li data-value="S" class="select-item">
+                    <a href="/single-product.html#">Modern</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="product-tabs">
+    <div class="container">
+      <div class="row">
+        <div class="tabs-listing">
+          <nav>
+            <div class="nav nav-tabs d-flex flex-wrap justify-content-center" id="nav-tab" role="tablist">
+              <button class="nav-link active text-capitalize" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Description</button>
+              <button class="nav-link text-capitalize" id="nav-information-tab" data-bs-toggle="tab" data-bs-target="#nav-information" type="button" role="tab" aria-controls="nav-information" aria-selected="false" tabindex="-1">Additional information</button>
+              <button class="nav-link text-capitalize" id="nav-review-tab" data-bs-toggle="tab" data-bs-target="#nav-review" type="button" role="tab" aria-controls="nav-review" aria-selected="false" tabindex="-1">Reviews</button>
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active border-top border-bottom padding-small" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+              <p>Product Description</p>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.
+                Nullam malesuada erat ut turpis. Suspendisse urna viverra non, semper suscipit, posuere a, pede. Donec
+                nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim
+                pellentesque felis. Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula
+                vulputate sem tristique cursus.</p>
+              <ul style="list-style-type:disc;" class="list-unstyled">
+                <li>Donec nec justo eget felis facilisis fermentum.</li>
+                <li>Suspendisse urna viverra non, semper suscipit pede.</li>
+                <li>Aliquam porttitor mauris sit amet orci.</li>
+              </ul>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.
+                Nullam malesuada erat ut turpis. Suspendisse urna viverra non, semper suscipit, posuere a, pede. Donec
+                nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim
+                pellentesque felis. Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula
+                vulputate sem tristique cursus. </p>
+            </div>
+            <div class="tab-pane fade border-top border-bottom padding-small" id="nav-information" role="tabpanel" aria-labelledby="nav-information-tab">
+              <p>It is Comfortable and Best</p>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                id est laborum.</p>
+            </div>
+            <div class="tab-pane fade border-top border-bottom padding-small" id="nav-review" role="tabpanel" aria-labelledby="nav-review-tab">
+              <div class="review-box d-flex">
+                <div class="review-item d-flex">
+                  <div class="row">
+                    <div class="col-md-2">
+                      <div class="image-holder">
+                        <img src="{% static 'skin3/images/review-item1.jpg' %}" alt="review">
+                      </div>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="review-content">
+                        <div class="rating-container d-flex align-items-center">
+                          <div class="rating" data-rating="1" onclick="rate(1)">
+                            <i class="icon icon-star"></i>
+                          </div>
+                          <div class="rating" data-rating="2" onclick="rate(1)">
+                            <i class="icon icon-star"></i>
+                          </div>
+                          <div class="rating" data-rating="3" onclick="rate(1)">
+                            <i class="icon icon-star"></i>
+                          </div>
+                          <div class="rating" data-rating="4" onclick="rate(1)">
+                            <i class="icon icon-star"></i>
+                          </div>
+                          <div class="rating" data-rating="5" onclick="rate(1)">
+                            <i class="icon icon-star"></i>
+                          </div>
+                          <span class="rating-count">(5)</span>
+                        </div>
+                        <div class="review-header px-3">
+                          <span class="author-name">Tina Johnson</span>
+                          <span class="review-date">– 03/07/2023</span>
+                        </div>
+                        <p>Vitae tortor condimentum lacinia quis vel eros donec ac. Nam at lectus urna duis convallis
+                          convallis</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="review-item d-flex">
+                  <div class="row">
+                    <div class="col-md-2">
+                      <div class="image-holder">
+                        <img src="{% static 'skin3/images/review-item2.jpg' %}" alt="review">
+                      </div>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="review-content">
+                        <div class="rating-container d-flex align-items-center">
+                          <div class="rating" data-rating="1" onclick="rate(1)">
+                            <i class="icon icon-star"></i>
+                          </div>
+                          <div class="rating" data-rating="2" onclick="rate(1)">
+                            <i class="icon icon-star"></i>
+                          </div>
+                          <div class="rating" data-rating="3" onclick="rate(1)">
+                            <i class="icon icon-star"></i>
+                          </div>
+                          <div class="rating" data-rating="4" onclick="rate(1)">
+                            <i class="icon icon-star"></i>
+                          </div>
+                          <div class="rating" data-rating="5" onclick="rate(1)">
+                            <i class="icon icon-star-line"></i>
+                          </div>
+                          <span class="rating-count">(4)</span>
+                        </div>
+                        <div class="review-header px-3">
+                          <span class="author-name">Jenny Willis</span>
+                          <span class="review-date">– 03/06/2022</span>
+                        </div>
+                        <p>Vitae tortor condimentum lacinia quis vel eros donec ac. Nam at lectus urna duis convallis
+                          convallis</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="fashion-trending" class="product-store position-relative overflow-hidden padding-large">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2 class="section-title">Related products</h2>
+        <p>These are the products that are related with your shop.</p>
+      </div>
+      <div class="row">
+        <div class="swiper product-swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
+          <div class="swiper-wrapper" id="swiper-wrapper-c5c57ab810a822b3" aria-live="polite">
+            <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 5" style="width: 346.25px; margin-right: 5px;">
+              <div class="product-item position-relative">
+                <div class="image-holder">
+                  <img src="{% static 'skin3/images/product-item1.jpg' %}" alt="product-item" class="product-image">
+                </div>
+                <div class="cart-concern">
+                  <div class="cart-button d-flex flex-wrap">
+                    <div class="btn-left">
+                      <a href="/single-product.html#" class="btn btn-medium btn-light">Add to Cart</a>
+                    </div>
+                    <button type="button" class="btn btn-light wishlist-btn">
+                      <i class="icon icon-like"></i>
+                    </button>
+                    <button type="button" class="btn btn-light view-btn 
+                          d-flex">
+                      <i class="icon icon-crop"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-detail text-center">
+                  <h3 class="product-title">
+                    <a href="/single-product.html#">Orange beanie</a>
+                  </h3>
+                  <span class="item-price text-primary">$12.00</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 5" style="width: 346.25px; margin-right: 5px;">
+              <div class="product-item position-relative">
+                <div class="image-holder">
+                  <img src="{% static 'skin3/images/product-item2.jpg' %}" alt="product-item" class="product-image">
+                </div>
+                <div class="cart-concern">
+                  <div class="cart-button d-flex flex-wrap">
+                    <div class="btn-left">
+                      <a href="/single-product.html#" class="btn btn-medium btn-light">Add to Cart</a>
+                    </div>
+                    <button type="button" class="btn btn-light wishlist-btn">
+                      <i class="icon icon-like"></i>
+                    </button>
+                    <button type="button" class="btn btn-light view-btn 
+                          d-flex">
+                      <i class="icon icon-crop"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-detail text-center">
+                  <h3 class="product-title">
+                    <a href="/single-product.html#">leather coat</a>
+                  </h3>
+                  <span class="item-price text-primary">$14.00</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide" role="group" aria-label="3 / 5" style="width: 346.25px; margin-right: 5px;">
+              <div class="product-item position-relative">
+                <div class="image-holder">
+                  <img src="{% static 'skin3/images/product-item3.jpg' %}" alt="product-item" class="product-image">
+                </div>
+                <div class="cart-concern">
+                  <div class="cart-button d-flex flex-wrap">
+                    <div class="btn-left">
+                      <a href="/single-product.html#" class="btn btn-medium btn-light">Add to Cart</a>
+                    </div>
+                    <button type="button" class="btn btn-light wishlist-btn">
+                      <i class="icon icon-like"></i>
+                    </button>
+                    <button type="button" class="btn btn-light view-btn 
+                          d-flex">
+                      <i class="icon icon-crop"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-detail text-center">
+                  <h3 class="product-title">
+                    <a href="/single-product.html#">Oversize shirt</a>
+                  </h3>
+                  <span class="item-price text-primary">$12.00</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide" role="group" aria-label="4 / 5" style="width: 346.25px; margin-right: 5px;">
+              <div class="product-item position-relative">
+                <div class="image-holder">
+                  <img src="{% static 'skin3/images/product-item4.jpg' %}" alt="product-item" class="product-image">
+                </div>
+                <div class="cart-concern">
+                  <div class="cart-button d-flex flex-wrap">
+                    <div class="btn-left">
+                      <a href="/single-product.html#" class="btn btn-medium btn-light">Add to Cart</a>
+                    </div>
+                    <button type="button" class="btn btn-light wishlist-btn">
+                      <i class="icon icon-like"></i>
+                    </button>
+                    <button type="button" class="btn btn-light view-btn 
+                          d-flex">
+                      <i class="icon icon-crop"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-detail text-center">
+                  <h3 class="product-title">
+                    <a href="/single-product.html#">Flora print dress</a>
+                  </h3>
+                  <span class="item-price text-primary">$14.00</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide" role="group" aria-label="5 / 5" style="width: 346.25px; margin-right: 5px;">
+              <div class="product-item position-relative">
+                <div class="image-holder">
+                  <img src="{% static 'skin3/images/product-item5.jpg' %}" alt="product-item" class="product-image">
+                </div>
+                <div class="cart-concern">
+                  <div class="cart-button d-flex flex-wrap">
+                    <div class="btn-left">
+                      <a href="/single-product.html#" class="btn btn-medium btn-light">Add to Cart</a>
+                    </div>
+                    <button type="button" class="btn btn-light wishlist-btn">
+                      <i class="icon icon-like"></i>
+                    </button>
+                    <button type="button" class="btn btn-light view-btn 
+                          d-flex">
+                      <i class="icon icon-crop"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-detail text-center">
+                  <h3 class="product-title">
+                    <a href="/single-product.html#">Green outer</a>
+                  </h3>
+                  <span class="item-price text-primary">$16.00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+        <div class="swiper-button swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-c5c57ab810a822b3" aria-disabled="false"><svg class="swiper-navigation-icon" width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.38296 20.0762C0.111788 19.805 0.111788 19.3654 0.38296 19.0942L9.19758 10.2796L0.38296 1.46497C0.111788 1.19379 0.111788 0.754138 0.38296 0.482966C0.654131 0.211794 1.09379 0.211794 1.36496 0.482966L10.4341 9.55214C10.8359 9.9539 10.8359 10.6053 10.4341 11.007L1.36496 20.0762C1.09379 20.3474 0.654131 20.3474 0.38296 20.0762Z" fill="currentColor"></path></svg></div>
+        <div class="swiper-button swiper-button-prev swiper-button-disabled" tabindex="-1" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-c5c57ab810a822b3" aria-disabled="true"><svg class="swiper-navigation-icon" width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.38296 20.0762C0.111788 19.805 0.111788 19.3654 0.38296 19.0942L9.19758 10.2796L0.38296 1.46497C0.111788 1.19379 0.111788 0.754138 0.38296 0.482966C0.654131 0.211794 1.09379 0.211794 1.36496 0.482966L10.4341 9.55214C10.8359 9.9539 10.8359 10.6053 10.4341 11.007L1.36496 20.0762C1.09379 20.3474 0.654131 20.3474 0.38296 20.0762Z" fill="currentColor"></path></svg></div>
+        <div class="btn-center">
+          <a href="/single-product.html#" class="btn btn-medium btn-black">Shop All</a>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1" aria-current="true"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span></div>
+  </section>
+  <section id="brand-collection" class="padding-small border-top border-bottom overflow-hidden my-5">
+    <div class="container">
+      <div class="row d-flex flex-wrap justify-content-between align-items-center py-3">
+        <div class="col">
+          <i class="icon icon-brand-item1"></i>
+        </div>
+        <div class="col">
+          <i class="icon icon-brand-item2"></i>
+        </div>
+        <div class="col">
+          <i class="icon icon-brand-item3"></i>
+        </div>
+        <div class="col">
+          <i class="icon icon-brand-item4"></i>
+        </div>
+        <div class="col">
+          <i class="icon icon-brand-item5"></i>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section id="instagram" class="padding-large overflow-hidden">
+    <div class="container">
+      <div class="row">
+        <div class="section-header text-center">
+          <h2 class="section-title">Shop our insta</h2>
+        </div>
+        <div class="row d-flex flex-wrap">
+          <figure class=" col instagram-item magnific position-relative">
+            <a href="/single-product.html#" class="">
+              <img src="{% static 'skin3/images/insta-item1.jpg' %}" alt="instagram" class="insta-image">
+              <div class="icon-overlay d-flex justify-content-center">
+                <i class="icon icon-instagram1"></i>
+              </div>
+            </a>
+          </figure>
+          <figure class=" col instagram-item magnific position-relative">
+            <a href="/single-product.html#" class="">
+              <img src="{% static 'skin3/images/insta-item2.JPG' %}" alt="instagram" class="insta-image">
+              <div class="icon-overlay d-flex justify-content-center">
+                <i class="icon icon-instagram1"></i>
+              </div>
+            </a>
+          </figure>
+          <figure class=" col instagram-item magnific position-relative">
+            <a href="/single-product.html#" class="">
+              <img src="{% static 'skin3/images/insta-item3.jpg' %}" alt="instagram" class="insta-image">
+              <div class="icon-overlay d-flex justify-content-center">
+                <i class="icon icon-instagram1"></i>
+              </div>
+            </a>
+          </figure>
+          <figure class=" col instagram-item magnific position-relative">
+            <a href="/single-product.html#" class="">
+              <img src="{% static 'skin3/images/insta-item4.jpg' %}" alt="instagram" class="insta-image">
+              <div class="icon-overlay d-flex justify-content-center">
+                <i class="icon icon-instagram1"></i>
+              </div>
+            </a>
+          </figure>
+          <figure class=" col instagram-item magnific position-relative">
+            <a href="/single-product.html#" class="">
+              <img src="{% static 'skin3/images/insta-item5.jpg' %}" alt="instagram" class="insta-image">
+              <div class="icon-overlay d-flex justify-content-center">
+                <i class="icon icon-instagram1"></i>
+              </div>
+            </a>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+{% endblock %}
+
+
+{% block scripts %}
+{% endblock %}
+
+

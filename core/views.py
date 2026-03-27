@@ -12,3 +12,6 @@ def index(request):
 
 def shop(request):
     return render(request, f'{used_skin}/shop.html')
+
+def single_product(request):
+    return render(request, f'{used_skin}/single_product.html')
