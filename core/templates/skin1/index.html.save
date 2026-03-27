@@ -1,6 +1,5 @@
 {% extends "skin1/base.html" %}
 
-{% load static %}
 
 {% block titlekeywords %}
     <meta name="keywords" content="купить книги онлайн, интернет-магазин книг, digital book sales, каталог книг, книжный маркетплейс, заказать книги с доставкой.">
@@ -19,7 +18,7 @@
             <div class="container">
               <div class="row">
                 <div class="offset-md-1 col-md-5">
-                  <img src="{% static 'skin1/images/book1.png' %}" alt="product-img" class="img-fluid mb-3">
+                  <img src="images/book1.png" alt="product-img" class="img-fluid mb-3">
                 </div>
                 <div class="col-md-6 d-flex align-items-center">
                   <div class="banner-content">
@@ -35,7 +34,7 @@
             <div class="container">
               <div class="row">
                 <div class="offset-md-1 col-md-5">
-                  <img src="{% static 'skin1/images/book2.png' %}" alt="product-img" class="img-fluid mb-3">
+                  <img src="images/book2.png" alt="product-img" class="img-fluid mb-3">
                 </div>
                 <div class="col-md-6 d-flex align-items-center">
                   <div class="banner-content">
@@ -51,7 +50,7 @@
             <div class="container">
               <div class="row">
                 <div class="offset-md-1 col-md-5">
-                  <img src="{% static 'skin1/images/book3.png' %}" alt="product-img" class="img-fluid mb-3">
+                  <img src="images/book3.png" alt="product-img" class="img-fluid mb-3">
                 </div>
                 <div class="col-md-6 d-flex align-items-center">
                   <div class="banner-content">
@@ -130,7 +129,7 @@
         <div class="row position-relative">
           <div class="col-lg-8">
             <div class="image-holder">
-              <img src="{% static 'skin1/images/single-image3.jpg' %}" alt="single" class="single-image img-fluid">
+              <img src="images/single-image3.jpg" alt="single" class="single-image img-fluid">
             </div>
           </div>
           <div class="about-content bg-gray col-lg-4 m-auto top-0 end-0 bottom-0">
@@ -161,7 +160,7 @@
           <div class="swiper-slide">
             <div class="product-card">
               <div class="image-holder">
-                <img src="{% static 'skin1/images/product-item1.jpg' %}" alt="product-item" class="img-fluid">
+                <img src="images/product-item1.jpg" alt="product-item" class="img-fluid">
               </div>
               <div class="card-detail text-center pt-3 pb-2">
                 <h5 class="card-title fs-4 text-uppercase m-0">
@@ -177,7 +176,7 @@
           <div class="swiper-slide">
             <div class="product-card">
               <div class="image-holder">
-                <img src="{% static 'skin1/images/product-item2.jpg' %}" alt="product-item" class="img-fluid">
+                <img src="images/product-item2.jpg" alt="product-item" class="img-fluid">
               </div>
               <div class="card-detail text-center pt-3 pb-2">
                 <h5 class="card-title fs-4 text-uppercase m-0">
@@ -193,7 +192,7 @@
           <div class="swiper-slide">
             <div class="product-card">
               <div class="image-holder">
-                <img src="{% static 'skin1/images/product-item3.jpg' %}" alt="product-item" class="img-fluid">
+                <img src="images/product-item3.jpg" alt="product-item" class="img-fluid">
               </div>
               <div class="card-detail text-center pt-3 pb-2">
                 <h5 class="card-title fs-4 text-uppercase m-0">
@@ -209,7 +208,7 @@
           <div class="swiper-slide">
             <div class="product-card">
               <div class="image-holder">
-                <img src="{% static 'skin1/images/product-item4.jpg' %}" alt="product-item" class="img-fluid">
+                <img src="images/product-item4.jpg" alt="product-item" class="img-fluid">
               </div>
               <div class="card-detail text-center pt-3 pb-2">
                 <h5 class="card-title fs-4 text-uppercase m-0">
@@ -225,7 +224,7 @@
           <div class="swiper-slide">
             <div class="product-card">
               <div class="image-holder">
-                <img src="{% static 'skin1/images/product-item5.jpg' %}" alt="product-item" class="img-fluid">
+                <img src="images/product-item5.jpg" alt="product-item" class="img-fluid">
               </div>
               <div class="card-detail text-center pt-3 pb-2">
                 <h5 class="card-title fs-4 text-uppercase m-0">
@@ -241,7 +240,7 @@
           <div class="swiper-slide">
             <div class="product-card">
               <div class="image-holder">
-                <img src="{% static 'skin1/images/product-item2.jpg' %}" alt="product-item" class="img-fluid">
+                <img src="images/product-item2.jpg" alt="product-item" class="img-fluid">
               </div>
               <div class="card-detail text-center pt-3 pb-2">
                 <h5 class="card-title fs-4 text-uppercase m-0">
@@ -257,7 +256,7 @@
           <div class="swiper-slide">
             <div class="product-card">
               <div class="image-holder">
-                <img src="{% static 'skin1/images/product-item4.jpg' %}" alt="product-item" class="img-fluid">
+                <img src="images/product-item4.jpg" alt="product-item" class="img-fluid">
               </div>
               <div class="card-detail text-center pt-3 pb-2">
                 <h5 class="card-title fs-4 text-uppercase m-0">
@@ -273,7 +272,7 @@
           <div class="swiper-slide">
             <div class="product-card">
               <div class="image-holder">
-                <img src="{% static 'skin1/images/product-item3.jpg' %}" alt="product-item" class="img-fluid">
+                <img src="images/product-item3.jpg" alt="product-item" class="img-fluid">
               </div>
               <div class="card-detail text-center pt-3 pb-2">
                 <h5 class="card-title fs-4 text-uppercase m-0">
@@ -352,7 +351,7 @@
           <div class="col-lg-6 mb-5">
             <div class="flex-column flex-md-row d-flex justify-content-start h-100">
               <div class="image-holder">
-                <img src="{% static 'skin1/images/banner-img1.png' %}" alt="product-img" class="img-fluid mb-3">
+                <img src="images/banner-img1.png" alt="product-img" class="img-fluid mb-3">
               </div>
               <div class="banner-content-text ms-md-4 d-flex align-items-center">
                 <div class="banner-text">
@@ -366,7 +365,7 @@
           <div class="col-lg-6 mb-5">
             <div class="flex-column flex-md-row d-flex justify-content-start h-100">
               <div class="image-holder">
-                <img src="{% static 'skin1/images/banner-img2.png' %}" alt="product-img" class="img-fluid mb-3">
+                <img src="images/banner-img2.png" alt="product-img" class="img-fluid mb-3">
               </div>
               <div class="banner-content-text ms-md-4 d-flex align-items-center">
                 <div class="banner-text">
@@ -382,7 +381,7 @@
           <div class="col-lg-6 mb-5">
             <div class="flex-column flex-md-row d-flex justify-content-start h-100">
               <div class="image-holder">
-                <img src="{% static 'skin1/images/banner-img3.png' %}" alt="product-img" class="img-fluid mb-3">
+                <img src="images/banner-img3.png" alt="product-img" class="img-fluid mb-3">
               </div>
               <div class="banner-content-text ms-md-4 d-flex align-items-center">
                 <div class="banner-text">
@@ -396,7 +395,7 @@
           <div class="col-lg-6 mb-5">
             <div class="flex-column flex-md-row d-flex justify-content-start h-100">
               <div class="image-holder">
-                <img src="{% static 'skin1/images/banner-img4.png' %}" alt="product-img" class="img-fluid mb-3">
+                <img src="images/banner-img4.png" alt="product-img" class="img-fluid mb-3">
               </div>
               <div class="banner-content-text ms-md-4 d-flex align-items-center">
                 <div class="banner-text">
@@ -430,7 +429,7 @@
           <div class="swiper-slide">
             <div class="product-card">
               <div class="image-holder">
-                <img src="{% static 'skin1/images/product-item6.jpg' %}" alt="product-item" class="img-fluid">
+                <img src="images/product-item6.jpg" alt="product-item" class="img-fluid">
               </div>
               <div class="card-detail text-center pt-3 pb-2">
                 <h5 class="card-title fs-4 text-uppercase m-0">
@@ -446,7 +445,7 @@
           <div class="swiper-slide">
             <div class="product-card">
               <div class="image-holder">
-                <img src="{% static 'skin1/images/product-item7.jpg' %}" alt="product-item" class="img-fluid">
+                <img src="images/product-item7.jpg" alt="product-item" class="img-fluid">
               </div>
               <div class="card-detail text-center pt-3 pb-2">
                 <h5 class="card-title fs-4 text-uppercase m-0">
@@ -462,7 +461,7 @@
           <div class="swiper-slide">
             <div class="product-card">
               <div class="image-holder">
-                <img src="{% static 'skin1/images/product-item8.jpg' %}" alt="product-item" class="img-fluid">
+                <img src="images/product-item8.jpg" alt="product-item" class="img-fluid">
               </div>
               <div class="card-detail text-center pt-3 pb-2">
                 <h5 class="card-title fs-4 text-uppercase m-0">
@@ -478,7 +477,7 @@
           <div class="swiper-slide">
             <div class="product-card">
               <div class="image-holder">
-                <img src="{% static 'skin1/images/product-item9.jpg' %}" alt="product-item" class="img-fluid">
+                <img src="images/product-item9.jpg" alt="product-item" class="img-fluid">
               </div>
               <div class="card-detail text-center pt-3 pb-2">
                 <h5 class="card-title fs-4 text-uppercase m-0">
@@ -494,7 +493,7 @@
           <div class="swiper-slide">
             <div class="product-card">
               <div class="image-holder">
-                <img src="{% static 'skin1/images/product-item10.jpg' %}" alt="product-item" class="img-fluid">
+                <img src="images/product-item10.jpg" alt="product-item" class="img-fluid">
               </div>
               <div class="card-detail text-center pt-3 pb-2">
                 <h5 class="card-title fs-4 text-uppercase m-0">
@@ -510,7 +509,7 @@
           <div class="swiper-slide">
             <div class="product-card">
               <div class="image-holder">
-                <img src="{% static 'skin1/images/product-item2.jpg' %}" alt="product-item" class="img-fluid">
+                <img src="images/product-item2.jpg" alt="product-item" class="img-fluid">
               </div>
               <div class="card-detail text-center pt-3 pb-2">
                 <h5 class="card-title fs-4 text-uppercase m-0">
@@ -526,7 +525,7 @@
           <div class="swiper-slide">
             <div class="product-card">
               <div class="image-holder">
-                <img src="{% static 'skin1/images/product-item4.jpg' %}" alt="product-item" class="img-fluid">
+                <img src="images/product-item4.jpg" alt="product-item" class="img-fluid">
               </div>
               <div class="card-detail text-center pt-3 pb-2">
                 <h5 class="card-title fs-4 text-uppercase m-0">
@@ -542,7 +541,7 @@
           <div class="swiper-slide">
             <div class="product-card">
               <div class="image-holder">
-                <img src="{% static 'skin1/images/product-item3.jpg' %}" alt="product-item" class="img-fluid">
+                <img src="images/product-item3.jpg" alt="product-item" class="img-fluid">
               </div>
               <div class="card-detail text-center pt-3 pb-2">
                 <h5 class="card-title fs-4 text-uppercase m-0">
@@ -644,7 +643,7 @@
           <div class="col-lg-3 mb-2">
             <div class="card border-0 rounded-0">
               <div class="card-image">
-                <img src="{% static 'skin1/images/post-item1.jpg' %}" alt="blog-img" class="img-fluid">
+                <img src="images/post-item1.jpg" alt="blog-img" class="img-fluid">
               </div>
             </div>
             <div class="card-body text-capitalize">
@@ -660,7 +659,7 @@
           <div class="col-lg-3 mb-2">
             <div class="card border-0 rounded-0">
               <div class="card-image">
-                <img src="{% static 'skin1/images/post-item3.jpg' %}" alt="blog-img" class="img-fluid">
+                <img src="images/post-item3.jpg" alt="blog-img" class="img-fluid">
               </div>
             </div>
             <div class="card-body text-capitalize">
@@ -676,7 +675,7 @@
           <div class="col-lg-3 mb-2">
             <div class="card border-0 rounded-0">
               <div class="card-image">
-                <img src="{% static 'skin1/images/post-item2.jpg' %}" alt="blog-img" class="img-fluid">
+                <img src="images/post-item2.jpg" alt="blog-img" class="img-fluid">
               </div>
             </div>
             <div class="card-body text-capitalize">
@@ -692,7 +691,7 @@
           <div class="col-lg-3 mb-2">
             <div class="card border-0 rounded-0">
               <div class="card-image">
-                <img src="{% static 'skin1/images/post-item4.jpg' %}" alt="blog-img" class="img-fluid">
+                <img src="images/post-item4.jpg" alt="blog-img" class="img-fluid">
               </div>
             </div>
             <div class="card-body text-capitalize">
