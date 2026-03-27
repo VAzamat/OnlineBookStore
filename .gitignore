@@ -86,4 +86,4 @@ local_settings.py
 
 ### TOOLS/HAMMER###
 .tools/sources/
-.tools/processes/
+.tools/processed/
