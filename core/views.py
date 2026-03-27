@@ -15,3 +15,6 @@ def shop(request):
 
 def single_product(request):
     return render(request, f'{used_skin}/single_product.html')
+
+def blog(request):
+    return render(request, f'{used_skin}/blog.html')
