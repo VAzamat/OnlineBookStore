@@ -30,3 +30,6 @@ def contacts(request):
 
 def about_us(request):
     return render(request, f'{used_skin}/about_us.html')
+
+def cart(request):
+    return render(request, f'{used_skin}/cart.html')
