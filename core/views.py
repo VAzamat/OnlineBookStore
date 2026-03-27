@@ -39,3 +39,6 @@ def cart(request):
 
 def checkout(request):
     return render(request, f'{used_skin}/checkout.html')
+
+def classes(request):
+    return render(request, f'{used_skin}/class.html')
