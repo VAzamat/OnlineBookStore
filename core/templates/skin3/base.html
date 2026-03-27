@@ -74,7 +74,7 @@
                     <li class="sub-page pe-0"><a class="text-black text-uppercase dropdown-item" href="{% url 'core:contacts' %}">contact </a></li>
                     <li class="sub-page pe-0"><a class="text-black text-uppercase dropdown-item" href="{% url 'core:cart' %}">cart </a></li>
                     <li class="sub-page pe-0"><a class="text-black text-uppercase dropdown-item" href="/checkout.html">checkout </a></li>
-                    <li class="sub-page pe-0"><a class="text-black text-uppercase dropdown-item" href="/my-account.html">account </a></li>
+                    <li class="sub-page pe-0"><a class="text-black text-uppercase dropdown-item" href="{% url 'core:my_account' %}">account </a></li>
                   </ul>
                 </li>
               </ul>
@@ -99,7 +99,7 @@
               <ul class="list-unstyled d-flex align-items-center m-0">
                 <li>
                   <i class="icon icon-user"></i>
-                  <a href="/my-account.html" class="text-uppercase item-anchor">Login</a>
+                  <a href="{% url 'core:my_account' %}" class="text-uppercase item-anchor">Login</a>
                 </li>
                 <li class="search-item">
                   <div class="search-bar">

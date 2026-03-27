@@ -1,5 +1,6 @@
 from django.urls import path
-from core.views import index, shop, single_product, blog, blog_with_sidebar, blog_single_post, contacts, about_us, cart
+from core.views import index, shop, single_product, blog, blog_with_sidebar, blog_single_post
+from core.views import contacts, about_us, cart, my_account
 
 from core.apps import CoreConfig
 
@@ -15,4 +16,5 @@ urlpatterns = [
     path("contacts.html", contacts, name='contacts'),
     path("about_us.html", about_us, name='about_us'),
     path("cart.html", cart, name='cart'),
+    path("my_account.html", my_account, name='my_account'),
 ]

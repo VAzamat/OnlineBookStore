@@ -31,5 +31,8 @@ def contacts(request):
 def about_us(request):
     return render(request, f'{used_skin}/about_us.html')
 
+def my_account(request):
+    return render(request, f'{used_skin}/my_account.html')
+
 def cart(request):
     return render(request, f'{used_skin}/cart.html')
