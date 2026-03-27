@@ -51,3 +51,6 @@ def pricing(request):
 
 def wishlist(request):
     return render(request, f'{used_skin}/wishlist.html')
+
+def faqs(request):
+    return render(request, f'{used_skin}/faqs.html')

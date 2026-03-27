@@ -1,0 +1,173 @@
+{% extends "skin4/base.html" %}
+
+{% load static %}
+
+{% block titlekeywords %}
+    <title>Fitzone - Контакты</title>
+    <meta name="keywords" content="electronics gadget">
+{% endblock %}
+
+{% block customstyle %}
+{% endblock %}
+
+{% block bodycustomclass %}
+{% endblock %}
+
+{% block content %}
+    <main id="banner">
+      <div class="position-relative" style="background: url({% static 'skin4/images/banner1.jpg' %}); background-size: cover; background-repeat: no-repeat; background-position: center; height: 60vh;">
+        <div class="container-fluid ">
+          <div class="hero-content text-center position-absolute start-50 top-50 translate-middle">
+            <h2 class="display-2 text-uppercase text-white mb-0 fw-medium">Contact Us</h2>
+
+            <nav class="breadcrumb d-flex justify-content-center mt-3 me-1 text-white">
+              <a class="breadcrumb-item breadcrumb-light text-white" href="/index.html">Home</a>
+              <a class="breadcrumb-item breadcrumb-light text-white" href="/contact.html#">Pages</a>
+              <a class="breadcrumb-item breadcrumb-light active text-white" aria-current="page">Contact Us</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <section class="contact-us padding-medium pb-0">
+      <div class="container-fluid px-md-5 ">
+        <div class="row flex-row-reverse">
+          <div class="inquiry-item col-lg-6 pb-5 pb-lg-0">
+            <div class="rounded-5">
+              <h3 class="display-3">Get in Touch</h3>
+              <p>Use the form below to get in touch with us.</p>
+              <form name="contactform" action="/contact.php" method="post" class="form-group contact-form mt-4">
+                <div class="form-input col-lg-12 d-flex justify-content-between mb-3">
+                  <div class="w-100 me-3">
+                    <label class="mb-2 fs-6 text-dark">Your Name*</label>
+                    <input type="text" name="name" placeholder="Write Your Name Here" class="form-control shadow-none px-3 py-2" required="">
+                  </div>
+                  <div class="w-100">
+                    <label class="mb-2 fs-6 text-dark">Your E-mail*</label>
+                    <input type="email" name="email" placeholder="Write Your Email Here" class="form-control shadow-none px-3 py-2" required="">
+                  </div>
+
+                </div>
+                <div class="col-lg-12 mb-3">
+                  <label class="mb-2 fs-6 text-dark">Phone Number</label>
+                  <input type="number" name="phone" placeholder="Phone Number" class="form-control shadow-none px-3 py-2">
+                </div>
+                <div class="col-lg-12 mb-3">
+                  <label class="mb-2 fs-6 text-dark">Subject</label>
+
+                  <input type="text" name="subject" placeholder="Write Your Subject Here" class="form-control shadow-none px-3 py-2">
+                </div>
+                <div class="col-lg-12 mb-3">
+                  <label class="mb-2 fs-6 text-dark">Your Message*</label>
+
+                  <textarea name="message" placeholder="Write Your Message Here" class="form-control shadow-none px-3 py-2" style="height:150px;" required=""></textarea>
+                </div>
+                <div class="d-grid">
+                  <button type="submit" name="submit" class="btn btn-arrow btn-primary btn-lg btn-dark fs-6">Submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="contact-info col-lg-6 ">
+            <h3 class="display-3">Contact Information</h3>
+            <p>Tortor dignissim convallis aenean et tortor at risus viverra adipiscing.</p>
+            <div class="page-content d-flex flex-wrap mt-5">
+              <div class="col-lg-6 col-sm-12">
+                <div class="content-box text-dark pe-4 mb-5">
+                  <h4 class="display-5 card-title">Office</h4>
+                  <div class="contact-address pt-3">
+                    <p>730 Glenstone Ave 65802, Springfield, US</p>
+                  </div>
+                  <div class="contact-number">
+                    <p>
+                      <a href="/contact.html#">+123 987 321</a>
+                    </p>
+                    <p>
+                      <a href="/contact.html#">+123 123 654</a>
+                    </p>
+                  </div>
+                  <div class="email-address">
+                    <p>
+                      <a href="/contact.html#">contactoffice@website.com</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-sm-12">
+                <div class="content-box text-dark">
+                  <h4 class="display-5 card-title">Management</h4>
+                  <div class="contact-address pt-3">
+                    <p>730 Glenstone Ave 65802, Springfield, US</p>
+                  </div>
+                  <div class="contact-number">
+                    <p>
+                      <a href="/contact.html#">+123 987 321</a>
+                    </p>
+                    <p>
+                      <a href="/contact.html#">+123 123 654</a>
+                    </p>
+                  </div>
+                  <div class="email-address">
+                    <p>
+                      <a href="/contact.html#">contactmanagement@website.com</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="padding-medium pb-0">
+        <div class="container text-center">
+            <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <h3 class="display-3 fw-medium">Sign up newsletter</h3>
+                <p>Subscribe to our newsletter for discounts and updates.</p>
+                <form class="d-flex justify-content-between border rounded-pill w-100 mt-5">
+                <input type="email" name="email" placeholder="Write your email address here..." class="w-100 px-4 border-0 bg-transparent">
+                <button type="button" class="btn btn-dark rounded-end-pill">Subscribe</button>
+                </form>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blogs" class="padding-medium">
+        <div class="container-fluid">
+            <div class="d-block d-md-flex justify-content-between align-items-center mb-4">
+                <h3 class="display-3 fw-medium">News Articles</h3>
+                <div><a href="/contact.html#" class="btn btn-dark border-start border-4 border-primary">Read All</a></div>
+            </div>
+            <div class="article">
+                <div class="row">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <a href="/single-post.html"> <img src="{% static 'skin4/images/article1.jpg' %}" class="img-fluid" alt="blog-img">
+                        </a>
+                        <h5 class="fs-3 mt-2"><a href="/single-post.html" class="article-names">10 Essential Workout Tips to Maximize Your Gym Sessions</a></h5>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <a href="/single-post.html"> <img src="{% static 'skin4/images/article2.jpg' %}" class="img-fluid" alt="blog-img">
+                        </a>
+                        <h5 class="fs-3 mt-2"><a href="/single-post.html" class="article-names">Strength vs. Cardio: Which Workout is Best for You?</a></h5>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <a href="/single-post.html"> <img src="{% static 'skin4/images/article5.jpg' %}" class="img-fluid" alt="blog-img">
+                        </a>
+                        <h5 class="fs-3 mt-2"><a href="/single-post.html" class="article-names">How to Stay Motivated on Your Fitness Journey</a>
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+{% endblock %}
+
+
+{% block scripts %}
+{% endblock %}
