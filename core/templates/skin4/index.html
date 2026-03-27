@@ -22,7 +22,7 @@
                     <p class="top-text fs-2 mb-4 text-white text-capitalize">Transform Your Life</p>
                     <h2 class="display-1 text-white fw-medium mt-3 lh-1">Welcome to FitZone, <span class="text-primary">achieve your goal</span></h2>
                     <p class="text-light">Welcome to FitZone, where fitness meets dedication. Join us to sculpt your body, strengthen your mind, and achieve your health goals.</p>
-                    <a href="contact.html" class="btn btn-light mt-3 btn-slide hover-slide-right border-start border-4 border-primary">Join Now</a>
+                    <a href="{% url 'core:contacts' %}" class="btn btn-light mt-3 btn-slide hover-slide-right border-start border-4 border-primary">Join Now</a>
                 </div>
             </div>
         </div>
@@ -38,7 +38,7 @@
                             <h2 class="display-2 fw-medium text-white mb-3">Functional Fitness</h2>
                             <p class="fs-3 text-white">CrossFit, bodyweight exercises, calisthenics</p>
                             <div>
-                                <a href="contact.html" class="btn btn-light mt-3 border-start border-4 border-primary">Join Now</a>
+                                <a href="{% url 'core:contacts' %}" class="btn btn-light mt-3 border-start border-4 border-primary">Join Now</a>
                             </div>
                         </div>
                     </div>
@@ -50,7 +50,7 @@
                             <h2 class="display-2 fw-medium text-white mb-3">Strength Training</h2>
                             <p class="fs-3 text-white">Weightlifting, resistance training, powerlifting</p>
                             <div>
-                                <a href="contact.html" class="btn btn-light mt-3 border-start border-4 border-primary">Join Now</a>
+                                <a href="{% url 'core:contacts' %}" class="btn btn-light mt-3 border-start border-4 border-primary">Join Now</a>
                             </div>
                         </div>
                     </div>
@@ -91,7 +91,7 @@
         <div class="container-fluid">
             <div class="d-block d-md-flex justify-content-between align-items-center mb-4">
                 <h3 class="display-3 fw-medium">NEW ARRIVAL ITEMS</h3>
-                <div><a href="shop.html" class="btn btn-dark border-start border-4 border-primary">SHOP ALL</a></div>
+                <div><a href="{% url 'core:shop' %}" class="btn btn-dark border-start border-4 border-primary">SHOP ALL</a></div>
             </div>
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
@@ -105,7 +105,7 @@
                                             <use xlink:href="#arrow-right"></use>
                                         </svg>
                                     </a>
-                                    <a href="single-product.html" class="view-btn">
+                                    <a href="{% url 'core:single_product' %}" class="view-btn">
                                         <svg class="expand" width="16" height="16">
                                             <use xlink:href="#expand"></use>
                                         </svg>
@@ -118,7 +118,7 @@
                                 </div>
                             </div>
                             <div class="d-flex justify-content-between mt-2">
-                                <h5 class="display-6"><a href="single-product.html" class="item-name">Product One</a></h5>
+                                <h5 class="display-6"><a href="{% url 'core:single_product' %}" class="item-name">Product One</a></h5>
                                 <h5 class="money display-6 text-primary">$22.00</h5>
                             </div>
                         </div>
@@ -133,7 +133,7 @@
                                             <use xlink:href="#arrow-right"></use>
                                         </svg>
                                     </a>
-                                    <a href="single-product.html" class="view-btn">
+                                    <a href="{% url 'core:single_product' %}" class="view-btn">
                                         <svg class="expand" width="16" height="16">
                                             <use xlink:href="#expand"></use>
                                         </svg>
@@ -146,7 +146,7 @@
                                 </div>
                             </div>
                             <div class="d-flex justify-content-between mt-2">
-                                <h5 class="display-6"><a href="single-product.html" class="item-name">Product Two</a></h5>
+                                <h5 class="display-6"><a href="{% url 'core:single_product' %}" class="item-name">Product Two</a></h5>
                                 <h5 class="money display-6 text-primary">$22.00</h5>
                             </div>
                         </div>
@@ -161,7 +161,7 @@
                                             <use xlink:href="#arrow-right"></use>
                                         </svg>
                                     </a>
-                                    <a href="single-product.html" class="view-btn">
+                                    <a href="{% url 'core:single_product' %}" class="view-btn">
                                         <svg class="expand" width="16" height="16">
                                             <use xlink:href="#expand"></use>
                                         </svg>
@@ -174,7 +174,7 @@
                                 </div>
                             </div>
                             <div class="d-flex justify-content-between mt-2">
-                                <h5 class="display-6"><a href="single-product.html" class="item-name">Product three</a></h5>
+                                <h5 class="display-6"><a href="{% url 'core:single_product' %}" class="item-name">Product three</a></h5>
                                 <h5 class="money display-6 text-primary">$22.00</h5>
                             </div>
                         </div>
@@ -189,7 +189,7 @@
                                             <use xlink:href="#arrow-right"></use>
                                         </svg>
                                     </a>
-                                    <a href="single-product.html" class="view-btn">
+                                    <a href="{% url 'core:single_product' %}" class="view-btn">
                                         <svg class="expand" width="16" height="16">
                                             <use xlink:href="#expand"></use>
                                         </svg>
@@ -202,7 +202,7 @@
                                 </div>
                             </div>
                             <div class="d-flex justify-content-between mt-2">
-                                <h5 class="display-6"><a href="single-product.html" class="item-name">Product four</a></h5>
+                                <h5 class="display-6"><a href="{% url 'core:single_product' %}" class="item-name">Product four</a></h5>
                                 <h5 class="money display-6 text-primary">$22.00</h5>
                             </div>
                         </div>
@@ -217,7 +217,7 @@
                                             <use xlink:href="#arrow-right"></use>
                                         </svg>
                                     </a>
-                                    <a href="single-product.html" class="view-btn">
+                                    <a href="{% url 'core:single_product' %}" class="view-btn">
                                         <svg class="expand" width="16" height="16">
                                             <use xlink:href="#expand"></use>
                                         </svg>
@@ -230,7 +230,7 @@
                                 </div>
                             </div>
                             <div class="d-flex justify-content-between mt-2">
-                                <h5 class="display-6"><a href="single-product.html" class="item-name">Product five</a></h5>
+                                <h5 class="display-6"><a href="{% url 'core:single_product' %}" class="item-name">Product five</a></h5>
                                 <h5 class="money display-6 text-primary">$22.00</h5>
                             </div>
                         </div>
@@ -245,7 +245,7 @@
                                             <use xlink:href="#arrow-right"></use>
                                         </svg>
                                     </a>
-                                    <a href="single-product.html" class="view-btn">
+                                    <a href="{% url 'core:single_product' %}" class="view-btn">
                                         <svg class="expand" width="16" height="16">
                                             <use xlink:href="#expand"></use>
                                         </svg>
@@ -258,7 +258,7 @@
                                 </div>
                             </div>
                             <div class="d-flex justify-content-between mt-2">
-                                <h5 class="display-6"><a href="single-product.html" class="item-name">Product six</a></h5>
+                                <h5 class="display-6"><a href="{% url 'core:single_product' %}" class="item-name">Product six</a></h5>
                                 <h5 class="money display-6 text-primary">$22.00</h5>
                             </div>
                         </div>
@@ -446,19 +446,19 @@
             <div class="article">
                 <div class="row">
                     <div class="col-md-4 mb-3 mb-md-0">
-                        <a href="single-post.html"> <img src="{% static 'skin4/images/article1.jpg' %}" class="img-fluid" alt="blog-img">
+                        <a href="{% url 'core:single_post' %}"> <img src="{% static 'skin4/images/article1.jpg' %}" class="img-fluid" alt="blog-img">
                         </a>
-                        <h5 class="fs-3 mt-2"><a href="single-post.html" class="article-names">10 Essential Workout Tips to Maximize Your Gym Sessions</a></h5>
+                        <h5 class="fs-3 mt-2"><a href="{% url 'core:single_post' %}" class="article-names">10 Essential Workout Tips to Maximize Your Gym Sessions</a></h5>
                     </div>
                     <div class="col-md-4 mb-3 mb-md-0">
-                        <a href="single-post.html"> <img src="{% static 'skin4/images/article2.jpg' %}" class="img-fluid" alt="blog-img">
+                        <a href="{% url 'core:single_post' %}"> <img src="{% static 'skin4/images/article2.jpg' %}" class="img-fluid" alt="blog-img">
                         </a>
-                        <h5 class="fs-3 mt-2"><a href="single-post.html" class="article-names">Strength vs. Cardio: Which Workout is Best for You?</a></h5>
+                        <h5 class="fs-3 mt-2"><a href="{% url 'core:single_post' %}" class="article-names">Strength vs. Cardio: Which Workout is Best for You?</a></h5>
                     </div>
                     <div class="col-md-4 mb-3 mb-md-0">
-                        <a href="single-post.html"> <img src="{% static 'skin4/images/article5.jpg' %}" class="img-fluid" alt="blog-img">
+                        <a href="{% url 'core:single_post' %}"> <img src="{% static 'skin4/images/article5.jpg' %}" class="img-fluid" alt="blog-img">
                         </a>
-                        <h5 class="fs-3 mt-2"><a href="single-post.html" class="article-names">How to Stay Motivated on Your Fitness Journey</a>
+                        <h5 class="fs-3 mt-2"><a href="{% url 'core:single_post' %}" class="article-names">How to Stay Motivated on Your Fitness Journey</a>
                         </h5>
                     </div>
                 </div>

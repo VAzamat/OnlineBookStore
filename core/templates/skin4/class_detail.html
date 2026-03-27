@@ -103,7 +103,7 @@
                                                   </tr>
                                                   <tr>
                                                     <th scope="row">Social</th>
-                                                    <td><a href="/class-detail.html#">Fb</a>,<a href="/class-detail.html#" class="ms-1">Insta</a>,<a href="/class-detail.html#" class="ms-1">Yt</a></td>
+                                                    <td><a href="{% url 'core:class_detail' %}">Fb</a>,<a href="{% url 'core:class_detail' %}" class="ms-1">Insta</a>,<a href="{% url 'core:class_detail' %}" class="ms-1">Yt</a></td>
                                                   </tr>
                                                 </tbody>
                                             </table>
@@ -199,24 +199,24 @@
         <div class="container-fluid">
             <div class="d-block d-md-flex justify-content-between align-items-center mb-4">
                 <h3 class="display-3 fw-medium">Related Articles</h3>
-                <div><a href="/class-detail.html#" class="btn btn-dark border-start border-4 border-primary">Read All</a></div>
+                <div><a href="{% url 'core:class_detail' %}" class="btn btn-dark border-start border-4 border-primary">Read All</a></div>
             </div>
             <div class="article">
                 <div class="row">
                     <div class="col-md-4 mb-3 mb-md-0">
-                        <a href="/single-post.html"> <img src="{% static 'skin4/images/article1.jpg' %}" class="img-fluid" alt="blog-img">
+                        <a href="{% url 'core:single_post' %}"> <img src="{% static 'skin4/images/article1.jpg' %}" class="img-fluid" alt="blog-img">
                         </a>
-                        <h5 class="fs-3 mt-2"><a href="/single-post.html" class="article-names">10 Essential Workout Tips to Maximize Your Gym Sessions</a></h5>
+                        <h5 class="fs-3 mt-2"><a href="{% url 'core:single_post' %}" class="article-names">10 Essential Workout Tips to Maximize Your Gym Sessions</a></h5>
                     </div>
                     <div class="col-md-4 mb-3 mb-md-0">
-                        <a href="/single-post.html"> <img src="{% static 'skin4/images/article2.jpg' %}" class="img-fluid" alt="blog-img">
+                        <a href="{% url 'core:single_post' %}"> <img src="{% static 'skin4/images/article2.jpg' %}" class="img-fluid" alt="blog-img">
                         </a>
-                        <h5 class="fs-3 mt-2"><a href="/single-post.html" class="article-names">Strength vs. Cardio: Which Workout is Best for You?</a></h5>
+                        <h5 class="fs-3 mt-2"><a href="{% url 'core:single_post' %}" class="article-names">Strength vs. Cardio: Which Workout is Best for You?</a></h5>
                     </div>
                     <div class="col-md-4 mb-3 mb-md-0">
-                        <a href="/single-post.html"> <img src="{% static 'skin4/images/article5.jpg' %}" class="img-fluid" alt="blog-img">
+                        <a href="{% url 'core:single_post' %}"> <img src="{% static 'skin4/images/article5.jpg' %}" class="img-fluid" alt="blog-img">
                         </a>
-                        <h5 class="fs-3 mt-2"><a href="/single-post.html" class="article-names">How to Stay Motivated on Your Fitness Journey</a>
+                        <h5 class="fs-3 mt-2"><a href="{% url 'core:single_post' %}" class="article-names">How to Stay Motivated on Your Fitness Journey</a>
                         </h5>
                     </div>
                 </div>

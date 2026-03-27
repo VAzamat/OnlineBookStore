@@ -235,7 +235,7 @@
                             <use xlink:href="#navbar-icon"></use>
                         </svg>
                     </button>
-                    <a href="index.html" class="navbar-brand order-2 order-lg-2 d-flex d-lg-none">
+                    <a href="{% url 'core:index' %}" class="navbar-brand order-2 order-lg-2 d-flex d-lg-none">
                         <img src="{% static 'skin4/images/logo.png' %}" alt="Logo">
                     </a>
                     <div class="offcanvas offcanvas-end bg-black order-3" tabindex="-1" id="bdNavbar"
@@ -246,7 +246,7 @@
                                     data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#bdNavbar"></button>
                             </div>
                             <div class="col-md-2 d-flex">
-                                <a href="index.html" class="navbar-brand order-2 order-lg-2 d-none d-lg-flex">
+                                <a href="{% url 'core:index' %}" class="navbar-brand order-2 order-lg-2 d-none d-lg-flex">
                                     <img src="{% static 'skin4/images/logo.png' %}" alt="Logo">
                                 </a>
                             </div>
@@ -255,11 +255,11 @@
                                     <ul class="navbar-nav d-flex justify-content-center">
                                         <li class="nav-item me-5">
                                             <a class="nav-link text-white pb-1 pe-0"
-                                                href="index.html">Home</a>
+                                                href="{% url 'core:index' %}">Home</a>
                                         </li>
                                         <li class="nav-item me-5">
                                             <a class="nav-link text-white pb-1 pe-0"
-                                                href="about-us.html">About</a>
+                                                href="{% url 'core:about_us' %}">About</a>
                                         </li>
 
                                         <!-- Dropdown for Shop -->
@@ -270,9 +270,9 @@
                                                 Shop
                                             </a>
                                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownShop">
-                                                <li><a class="dropdown-item" href="shop.html">Shop </a>
+                                                <li><a class="dropdown-item" href="{% url 'core:shop' %}">Shop </a>
                                                 </li>
-                                                <li><a class="dropdown-item" href="single-product.html">Single Product
+                                                <li><a class="dropdown-item" href="{% url 'core:single_product' %}">Single Product
                                                         </a></li>
                                             </ul>
                                         </li>
@@ -285,9 +285,9 @@
                                                 Blog
                                             </a>
                                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownBlog">
-                                                <li><a class="dropdown-item" href="blog.html">Blog </a>
+                                                <li><a class="dropdown-item" href="{% url 'core:blog' %}">Blog </a>
                                                 </li>
-                                                <li><a class="dropdown-item" href="single-post.html">Single Post </a></li>
+                                                <li><a class="dropdown-item" href="{% url 'core:single_post' %}">Single Post </a></li>
                                             </ul>
                                         </li>
 
@@ -300,34 +300,34 @@
                                             </a>
                                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownPages">
                                                 <li>
-                                                    <a href="about-us.html" class="dropdown-item">About </a>
+                                                    <a href="{% url 'core:about_us' %}" class="dropdown-item">About </a>
                                                 </li>
                                                 <li>
-                                                    <a href="class.html" class="dropdown-item">Classes </a>
+                                                    <a href="{% url 'core:classes' %}" class="dropdown-item">Classes </a>
                                                 </li>
                                                 <li>
-                                                    <a href="class-detail.html" class="dropdown-item">Class Detail </a>
+                                                    <a href="{% url 'core:class_detail' %}" class="dropdown-item">Class Detail </a>
                                                 </li>
                                                 <li>
-                                                    <a href="pricing.html" class="dropdown-item">Pricing </a>
+                                                    <a href="{% url 'core:pricing' %}" class="dropdown-item">Pricing </a>
                                                 </li>
                                                 <li>
-                                                    <a href="cart.html" class="dropdown-item">Cart </a>
+                                                    <a href="{% url 'core:cart' %}" class="dropdown-item">Cart </a>
                                                 </li>
                                                 <li>
-                                                    <a href="wishlist.html" class="dropdown-item">Wishlist </a>
+                                                    <a href="{% url 'core:wishlist' %}" class="dropdown-item">Wishlist </a>
                                                 </li>
                                                 <li>
-                                                    <a href="checkout.html" class="dropdown-item">Checkout </a>
+                                                    <a href="{% url 'core:checkout' %}" class="dropdown-item">Checkout </a>
                                                 </li>
                                                 <li>
-                                                    <a href="contact.html" class="dropdown-item">Contact </a>
+                                                    <a href="{% url 'core:contacts' %}" class="dropdown-item">Contact </a>
                                                 </li>
                                                 <li>
-                                                    <a href="faqs.html" class="dropdown-item">FAQs </a>
+                                                    <a href="{% url 'core:faqs' %}" class="dropdown-item">FAQs </a>
                                                 </li>
                                                 <li>
-                                                    <a href="account.html" class="dropdown-item">Account </a>
+                                                    <a href="{% url 'core:my_account' %}" class="dropdown-item">Account </a>
                                                 </li>
                                             </ul>
                                         </li>
@@ -348,14 +348,14 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="cart.html" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart"
+                                        <a href="{% url 'core:cart' %}" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart"
                                             aria-controls="offcanvasCart">
                                             <svg class="text-white cart" width="20" height="20">
                                                 <use xlink:href="#cart"></use>
                                             </svg>
                                         </a>
                                     <li>
-                                        <a href="wishlist.html" data-bs-toggle="offcanvas"
+                                        <a href="{% url 'core:wishlist' %}" data-bs-toggle="offcanvas"
                                             data-bs-target="#offcanvasWishlist" aria-controls="offcanvasWishlist">
                                             <svg class="text-white wishlist" width="20" height="20">
                                                 <use xlink:href="#wishlist"></use>
@@ -364,7 +364,7 @@
                                     </li>
                                     </li>
                                     <li>
-                                        <a href="account.html">
+                                        <a href="{% url 'core:my_account' %}">
                                             <svg class="text-white man" width="20" height="20">
                                                 <use xlink:href="#man"></use>
                                             </svg>

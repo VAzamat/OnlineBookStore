@@ -21,8 +21,8 @@
             <h2 class="display-2 text-uppercase text-white mb-0 fw-medium">Contact Us</h2>
 
             <nav class="breadcrumb d-flex justify-content-center mt-3 me-1 text-white">
-              <a class="breadcrumb-item breadcrumb-light text-white" href="/index.html">Home</a>
-              <a class="breadcrumb-item breadcrumb-light text-white" href="/contact.html#">Pages</a>
+              <a class="breadcrumb-item breadcrumb-light text-white" href="{% url 'core:index' %}">Home</a>
+              <a class="breadcrumb-item breadcrumb-light text-white" href="{% url 'core:contacts' %}">Pages</a>
               <a class="breadcrumb-item breadcrumb-light active text-white" aria-current="page">Contact Us</a>
             </nav>
           </div>
@@ -81,15 +81,15 @@
                   </div>
                   <div class="contact-number">
                     <p>
-                      <a href="/contact.html#">+123 987 321</a>
+                      <a href="{% url 'core:contacts' %}">+123 987 321</a>
                     </p>
                     <p>
-                      <a href="/contact.html#">+123 123 654</a>
+                      <a href="{% url 'core:contacts' %}">+123 123 654</a>
                     </p>
                   </div>
                   <div class="email-address">
                     <p>
-                      <a href="/contact.html#">contactoffice@website.com</a>
+                      <a href="{% url 'core:contacts' %}">contactoffice@website.com</a>
                     </p>
                   </div>
                 </div>
@@ -102,15 +102,15 @@
                   </div>
                   <div class="contact-number">
                     <p>
-                      <a href="/contact.html#">+123 987 321</a>
+                      <a href="{% url 'core:contacts' %}">+123 987 321</a>
                     </p>
                     <p>
-                      <a href="/contact.html#">+123 123 654</a>
+                      <a href="{% url 'core:contacts' %}">+123 123 654</a>
                     </p>
                   </div>
                   <div class="email-address">
                     <p>
-                      <a href="/contact.html#">contactmanagement@website.com</a>
+                      <a href="{% url 'core:contacts' %}">contactmanagement@website.com</a>
                     </p>
                   </div>
                 </div>
@@ -140,24 +140,24 @@
         <div class="container-fluid">
             <div class="d-block d-md-flex justify-content-between align-items-center mb-4">
                 <h3 class="display-3 fw-medium">News Articles</h3>
-                <div><a href="/contact.html#" class="btn btn-dark border-start border-4 border-primary">Read All</a></div>
+                <div><a href="{% url 'core:contacts' %}" class="btn btn-dark border-start border-4 border-primary">Read All</a></div>
             </div>
             <div class="article">
                 <div class="row">
                     <div class="col-md-4 mb-3 mb-md-0">
-                        <a href="/single-post.html"> <img src="{% static 'skin4/images/article1.jpg' %}" class="img-fluid" alt="blog-img">
+                        <a href="{% url 'core:single_post' %}"> <img src="{% static 'skin4/images/article1.jpg' %}" class="img-fluid" alt="blog-img">
                         </a>
-                        <h5 class="fs-3 mt-2"><a href="/single-post.html" class="article-names">10 Essential Workout Tips to Maximize Your Gym Sessions</a></h5>
+                        <h5 class="fs-3 mt-2"><a href="{% url 'core:single_post' %}" class="article-names">10 Essential Workout Tips to Maximize Your Gym Sessions</a></h5>
                     </div>
                     <div class="col-md-4 mb-3 mb-md-0">
-                        <a href="/single-post.html"> <img src="{% static 'skin4/images/article2.jpg' %}" class="img-fluid" alt="blog-img">
+                        <a href="{% url 'core:single_post' %}"> <img src="{% static 'skin4/images/article2.jpg' %}" class="img-fluid" alt="blog-img">
                         </a>
-                        <h5 class="fs-3 mt-2"><a href="/single-post.html" class="article-names">Strength vs. Cardio: Which Workout is Best for You?</a></h5>
+                        <h5 class="fs-3 mt-2"><a href="{% url 'core:single_post' %}" class="article-names">Strength vs. Cardio: Which Workout is Best for You?</a></h5>
                     </div>
                     <div class="col-md-4 mb-3 mb-md-0">
-                        <a href="/single-post.html"> <img src="{% static 'skin4/images/article5.jpg' %}" class="img-fluid" alt="blog-img">
+                        <a href="{% url 'core:single_post' %}"> <img src="{% static 'skin4/images/article5.jpg' %}" class="img-fluid" alt="blog-img">
                         </a>
-                        <h5 class="fs-3 mt-2"><a href="/single-post.html" class="article-names">How to Stay Motivated on Your Fitness Journey</a>
+                        <h5 class="fs-3 mt-2"><a href="{% url 'core:single_post' %}" class="article-names">How to Stay Motivated on Your Fitness Journey</a>
                         </h5>
                     </div>
                 </div>

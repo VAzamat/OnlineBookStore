@@ -21,8 +21,8 @@
             <h2 class="display-2 text-uppercase text-white mb-0 fw-medium">Blog</h2>
 
             <nav class="breadcrumb d-flex justify-content-center mt-3 me-1 text-white">
-              <a class="breadcrumb-item breadcrumb-light text-white" href="/index.html">Home</a>
-              <a class="breadcrumb-item breadcrumb-light text-white" href="/blog.html#">Pages</a>
+              <a class="breadcrumb-item breadcrumb-light text-white" href="{% url 'core:index' %}">Home</a>
+              <a class="breadcrumb-item breadcrumb-light text-white" href="{% url 'core:blog' %}">Pages</a>
               <a class="breadcrumb-item breadcrumb-light active text-white" aria-current="page">Blog</a>
             </nav>
           </div>
@@ -35,37 +35,37 @@
             <div class="article">
                 <div class="row">
                     <div class="col-md-4 mb-3">
-                        <a href="/single-post.html"> <img src="{% static 'skin4/images/article1.jpg' %}" class="img-fluid" alt="blog-img">
+                        <a href="{% url 'core:single_post' %}"> <img src="{% static 'skin4/images/article1.jpg' %}" class="img-fluid" alt="blog-img">
                         </a>
-                        <h5 class="fs-3 mt-2"><a href="/single-post.html" class="article-names">10 Essential Workout Tips to Maximize Your Gym Sessions</a></h5>
+                        <h5 class="fs-3 mt-2"><a href="{% url 'core:single_post' %}" class="article-names">10 Essential Workout Tips to Maximize Your Gym Sessions</a></h5>
                     </div>
                     <div class="col-md-4 mb-3">
-                        <a href="/single-post.html"> <img src="{% static 'skin4/images/article2.jpg' %}" class="img-fluid" alt="blog-img">
+                        <a href="{% url 'core:single_post' %}"> <img src="{% static 'skin4/images/article2.jpg' %}" class="img-fluid" alt="blog-img">
                         </a>
-                        <h5 class="fs-3 mt-2"><a href="/single-post.html" class="article-names">Strength vs. Cardio: Which Workout is Best for You?</a></h5>
+                        <h5 class="fs-3 mt-2"><a href="{% url 'core:single_post' %}" class="article-names">Strength vs. Cardio: Which Workout is Best for You?</a></h5>
                     </div>
                     <div class="col-md-4 mb-3">
-                        <a href="/single-post.html"> <img src="{% static 'skin4/images/article5.jpg' %}" class="img-fluid" alt="blog-img">
+                        <a href="{% url 'core:single_post' %}"> <img src="{% static 'skin4/images/article5.jpg' %}" class="img-fluid" alt="blog-img">
                         </a>
-                        <h5 class="fs-3 mt-2"><a href="/single-post.html" class="article-names">How to Stay Motivated on Your Fitness Journey</a>
+                        <h5 class="fs-3 mt-2"><a href="{% url 'core:single_post' %}" class="article-names">How to Stay Motivated on Your Fitness Journey</a>
                         </h5>
                     </div>
                     <div class="col-md-4 mb-3">
-                        <a href="/single-post.html"> <img src="{% static 'skin4/images/article5.jpg' %}" class="img-fluid" alt="blog-img">
+                        <a href="{% url 'core:single_post' %}"> <img src="{% static 'skin4/images/article5.jpg' %}" class="img-fluid" alt="blog-img">
                         </a>
-                        <h5 class="fs-3 mt-2"><a href="/single-post.html" class="article-names">How to Stay Motivated on Your Fitness Journey</a>
+                        <h5 class="fs-3 mt-2"><a href="{% url 'core:single_post' %}" class="article-names">How to Stay Motivated on Your Fitness Journey</a>
                         </h5>
                     </div>
                     <div class="col-md-4 mb-3">
-                        <a href="/single-post.html"> <img src="{% static 'skin4/images/article5.jpg' %}" class="img-fluid" alt="blog-img">
+                        <a href="{% url 'core:single_post' %}"> <img src="{% static 'skin4/images/article5.jpg' %}" class="img-fluid" alt="blog-img">
                         </a>
-                        <h5 class="fs-3 mt-2"><a href="/single-post.html" class="article-names">How to Stay Motivated on Your Fitness Journey</a>
+                        <h5 class="fs-3 mt-2"><a href="{% url 'core:single_post' %}" class="article-names">How to Stay Motivated on Your Fitness Journey</a>
                         </h5>
                     </div>
                     <div class="col-md-4 mb-3">
-                        <a href="/single-post.html"> <img src="{% static 'skin4/images/article5.jpg' %}" class="img-fluid" alt="blog-img">
+                        <a href="{% url 'core:single_post' %}"> <img src="{% static 'skin4/images/article5.jpg' %}" class="img-fluid" alt="blog-img">
                         </a>
-                        <h5 class="fs-3 mt-2"><a href="/single-post.html" class="article-names">How to Stay Motivated on Your Fitness Journey</a>
+                        <h5 class="fs-3 mt-2"><a href="{% url 'core:single_post' %}" class="article-names">How to Stay Motivated on Your Fitness Journey</a>
                         </h5>
                     </div>
                 </div>

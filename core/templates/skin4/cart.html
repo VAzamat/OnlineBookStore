@@ -21,8 +21,8 @@
             <h2 class="display-2 text-uppercase text-white mb-0 fw-medium">Cart</h2>
 
             <nav class="breadcrumb d-flex justify-content-center mt-3 me-1 text-white">
-              <a class="breadcrumb-item breadcrumb-light text-white" href="/index.html">Home</a>
-              <a class="breadcrumb-item breadcrumb-light text-white" href="/cart.html#">Pages</a>
+              <a class="breadcrumb-item breadcrumb-light text-white" href="{% url 'core:index' %}">Home</a>
+              <a class="breadcrumb-item breadcrumb-light text-white" href="{% url 'core:cart' %}">Pages</a>
               <a class="breadcrumb-item breadcrumb-light active text-white" aria-current="page">Cart</a>
             </nav>
           </div>
@@ -55,7 +55,7 @@
                       <div class="col-lg-9">
                         <div class="card-detail ps-3">
                           <h5 class="card-title">
-                            <a href="/cart.html#" class="text-decoration-none">Category Item Name</a>
+                            <a href="{% url 'core:cart' %}" class="text-decoration-none">Category Item Name</a>
                           </h5>
                         </div>
                       </div>
@@ -87,7 +87,7 @@
                   </td>
                   <td class="py-4 align-middle">
                     <div class="cart-remove">
-                      <a href="/cart.html#">
+                      <a href="{% url 'core:cart' %}">
                         <svg width="24" height="24">
                           <use xlink:href="#trash"></use>
                         </svg>
@@ -106,7 +106,7 @@
                       <div class="col-lg-9">
                         <div class="card-detail ps-3">
                           <h5 class="card-title">
-                            <a href="/cart.html#" class="text-decoration-none">Category Item Name</a>
+                            <a href="{% url 'core:cart' %}" class="text-decoration-none">Category Item Name</a>
                           </h5>
                         </div>
                       </div>
@@ -138,7 +138,7 @@
                   </td>
                   <td class="py-4 align-middle">
                     <div class="cart-remove">
-                      <a href="/cart.html#">
+                      <a href="{% url 'core:cart' %}">
                         <svg width="24" height="24">
                           <use xlink:href="#trash"></use>
                         </svg>
@@ -157,7 +157,7 @@
                       <div class="col-lg-9">
                         <div class="card-detail ps-3">
                           <h5 class="card-title">
-                            <a href="/cart.html#" class="text-decoration-none">Category Item Name</a>
+                            <a href="{% url 'core:cart' %}" class="text-decoration-none">Category Item Name</a>
                           </h5>
                         </div>
                       </div>
@@ -189,7 +189,7 @@
                   </td>
                   <td class="py-4 align-middle">
                     <div class="cart-remove">
-                      <a href="/cart.html#">
+                      <a href="{% url 'core:cart' %}">
                         <svg width="24" height="24">
                           <use xlink:href="#trash"></use>
                         </svg>
@@ -231,13 +231,13 @@
               </div>
               <div class="button-wrap row g-3">
                 <div class="col-md-6">
-                  <a href="/cart.html#" class="btn btn-dark border-start border-4 border-primary w-100">Update Cart</a>
+                  <a href="{% url 'core:cart' %}" class="btn btn-dark border-start border-4 border-primary w-100">Update Cart</a>
                 </div>
                 <div class="col-md-6">
-                  <a href="/cart.html#" class="btn btn-dark border-start border-4 border-primary w-100">Continue Shop</a>
+                  <a href="{% url 'core:cart' %}" class="btn btn-dark border-start border-4 border-primary w-100">Continue Shop</a>
                 </div>
                 <div class="col-md-12">
-                  <a href="/checkout.html" class="btn btn-dark border-start border-4 border-primary w-100">Proceed to checkout</a>
+                  <a href="{% url 'core:checkout' %}" class="btn btn-dark border-start border-4 border-primary w-100">Proceed to checkout</a>
                 </div>
               </div>
             </div>
@@ -265,24 +265,24 @@
         <div class="container-fluid">
             <div class="d-block d-md-flex justify-content-between align-items-center mb-4">
                 <h3 class="display-3 fw-medium">News Articles</h3>
-                <div><a href="/cart.html#" class="btn btn-dark border-start border-4 border-primary">Read All</a></div>
+                <div><a href="{% url 'core:cart' %}" class="btn btn-dark border-start border-4 border-primary">Read All</a></div>
             </div>
             <div class="article">
                 <div class="row">
                     <div class="col-md-4 mb-3 mb-md-0">
-                        <a href="/single-post.html"> <img src="{% static 'skin4/images/article1.jpg' %}" class="img-fluid" alt="blog-img">
+                        <a href="{% url 'core:single_post' %}"> <img src="{% static 'skin4/images/article1.jpg' %}" class="img-fluid" alt="blog-img">
                         </a>
-                        <h5 class="fs-3 mt-2"><a href="/single-post.html" class="article-names">10 Essential Workout Tips to Maximize Your Gym Sessions</a></h5>
+                        <h5 class="fs-3 mt-2"><a href="{% url 'core:single_post' %}" class="article-names">10 Essential Workout Tips to Maximize Your Gym Sessions</a></h5>
                     </div>
                     <div class="col-md-4 mb-3 mb-md-0">
-                        <a href="/single-post.html"> <img src="{% static 'skin4/images/article2.jpg' %}" class="img-fluid" alt="blog-img">
+                        <a href="{% url 'core:single_post' %}"> <img src="{% static 'skin4/images/article2.jpg' %}" class="img-fluid" alt="blog-img">
                         </a>
-                        <h5 class="fs-3 mt-2"><a href="/single-post.html" class="article-names">Strength vs. Cardio: Which Workout is Best for You?</a></h5>
+                        <h5 class="fs-3 mt-2"><a href="{% url 'core:single_post' %}" class="article-names">Strength vs. Cardio: Which Workout is Best for You?</a></h5>
                     </div>
                     <div class="col-md-4 mb-3 mb-md-0">
-                        <a href="/single-post.html"> <img src="{% static 'skin4/images/article5.jpg' %}" class="img-fluid" alt="blog-img">
+                        <a href="{% url 'core:single_post' %}"> <img src="{% static 'skin4/images/article5.jpg' %}" class="img-fluid" alt="blog-img">
                         </a>
-                        <h5 class="fs-3 mt-2"><a href="/single-post.html" class="article-names">How to Stay Motivated on Your Fitness Journey</a>
+                        <h5 class="fs-3 mt-2"><a href="{% url 'core:single_post' %}" class="article-names">How to Stay Motivated on Your Fitness Journey</a>
                         </h5>
                     </div>
                 </div>
