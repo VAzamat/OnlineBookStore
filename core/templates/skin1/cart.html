@@ -1,0 +1,195 @@
+{% extends "skin1/base.html" %}
+
+{% load static %}
+
+{% block titlekeywords %}
+    <meta name="keywords" content="купить книги онлайн, интернет-магазин книг, digital book sales, каталог книг, книжный маркетплейс, заказать книги с доставкой.">
+    <title>Корзина покупок</title>
+{% endblock %}
+
+{% block customstyle %}
+{% endblock %}
+
+
+{% block content %}
+
+    <section class="hero-section bg-gray d-flex align-items-center justify-content-center padding-medium pb-5">
+      <div class="hero-content">
+        <div class="container">
+          <div class="row">
+            <div class="text-center padding-medium no-padding-bottom">
+              <h1>Cart</h1>
+              <div class="breadcrumbs">
+                <span class="item">
+                  <a href="{% url 'core:index' %}">Home &gt;</a>
+                </span>
+                <span class="item">Cart</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="shopify-cart padding-large">
+      <div class="container">
+        <div class="row">
+          <div class="table-responsive">
+            <table class="table">
+              <thead class="text-uppercase">
+                <tr>
+                  <th scope="col" class="fw-light">Product</th>
+                  <th scope="col" class="fw-light">Quantity</th>
+                  <th scope="col" class="fw-light">Subtotal</th>
+                  <th scope="col" class="fw-light"></th>
+                </tr>
+              </thead>
+              <tbody class="border-top border-gray">
+                <tr class="border-bottom border-gray">
+                  <td class="align-middle border-0" scope="row">
+                    <div class="cart-product-detail d-flex align-items-center">
+                      <div class="card-image">
+                        <img src="{% static 'skin1/images/cart-img1.jpg' %}" alt="cloth" class="img-fluid">
+                      </div>
+                      <div class="card-detail ps-3">
+                        <h5 class="card-title fs-4 text-uppercase">
+                          <a href="{% url 'core:single_product' %}">Scarlet Secrets</a>
+                        </h5>
+                        <span class="item-price text-primary fs-4">$870</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="align-middle border-0">
+                    <div class="input-group product-qty" style="max-width: 150px;">
+                      <span class="input-group-btn">
+                        <button type="button" class="quantity-left-minus" data-type="minus" data-field="">
+                          <svg width="16" height="16"><use xlink:href="#minus"></use></svg>
+                        </button>
+                      </span>
+                      <input type="text" id="quantity" name="quantity" class="form-control input-number text-center" value="1" min="1" max="100" required="">
+                      <span class="input-group-btn">
+                        <button type="button" class="quantity-right-plus" data-type="plus" data-field="">
+                          <svg width="16" height="16"><use xlink:href="#plus"></use></svg>
+                        </button>
+                      </span>
+                    </div>
+                  </td>
+                  <td class="align-middle border-0"><span class="item-price text-primary fs-3 fw-medium">$750</span></td>
+                  <td class="align-middle border-0 cart-remove">
+                    <a href="{% url 'core:cart' %}#">
+                      <svg width="32px" height="32px">
+                        <use xlink:href="#baseline-clear"></use>
+                      </svg>
+                    </a>
+                  </td>
+                </tr>
+
+                <tr class="border-bottom border-gray">
+                  <td class="align-middle border-0" scope="row">
+                    <div class="cart-product-detail d-flex align-items-center">
+                      <div class="card-image">
+                        <img src="{% static 'skin1/images/cart-img2.jpg' %}" alt="cloth" class="img-fluid">
+                      </div>
+                      <div class="card-detail ps-3">
+                        <h5 class="card-title fs-4 text-uppercase">
+                          <a href="{% url 'core:single_product' %}">Crystal Caverns</a>
+                        </h5>
+                        <span class="item-price text-primary fs-4">$870</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="align-middle border-0">
+                    <div class="input-group product-qty" style="max-width: 150px;">
+                      <span class="input-group-btn">
+                        <button type="button" class="quantity-left-minus" data-type="minus" data-field="">
+                          <svg width="16" height="16"><use xlink:href="#minus"></use></svg>
+                        </button>
+                      </span>
+                      <input type="text" id="quantity" name="quantity" class="form-control input-number text-center" value="1" min="1" max="100" required="">
+                      <span class="input-group-btn">
+                        <button type="button" class="quantity-right-plus" data-type="plus" data-field="">
+                          <svg width="16" height="16"><use xlink:href="#plus"></use></svg>
+                        </button>
+                      </span>
+                    </div>
+                  </td>
+                  <td class="align-middle border-0"><span class="item-price text-primary fs-3 fw-medium">$750</span></td>
+                  <td class="align-middle border-0 cart-remove">
+                    <a href="{% url 'core:cart' %}#">
+                      <svg width="32px" height="32px">
+                        <use xlink:href="#baseline-clear"></use>
+                      </svg>
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="cart-bottom d-flex flex-wrap justify-content-between align-items-center pt-2">
+              <form action="{% url 'core:cart' %}#" class="d-flex flex-wrap justify-content-between">
+                <input type="text" class="bg-gray border-0 p-2 me-1 mb-2" required="" placeholder="Coupon Code">
+                <a href="{% url 'core:cart' %}#" class="btn btn-dark mb-2" type="submit">Apply Coupon</a>
+              </form>
+              <a href="{% url 'core:cart' %}#" class="btn btn-dark mb-2">Update cart</a>
+            </div>
+          </div>
+          <div class="cart-totals padding-medium">
+            <h3 class="pb-4">Cart Total</h3>
+            <div class="total-price pb-5">
+              <table cellspacing="0" class="table text-uppercase">
+                <tbody>
+                  <tr class="subtotal pt-2 pb-2 border-top border-bottom border-gray">
+                    <th class="fw-light">Subtotal</th>
+                    <td class="align-middle border-0" data-title="Subtotal">
+                      <span class="price-amount amount text-primary">
+                        <bdi>
+                          <span class="price-currency-symbol">$</span>2,370.00
+                        </bdi>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr class="order-total pt-2 pb-2 border-bottom border-gray">
+                    <th class="fw-light">Total</th>
+                    <td class="align-middle border-0" data-title="Total">
+                      <span class="price-amount amount text-primary">
+                        <bdi>
+                          <span class="price-currency-symbol">$</span>2,370.00
+                        </bdi>
+                      </span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="button-wrap">
+              <a href="{% url 'core:cart' %}#" class="btn btn-dark me-2 mb-2">Update Cart</a>
+              <a href="{% url 'core:shop' %}" class="btn btn-dark me-2 mb-2">Continue Shopping</a>
+              <a href="{% url 'core:checkout' %}" class="btn btn-primary me-2 mb-2">Proceed to checkout</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="newsletter" class="bg-gray padding-medium">
+      <div class="container">
+        <div class="newsletter">
+          <div class="row">
+            <div class="col-lg-6 col-md-12 title">
+              <h3>Subscribe to Our Newsletter</h3>
+              <p>Get latest news, updates and deals directly mailed to your inbox.</p>
+            </div>
+            <form class="col-lg-6 col-md-12 d-flex align-items-center">
+              <div class="d-flex w-75 border-bottom border-dark py-2">
+                <input id="newsletter1" type="text" class="form-control border-0 p-0" placeholder="Your email address here">
+                <button class="btn border-0 p-0" type="button">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+{% endblock %}
+
+
+{% block scripts %}
+{% endblock %}
