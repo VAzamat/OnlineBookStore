@@ -54,3 +54,6 @@ def wishlist(request):
 
 def faqs(request):
     return render(request, f'{used_skin}/faqs.html')
+
+def author(request):
+    return render(request, f'{used_skin}/author.html')
