@@ -57,3 +57,9 @@ def faqs(request):
 
 def author(request):
     return render(request, f'{used_skin}/author.html')
+
+def styles(request):
+    return render(request, f'{used_skin}/styles.html')
+
+def thanks(request):
+    return render(request, f'{used_skin}/thanks.html')
