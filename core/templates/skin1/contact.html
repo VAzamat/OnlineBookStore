@@ -1,0 +1,209 @@
+{% extends "skin1/base.html" %}
+
+{% load static %}
+
+{% block titlekeywords %}
+    <meta name="keywords" content="купить книги онлайн, интернет-магазин книг, digital book sales, каталог книг, книжный маркетплейс, заказать книги с доставкой.">
+    <title>Контакты компании</title>
+{% endblock %}
+
+{% block customstyle %}
+{% endblock %}
+
+
+{% block content %}
+
+    <section class="hero-section bg-gray d-flex align-items-center justify-content-center padding-medium pb-5">
+      <div class="hero-content">
+        <div class="container">
+          <div class="row">
+            <div class="text-center padding-medium no-padding-bottom">
+              <h1>Contact</h1>
+              <div class="breadcrumbs">
+                <span class="item">
+                  <a href="{% url 'core:index' %}">Home &gt;</a>
+                </span>
+                <span class="item">Contact</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="contact-us padding-xlarge">
+      <div class="container">
+        <div class="row">
+          <div class="contact-info col-lg-6 pb-3">
+            <h3>Contact info</h3>
+            <p>Tortor dignissim convallis aenean et tortor at risus viverra adipiscing.</p>
+            <div class="page-content d-flex flex-wrap mt-5">
+              <div class="col-lg-6 col-sm-12">
+                <div class="content-box text-dark pe-4 mb-5">
+                  <h5 class="widget-title text-uppercase">Office</h5>
+                  <div class="contact-address pt-3">
+                    <p>730 Glenstone Ave 65802, Springfield, US</p>
+                  </div>
+                  <div class="contact-number">
+                    <p>
+                      <a href="{% url 'core:contacts' %}#">+123 987 321</a>
+                    </p>
+                    <p>
+                      <a href="{% url 'core:contacts' %}#">+123 123 654</a>
+                    </p>
+                  </div>
+                  <div class="email-address">
+                    <p>
+                      <a href="{% url 'core:contacts' %}#">info@yourinfo.com</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-sm-12">
+                <div class="content-box">
+                  <h5 class="widget-title text-uppercase">Management</h5>
+                  <div class="contact-address pt-3">
+                    <p>730 Glenstone Ave 65802, Springfield, US</p>
+                  </div>
+                  <div class="contact-number">
+                    <p>
+                      <a href="{% url 'core:contacts' %}#">+123 987 321</a>
+                    </p>
+                    <p>
+                      <a href="{% url 'core:contacts' %}#">+123 123 654</a>
+                    </p>
+                  </div>
+                  <div class="email-address">
+                    <p>
+                      <a href="{% url 'core:contacts' %}#">info@yourinfo.com</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="inquiry-item col-lg-6">
+            <h3>Any questions?</h3>
+            <p>Use the form below to get in touch with us.</p>
+            <form id="form">
+              <div class="py-3">
+                <label>Your Name *</label>
+                <input type="text" name="name" placeholder="Write your name here" class="w-100">
+              </div>
+              <div class="py-3">
+                <label>Your Email *</label>
+                <input type="text" name="email" placeholder="Write your email here" class="w-100">
+              </div>
+              <div class="py-3">
+                <label>Phone Number</label>
+                <input type="number" name="number" placeholder="Write your phone nuumber" class="w-100">
+              </div>
+              <div class="py-3">
+                <label>Subject *</label>
+                <input type="text" name="subject" placeholder="Write your subject here" class="w-100">
+              </div>
+              <div class="py-3">
+                <label>Your Message *</label>
+                <textarea placeholder="Write Your Message Here" class="w-100"></textarea>
+              </div>
+              <button type="submit" name="submit" class="btn btn-dark w-100 my-3">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <section id="our-stores" class="padding-xlarge">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="contact-item text-center">
+              <h4 class="widget-title pb-2">Store Main</h4>
+              <ul class="menu-list list-unstyled">
+                <li class="menu-item pb-2">
+                  <a href="{% url 'core:contacts' %}#">Tea Berry, Marinette, USA</a>
+                </li>
+                <li class="menu-item pb-2">
+                  <a href="{% url 'core:contacts' %}#">+55 111 222 333 44</a>
+                </li>
+                <li class="menu-item pb-2">
+                  <a href="mailto:">yourinfo@gmail.com</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="contact-item text-center">
+              <h4 class="widget-title pb-2">Store 1</h4>
+              <ul class="menu-list list-unstyled">
+                <li class="menu-item pb-2">
+                  <a href="{% url 'core:contacts' %}#">Tea Berry, Marinette, USA</a>
+                </li>
+                <li class="menu-item pb-2">
+                  <a href="{% url 'core:contacts' %}#">+55 111 222 333 44</a>
+                </li>
+                <li class="menu-item pb-2">
+                  <a href="mailto:">yourinfo@gmail.com</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="contact-item text-center">
+              <h4 class="widget-title pb-2">Store 2</h4>
+              <ul class="menu-list list-unstyled">
+                <li class="menu-item pb-2">
+                  <a href="{% url 'core:contacts' %}#">Tea Berry, Marinette, USA</a>
+                </li>
+                <li class="menu-item pb-2">
+                  <a href="{% url 'core:contacts' %}#">+55 111 222 333 44</a>
+                </li>
+                <li class="menu-item pb-2">
+                  <a href="mailto:">yourinfo@gmail.com</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="contact-item text-center">
+              <h4 class="widget-title pb-2">Store 3</h4>
+              <ul class="menu-list list-unstyled">
+                <li class="menu-item pb-2">
+                  <a href="{% url 'core:contacts' %}#">Tea Berry, Marinette, USA</a>
+                </li>
+                <li class="menu-item pb-2">
+                  <a href="{% url 'core:contacts' %}#">+55 111 222 333 44</a>
+                </li>
+                <li class="menu-item pb-2">
+                  <a href="mailto:">yourinfo@gmail.com</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="newsletter" class="bg-gray padding-medium">
+      <div class="container">
+        <div class="newsletter">
+          <div class="row">
+            <div class="col-lg-6 col-md-12 title">
+              <h3>Subscribe to Our Newsletter</h3>
+              <p>Get latest news, updates and deals directly mailed to your inbox.</p>
+            </div>
+            <form class="col-lg-6 col-md-12 d-flex align-items-center">
+              <div class="d-flex w-75 border-bottom border-dark py-2">
+                <input id="newsletter1" type="text" class="form-control border-0 p-0" placeholder="Your email address here">
+                <button class="btn border-0 p-0" type="button">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+{% endblock %}
+
+
+{% block scripts %}
+{% endblock %}
