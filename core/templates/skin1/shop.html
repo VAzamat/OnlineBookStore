@@ -1,0 +1,330 @@
+{% extends "skin1/base.html" %}
+
+{% load static %}
+
+{% block titlekeywords %}
+    <meta name="keywords" content="купить книги онлайн, интернет-магазин книг, digital book sales, каталог книг, книжный маркетплейс, заказать книги с доставкой.">
+    <title>Магазин Digital Book Sales</title>
+{% endblock %}
+
+{% block customstyle %}
+{% endblock %}
+
+
+{% block content %}
+
+    <section class="hero-section bg-gray d-flex align-items-center justify-content-center padding-medium pb-5">
+      <div class="hero-content">
+        <div class="container">
+          <div class="row">
+            <div class="text-center padding-medium no-padding-bottom">
+              <h1>Shop</h1>
+              <div class="breadcrumbs">
+                <span class="item">
+                  <a href="{% url 'core:index' %}">Home &gt;</a>
+                </span>
+                <span class="item">Shop</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="shopify-grid padding-large">
+      <div class="container">
+        <div class="row">
+          <main class="col-md-9">
+            <div class="filter-shop d-flex flex-wrap justify-content-between">
+              <div class="showing-product">
+                <p>Showing 1-9 of 55 results</p>
+              </div>
+              <div class="sort-by">
+                <select id="input-sort" class="form-control" data-filter-sort="" data-filter-order="">
+                  <option value="">Default sorting</option>
+                  <option value="">Name (A - Z)</option>
+                  <option value="">Name (Z - A)</option>
+                  <option value="">Price (Low-High)</option>
+                  <option value="">Price (High-Low)</option>
+                  <option value="">Rating (Highest)</option>
+                  <option value="">Rating (Lowest)</option>
+                  <option value="">Model (A - Z)</option>
+                  <option value="">Model (Z - A)</option>
+                </select>
+              </div>
+            </div>
+            <div class="row product-content product-store">
+              <div class="col-lg-4 col-md-6">
+                <div class="product-card mb-4">
+                  <div class="image-holder">
+                    <img src="{% static 'skin1/images/product-item1.jpg' %}" alt="product-item" class="img-fluid">
+                  </div>
+                  <div class="card-detail text-center pt-3 pb-2">
+                    <h5 class="card-title fs-4 text-uppercase m-0">
+                      <a href="{% url 'core:single_product' %}">Whispersong</a>
+                    </h5>
+                    <span class="item-price text-primary fs-4">$870</span>
+                    <div class="cart-button mt-1">
+                      <a href="{% url 'core:shop' %}#" class="btn">Add to cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="product-card mb-4">
+                  <div class="image-holder">
+                    <img src="{% static 'skin1/images/product-item2.jpg' %}" alt="product-item" class="img-fluid">
+                  </div>
+                  <div class="card-detail text-center pt-3 pb-2">
+                    <h5 class="card-title fs-4 text-uppercase m-0">
+                      <a href="{% url 'core:single_product' %}">Starlight Secrets</a>
+                    </h5>
+                    <span class="item-price text-primary fs-4">$870</span>
+                    <div class="cart-button mt-1">
+                      <a href="{% url 'core:shop' %}#" class="btn">Add to cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="product-card mb-4">
+                  <div class="image-holder">
+                    <img src="{% static 'skin1/images/product-item3.jpg' %}" alt="product-item" class="img-fluid">
+                  </div>
+                  <div class="card-detail text-center pt-3 pb-2">
+                    <h5 class="card-title fs-4 text-uppercase m-0">
+                      <a href="{% url 'core:single_product' %}">Shadow Dance</a>
+                    </h5>
+                    <span class="item-price text-primary fs-4">$870</span>
+                    <div class="cart-button mt-1">
+                      <a href="{% url 'core:shop' %}#" class="btn">Add to cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="product-card mb-4">
+                  <div class="image-holder">
+                    <img src="{% static 'skin1/images/product-item4.jpg' %}" alt="product-item" class="img-fluid">
+                  </div>
+                  <div class="card-detail text-center pt-3 pb-2">
+                    <h5 class="card-title fs-4 text-uppercase m-0">
+                      <a href="{% url 'core:single_product' %}">Crimson Destiny</a>
+                    </h5>
+                    <span class="item-price text-primary fs-4">$870</span>
+                    <div class="cart-button mt-1">
+                      <a href="{% url 'core:shop' %}#" class="btn">Add to cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="product-card mb-4">
+                  <div class="image-holder">
+                    <img src="{% static 'skin1/images/product-item5.jpg' %}" alt="product-item" class="img-fluid">
+                  </div>
+                  <div class="card-detail text-center pt-3 pb-2">
+                    <h5 class="card-title fs-4 text-uppercase m-0">
+                      <a href="{% url 'core:single_product' %}">Enchanted Sands</a>
+                    </h5>
+                    <span class="item-price text-primary fs-4">$870</span>
+                    <div class="cart-button mt-1">
+                      <a href="{% url 'core:shop' %}#" class="btn">Add to cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="product-card mb-4">
+                  <div class="image-holder">
+                    <img src="{% static 'skin1/images/product-item6.jpg' %}" alt="product-item" class="img-fluid">
+                  </div>
+                  <div class="card-detail text-center pt-3 pb-2">
+                    <h5 class="card-title fs-4 text-uppercase m-0">
+                      <a href="{% url 'core:single_product' %}">Aetherial Alchemy</a>
+                    </h5>
+                    <span class="item-price text-primary fs-4">$870</span>
+                    <div class="cart-button mt-1">
+                      <a href="{% url 'core:shop' %}#" class="btn">Add to cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="product-card mb-4">
+                  <div class="image-holder">
+                    <img src="{% static 'skin1/images/product-item7.jpg' %}" alt="product-item" class="img-fluid">
+                  </div>
+                  <div class="card-detail text-center pt-3 pb-2">
+                    <h5 class="card-title fs-4 text-uppercase m-0">
+                      <a href="{% url 'core:single_product' %}">The Lost Labyrinth</a>
+                    </h5>
+                    <span class="item-price text-primary fs-4">$870</span>
+                    <div class="cart-button mt-1">
+                      <a href="{% url 'core:shop' %}#" class="btn">Add to cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="product-card mb-4">
+                  <div class="image-holder">
+                    <img src="{% static 'skin1/images/product-item8.jpg' %}" alt="product-item" class="img-fluid">
+                  </div>
+                  <div class="card-detail text-center pt-3 pb-2">
+                    <h5 class="card-title fs-4 text-uppercase m-0">
+                      <a href="{% url 'core:single_product' %}">Crystal Caverns</a>
+                    </h5>
+                    <span class="item-price text-primary fs-4">$870</span>
+                    <div class="cart-button mt-1">
+                      <a href="{% url 'core:shop' %}#" class="btn">Add to cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="product-card mb-4">
+                  <div class="image-holder">
+                    <img src="{% static 'skin1/images/product-item9.jpg' %}" alt="product-item" class="img-fluid">
+                  </div>
+                  <div class="card-detail text-center pt-3 pb-2">
+                    <h5 class="card-title fs-4 text-uppercase m-0">
+                      <a href="{% url 'core:single_product' %}">Scarlet Secrets</a>
+                    </h5>
+                    <span class="item-price text-primary fs-4">$870</span>
+                    <div class="cart-button mt-1">
+                      <a href="{% url 'core:shop' %}#" class="btn">Add to cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <nav class="navigation paging-navigation text-center padding-medium" role="navigation">
+              <div class="pagination loop-pagination d-flex justify-content-center align-items-center">
+                <a href="{% url 'core:shop' %}#" class="d-flex pe-2">
+                  <svg width="24" height="24"><use xlink:href="#angle-left"></use></svg>
+                </a>
+                <span aria-current="page" class="page-numbers current pe-3">1</span>
+                <a class="page-numbers pe-3" href="{% url 'core:shop' %}#">2</a>
+                <a class="page-numbers pe-3" href="{% url 'core:shop' %}#">3</a>
+                <a class="page-numbers pe-3" href="{% url 'core:shop' %}#">4</a>
+                <a class="page-numbers" href="{% url 'core:shop' %}#">5</a>
+                <a href="{% url 'core:shop' %}#" class="d-flex ps-2">
+                  <svg width="24" height="24"><use xlink:href="#angle-right"></use></svg>
+                </a>
+              </div>
+            </nav>
+          </main>
+          <aside class="col-md-3">
+            <div class="sidebar">
+              <div class="widget-menu">
+                <div class="widget-search-bar">
+                  <form role="search" method="get" class="position-relative d-flex justify-content-between align-items-center border-bottom border-dark py-1">
+                    <input class="search-field" placeholder="Search" type="search">
+                    <div class="search-icon position-absolute end-0">
+                      <a href="{% url 'core:shop' %}#">
+                        <svg width="26" height="26" class="search">
+                          <use xlink:href="#search"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="widget-product-categories pt-5">
+                <h5 class="widget-title text-uppercase">Categories</h5>
+                <ul class="product-categories sidebar-list list-unstyled">
+                  <li class="cat-item">
+                    <a href="{% url 'core:shop' %}#">All</a>
+                  </li>
+                  <li class="cat-item">
+                    <a href="{% url 'core:shop' %}#">Spiritual</a>
+                  </li>
+                  <li class="cat-item">
+                    <a href="{% url 'core:shop' %}#">Money</a>
+                  </li>
+                  <li class="cat-item">
+                    <a href="{% url 'core:shop' %}#">Life</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="widget-product-tags pt-3">
+                <h5 class="widget-title text-uppercase">Tags</h5>
+                <ul class="product-tags sidebar-list list-unstyled">
+                  <li class="tags-item">
+                    <a href="{% url 'core:shop' %}#">Finance</a>
+                  </li>
+                  <li class="tags-item">
+                    <a href="{% url 'core:shop' %}#">Cheap</a>
+                  </li>
+                  <li class="tags-item">
+                    <a href="{% url 'core:shop' %}#">Story</a>
+                  </li>
+                  <li class="tags-item">
+                    <a href="{% url 'core:shop' %}#">Biography</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="widget-product-brands pt-3">
+                <h5 class="widget-title text-uppercase">Latest Products</h5>
+                <ul class="product-tags sidebar-list list-unstyled">
+                  <li class="tags-item">
+                    <a href="{% url 'core:shop' %}#">Dance of Fireflies</a>
+                  </li>
+                  <li class="tags-item">
+                    <a href="{% url 'core:shop' %}#">Starry Horizons</a>
+                  </li>
+                  <li class="tags-item">
+                    <a href="{% url 'core:shop' %}#">Tales of Tranquility</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="widget-price-filter pt-3">
+                <h5 class="widget-title text-uppercase">Filter By Price</h5>
+                <ul class="product-tags sidebar-list list-unstyled">
+                  <li class="tags-item">
+                    <a href="{% url 'core:shop' %}#">Less than $100</a>
+                  </li>
+                  <li class="tags-item">
+                    <a href="{% url 'core:shop' %}#">$100 - $200</a>
+                  </li>
+                  <li class="tags-item">
+                    <a href="{% url 'core:shop' %}#">$200 - $300</a>
+                  </li>
+                  <li class="tags-item">
+                    <a href="{% url 'core:shop' %}#">$300 - $400</a>
+                  </li>
+                  <li class="tags-item">
+                    <a href="{% url 'core:shop' %}#">$400 - $500</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </div>
+    <section id="newsletter" class="bg-gray padding-medium">
+      <div class="container">
+        <div class="newsletter">
+          <div class="row">
+            <div class="col-lg-6 col-md-12 title">
+              <h3>Subscribe to Our Newsletter</h3>
+              <p>Get latest news, updates and deals directly mailed to your inbox.</p>
+            </div>
+            <form class="col-lg-6 col-md-12 d-flex align-items-center">
+              <div class="d-flex w-75 border-bottom border-dark py-2">
+                <input id="newsletter1" type="text" class="form-control border-0 p-0" placeholder="Your email address here">
+                <button class="btn border-0 p-0" type="button">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+{% endblock %}
+
+
+{% block scripts %}
+{% endblock %}
