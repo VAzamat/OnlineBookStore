@@ -1,0 +1,319 @@
+{% extends "skin5/base.html" %}
+{% load static %}
+
+{% block titlekeywords %}
+  <meta name="keywords" content="">
+  <title>Digital Book Sales</title>
+{% endblock %}
+
+{% block customstyle %}
+{% endblock %}
+
+{% block bodycustomclass %} homepage  {% endblock %}
+
+{% block content %}
+
+  <section class="hero-section jarallax mt-5 pt-5">
+
+    <div class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="d-flex flex-wrap flex-column justify-content-center align-items-center my-5 py-5 text-white">
+            <h1 class="page-title text-uppercase">About Us</h1>
+            <nav class="breadcrumb text-white">
+              <a class="breadcrumb-item" href="{% url 'core:about_us' %}#">Home</a>
+              <a class="breadcrumb-item" href="{% url 'core:about_us' %}#">Pages</a>
+              <span class="breadcrumb-item active" aria-current="page">About Us</span>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  <div id="jarallax-container-0" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; z-index: -100; clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0px 100%);"><img src="{% static 'skin5/images/banner-large-image2.jpg' %}" class="jarallax-img" style="object-fit: cover; object-position: 50% 50%; max-width: none; position: fixed; top: 0px; left: 0px; width: 1905px; height: 732.133px; overflow: hidden; pointer-events: none; transform-style: preserve-3d; backface-visibility: hidden; will-change: transform, opacity; margin-top: 108.434px; transform: translate3d(0px, -84.4336px, 0px);"></div></section>
+
+  <section class="features py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 text-center aos-init aos-animate" data-aos="fade-in" data-aos-delay="0">
+          <div class="py-5">
+            <svg width="38" height="38" viewBox="0 0 24 24"><use xlink:href="#calendar"></use></svg>
+            <h4 class="element-title text-capitalize my-3">Book An Appointment</h4>
+            <p>At imperdiet dui accumsan sit amet nulla risus est ultricies quis.</p>
+          </div>
+        </div>
+        <div class="col-md-3 text-center aos-init aos-animate" data-aos="fade-in" data-aos-delay="300">
+          <div class="py-5">
+            <svg width="38" height="38" viewBox="0 0 24 24"><use xlink:href="#shopping-bag"></use></svg>
+            <h4 class="element-title text-capitalize my-3">Pick up in store</h4>
+            <p>At imperdiet dui accumsan sit amet nulla risus est ultricies quis.</p>
+          </div>
+        </div>
+        <div class="col-md-3 text-center aos-init aos-animate" data-aos="fade-in" data-aos-delay="600">
+          <div class="py-5">
+            <svg width="38" height="38" viewBox="0 0 24 24"><use xlink:href="#gift"></use></svg>
+            <h4 class="element-title text-capitalize my-3">Special packaging</h4>
+            <p>At imperdiet dui accumsan sit amet nulla risus est ultricies quis.</p>
+          </div>
+        </div>
+        <div class="col-md-3 text-center aos-init aos-animate" data-aos="fade-in" data-aos-delay="900">
+          <div class="py-5">
+            <svg width="38" height="38" viewBox="0 0 24 24"><use xlink:href="#arrow-cycle"></use></svg>
+            <h4 class="element-title text-capitalize my-3">free global returns</h4>
+            <p>At imperdiet dui accumsan sit amet nulla risus est ultricies quis.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about-us">
+    <div class="vertical-element">
+      <div class="container">
+        <div class="row d-flex align-items-center">
+          <div class="col-md-6">
+            <div class="image-holder">
+              <img src="{% static 'skin5/images/single-image1.jpg' %}" alt="about-us">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="section-element p-5">
+              <h2 class="element-title text-uppercase">The beginning of our journey</h2>
+              <p>The beginning of our journey vel tellus Turpis purus, gravida orci, fringilla a. Ac sed eu fringilla odio mi. Consequat pharetra at magna imperdiet cursus ac faucibus sit libero. Ultricies quam nunc, lorem sit lorem urna, pretium aliquam ut. In vel, quis donec dolor id in. Pulvinar commodo mollis diam sed facilisis at magna imperdiet cursus ac faucibus sit libero.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="vertical-element py-5">
+      <div class="container">
+        <div class="row d-flex align-items-center justify-content-between">
+          <div class="col-md-6">
+            <div class="section-element p-5">
+              <h2 class="element-title text-uppercase">Who are we?</h2>
+              <p>We are nunc, lorem sit lorem urna, pretium aliquam ut. In vel, quis donec dolor id in. Pulvinar commodo mollis diam sed facilisis at magna imperdiet cursus ac faucibus sit libero. Dignissim lacus, turpis ut suspendisse vel tellus. Turpis purus, gravida orci, fringilla a. Ac sed eu fringilla odio mi. Consequat pharetra at magna imperdiet cursus ac faucibus sit libero.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="image-holder text-right">
+              <img src="{% static 'skin5/images/single-image2.jpg' %}" alt="about-us">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="video py-5">
+    <div class="video-content open-up aos-init" data-aos="zoom-out">
+      <div class="video-bg">
+        <img src="{% static 'skin5/images/video-image.jpg' %}" alt="video" class="video-image img-fluid">
+      </div>
+      <div class="video-player">
+            <a class="youtube cboxElement" href="https://www.youtube.com/embed/pjtsGzQjFM4">
+              <svg width="24" height="24" viewBox="0 0 24 24"><use xlink:href="#play"></use></svg>
+              <img src="{% static 'skin5/images/text-pattern.png' %}" alt="pattern" class="text-rotate">
+            </a>
+          </div>
+    </div>
+  </section>
+
+  <section class="testimonials py-5">
+    <div class="section-header text-center mt-5">
+      <h3 class="section-title"> WE LOVE GOOD COMPLIMENT </h3>
+    </div>
+    <div class="swiper testimonial-swiper overflow-hidden my-5 swiper-initialized swiper-horizontal swiper-backface-hidden">
+      <div class="swiper-wrapper d-flex" id="swiper-wrapper-dc83b70a8f2ab848" aria-live="polite" style="cursor: grab; transition-duration: 0ms; transform: translate3d(-1847.83px, 0px, 0px);"><div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 4" data-swiper-slide-index="1">
+          <div class="testimonial-item text-center">
+            <blockquote>
+              <p>“Best fitted white denim shirt more than expected crazy soft, flexible</p>
+              <div class="review-title text-uppercase">uptop</div>
+            </blockquote>
+          </div>
+        </div><div class="swiper-slide" role="group" aria-label="3 / 4" data-swiper-slide-index="2">
+          <div class="testimonial-item text-center">
+            <blockquote>
+              <p>“Best fitted white denim shirt more white denim than expected flexible crazy soft.”</p>
+              <div class="review-title text-uppercase">Denim craze</div>
+            </blockquote>
+          </div>
+        </div><div class="swiper-slide swiper-slide-prev" role="group" aria-label="4 / 4" data-swiper-slide-index="3">
+          <div class="testimonial-item text-center">
+            <blockquote>
+              <p>“Best fitted white denim shirt more than expected crazy soft, flexible</p>
+              <div class="review-title text-uppercase">uptop</div>
+            </blockquote>
+          </div>
+        </div>
+        <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 4" data-swiper-slide-index="0">
+          <div class="testimonial-item text-center">
+            <blockquote>
+              <p>“More than expected crazy soft, flexible and best fitted white simple denim shirt.”</p>
+              <div class="review-title text-uppercase">casual way</div>
+            </blockquote>
+          </div>
+        </div>
+
+
+
+      </div>
+    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+    <div class="testimonial-swiper-pagination d-flex justify-content-center mb-5 swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1" aria-current="true"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span></div>
+  </section>
+
+  <section class="blog py-5">
+    <div class="container">
+      <div class="d-flex flex-wrap justify-content-between align-items-center mt-5 mb-3">
+        <h4 class="text-uppercase">Read Blog Posts</h4>
+        <a href="{% url 'core:blog' %}" class="btn-link">View All</a>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <article class="post-item">
+            <div class="post-image">
+              <a href="{% url 'core:single_post' %}">
+                <img src="{% static 'skin5/images/post-image1.jpg' %}" alt="image" class="post-grid-image img-fluid">
+              </a>
+            </div>
+            <div class="post-content d-flex flex-wrap gap-2 my-3">
+              <div class="post-meta text-uppercase fs-6 text-secondary">
+                <span class="post-category">Fashion /</span>
+                <span class="meta-day"> jul 11, 2022</span>
+              </div>
+              <h5 class="post-title text-uppercase">
+                <a href="{% url 'core:single_post' %}">How to look outstanding in pastel</a>
+              </h5>
+              <p>Dignissim lacus,turpis ut suspendisse vel tellus.Turpis purus,gravida orci,fringilla...</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-4">
+          <article class="post-item">
+            <div class="post-image">
+              <a href="{% url 'core:single_post' %}">
+                <img src="{% static 'skin5/images/post-image2.jpg' %}" alt="image" class="post-grid-image img-fluid">
+              </a>
+            </div>
+            <div class="post-content d-flex flex-wrap gap-2 my-3">
+              <div class="post-meta text-uppercase fs-6 text-secondary">
+                <span class="post-category">Fashion /</span>
+                <span class="meta-day"> jul 11, 2022</span>
+              </div>
+              <h5 class="post-title text-uppercase">
+                <a href="{% url 'core:single_post' %}">Top 10 fashion trend for summer</a>
+              </h5>
+              <p>Turpis purus, gravida orci, fringilla dignissim lacus, turpis ut suspendisse vel tellus...</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-4">
+          <article class="post-item">
+            <div class="post-image">
+              <a href="{% url 'core:single_post' %}">
+                <img src="{% static 'skin5/images/post-image3.jpg' %}" alt="image" class="post-grid-image img-fluid">
+              </a>
+            </div>
+            <div class="post-content d-flex flex-wrap gap-2 my-3">
+              <div class="post-meta text-uppercase fs-6 text-secondary">
+                <span class="post-category">Fashion /</span>
+                <span class="meta-day"> jul 11, 2022</span>
+              </div>
+              <h5 class="post-title text-uppercase">
+                <a href="{% url 'core:single_post' %}">Crazy fashion with unique moment</a>
+              </h5>
+              <p>Turpis purus, gravida orci, fringilla dignissim lacus, turpis ut suspendisse vel tellus...</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="logo-bar py-5">
+    <div class="container">
+      <div class="row">
+        <div class="logo-content d-flex flex-wrap justify-content-between">
+          <img src="{% static 'skin5/images/logo1.png' %}" alt="logo" class="logo-image img-fluid">
+          <img src="{% static 'skin5/images/logo2.png' %}" alt="logo" class="logo-image img-fluid">
+          <img src="{% static 'skin5/images/logo3.png' %}" alt="logo" class="logo-image img-fluid">
+          <img src="{% static 'skin5/images/logo4.png' %}" alt="logo" class="logo-image img-fluid">
+          <img src="{% static 'skin5/images/logo5.png' %}" alt="logo" class="logo-image img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter jarallax">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 py-5 my-5">
+          <div class="subscribe-header text-center pb-3">
+            <h3 class="section-title text-uppercase text-white">Sign Up for Our Newsletter</h3>
+          </div>
+          <form id="form" class="d-flex flex-wrap gap-2">
+            <input type="text" name="email" placeholder="Your Email Addresss" class="form-control form-control-lg bg-white rounded-0">
+            <button class="btn btn-primary btn-lg text-uppercase w-100">Sign Up</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  <div id="jarallax-container-1" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; z-index: -100; clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0px 100%);"><img src="{% static 'skin5/images/bg-newsletter.jpg' %}" alt="newsletter" class="jarallax-img img-fluid" style="object-fit: cover; object-position: 50% 50%; max-width: none; position: fixed; top: 0px; left: 0px; width: 1905px; height: 684.5px; overflow: hidden; pointer-events: none; transform-style: preserve-3d; backface-visibility: hidden; will-change: transform, opacity; margin-top: 132.25px; transform: translate3d(0px, 1496.01px, 0px);"></div></section>
+
+  <section class="instagram py-5">
+    <div class="container">
+      <div class="row g-3">
+        <h6 class="element-title text-center">Follow us on Instagram</h6>
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="insta-item">
+            <a href="https://www.instagram.com/thebookstorepk/" target="_blank">
+              <img src="{% static 'skin5/images/insta-item1.jpg' %}" alt="instagram" class="insta-image img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="insta-item">
+            <a href="https://www.instagram.com/thebookstorepk/" target="_blank">
+              <img src="{% static 'skin5/images/insta-item2.jpg' %}" alt="instagram" class="insta-image img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="insta-item">
+            <a href="https://www.instagram.com/thebookstorepk/" target="_blank">
+              <img src="{% static 'skin5/images/insta-item3.jpg' %}" alt="instagram" class="insta-image img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="insta-item">
+            <a href="https://www.instagram.com/thebookstorepk/" target="_blank">
+              <img src="{% static 'skin5/images/insta-item4.jpg' %}" alt="instagram" class="insta-image img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="insta-item">
+            <a href="https://www.instagram.com/thebookstorepk/" target="_blank">
+              <img src="{% static 'skin5/images/insta-item5.jpg' %}" alt="instagram" class="insta-image img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="insta-item">
+            <a href="https://www.instagram.com/thebookstorepk/" target="_blank">
+              <img src="{% static 'skin5/images/insta-item6.jpg' %}" alt="instagram" class="insta-image img-fluid">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+{% endblock %}
+
+
+{% block scripts %}
+{% endblock %}
+
+
