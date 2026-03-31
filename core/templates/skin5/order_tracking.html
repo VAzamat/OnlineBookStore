@@ -1,0 +1,132 @@
+{% extends "skin5/base.html" %}
+{% load static %}
+
+{% block titlekeywords %}
+  <meta name="keywords" content="">
+  <title>Digital Book Sales</title>
+{% endblock %}
+
+{% block customstyle %}
+{% endblock %}
+
+{% block bodycustomclass %} homepage  {% endblock %}
+
+{% block content %}
+  <section class="hero-section jarallax mt-5 pt-5">
+
+    <div class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="d-flex flex-wrap flex-column justify-content-center align-items-center my-5 py-5 text-white">
+            <h1 class="page-title text-uppercase">Track your Order</h1>
+            <nav class="breadcrumb text-white">
+              <a class="breadcrumb-item" href="#">Home</a>
+              <a class="breadcrumb-item" href="#">Pages</a>
+              <span class="breadcrumb-item active" aria-current="page">Track your Order</span>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  <div style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; z-index: -100; clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0px 100%);" id="jarallax-container-0"><img src="{% static 'skin5/images/banner-large-image1.jpg' %}" class="jarallax-img" style="object-fit: cover; object-position: 50% 50%; max-width: none; position: fixed; top: 0px; left: 0px; width: 1280px; height: 701.142px; overflow: hidden; pointer-events: none; transform-style: preserve-3d; backface-visibility: hidden; will-change: transform, opacity; margin-top: 92.9292px; transform: translate3d(0px, -68.9292px, 0px);"></div></section>
+
+  <section id="order-tracking" class="py-5 my-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-6">
+          <h2 class="section-title text-uppercase">Order Tracking</h2>
+          <p>Please enter your Order ID and press the “Track” button.
+This was given to you on your receipt and in the confirmation email you
+should have received.</p>
+          <form id="form" class="form-group">
+            <div class="col-12 pb-3">
+              <label>Order ID</label>
+              <input type="text" name="name" placeholder="Found in your order confirmation email" class="form-control">
+            </div>
+            <div class="col-12 pb-3">
+              <label>Billing Email </label>
+              <input type="text" name="email" placeholder="Email you used during checkout." class="form-control">
+            </div>
+            <div class="col-12">
+              <button type="submit" name="submit" class="btn btn-dark btn-lg w-100 text-uppercase">Track</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter jarallax">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 py-5 my-5">
+          <div class="subscribe-header text-center pb-3">
+            <h3 class="section-title text-uppercase text-white">Sign Up for Our Newsletter</h3>
+          </div>
+          <form id="form" class="d-flex flex-wrap gap-2">
+            <input type="text" name="email" placeholder="Your Email Addresss" class="form-control form-control-lg bg-white rounded-0">
+            <button class="btn btn-primary btn-lg text-uppercase w-100">Sign Up</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  <div style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; z-index: -100; clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0px 100%);" id="jarallax-container-1"><img src="{% static 'skin5/images/bg-newsletter.jpg' %}" alt="newsletter" class="jarallax-img img-fluid" style="object-fit: cover; object-position: 50% 50%; max-width: none; position: fixed; top: 0px; left: 0px; width: 1280px; height: 653.5px; overflow: hidden; pointer-events: none; transform-style: preserve-3d; backface-visibility: hidden; will-change: transform, opacity; margin-top: 116.75px; transform: translate3d(0px, 467.6px, 0px);"></div></section>
+
+  <section class="instagram py-5">
+    <div class="container">
+      <div class="row g-3">
+        <h6 class="element-title text-center">Follow us on Instagram</h6>
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="insta-item">
+            <a href="https://www.instagram.com/thebookstorepk/" target="_blank">
+              <img src="{% static 'skin5/images/insta-item1.jpg' %}" alt="instagram" class="insta-image img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="insta-item">
+            <a href="https://www.instagram.com/thebookstorepk/" target="_blank">
+              <img src="{% static 'skin5/images/insta-item2.jpg' %}" alt="instagram" class="insta-image img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="insta-item">
+            <a href="https://www.instagram.com/thebookstorepk/" target="_blank">
+              <img src="{% static 'skin5/images/insta-item3.jpg' %}" alt="instagram" class="insta-image img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="insta-item">
+            <a href="https://www.instagram.com/thebookstorepk/" target="_blank">
+              <img src="{% static 'skin5/images/insta-item4.jpg' %}" alt="instagram" class="insta-image img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="insta-item">
+            <a href="https://www.instagram.com/thebookstorepk/" target="_blank">
+              <img src="{% static 'skin5/images/insta-item5.jpg' %}" alt="instagram" class="insta-image img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="insta-item">
+            <a href="https://www.instagram.com/thebookstorepk/" target="_blank">
+              <img src="{% static 'skin5/images/insta-item6.jpg' %}" alt="instagram" class="insta-image img-fluid">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+{% endblock %}
+
+
+{% block scripts %}
+{% endblock %}
+
+
