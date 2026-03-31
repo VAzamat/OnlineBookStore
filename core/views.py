@@ -63,3 +63,12 @@ def styles(request):
 
 def thanks(request):
     return render(request, f'{used_skin}/thanks.html')
+
+def comming_soon(request):
+    return render(request, f'{used_skin}/comming_soon.html')
+
+def error_page(request):
+    return render(request, f'{used_skin}/error_page.html')
+
+def order_tracking(request):
+    return render(request, f'{used_skin}/order_tracking.html')
