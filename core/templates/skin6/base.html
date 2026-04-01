@@ -9,8 +9,12 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="author" content="">
-    <meta name="keywords" content="">
     <meta name="description" content="">
+  <link rel="icon" type="image/svg+xml" href="{% static 'common/images/favicon.svg' %}">
+{% block titlekeywords %}
+    <meta name="keywords" content="">
+    <title>Digital Book Sales</title>
+{% endblock %}
   <link rel="stylesheet" type="text/css" href="{% static 'skin6/css/bootstrap.min.css' %}">
   <link rel="stylesheet" type="text/css" href="{% static 'skin6/css/style.css' %}">
   <link rel="stylesheet" type="text/css" href="{% static 'skin6/css/swiper-bundle.min.css' %}">
