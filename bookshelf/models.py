@@ -87,6 +87,7 @@ class Book(models.Model):
     id = models.BigIntegerField(unique=True, verbose_name="ID")
     uuid = models.UUIDField(primary_key=True, editable=False)
     title = models.CharField(max_length=255, verbose_name="Название книги")
+    slug = models.SlugField(max_length=300, unique=True)
 
     # Many-to-Many
     # Связь с участниками через промежуточную таблицу

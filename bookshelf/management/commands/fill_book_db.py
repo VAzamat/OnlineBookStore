@@ -1,5 +1,6 @@
 from types import NoneType
 
+from pytils.translit import slugify
 from django.core.management import BaseCommand
 from bookshelf.models import Publisher, Copyrighter, Rightholder, Genre, Rating
 from bookshelf.models import Book, Contributor, BookContributor
@@ -117,6 +118,7 @@ class Command(BaseCommand):
                     'id': library_data['id'],
                     'uuid': library_data['uuid'],
                     'title': library_data['title'],
+                    'slug': "{}{}".format(library_data['id'], slugify(library_data['title'])),
                     'subtitle': library_data['subtitle'],
                     'cover_url': library_data['cover_url'].replace("/pub/c/cover/","media/book_covers/"),
                     'url': library_data['url'],

@@ -2,3 +2,4 @@ Django==5.2.12
 ipython
 pillow
 psycopg2-binary==2.9.11
+pytils
