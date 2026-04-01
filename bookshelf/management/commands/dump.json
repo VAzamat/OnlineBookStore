@@ -1,0 +1,1954 @@
+[
+{
+    "model": "bookshelf.genre",
+    "pk": 5028,
+    "fields": {
+        "uuid": "ed160c02-f034-11e5-a511-0cc47a5454c6",
+        "name": "классическая литература",
+        "is_root": false,
+        "url": "/genre/klassicheskaya-literatura-5028/",
+        "is_main": false
+    }
+},
+{
+    "model": "bookshelf.genre",
+    "pk": 5104,
+    "fields": {
+        "uuid": "ed167748-f034-11e5-a511-0cc47a5454c6",
+        "name": "детская проза",
+        "is_root": false,
+        "url": "/genre/proza-5104/",
+        "is_main": false
+    }
+},
+{
+    "model": "bookshelf.genre",
+    "pk": 5106,
+    "fields": {
+        "uuid": "ed1678fc-f034-11e5-a511-0cc47a5454c6",
+        "name": "сказки",
+        "is_root": false,
+        "url": "/genre/skazki-5106/",
+        "is_main": false
+    }
+},
+{
+    "model": "bookshelf.genre",
+    "pk": 5107,
+    "fields": {
+        "uuid": "ed167a17-f034-11e5-a511-0cc47a5454c6",
+        "name": "детские приключения",
+        "is_root": false,
+        "url": "/genre/priklucheniya-5107/",
+        "is_main": false
+    }
+},
+{
+    "model": "bookshelf.genre",
+    "pk": 5110,
+    "fields": {
+        "uuid": "ed167caf-f034-11e5-a511-0cc47a5454c6",
+        "name": "детские стихи",
+        "is_root": false,
+        "url": "/genre/stihi-5110/",
+        "is_main": false
+    }
+},
+{
+    "model": "bookshelf.genre",
+    "pk": 5199,
+    "fields": {
+        "uuid": "ed172b63-f034-11e5-a511-0cc47a5454c6",
+        "name": "юмористическая проза",
+        "is_root": false,
+        "url": "/genre/umoristicheskaya-proza-5199/",
+        "is_main": false
+    }
+},
+{
+    "model": "bookshelf.genre",
+    "pk": 5209,
+    "fields": {
+        "uuid": "ed173a66-f034-11e5-a511-0cc47a5454c6",
+        "name": "историческая литература",
+        "is_root": false,
+        "url": "/genre/istoricheskaya-literatura-5209/",
+        "is_main": false
+    }
+},
+{
+    "model": "bookshelf.genre",
+    "pk": 5210,
+    "fields": {
+        "uuid": "ed173b4e-f034-11e5-a511-0cc47a5454c6",
+        "name": "современная русская литература",
+        "is_root": false,
+        "url": "/genre/russkaya-literatura-5210/",
+        "is_main": false
+    }
+},
+{
+    "model": "bookshelf.genre",
+    "pk": 5219,
+    "fields": {
+        "uuid": "ed1744cd-f034-11e5-a511-0cc47a5454c6",
+        "name": "зарубежные детективы",
+        "is_root": false,
+        "url": "/genre/zarubezhnye-5219/",
+        "is_main": false
+    }
+},
+{
+    "model": "bookshelf.genre",
+    "pk": 5254,
+    "fields": {
+        "uuid": "ed176e9c-f034-11e5-a511-0cc47a5454c6",
+        "name": "детская психология",
+        "is_root": false,
+        "url": "/genre/detskaya-5254/",
+        "is_main": false
+    }
+},
+{
+    "model": "bookshelf.genre",
+    "pk": 5257,
+    "fields": {
+        "uuid": "ed177177-f034-11e5-a511-0cc47a5454c6",
+        "name": "возрастная психология",
+        "is_root": false,
+        "url": "/genre/vozrastnaya-psihologiya-5257/",
+        "is_main": false
+    }
+},
+{
+    "model": "bookshelf.genre",
+    "pk": 5259,
+    "fields": {
+        "uuid": "ed17732f-f034-11e5-a511-0cc47a5454c6",
+        "name": "современные детективы",
+        "is_root": false,
+        "url": "/genre/sovremennye-5259/",
+        "is_main": false
+    }
+},
+{
+    "model": "bookshelf.genre",
+    "pk": 5261,
+    "fields": {
+        "uuid": "ed17766c-f034-11e5-a511-0cc47a5454c6",
+        "name": "классические детективы",
+        "is_root": false,
+        "url": "/genre/klassicheskie-5261/",
+        "is_main": false
+    }
+},
+{
+    "model": "bookshelf.genre",
+    "pk": 5267,
+    "fields": {
+        "uuid": "ed177bea-f034-11e5-a511-0cc47a5454c6",
+        "name": "стихи и поэзия",
+        "is_root": false,
+        "url": "/genre/poeziya-5267/",
+        "is_main": false
+    }
+},
+{
+    "model": "bookshelf.genre",
+    "pk": 5284,
+    "fields": {
+        "uuid": "ed178dce-f034-11e5-a511-0cc47a5454c6",
+        "name": "воспитание детей",
+        "is_root": false,
+        "url": "/genre/vospitanie-detey-5284/",
+        "is_main": false
+    }
+},
+{
+    "model": "bookshelf.genre",
+    "pk": 5297,
+    "fields": {
+        "uuid": "ed17a40a-f034-11e5-a511-0cc47a5454c6",
+        "name": "русская классика",
+        "is_root": false,
+        "url": "/genre/russkaya-5297/",
+        "is_main": false
+    }
+},
+{
+    "model": "bookshelf.genre",
+    "pk": 5298,
+    "fields": {
+        "uuid": "ed17a4d8-f034-11e5-a511-0cc47a5454c6",
+        "name": "советская литература",
+        "is_root": false,
+        "url": "/genre/sovetskaya-5298/",
+        "is_main": false
+    }
+},
+{
+    "model": "bookshelf.genre",
+    "pk": 5304,
+    "fields": {
+        "uuid": "ed17af4c-f034-11e5-a511-0cc47a5454c6",
+        "name": "литература 20 века",
+        "is_root": false,
+        "url": "/genre/20-vek-5304/",
+        "is_main": false
+    }
+},
+{
+    "model": "bookshelf.genre",
+    "pk": 5305,
+    "fields": {
+        "uuid": "ed17b426-f034-11e5-a511-0cc47a5454c6",
+        "name": "литература 19 века",
+        "is_root": false,
+        "url": "/genre/19-vek-5305/",
+        "is_main": false
+    }
+},
+{
+    "model": "bookshelf.genre",
+    "pk": 5624,
+    "fields": {
+        "uuid": "ed19881b-f034-11e5-a511-0cc47a5454c6",
+        "name": "семейная психология",
+        "is_root": false,
+        "url": "/genre/semeynaya-psihologiya-5624/",
+        "is_main": false
+    }
+},
+{
+    "model": "bookshelf.genre",
+    "pk": 5640,
+    "fields": {
+        "uuid": "ed199c33-f034-11e5-a511-0cc47a5454c6",
+        "name": "практическая психология",
+        "is_root": false,
+        "url": "/genre/praktika-5640/",
+        "is_main": false
+    }
+},
+{
+    "model": "bookshelf.genre",
+    "pk": 6394,
+    "fields": {
+        "uuid": "ed1b0518-f034-11e5-a511-0cc47a5454c6",
+        "name": "история России",
+        "is_root": false,
+        "url": "/genre/istoriya_rossii-6394/",
+        "is_main": false
+    }
+},
+{
+    "model": "bookshelf.genre",
+    "pk": 6429,
+    "fields": {
+        "uuid": "ed1b1431-f034-11e5-a511-0cc47a5454c6",
+        "name": "общая история",
+        "is_root": false,
+        "url": "/genre/obshchaya_istoriya-6429/",
+        "is_main": false
+    }
+},
+{
+    "model": "bookshelf.genre",
+    "pk": 6496,
+    "fields": {
+        "uuid": "ed1b444e-f034-11e5-a511-0cc47a5454c6",
+        "name": "юмор и сатира",
+        "is_root": false,
+        "url": "/genre/umori_i_satira-6496/",
+        "is_main": false
+    }
+},
+{
+    "model": "bookshelf.genre",
+    "pk": 6544,
+    "fields": {
+        "uuid": "ed1b518f-f034-11e5-a511-0cc47a5454c6",
+        "name": "психологическая консультация",
+        "is_root": false,
+        "url": "/genre/konsultatsii_psihoterapiya-6544/",
+        "is_main": false
+    }
+},
+{
+    "model": "bookshelf.publisher",
+    "pk": 33332764,
+    "fields": {
+        "name": "Литрес Классика",
+        "url": "/author/proekt-litres-klassika/"
+    }
+},
+{
+    "model": "bookshelf.copyrighter",
+    "pk": 107589,
+    "fields": {
+        "name": "Азбука",
+        "url": "publisher/azbuka/"
+    }
+},
+{
+    "model": "bookshelf.copyrighter",
+    "pk": 119123,
+    "fields": {
+        "name": "Аудиокнига (АСТ)",
+        "url": "publisher/audiokniga-ast-audio/"
+    }
+},
+{
+    "model": "bookshelf.copyrighter",
+    "pk": 581532,
+    "fields": {
+        "name": "СОЮЗ",
+        "url": "publisher/souz/"
+    }
+},
+{
+    "model": "bookshelf.copyrighter",
+    "pk": 709032,
+    "fields": {
+        "name": "АРДИС",
+        "url": "publisher/ardis-2/"
+    }
+},
+{
+    "model": "bookshelf.copyrighter",
+    "pk": 9339005,
+    "fields": {
+        "name": "ВИМБО",
+        "url": "publisher/vimbo-2/"
+    }
+},
+{
+    "model": "bookshelf.copyrighter",
+    "pk": 9351080,
+    "fields": {
+        "name": "Лекторий «Прямая Речь»",
+        "url": "publisher/lektoriy-pryamaya-rech/"
+    }
+},
+{
+    "model": "bookshelf.copyrighter",
+    "pk": 9356748,
+    "fields": {
+        "name": "Литрес Паблишинг",
+        "url": "publisher/litres-pablishing/"
+    }
+},
+{
+    "model": "bookshelf.rightholder",
+    "pk": 107589,
+    "fields": {
+        "name": "Азбука",
+        "url": "publisher/azbuka/"
+    }
+},
+{
+    "model": "bookshelf.rightholder",
+    "pk": 119123,
+    "fields": {
+        "name": "Аудиокнига (АСТ)",
+        "url": "publisher/audiokniga-ast-audio/"
+    }
+},
+{
+    "model": "bookshelf.rightholder",
+    "pk": 581532,
+    "fields": {
+        "name": "СОЮЗ",
+        "url": "publisher/souz/"
+    }
+},
+{
+    "model": "bookshelf.rightholder",
+    "pk": 709032,
+    "fields": {
+        "name": "АРДИС",
+        "url": "publisher/ardis-2/"
+    }
+},
+{
+    "model": "bookshelf.rightholder",
+    "pk": 9339005,
+    "fields": {
+        "name": "ВИМБО",
+        "url": "publisher/vimbo-2/"
+    }
+},
+{
+    "model": "bookshelf.rightholder",
+    "pk": 9351080,
+    "fields": {
+        "name": "Лекторий «Прямая Речь»",
+        "url": "publisher/lektoriy-pryamaya-rech/"
+    }
+},
+{
+    "model": "bookshelf.rightholder",
+    "pk": 9356748,
+    "fields": {
+        "name": "Литрес Паблишинг",
+        "url": "publisher/litres-pablishing/"
+    }
+},
+{
+    "model": "bookshelf.rating",
+    "pk": 19,
+    "fields": {
+        "user_rating": null,
+        "rated_1_count": 8,
+        "rated_2_count": 5,
+        "rated_3_count": 14,
+        "rated_4_count": 40,
+        "rated_5_count": 136,
+        "rated_avg": 4.43,
+        "rated_total_count": 203
+    }
+},
+{
+    "model": "bookshelf.rating",
+    "pk": 20,
+    "fields": {
+        "user_rating": null,
+        "rated_1_count": 4,
+        "rated_2_count": 1,
+        "rated_3_count": 2,
+        "rated_4_count": 7,
+        "rated_5_count": 56,
+        "rated_avg": 4.57,
+        "rated_total_count": 70
+    }
+},
+{
+    "model": "bookshelf.rating",
+    "pk": 21,
+    "fields": {
+        "user_rating": null,
+        "rated_1_count": 0,
+        "rated_2_count": 0,
+        "rated_3_count": 13,
+        "rated_4_count": 23,
+        "rated_5_count": 126,
+        "rated_avg": 4.7,
+        "rated_total_count": 162
+    }
+},
+{
+    "model": "bookshelf.rating",
+    "pk": 22,
+    "fields": {
+        "user_rating": null,
+        "rated_1_count": 14,
+        "rated_2_count": 11,
+        "rated_3_count": 20,
+        "rated_4_count": 44,
+        "rated_5_count": 419,
+        "rated_avg": 4.66,
+        "rated_total_count": 508
+    }
+},
+{
+    "model": "bookshelf.rating",
+    "pk": 23,
+    "fields": {
+        "user_rating": null,
+        "rated_1_count": 4,
+        "rated_2_count": 6,
+        "rated_3_count": 18,
+        "rated_4_count": 82,
+        "rated_5_count": 425,
+        "rated_avg": 4.72,
+        "rated_total_count": 535
+    }
+},
+{
+    "model": "bookshelf.rating",
+    "pk": 24,
+    "fields": {
+        "user_rating": null,
+        "rated_1_count": 3,
+        "rated_2_count": 5,
+        "rated_3_count": 1,
+        "rated_4_count": 21,
+        "rated_5_count": 247,
+        "rated_avg": 4.82,
+        "rated_total_count": 277
+    }
+},
+{
+    "model": "bookshelf.rating",
+    "pk": 25,
+    "fields": {
+        "user_rating": null,
+        "rated_1_count": 18,
+        "rated_2_count": 6,
+        "rated_3_count": 13,
+        "rated_4_count": 38,
+        "rated_5_count": 464,
+        "rated_avg": 4.71,
+        "rated_total_count": 539
+    }
+},
+{
+    "model": "bookshelf.rating",
+    "pk": 26,
+    "fields": {
+        "user_rating": null,
+        "rated_1_count": 10,
+        "rated_2_count": 4,
+        "rated_3_count": 16,
+        "rated_4_count": 41,
+        "rated_5_count": 333,
+        "rated_avg": 4.69,
+        "rated_total_count": 404
+    }
+},
+{
+    "model": "bookshelf.rating",
+    "pk": 27,
+    "fields": {
+        "user_rating": null,
+        "rated_1_count": 11,
+        "rated_2_count": 9,
+        "rated_3_count": 8,
+        "rated_4_count": 35,
+        "rated_5_count": 374,
+        "rated_avg": 4.72,
+        "rated_total_count": 437
+    }
+},
+{
+    "model": "bookshelf.rating",
+    "pk": 28,
+    "fields": {
+        "user_rating": null,
+        "rated_1_count": 2,
+        "rated_2_count": 4,
+        "rated_3_count": 6,
+        "rated_4_count": 17,
+        "rated_5_count": 31,
+        "rated_avg": 4.18,
+        "rated_total_count": 60
+    }
+},
+{
+    "model": "bookshelf.rating",
+    "pk": 29,
+    "fields": {
+        "user_rating": null,
+        "rated_1_count": 7,
+        "rated_2_count": 7,
+        "rated_3_count": 6,
+        "rated_4_count": 31,
+        "rated_5_count": 289,
+        "rated_avg": 4.73,
+        "rated_total_count": 340
+    }
+},
+{
+    "model": "bookshelf.rating",
+    "pk": 30,
+    "fields": {
+        "user_rating": null,
+        "rated_1_count": 10,
+        "rated_2_count": 3,
+        "rated_3_count": 17,
+        "rated_4_count": 65,
+        "rated_5_count": 784,
+        "rated_avg": 4.83,
+        "rated_total_count": 879
+    }
+},
+{
+    "model": "bookshelf.rating",
+    "pk": 31,
+    "fields": {
+        "user_rating": null,
+        "rated_1_count": 10,
+        "rated_2_count": 11,
+        "rated_3_count": 32,
+        "rated_4_count": 68,
+        "rated_5_count": 407,
+        "rated_avg": 4.61,
+        "rated_total_count": 528
+    }
+},
+{
+    "model": "bookshelf.rating",
+    "pk": 32,
+    "fields": {
+        "user_rating": null,
+        "rated_1_count": 6,
+        "rated_2_count": 8,
+        "rated_3_count": 10,
+        "rated_4_count": 41,
+        "rated_5_count": 260,
+        "rated_avg": 4.66,
+        "rated_total_count": 325
+    }
+},
+{
+    "model": "bookshelf.rating",
+    "pk": 33,
+    "fields": {
+        "user_rating": null,
+        "rated_1_count": 5,
+        "rated_2_count": 6,
+        "rated_3_count": 21,
+        "rated_4_count": 52,
+        "rated_5_count": 348,
+        "rated_avg": 4.69,
+        "rated_total_count": 432
+    }
+},
+{
+    "model": "bookshelf.rating",
+    "pk": 34,
+    "fields": {
+        "user_rating": null,
+        "rated_1_count": 36,
+        "rated_2_count": 13,
+        "rated_3_count": 38,
+        "rated_4_count": 81,
+        "rated_5_count": 849,
+        "rated_avg": 4.67,
+        "rated_total_count": 1017
+    }
+},
+{
+    "model": "bookshelf.rating",
+    "pk": 35,
+    "fields": {
+        "user_rating": null,
+        "rated_1_count": 16,
+        "rated_2_count": 7,
+        "rated_3_count": 16,
+        "rated_4_count": 35,
+        "rated_5_count": 232,
+        "rated_avg": 4.5,
+        "rated_total_count": 306
+    }
+},
+{
+    "model": "bookshelf.rating",
+    "pk": 36,
+    "fields": {
+        "user_rating": null,
+        "rated_1_count": 10,
+        "rated_2_count": 10,
+        "rated_3_count": 15,
+        "rated_4_count": 42,
+        "rated_5_count": 291,
+        "rated_avg": 4.61,
+        "rated_total_count": 368
+    }
+},
+{
+    "model": "bookshelf.contributor",
+    "pk": "005b2a29-2d50-11e4-9172-0025905a06ea",
+    "fields": {
+        "id": 4549778,
+        "full_name": "Дарья Дезомбре",
+        "full_rodit": "Дарьи Дезомбре",
+        "url": "/author/darya-dezombre/"
+    }
+},
+{
+    "model": "bookshelf.contributor",
+    "pk": "16fd8578-c162-102b-8639-bb1d5f8374bd",
+    "fields": {
+        "id": 61772,
+        "full_name": "Михаил Зощенко",
+        "full_rodit": "Михаила Зощенко",
+        "url": "/author/mihail-zoschenko/"
+    }
+},
+{
+    "model": "bookshelf.contributor",
+    "pk": "1b3b14c6-6ea5-11e2-8a5c-002590591ea6",
+    "fields": {
+        "id": 3201181,
+        "full_name": "Елена Новоселова",
+        "full_rodit": "Елены Новоселовой",
+        "url": "/author/elena-novoselova/"
+    }
+},
+{
+    "model": "bookshelf.contributor",
+    "pk": "27ae0d3c-2a81-102a-9ae1-2dfe723fe7c7",
+    "fields": {
+        "id": 45683,
+        "full_name": "Юрий Поляков",
+        "full_rodit": "Юрия Полякова",
+        "url": "/author/uriy-polyakov/"
+    }
+},
+{
+    "model": "bookshelf.contributor",
+    "pk": "3b73ba8a-2fae-102d-93f9-060d30c95e7d",
+    "fields": {
+        "id": 69072,
+        "full_name": "Валентин Гафт",
+        "full_rodit": "Валентина Гафта",
+        "url": "/author/valentin-gaft/"
+    }
+},
+{
+    "model": "bookshelf.contributor",
+    "pk": "3bccfffd-2fae-102d-93f9-060d30c95e7d",
+    "fields": {
+        "id": 94782,
+        "full_name": "Игорь Сергеев",
+        "full_rodit": "Игоря Сергеева",
+        "url": "/author/igor-sergeev-2/"
+    }
+},
+{
+    "model": "bookshelf.contributor",
+    "pk": "3bcf9e71-2fae-102d-93f9-060d30c95e7d",
+    "fields": {
+        "id": 96342,
+        "full_name": "Юрий Стоянов",
+        "full_rodit": "Юрия Стоянова",
+        "url": "/author/uriy-stoyanov/"
+    }
+},
+{
+    "model": "bookshelf.contributor",
+    "pk": "3c524bc0-2fae-102d-93f9-060d30c95e7d",
+    "fields": {
+        "id": 148402,
+        "full_name": "Максим Суханов",
+        "full_rodit": "Максима Суханова",
+        "url": "/author/maksim-suhanov/"
+    }
+},
+{
+    "model": "bookshelf.contributor",
+    "pk": "40c1c644-2a81-102a-9ae1-2dfe723fe7c7",
+    "fields": {
+        "id": 46020,
+        "full_name": "Валентин Пикуль",
+        "full_rodit": "Валентина Пикуля",
+        "url": "/author/valentin-pikul/"
+    }
+},
+{
+    "model": "bookshelf.contributor",
+    "pk": "583f4ce7-0b87-102c-96f3-af3a14b75ca4",
+    "fields": {
+        "id": 63090,
+        "full_name": "Сергей Чонишвили",
+        "full_rodit": "Сергея Чонишвили",
+        "url": "/author/sergey-chonishvili/"
+    }
+},
+{
+    "model": "bookshelf.contributor",
+    "pk": "69008fb0-0b60-102c-96f3-af3a14b75ca4",
+    "fields": {
+        "id": 63067,
+        "full_name": "Степан Старчиков",
+        "full_rodit": "Степана Старчикова",
+        "url": "/author/s-starchikov/"
+    }
+},
+{
+    "model": "bookshelf.contributor",
+    "pk": "702a7421-aa61-102a-94d5-07de47c81719",
+    "fields": {
+        "id": 58388,
+        "full_name": "Дмитрий Мережковский",
+        "full_rodit": "Дмитрия Мережковского",
+        "url": "/author/dmitriy-merezhkovskiy/"
+    }
+},
+{
+    "model": "bookshelf.contributor",
+    "pk": "90f52029-2a81-102a-9ae1-2dfe723fe7c7",
+    "fields": {
+        "id": 46906,
+        "full_name": "Артур Конан Дойл",
+        "full_rodit": "Артура Конана Дойла",
+        "url": "/author/arthur-konan-doyle/"
+    }
+},
+{
+    "model": "bookshelf.contributor",
+    "pk": "a9fd8145-2a83-102a-9ae1-2dfe723fe7c7",
+    "fields": {
+        "id": 53052,
+        "full_name": "Виктория Токарева",
+        "full_rodit": "Виктории Токаревой",
+        "url": "/author/viktoriya-tokareva/"
+    }
+},
+{
+    "model": "bookshelf.contributor",
+    "pk": "b286ae34-fc52-102a-9d2a-1f07c3bd69d8",
+    "fields": {
+        "id": 59354,
+        "full_name": "Екатерина Мурашова",
+        "full_rodit": "Екатерины Мурашовой",
+        "url": "/author/ekaterina-murashova/"
+    }
+},
+{
+    "model": "bookshelf.contributor",
+    "pk": "b5cff023-343d-102c-8542-66c29cc710f8",
+    "fields": {
+        "id": 63754,
+        "full_name": "Владимир Левашёв",
+        "full_rodit": "Владимира Левашёва",
+        "url": "/author/vladimir-levashev/"
+    }
+},
+{
+    "model": "bookshelf.contributor",
+    "pk": "c15f15df-2a81-102a-9ae1-2dfe723fe7c7",
+    "fields": {
+        "id": 47397,
+        "full_name": "Илья Ильф",
+        "full_rodit": "Ильи Ильфа",
+        "url": "/author/ilya-ilf/"
+    }
+},
+{
+    "model": "bookshelf.contributor",
+    "pk": "c164c703-2a81-102a-9ae1-2dfe723fe7c7",
+    "fields": {
+        "id": 47398,
+        "full_name": "Евгений Петров",
+        "full_rodit": "Евгения Петрова",
+        "url": "/author/evgeniy-petrov/"
+    }
+},
+{
+    "model": "bookshelf.contributor",
+    "pk": "c59bc529-2228-11e3-8cff-002590591ea6",
+    "fields": {
+        "id": 3551002,
+        "full_name": "Александр Борисович Раскин",
+        "full_rodit": "Александра Борисовича Раскина",
+        "url": "/author/aleksandr-borisovich-raskin/"
+    }
+},
+{
+    "model": "bookshelf.contributor",
+    "pk": "cdde7d97-2a81-102a-9ae1-2dfe723fe7c7",
+    "fields": {
+        "id": 47552,
+        "full_name": "Борис Пастернак",
+        "full_rodit": "Бориса Пастернака",
+        "url": "/author/boris-pasternak/"
+    }
+},
+{
+    "model": "bookshelf.contributor",
+    "pk": "d1d156bf-2a82-102a-9ae1-2dfe723fe7c7",
+    "fields": {
+        "id": 50505,
+        "full_name": "Корней Чуковский",
+        "full_rodit": "Корнея Чуковского",
+        "url": "/author/korney-chukovskiy/"
+    }
+},
+{
+    "model": "bookshelf.contributor",
+    "pk": "e216e86d-3460-102c-8542-66c29cc710f8",
+    "fields": {
+        "id": 63812,
+        "full_name": "Сергей Гармаш",
+        "full_rodit": "Сергея Гармаша",
+        "url": "/author/sergey-garmash/"
+    }
+},
+{
+    "model": "bookshelf.contributor",
+    "pk": "eec92c4c-e796-11ef-8ce3-0cc47af30fe4",
+    "fields": {
+        "id": 33332764,
+        "full_name": "Литрес Классика",
+        "full_rodit": "Литреса Классика",
+        "url": "/author/proekt-litres-klassika/"
+    }
+},
+{
+    "model": "bookshelf.contributor",
+    "pk": "f3d9ea91-0c5e-102c-96f3-af3a14b75ca4",
+    "fields": {
+        "id": 63128,
+        "full_name": "Иван Литвинов",
+        "full_rodit": "Ивана Литвинова",
+        "url": "/author/i-litvinov/"
+    }
+},
+{
+    "model": "bookshelf.contributor",
+    "pk": "f8c5b130-607c-102d-9ab1-2309c0a91052",
+    "fields": {
+        "id": 164962,
+        "full_name": "Александр Бордуков",
+        "full_rodit": "Александра Бордукова",
+        "url": "/author/aleksandr-bordukov/"
+    }
+},
+{
+    "model": "bookshelf.contributor",
+    "pk": "fbf1ed81-8c98-11e1-aac2-5924aae99221",
+    "fields": {
+        "id": 2210695,
+        "full_name": "Марина Ливанова",
+        "full_rodit": "Марины Ливановой",
+        "url": "/author/marina-livanova/"
+    }
+},
+{
+    "model": "bookshelf.contributor",
+    "pk": "fec2b083-2a80-102a-9ae1-2dfe723fe7c7",
+    "fields": {
+        "id": 45142,
+        "full_name": "Александр Пушкин",
+        "full_rodit": "Александра Пушкина",
+        "url": "/author/aleksandr-pushkin/"
+    }
+},
+{
+    "model": "bookshelf.book",
+    "pk": "1e0570eb-7c1c-11e5-9956-002590591dd6",
+    "fields": {
+        "id": 12046100,
+        "title": "Лекция «Чего мы не знаем о мужчинах и стесняемся спросить?»",
+        "publisher": null,
+        "copyrighter": 9351080,
+        "subtitle": "",
+        "cover_url": "media/book_covers/12046100.jpg",
+        "url": "/audiobook/elena-novoselova/lekciya-chego-my-ne-znaem-o-muzhchinah-i-stesnyaemsya-spr-12046100/",
+        "is_draft": false,
+        "art_type": 1,
+        "prices": "279.00",
+        "is_auto_speech_gift": false,
+        "min_age": 12,
+        "language_code": "ru",
+        "last_updated_at": "2025-08-27T17:33:59Z",
+        "last_released_at": "2017-03-29T12:16:14Z",
+        "availability": false,
+        "available_from": "2015-10-27T00:30:00Z",
+        "rating": 22,
+        "html_annotation": "<p>– Мы будем говорить о мужчинах. О проявлении мужской сути в самых простых житейских ситуациях, которые порой становятся непреодолимой преградой в понимании между мужчиной и женщиной. О Его кризисах и Ее возможностях пережить сложный период рядом с ним. Об изменах и верности, о его друзьях и ее подругах. Без понимания ключевых вопросов, отличающих мужчин от женщин, создать долгие и счастливые отношения невозможно. Так давайте понимать!</p><p>Мужской фаллический комплекс. Большинство женщин не имеют о нем ни малейшего представления. Да и откуда им об этом узнать? Мужчины молчат, считая его естественным проявлением мужественности. Женщины в общении с мужчиной совершают одну ошибку за другой, не принимая его во внимание. </p><p>В последние 60-70 лет культура унисекс стерла внешние границы различий пола, но изменить суть она, конечно же, не смогла. Ключ к благополучным отношениям с мужчиной – понимание сути его психологии, основанной на таинственном фаллическом комплексе.</p><p></p>",
+        "html_annotation_litres": "",
+        "livelib_rated_count": 0,
+        "livelib_rated_avg": 0.0,
+        "isbn": "978-5-535-00490-7",
+        "publication_date": "2013-01-01",
+        "contents_url": null,
+        "genres": [
+            5257,
+            5624
+        ],
+        "rightholder": [
+            9351080
+        ]
+    }
+},
+{
+    "model": "bookshelf.book",
+    "pk": "27a3f71f-a020-11e5-9ffd-0cc47a52085c",
+    "fields": {
+        "id": 14417452,
+        "title": "Портрет мертвой натурщицы",
+        "publisher": null,
+        "copyrighter": 709032,
+        "subtitle": "",
+        "cover_url": "media/book_covers/14417452.jpg",
+        "url": "/audiobook/darya-dezombre/portret-mertvoy-naturschicy-14417452/",
+        "is_draft": false,
+        "art_type": 1,
+        "prices": "249.00",
+        "is_auto_speech_gift": false,
+        "min_age": 16,
+        "language_code": "ru",
+        "last_updated_at": "2020-11-02T15:18:49Z",
+        "last_released_at": "2015-12-11T19:15:04Z",
+        "availability": true,
+        "available_from": "2015-12-12T00:30:00Z",
+        "rating": 32,
+        "html_annotation": "<p>Аудиокнига «Портрет мёртвой натурщицы», записанная в студии «Ардис», продолжает рассказ о столичных сыщиках – старшем уполномоченном Андрее Яковлеве и оперативнике Маше Каравай, начатый Дарьей Дезомбре в романе «Призрак Небесного Иерусалима». </p><p>В Москве действует еще один необычный маньяк, на сей раз помешанный на живописи великого французского художника Жана Огюста Доминика Энгра. В городе пропадают девушки, приехавшие из провинции покорять столицу. Их находят через месяц, а на мертвых обнаженных телах обнаруживают листы с эскизами, подписанными Энгром. В это трудно поверить, но эскизы оказываются подлинными, а дело получает международный отклик.</p>",
+        "html_annotation_litres": "",
+        "livelib_rated_count": 0,
+        "livelib_rated_avg": 0.0,
+        "isbn": "978-5-535-55694-9",
+        "publication_date": "2014-01-01",
+        "contents_url": "pub/c/cover/8638999.xml",
+        "genres": [
+            5259
+        ],
+        "rightholder": [
+            709032
+        ]
+    }
+},
+{
+    "model": "bookshelf.book",
+    "pk": "2c462470-de70-11e5-b35e-0cc47a1952f2",
+    "fields": {
+        "id": 17296888,
+        "title": "Как папа был маленьким",
+        "publisher": null,
+        "copyrighter": 581532,
+        "subtitle": "",
+        "cover_url": "media/book_covers/17296888.jpg",
+        "url": "/audiobook/aleksandr-borisovich-raskin/kak-papa-byl-malenkim-17296888/",
+        "is_draft": false,
+        "art_type": 1,
+        "prices": "253.00",
+        "is_auto_speech_gift": false,
+        "min_age": 6,
+        "language_code": "ru",
+        "last_updated_at": "2023-09-30T13:23:51Z",
+        "last_released_at": "2023-09-30T13:25:56Z",
+        "availability": true,
+        "available_from": "2016-03-14T00:30:00Z",
+        "rating": 25,
+        "html_annotation": "<p>Удивительно добрые, веселые и поучительные рассказы Александра Раскина о том, как папа был маленьким, теперь можно и даже нужно не только читать, но и слушать. Ведь исполнил их для вас не кто-нибудь, а сам Юрий Николаевич Стоянов – Народный артист Российской Федерации актер театра и кино и просто замечательный человек. </p><p>А вот, что рассказывает о своей книге сам автор: </p><p><i>«..Я хочу рассказать вам, как родилась эта книжка. Вот ее история. У меня есть дочка Саша. Теперь она уже большая девочка. Она сама теперь часто говорит: „Когда я была маленькая…“ Так вот, когда Саша была совсем маленькой, она много болела. Однажды у Саши так болело ухо, что она плакала целые сутки и почти не могла спать. Мне было так жалко ее, что я сам чуть не плакал. И я читал ей разные книги или рассказывал смешные истории. И вот я рассказал ей о том, как я был маленьким и бросил свой новый мяч под машину. Саше очень понравилась эта история. Ей понравилось, что папа тоже был маленьким, тоже шалил и не слушался и его тоже наказывали. Она запомнила это. И теперь, как только у нее начинало стрелять в ухе, она сразу же кричала: „Папа, папа, у меня болит ухо! Скорей расскажи, как ты был маленьким!“ Я выбирал истории посмешнее: ведь нужно было развеселить больную девочку. И еще я старался, чтобы моя дочка поняла, как нехорошо быть жадным, хвастунишкой, зазнайкой. Но это вовсе не значит, что я сам всю жизнь был таким. Просто я старался вспоминать только такие случаи. А когда мне их не хватало, я брал их у других знакомых пап. Ведь каждый из них тоже был когда-то маленьким. Так что все эти истории не выдуманы мной, а были на самом деле….»</i></p><p>А. Раскин</p><spoiler title=\"В сборник вошли рассказы:\"><p>Как папа был маленьким</p><p>Как папа бросил мяч под автомобиль</p><p>Как папа укрощал собачку</p><p>Как папа сочинял стихи</p><p>Как папа укусил профессора</p><p>Как папа выбирал профессию</p><p>Как папа учился музыке</p><p>Как папа обижался</p><p>Как папа бросил хлеб</p><p>Как папа ошибся</p><p>Как папа учился писать</p><p>Как папа бросил дядю Витю</p><p>Как папа дружил с девочкой</p><p>Как папа пошел в школу</p></spoiler><spoiler title=\"Копирайт\"><p>© А. Раскин (наследники)</p><p>©&amp;℗ ИП Воробьев</p><p>©&amp;℗ ИД СОЮЗ</p></spoiler><p></p>",
+        "html_annotation_litres": "",
+        "livelib_rated_count": 0,
+        "livelib_rated_avg": 0.0,
+        "isbn": null,
+        "publication_date": "2016-03-14",
+        "contents_url": null,
+        "genres": [
+            5104,
+            5107
+        ],
+        "rightholder": [
+            581532
+        ]
+    }
+},
+{
+    "model": "bookshelf.book",
+    "pk": "2c6fc70f-c8cd-11e5-aa7c-0cc47a1952f2",
+    "fields": {
+        "id": 17097252,
+        "title": "Детективные рассказы",
+        "publisher": null,
+        "copyrighter": 581532,
+        "subtitle": "",
+        "cover_url": "media/book_covers/17097252.jpg",
+        "url": "/audiobook/arthur-konan-doyle/detektivnye-rasskazy-17097252/",
+        "is_draft": false,
+        "art_type": 1,
+        "prices": "253.00",
+        "is_auto_speech_gift": false,
+        "min_age": 12,
+        "language_code": "ru",
+        "last_updated_at": "2023-09-30T21:36:54Z",
+        "last_released_at": "2023-09-30T21:38:18Z",
+        "availability": true,
+        "available_from": "2016-02-05T00:30:00Z",
+        "rating": 21,
+        "html_annotation": "<p>Настоящим подарком для всех поклонников творчества А. Конан Дойла станет этот сборник рассказов. Несмотря на то, что в нем нет уже полюбившихся многим историй о Шерлоке Холмсе и его незаменимом помощнике Ватсоне, вас ждут не менее захватывающие, а временами и жуткие повествования. О загадочном сундуке и военном корреспонденте, о непонятном убийстве молодого человека и о таинственном черном докторе. Уверены, такого Конан Дойла вы еще не знали. </p><spoiler title=\"В сборник вошли рассказы:\"><p>Дебют Бимбаши Иойсе</p><p>Морская поездка Джелланда</p><p>Роковой сундук</p><p>Три корреспондента</p><p>Человек с часами</p><p>Черный доктор </p></spoiler><p><br/></p><spoiler title=\"Копирайт\"><p>©&amp;℗ ИП Воробьев В.А.</p><p>©&amp;℗ ИД СОЮЗ</p></spoiler><p></p>",
+        "html_annotation_litres": "",
+        "livelib_rated_count": 0,
+        "livelib_rated_avg": 0.0,
+        "isbn": null,
+        "publication_date": "2016-02-05",
+        "contents_url": null,
+        "genres": [
+            5219,
+            5261
+        ],
+        "rightholder": [
+            581532
+        ]
+    }
+},
+{
+    "model": "bookshelf.book",
+    "pk": "2e830b66-c5d1-11e5-bf66-0cc47a5453d6",
+    "fields": {
+        "id": 17072880,
+        "title": "Охранная грамота",
+        "publisher": null,
+        "copyrighter": 581532,
+        "subtitle": "",
+        "cover_url": "media/book_covers/17072880.jpg",
+        "url": "/audiobook/boris-pasternak/ohrannaya-gramota-17072880/",
+        "is_draft": false,
+        "art_type": 1,
+        "prices": "162.00",
+        "is_auto_speech_gift": false,
+        "min_age": 12,
+        "language_code": "ru",
+        "last_updated_at": "2023-09-30T18:57:02Z",
+        "last_released_at": "2023-09-30T18:58:30Z",
+        "availability": true,
+        "available_from": "2016-02-15T00:30:00Z",
+        "rating": 28,
+        "html_annotation": "<p>Автобиографическая проза «Охранная грамота» – о юности, встречах с замечательными людьми, путешествии по Европе, духовных исканиях, первой любви, становлении поэта. </p><spoiler title=\"Копирайт\"><p>Исполняют: Максим Суханов</p><p>Продюсер издания: Владимир Воробьёв</p><p>© Б. Пастернак (наследники)</p><p>©&amp;℗ ИП Воробьев</p><p>©&amp;℗ ИД СОЮЗ</p></spoiler><p><br/></p><p></p>",
+        "html_annotation_litres": "",
+        "livelib_rated_count": 0,
+        "livelib_rated_avg": 0.0,
+        "isbn": null,
+        "publication_date": "2016-02-15",
+        "contents_url": "pub/c/cover/164305.xml",
+        "genres": [
+            5297,
+            5298,
+            5304
+        ],
+        "rightholder": [
+            581532
+        ]
+    }
+},
+{
+    "model": "bookshelf.book",
+    "pk": "338a0a9f-66ca-11e5-9956-002590591dd6",
+    "fields": {
+        "id": 11799393,
+        "title": "Любовь в эпоху перемен",
+        "publisher": null,
+        "copyrighter": 119123,
+        "subtitle": "",
+        "cover_url": "media/book_covers/11799393.jpg",
+        "url": "/audiobook/uriy-polyakov/lubov-v-epohu-peremen-11799393/",
+        "is_draft": false,
+        "art_type": 1,
+        "prices": "349.00",
+        "is_auto_speech_gift": false,
+        "min_age": 16,
+        "language_code": "ru",
+        "last_updated_at": "2025-02-05T09:08:34Z",
+        "last_released_at": "2015-10-18T19:54:58Z",
+        "availability": true,
+        "available_from": "2021-06-30T11:54:40Z",
+        "rating": 19,
+        "html_annotation": "<p>Новый роман Юрия Полякова «Любовь в эпоху перемен» оправдывает свое название. Это тонкое повествование о сложных отношениях главного героя Гены Скорятина, редактора еженедельника «Мир и мы», с тремя главными женщинами его жизни. И в то же время это первая в отечественной литературе попытка разобраться в эпохе Перестройки, жестко рассеять мифы, понять ее тайные пружины, светлые и темные стороны. Впрочем, и о современной России автор пишет в суровых традициях критического реализма. Как всегда слушателя ждут острый сюжет, яркие характеры, язвительная сатира, острые словечки, неожиданные сравнения, смелые эротические метафоры… </p><p>Одним словом, все то, за что настоящие ценители словесности так любят прозу Юрия Полякова.</p>",
+        "html_annotation_litres": "",
+        "livelib_rated_count": 0,
+        "livelib_rated_avg": 0.0,
+        "isbn": null,
+        "publication_date": "2015-01-01",
+        "contents_url": "pub/c/cover/11282268.xml",
+        "genres": [
+            5210
+        ],
+        "rightholder": [
+            119123
+        ]
+    }
+},
+{
+    "model": "bookshelf.book",
+    "pk": "50f15ac6-3c4b-11e5-8017-002590591ed2",
+    "fields": {
+        "id": 11132541,
+        "title": "Валентин Гафт. Избранное",
+        "publisher": null,
+        "copyrighter": 9339005,
+        "subtitle": "",
+        "cover_url": "media/book_covers/11132541.jpg",
+        "url": "/audiobook/valentin-gaft/valentin-gaft-izbrannoe-11132541/",
+        "is_draft": false,
+        "art_type": 1,
+        "prices": "339.00",
+        "is_auto_speech_gift": false,
+        "min_age": 16,
+        "language_code": "ru",
+        "last_updated_at": "2020-11-13T09:42:49Z",
+        "last_released_at": "2015-08-29T10:42:44Z",
+        "availability": true,
+        "available_from": "2015-09-04T10:55:00Z",
+        "rating": 26,
+        "html_annotation": "<p>В этот сборник вошли избранные произведения Валентина Гафта в потрясающем исполнении великого артиста.</p><p>Сборник стихов «Уже от мыслей никуда не деться»</p><p>Детство, мухи, море, пепел… о чем только не передумаешь в поезде. Сколько же поэзии может быть в прозе жизни. Сколько нового, философского и личного – в самом обыденном.</p><p>Моноспектакль Валентина Гафта «Жить стало лучше, жить стало веселее»</p><p>Эта убийственно ироничная фантасмагория и есть поиск ответа на такой мучительный для истории России вопрос. Возможно, мы услышим его в беседах Вождя народов с героями минувшей и нынешней эпох: Жуковым, Ахматовой, Шостаковичем, Бухариным, Радзинским, Жванецким, Зюгановым и даже Христом…</p><p>«Такое ощущение, что тебя перевернули с ног на голову, потрясли и поставили на место»</p><p>Зрители после спектакля в театре «Современник»</p><p>Автор и исполнитель: Валентин Гафт</p><p>Режиссер: Дмитрий Креминский\t</p><p>Музыка: Владимир Багров («Жить стало лучше, жить стало веселее»)</p><p>Аранжировка: Николай Скворцов («Уже от мыслей никуда не деться…»)</p><p>Дизайн и иллюстрации: Юлия Стоцкая</p><p>Продюсеры: Вадим Бух, Михаил Литваков</p><p>© Валентин Гафт </p><p>Запись произведена Продюсерским центром «Вимбо»</p><p>© &amp; ℗ ООО «Вимбо»</p>",
+        "html_annotation_litres": "",
+        "livelib_rated_count": 0,
+        "livelib_rated_avg": 0.0,
+        "isbn": "978-5-535-54946-0",
+        "publication_date": "2010-01-01",
+        "contents_url": null,
+        "genres": [
+            5210,
+            5267
+        ],
+        "rightholder": [
+            9339005
+        ]
+    }
+},
+{
+    "model": "bookshelf.book",
+    "pk": "6605adf2-2cc8-11e5-89fe-0025905a069a",
+    "fields": {
+        "id": 10811319,
+        "title": "Медный всадник и другие поэмы",
+        "publisher": null,
+        "copyrighter": 581532,
+        "subtitle": null,
+        "cover_url": "media/book_covers/10811319.jpg",
+        "url": "/audiobook/aleksandr-pushkin/mednyy-vsadnik-i-drugie-poemy-10811319/",
+        "is_draft": false,
+        "art_type": 1,
+        "prices": "253.00",
+        "is_auto_speech_gift": false,
+        "min_age": 6,
+        "language_code": "ru",
+        "last_updated_at": "2024-04-11T12:40:28Z",
+        "last_released_at": "2024-04-11T12:40:40Z",
+        "availability": true,
+        "available_from": "2015-08-17T00:30:00Z",
+        "rating": 24,
+        "html_annotation": "<p>Поэмы в творчестве Пушкина занимают самое большое место наряду с лирикой. Всего поэтом было создано двенадцать поэм, и еще более двенадцати сохранилось в планах и набросках. </p><p>Еще будучи лицеистом Пушкин начал, но не закончил еще совсем детскую шутливую поэму «Монах» и сказочную поэму «Бова». В 1817 г. он начал самую большую свою поэму – «Руслан и Людмила» – и писал ее целых три года. Затем последовали «Кавказский пленник», «Братья-разбойники», «Бахчисарайский фонтан». Длинный ряд поэм, написанных с 1820 по 1833 г., Пушкин завершил «Медным всадником» – по мнению критиков – лучшим своим произведением, замечательным как по необыкновенной глубине, так и по совершенству художественного выражения. </p><p>Предлагаем вам познакомиться с аудиоверсиями лучших поэм великого писателя в исполнении лауреата премий «Ника» и «Золотой овен», обладателя почетного звания заслуженного и народного артиста Российской Федерации, и просто замечательного актера Сергея Леонидовича Гармаша.</p><spoiler title=\"В сборник вошли поэмы:\"><p>Бахчисарайский фонтан</p><p>Граф Нулин</p><p>Домик в Коломне </p><p>Кавказский пленник</p><p>Медный всадник</p></spoiler><p>©&amp;℗ ИП Воробьев </p><p>©&amp;℗ ИД СОЮЗ </p>",
+        "html_annotation_litres": "",
+        "livelib_rated_count": 0,
+        "livelib_rated_avg": 0.0,
+        "isbn": "978-5-535-55311-5",
+        "publication_date": "2015-08-17",
+        "contents_url": null,
+        "genres": [
+            5297,
+            5028,
+            5267,
+            5305
+        ],
+        "rightholder": [
+            581532
+        ]
+    }
+},
+{
+    "model": "bookshelf.book",
+    "pk": "7d0df28e-cb40-11e5-82bb-0cc47a5203ba",
+    "fields": {
+        "id": 17118346,
+        "title": "Нечистая сила. Книга 1. Часть 1",
+        "publisher": null,
+        "copyrighter": 581532,
+        "subtitle": "",
+        "cover_url": "media/book_covers/17118346.jpg",
+        "url": "/audiobook/valentin-pikul/nechistaya-sila-chast-1-ya-17118346/",
+        "is_draft": false,
+        "art_type": 1,
+        "prices": "162.00",
+        "is_auto_speech_gift": false,
+        "min_age": 16,
+        "language_code": "ru",
+        "last_updated_at": "2025-10-08T15:37:25Z",
+        "last_released_at": "2023-10-01T03:40:51Z",
+        "availability": true,
+        "available_from": "2016-02-06T00:30:00Z",
+        "rating": 34,
+        "html_annotation": "<p>Валентин Пикуль считал «Нечистую силу» главной удачей в своей литературной биографии. Но у этого романа была очень сложная судьба. </p><p>Вот как об этом вспоминает сам автор: «Помню, я еще не приступал к написанию этой книги, как уже тогда начал получать грязные анонимки, предупреждавшие меня, что за Распутина со мной расправятся. Угрожатели писали, что ты, мол, пиши о чем угодно, но только не трогай Григория Распутина и его лучших друзей.» Как бы там ни было, роман был написан, и до его выхода отдельной книгой издан в журнале «Наш современник», правда под другим названием и с такими сокращениями, что судить о нем по этим обрывкам, просто не представлялось возможным. </p><p>Однако и этих небольших отрывков оказалось достаточно для того, чтобы тогдашнее руководство страны во главе с Л.И. Брежневым разглядели в сценах коррупции при дворе Николая II самих себя, и это послужило тому, что вокруг романа и имени автора сложился «вакуум зловещей тишины».</p><spoiler title=\"Копирайт\"><p>© В. Пикуль (наследники)</p><p>©&amp;℗ ИП Воробьев</p><p>©&amp;℗ ИД СОЮЗ</p></spoiler><p></p>",
+        "html_annotation_litres": "",
+        "livelib_rated_count": 0,
+        "livelib_rated_avg": 0.0,
+        "isbn": "978-5-535-00507-2",
+        "publication_date": "2015-01-01",
+        "contents_url": "pub/c/cover/122533.xml",
+        "genres": [
+            5304,
+            5209,
+            6394
+        ],
+        "rightholder": [
+            581532
+        ]
+    }
+},
+{
+    "model": "bookshelf.book",
+    "pk": "98f3dd89-2f92-11e5-a074-002590591dd6",
+    "fields": {
+        "id": 10864637,
+        "title": "Мои мужчины (сборник)",
+        "publisher": null,
+        "copyrighter": 107589,
+        "subtitle": "",
+        "cover_url": "media/book_covers/10864637.jpg",
+        "url": "/audiobook/viktoriya-tokareva/moi-muzhchiny-10864637/",
+        "is_draft": false,
+        "art_type": 1,
+        "prices": "379.00",
+        "is_auto_speech_gift": false,
+        "min_age": 16,
+        "language_code": "ru",
+        "last_updated_at": "2025-04-24T17:44:01Z",
+        "last_released_at": "2015-09-02T11:24:29Z",
+        "availability": true,
+        "available_from": "2021-01-28T14:38:12Z",
+        "rating": 31,
+        "html_annotation": "<p>«Собакин, Михалков, Войнович, Данелия, Горбачев – вот они, архитекторы моей жизни. </p><p>Я, конечно, и сама тоже внесла свой вклад, а именно – труд. Я написала двадцать томов, и за меня это никто не мог бы сделать. И тем не менее: литературный талант очень трудно обнаружить. Талант певца или художника – запросто. Человек поет или рисует – сразу заметно. А писать… Все умеют писать, всеобщая грамотность с тридцать седьмого года.</p><p>Я могла бы и не распознать свои литературные способности. Работала бы учительницей пения: вахадили гу-си… И так всю жизнь. Мое предназначение умирало бы во мне. Я ходила бы нервная и несчастная. Но я избежала этой участи. Я всегда занималась тем, что мне интересно. Это счастье. Я выиграла свою жизнь».</p><p>В. Токарева</p><p>© Токарева В. С., 2015</p><p>© Оформление ООО «Издательская Группа „Азбука-Аттикус“, 2015</p><p>Издательство АЗБУКА®</p>",
+        "html_annotation_litres": "",
+        "livelib_rated_count": 0,
+        "livelib_rated_avg": 0.0,
+        "isbn": "978-5-389-10180-7",
+        "publication_date": "2014-01-01",
+        "contents_url": "pub/c/cover/11283100.xml",
+        "genres": [
+            5210
+        ],
+        "rightholder": [
+            107589
+        ]
+    }
+},
+{
+    "model": "bookshelf.book",
+    "pk": "99083f95-1338-11e5-b52a-002590591dd6",
+    "fields": {
+        "id": 10238515,
+        "title": "Сволочей тоже жалко (сборник)",
+        "publisher": null,
+        "copyrighter": 107589,
+        "subtitle": "",
+        "cover_url": "media/book_covers/10238515.jpg",
+        "url": "/audiobook/viktoriya-tokareva/svolochey-tozhe-zhalko-10238515/",
+        "is_draft": false,
+        "art_type": 1,
+        "prices": "379.00",
+        "is_auto_speech_gift": false,
+        "min_age": 16,
+        "language_code": "ru",
+        "last_updated_at": "2025-04-24T17:44:01Z",
+        "last_released_at": "2015-06-15T13:05:55Z",
+        "availability": true,
+        "available_from": "2021-01-28T14:33:53Z",
+        "rating": 33,
+        "html_annotation": "<p>Совершенно родные и такие близкие по духу персонажи, ощущение полнейшей вовлеченности в описываемые события и судьбы, удивительный юмор, пронзительное сопереживание и превратности любви – книга Виктории Токаревой дарит счастье всем нам. В сборник вошли новые рассказы, повесть, а также малоизвестный читателям литературный сценарий «Вай нот?», написанный Викторией Токаревой для киностудии «Узбек-фильм» и заново отредактированный автором специально для данного издания.</p><spoiler title=\"СОДЕРЖАНИЕ\"><p>Сволочей тоже жалко</p><p>Странности любви</p><p>Люська из Баковки</p><p>Лишняя правда</p><p>Выстрел</p><p>Раз, два, три…</p><p>Все не так просто</p><p>Случайная связь</p><p>Вай нот?</p></spoiler><p>© Токарева В. С., 2014</p><p>© Оформление ООО «Издательская Группа „Азбука-Аттикус“, 2014</p><p>Издательство АЗБУКА®</p>",
+        "html_annotation_litres": "",
+        "livelib_rated_count": 0,
+        "livelib_rated_avg": 0.0,
+        "isbn": "978-5-389-10025-1",
+        "publication_date": "2014-01-01",
+        "contents_url": "pub/c/cover/6742047.xml",
+        "genres": [
+            5210
+        ],
+        "rightholder": [
+            107589
+        ]
+    }
+},
+{
+    "model": "bookshelf.book",
+    "pk": "abac5395-a8c6-11e5-a5a5-0cc47a5203ba",
+    "fields": {
+        "id": 16135859,
+        "title": "Светлая личность",
+        "publisher": null,
+        "copyrighter": 581532,
+        "subtitle": "",
+        "cover_url": "media/book_covers/16135859.jpg",
+        "url": "/audiobook/ilya-ilf/svetlaya-lichnost-16135859/",
+        "is_draft": false,
+        "art_type": 1,
+        "prices": "253.00",
+        "is_auto_speech_gift": false,
+        "min_age": 12,
+        "language_code": "ru",
+        "last_updated_at": "2023-09-30T22:57:15Z",
+        "last_released_at": "2023-09-30T22:58:49Z",
+        "availability": true,
+        "available_from": "2015-12-23T11:14:00Z",
+        "rating": 23,
+        "html_annotation": "<p>Почти одновременно с романом «12 стульев», Илья Ильф и Евгений Петров создали необыкновенно остроумную и искрометную повесть «Светлая личность», высмеивающую жизнь горожан уездного городка Пищеславля.</p><p>В провинциальном городишке Пищеславе, где буйным цветом процветает бюрократизм, карьеризм, семейственность и чванство, происходят невероятные события. Виной всему – изобретатель Бабский. Его мыло от веснушек – «веснулин» наделало много шуму, после того, как один из горожан – Егор Филюрин случайно намылился веснулином, стал невидимым и получил возможность проникать незамеченным во все учреждения города.</p><p>©&amp;℗ ИП Воробьев В.А.</p><p>©&amp;℗ ИД СОЮЗ</p>",
+        "html_annotation_litres": "",
+        "livelib_rated_count": 0,
+        "livelib_rated_avg": 0.0,
+        "isbn": null,
+        "publication_date": "1928-01-01",
+        "contents_url": "pub/c/cover/64945352.xml",
+        "genres": [
+            5199,
+            5297,
+            5298,
+            5304,
+            6496
+        ],
+        "rightholder": [
+            581532
+        ]
+    }
+},
+{
+    "model": "bookshelf.book",
+    "pk": "bc5941d6-8feb-11e5-a799-002590591ed2",
+    "fields": {
+        "id": 12547510,
+        "title": "Лекция «Как установить границы для ребенка?»",
+        "publisher": null,
+        "copyrighter": 9351080,
+        "subtitle": "",
+        "cover_url": "media/book_covers/12547510.jpg",
+        "url": "/audiobook/ekaterina-murashova/lekciya-kak-ustanovit-granicy-dlya-rebenka-12547510/",
+        "is_draft": false,
+        "art_type": 1,
+        "prices": "279.00",
+        "is_auto_speech_gift": false,
+        "min_age": 12,
+        "language_code": "ru",
+        "last_updated_at": "2025-08-27T17:45:07Z",
+        "last_released_at": "2017-03-29T14:08:44Z",
+        "availability": false,
+        "available_from": "2015-11-21T04:18:46Z",
+        "rating": 30,
+        "html_annotation": "<p>– Установление границ никогда не вредит психике ребенка. Психике ребенка вредит их отсутствие. Если что-то можно разрешить – разрешите. Если что-то можно дать – дайте!</p><p>Для чего же нужны границы между родителями и детьми, и как их правильно устанавливать?</p>",
+        "html_annotation_litres": "",
+        "livelib_rated_count": 0,
+        "livelib_rated_avg": 0.0,
+        "isbn": null,
+        "publication_date": "2013-01-01",
+        "contents_url": null,
+        "genres": [
+            5257,
+            5254,
+            5284,
+            6544,
+            5640
+        ],
+        "rightholder": [
+            9351080
+        ]
+    }
+},
+{
+    "model": "bookshelf.book",
+    "pk": "d61c1c4d-06c4-102c-99a2-0288a49f2f10",
+    "fields": {
+        "id": 173217,
+        "title": "Воскресшие боги. Леонардо да Винчи",
+        "publisher": 33332764,
+        "copyrighter": 9356748,
+        "subtitle": "",
+        "cover_url": "media/book_covers/173217.jpg",
+        "url": "/audiobook/dmitriy-merezhkovskiy/voskresshie-bogi-leonardo-da-vinchi-173217/",
+        "is_draft": false,
+        "art_type": 1,
+        "prices": "249.00",
+        "is_auto_speech_gift": false,
+        "min_age": 12,
+        "language_code": "ru",
+        "last_updated_at": "2025-07-28T13:48:48Z",
+        "last_released_at": "2025-07-28T12:12:42Z",
+        "availability": true,
+        "available_from": "2013-04-05T02:57:23Z",
+        "rating": 36,
+        "html_annotation": "<p>…Ему казалось, что не только изображенная на портрете, но и сама живая Мона Лиза становится все более и более похожей на Леонардо… Впрочем, главная сила возраставшего сходства заключалась не столько в самих чертах, сколько в выражении глаз и в улыбке. Он вспоминал с неизъяснимым удивлением, что эту же самую улыбку видел у прародительницы Евы в первой картине учителя, и у ангела Девы в скалах, и у Леды с лебедем, и во многих других женских лицах, которые писал, рисовал и лепил учитель, еще не зная Моны Лизы,&#160;– как будто всю жизнь, во всех своих созданиях искал он отражения собственной прелести и, наконец, нашел в лице Джоконды…</p><p>Эпоха великих мастеров искусства, знаменитых государственных деятелей и куртизанок, изменивших мир научных открытий и, конечно же, неразгаданных до сих пор тайн оживает в одном из лучших произведений Д.С.Мережковского – Воскресшие боги Леонардо да Винчи.</p><p>Роман представляет собой 2-ю часть трилогии Христос и Антихрист. Эпоха Леонардо показана автором, как один из кульминационных моментов истории: его главных героев представляют собой главную арену противостояния Божественного и сатанинского начал, и где как не в жизни и творениях великого мастера отражается эта борьба с максимальной силой?</p>",
+        "html_annotation_litres": "",
+        "livelib_rated_count": 0,
+        "livelib_rated_avg": 0.0,
+        "isbn": "978-5-535-00104-3",
+        "publication_date": "2006-01-01",
+        "contents_url": null,
+        "genres": [
+            5297,
+            6429
+        ],
+        "rightholder": [
+            9356748
+        ]
+    }
+},
+{
+    "model": "bookshelf.book",
+    "pk": "deb18518-a8ca-11e5-8cfa-0cc47a5453d6",
+    "fields": {
+        "id": 16141847,
+        "title": "Лекция «Подростковый возраст и подростковый кризис»",
+        "publisher": null,
+        "copyrighter": 9351080,
+        "subtitle": "",
+        "cover_url": "media/book_covers/16141847.jpg",
+        "url": "/audiobook/ekaterina-murashova/lekciya-podrostkovyy-vozrast-i-podrostkovyy-krizis-16141847/",
+        "is_draft": false,
+        "art_type": 1,
+        "prices": "279.00",
+        "is_auto_speech_gift": false,
+        "min_age": 12,
+        "language_code": "ru",
+        "last_updated_at": "2025-08-27T18:01:57Z",
+        "last_released_at": "2017-03-29T14:29:33Z",
+        "availability": false,
+        "available_from": "2015-12-23T00:30:00Z",
+        "rating": 27,
+        "html_annotation": "<p>Подростковый кризис – это не запрос на взрослость, а запрос на пересмотр договора. И если родители не соглашаются его пересмотреть, не признают этой необходимости, тогда и начинается кризис.</p><p>О том, как этого избежать – на лекции психолога Катерины Мурашовой.</p><p></p>",
+        "html_annotation_litres": "",
+        "livelib_rated_count": 0,
+        "livelib_rated_avg": 0.0,
+        "isbn": null,
+        "publication_date": "2013-01-01",
+        "contents_url": null,
+        "genres": [
+            5257,
+            5254,
+            5284,
+            6544
+        ],
+        "rightholder": [
+            9351080
+        ]
+    }
+},
+{
+    "model": "bookshelf.book",
+    "pk": "df1b64ea-9fa1-11e5-a5a5-0cc47a5203ba",
+    "fields": {
+        "id": 14376535,
+        "title": "Рассказы для детей",
+        "publisher": null,
+        "copyrighter": 709032,
+        "subtitle": "",
+        "cover_url": "media/book_covers/14376535.jpg",
+        "url": "/audiobook/mihail-zoschenko/rasskazy-dlya-detey-14376535/",
+        "is_draft": false,
+        "art_type": 1,
+        "prices": "229.00",
+        "is_auto_speech_gift": false,
+        "min_age": 6,
+        "language_code": "ru",
+        "last_updated_at": "2020-10-01T10:06:31Z",
+        "last_released_at": "2015-12-11T13:42:33Z",
+        "availability": true,
+        "available_from": "2015-12-11T04:16:42Z",
+        "rating": 35,
+        "html_annotation": "<p>Михаил Зощенко – не только писатель-сатирик, но и автор замечательных рассказов для детей и о детях, а также воспоминаний о собственном детстве, которые вошли во «взрослую» автобиографическую повесть «Перед восходом солнца».</p><p>Зощенко ценил своего маленького читателя и умел найти удивительно верный тон разговора с детьми. Может быть, секрет в том, что сам писатель смотрел на мир, как смотрит на него ребенок,&#160;– чистым и любопытным взглядом?</p><spoiler title=\"СОДЕРЖАНИЕ:\"><p><br/></p><p>Хитрые и умные</p><p>–&#160;Вот какие бывают мышки</p><p>–&#160;Попалась, которая кусалась</p><p>–&#160;Ученая обезьянка</p><p>–&#160;Умная белка</p><p>–&#160;Еще одна умная белка</p><p>–&#160;Интересно придумала</p><p><br/></p><p>Из детских рассказов</p><p>–&#160;Пора вставать!</p><p>–&#160;Любимое занятие</p><p>–&#160;Кто ваши родители?</p><p>–&#160;Смелый, да не очень</p><p>–&#160;В гостях у клоуна</p><p>–&#160;Загадочная история</p><p><br/></p><p>Из книги «Перед восходом солнца»</p><p>–&#160;Я больше не буду</p><p>–&#160;Не надо стоять на улице</p><p>–&#160;Золотые рыбки</p><p>–&#160;В зоологическом саду</p><p>–&#160;На берегу</p><p>–&#160;Коровы идут</p><p>–&#160;Гроза</p><p>–&#160;Ну, теперь спите</p><p>–&#160;Так просто</p><p>–&#160;Страшный мир</p><p>–&#160;Я не виноват</p><p>–&#160;В воде</p><p>–&#160;Закрывайте двери</p><p>–&#160;У калитки</p><p>–&#160;Это недоразумение</p><p>–&#160;Снова неприятности</p><p>–&#160;Пуд железа</p><p>–&#160;Муза</p><p>–&#160;Учитель истории</p><p>–&#160;Хлорофилл</p><p><br/></p><p>Из рассказов о войне</p><p>–&#160;Храбрые дети</p><p>–&#160;Леночка</p></spoiler><p></p>",
+        "html_annotation_litres": "",
+        "livelib_rated_count": 0,
+        "livelib_rated_avg": 0.0,
+        "isbn": "4607031765593",
+        "publication_date": "2015-01-01",
+        "contents_url": "pub/c/cover/24918123.xml",
+        "genres": [
+            5298,
+            5304,
+            5104
+        ],
+        "rightholder": [
+            709032
+        ]
+    }
+},
+{
+    "model": "bookshelf.book",
+    "pk": "e35bcc35-91f6-11e5-a799-002590591ed2",
+    "fields": {
+        "id": 12627890,
+        "title": "Лекция «Мужские кризисы. Как их пережить женщине, которая рядом»",
+        "publisher": null,
+        "copyrighter": 9351080,
+        "subtitle": "",
+        "cover_url": "media/book_covers/12627890.jpg",
+        "url": "/audiobook/elena-novoselova/lekciya-muzhskie-krizisy-kak-ih-perezhit-zhenschine-kotor-12627890/",
+        "is_draft": false,
+        "art_type": 1,
+        "prices": "279.00",
+        "is_auto_speech_gift": false,
+        "min_age": 16,
+        "language_code": "ru",
+        "last_updated_at": "2025-08-27T17:57:02Z",
+        "last_released_at": "2017-03-29T12:15:26Z",
+        "availability": false,
+        "available_from": "2015-11-23T18:45:00Z",
+        "rating": 29,
+        "html_annotation": "<p>&quot;Никаких кризисов нет! Их придумали психологи!\" – возмущаются молодые женщины, пока не столкнутся со странным, тяжелым, порой оскорбительным для них мужским поведением. К сожалению, кризисы – это реальность, с которой мужчины сталкиваются в возрасте 20, 30, 40, 50 лет. У каждого из этих периодов есть свои особенности и свой потенциал. В такие моменты женщине нелегко понять мужчину, а порой и сам мужчина не может в себе разобраться. Откуда, вдруг берутся раздражение, тревога, желание все бросить и начать жизнь сначала? Непонятно. Именно в этот период отношения становятся наиболее уязвимыми и можно потерять любимого человека. Как анализировать кризис? Где искать причины его возникновения? И что делать, чтобы успешно его преодолеть вместе? Об этом и поговорим на лекции. </p>",
+        "html_annotation_litres": "",
+        "livelib_rated_count": 0,
+        "livelib_rated_avg": 0.0,
+        "isbn": null,
+        "publication_date": "2013-01-01",
+        "contents_url": null,
+        "genres": [
+            5257,
+            5624
+        ],
+        "rightholder": [
+            9351080
+        ]
+    }
+},
+{
+    "model": "bookshelf.book",
+    "pk": "e872021b-1e36-11e5-89fe-0025905a069a",
+    "fields": {
+        "id": 10358939,
+        "title": "Айболит и другие",
+        "publisher": null,
+        "copyrighter": 581532,
+        "subtitle": "",
+        "cover_url": "media/book_covers/10358939.jpg",
+        "url": "/audiobook/korney-chukovskiy/aybolit-i-drugie-10358939/",
+        "is_draft": false,
+        "art_type": 1,
+        "prices": "253.00",
+        "is_auto_speech_gift": false,
+        "min_age": 3,
+        "language_code": "ru",
+        "last_updated_at": "2023-10-01T00:39:28Z",
+        "last_released_at": "2023-10-01T02:55:11Z",
+        "availability": true,
+        "available_from": "2023-10-01T00:39:28Z",
+        "rating": 20,
+        "html_annotation": "<p>Представляем вашему вниманию аудиоверсию избранных сказок и стихов Корнея Ивановича Чуковского в блестящем прочтении Сергея Гармаша. </p><p>Одной из сказок сборника стала всеми любимая сказка «Айболит», с созданием которой связана довольно интересная история, помогающая кроме всего прочего, понять и оценить насколько тяжел и непрост труд писателя. </p><p>«…Что же мне было делать, когда, окрылив меня на недолгое время, внезапно прекращался тот нервный подъем, который некогда именовали вдохновением, и у меня не оставалось надежды, что он снова вернется ко мне? Так произошло, например, с моей сказкой о целителе зверей Айболите, которую с давнего времени я хотел написать. Вдохновение нахлынуло на меня на Кавказе – в высшей степени нелепо и некстати – во время купания в море. Я заплыл довольно далеко, и вдруг под наваждением солнца, горячего ветра и черноморской волны у меня сами собой сложились слова:</p><p>О, если я утону,</p><p>Если пойду я ко дну…</p><p>И т.д.</p><p>Голышом побежал я по каменистому берегу и, спрятавшись за ближайшей скалой, стал мокрыми руками записывать стихотворные строки на мокрой папиросной коробке, валявшейся тут же, у самой воды, и сразу в какой-нибудь час набросал строк двадцать или больше. Ни начала, ни конца у сказки не было.</p><p>На первых страницах нужно было рассказать о зверях, приходивших к любимому доктору, и о болезнях, от которых он вылечил их. И тут, уже по возвращении домой, в Ленинград, начались мои долгие поиски подлинно поэтических строк. Не мог же я снова надеяться на слепую удачу, на праздничный взлет вдохновения. Мне поневоле пришлось выжимать из себя необходимые строки кропотливым, упорным трудом. Мне нужны были четыре стиха, и ради них я исписал мелким почерком две школьные тетрадки. Нет, при создании детских стихов рассчитывать на вдохновение нельзя…»</p><spoiler title=\"В сборник вошли:\"><p>Айболит</p><p>Айболит и воробей</p><p>Английская песенка</p><p>Барабек</p><p>Бебека</p><p>Бутерброд</p><p>Головастики</p><p>Ежики смеются</p><p>Елка</p><p>Котауси и Мауси</p><p>Курица</p><p>Муха в бане</p><p>Обжора</p><p>Поросенок</p><p>Радость</p><p>Свинки</p><p>Скрюченная песня</p><p>Слониха читает</p><p>Топтыгин и Лиса</p><p>Топтыгин и луна</p><p>Федотка</p><p>Храбрецы</p><p>Черепаха</p><p>Что сделала Мура, когда ей…</p><p>Чудо-дерево</p><p>Читает: Сергей Гармаш</p></spoiler><p>© К. Чуковский (наследники)</p><p>©&amp;℗ ИП Воробьев </p><p>©&amp;℗ ИД СОЮЗ</p>",
+        "html_annotation_litres": "",
+        "livelib_rated_count": 0,
+        "livelib_rated_avg": 0.0,
+        "isbn": null,
+        "publication_date": "2015-01-01",
+        "contents_url": null,
+        "genres": [
+            5106,
+            5110
+        ],
+        "rightholder": [
+            581532
+        ]
+    }
+},
+{
+    "model": "bookshelf.bookcontributor",
+    "pk": 39,
+    "fields": {
+        "book": "338a0a9f-66ca-11e5-9956-002590591dd6",
+        "contributor": "27ae0d3c-2a81-102a-9ae1-2dfe723fe7c7",
+        "role": "author"
+    }
+},
+{
+    "model": "bookshelf.bookcontributor",
+    "pk": 40,
+    "fields": {
+        "book": "338a0a9f-66ca-11e5-9956-002590591dd6",
+        "contributor": "3bccfffd-2fae-102d-93f9-060d30c95e7d",
+        "role": "reader"
+    }
+},
+{
+    "model": "bookshelf.bookcontributor",
+    "pk": 41,
+    "fields": {
+        "book": "e872021b-1e36-11e5-89fe-0025905a069a",
+        "contributor": "d1d156bf-2a82-102a-9ae1-2dfe723fe7c7",
+        "role": "author"
+    }
+},
+{
+    "model": "bookshelf.bookcontributor",
+    "pk": 42,
+    "fields": {
+        "book": "e872021b-1e36-11e5-89fe-0025905a069a",
+        "contributor": "e216e86d-3460-102c-8542-66c29cc710f8",
+        "role": "reader"
+    }
+},
+{
+    "model": "bookshelf.bookcontributor",
+    "pk": 43,
+    "fields": {
+        "book": "2c6fc70f-c8cd-11e5-aa7c-0cc47a1952f2",
+        "contributor": "90f52029-2a81-102a-9ae1-2dfe723fe7c7",
+        "role": "author"
+    }
+},
+{
+    "model": "bookshelf.bookcontributor",
+    "pk": 44,
+    "fields": {
+        "book": "2c6fc70f-c8cd-11e5-aa7c-0cc47a1952f2",
+        "contributor": "f8c5b130-607c-102d-9ab1-2309c0a91052",
+        "role": "reader"
+    }
+},
+{
+    "model": "bookshelf.bookcontributor",
+    "pk": 45,
+    "fields": {
+        "book": "1e0570eb-7c1c-11e5-9956-002590591dd6",
+        "contributor": "1b3b14c6-6ea5-11e2-8a5c-002590591ea6",
+        "role": "author"
+    }
+},
+{
+    "model": "bookshelf.bookcontributor",
+    "pk": 46,
+    "fields": {
+        "book": "1e0570eb-7c1c-11e5-9956-002590591dd6",
+        "contributor": "1b3b14c6-6ea5-11e2-8a5c-002590591ea6",
+        "role": "reader"
+    }
+},
+{
+    "model": "bookshelf.bookcontributor",
+    "pk": 47,
+    "fields": {
+        "book": "abac5395-a8c6-11e5-a5a5-0cc47a5203ba",
+        "contributor": "c15f15df-2a81-102a-9ae1-2dfe723fe7c7",
+        "role": "author"
+    }
+},
+{
+    "model": "bookshelf.bookcontributor",
+    "pk": 48,
+    "fields": {
+        "book": "abac5395-a8c6-11e5-a5a5-0cc47a5203ba",
+        "contributor": "c164c703-2a81-102a-9ae1-2dfe723fe7c7",
+        "role": "author"
+    }
+},
+{
+    "model": "bookshelf.bookcontributor",
+    "pk": 49,
+    "fields": {
+        "book": "abac5395-a8c6-11e5-a5a5-0cc47a5203ba",
+        "contributor": "f8c5b130-607c-102d-9ab1-2309c0a91052",
+        "role": "reader"
+    }
+},
+{
+    "model": "bookshelf.bookcontributor",
+    "pk": 50,
+    "fields": {
+        "book": "6605adf2-2cc8-11e5-89fe-0025905a069a",
+        "contributor": "fec2b083-2a80-102a-9ae1-2dfe723fe7c7",
+        "role": "author"
+    }
+},
+{
+    "model": "bookshelf.bookcontributor",
+    "pk": 51,
+    "fields": {
+        "book": "6605adf2-2cc8-11e5-89fe-0025905a069a",
+        "contributor": "e216e86d-3460-102c-8542-66c29cc710f8",
+        "role": "reader"
+    }
+},
+{
+    "model": "bookshelf.bookcontributor",
+    "pk": 52,
+    "fields": {
+        "book": "2c462470-de70-11e5-b35e-0cc47a1952f2",
+        "contributor": "c59bc529-2228-11e3-8cff-002590591ea6",
+        "role": "author"
+    }
+},
+{
+    "model": "bookshelf.bookcontributor",
+    "pk": 53,
+    "fields": {
+        "book": "2c462470-de70-11e5-b35e-0cc47a1952f2",
+        "contributor": "3bcf9e71-2fae-102d-93f9-060d30c95e7d",
+        "role": "reader"
+    }
+},
+{
+    "model": "bookshelf.bookcontributor",
+    "pk": 54,
+    "fields": {
+        "book": "50f15ac6-3c4b-11e5-8017-002590591ed2",
+        "contributor": "3b73ba8a-2fae-102d-93f9-060d30c95e7d",
+        "role": "author"
+    }
+},
+{
+    "model": "bookshelf.bookcontributor",
+    "pk": 55,
+    "fields": {
+        "book": "50f15ac6-3c4b-11e5-8017-002590591ed2",
+        "contributor": "3b73ba8a-2fae-102d-93f9-060d30c95e7d",
+        "role": "reader"
+    }
+},
+{
+    "model": "bookshelf.bookcontributor",
+    "pk": 56,
+    "fields": {
+        "book": "deb18518-a8ca-11e5-8cfa-0cc47a5453d6",
+        "contributor": "b286ae34-fc52-102a-9d2a-1f07c3bd69d8",
+        "role": "author"
+    }
+},
+{
+    "model": "bookshelf.bookcontributor",
+    "pk": 57,
+    "fields": {
+        "book": "deb18518-a8ca-11e5-8cfa-0cc47a5453d6",
+        "contributor": "b286ae34-fc52-102a-9d2a-1f07c3bd69d8",
+        "role": "reader"
+    }
+},
+{
+    "model": "bookshelf.bookcontributor",
+    "pk": 58,
+    "fields": {
+        "book": "2e830b66-c5d1-11e5-bf66-0cc47a5453d6",
+        "contributor": "cdde7d97-2a81-102a-9ae1-2dfe723fe7c7",
+        "role": "author"
+    }
+},
+{
+    "model": "bookshelf.bookcontributor",
+    "pk": 59,
+    "fields": {
+        "book": "2e830b66-c5d1-11e5-bf66-0cc47a5453d6",
+        "contributor": "3c524bc0-2fae-102d-93f9-060d30c95e7d",
+        "role": "reader"
+    }
+},
+{
+    "model": "bookshelf.bookcontributor",
+    "pk": 60,
+    "fields": {
+        "book": "e35bcc35-91f6-11e5-a799-002590591ed2",
+        "contributor": "1b3b14c6-6ea5-11e2-8a5c-002590591ea6",
+        "role": "author"
+    }
+},
+{
+    "model": "bookshelf.bookcontributor",
+    "pk": 61,
+    "fields": {
+        "book": "e35bcc35-91f6-11e5-a799-002590591ed2",
+        "contributor": "1b3b14c6-6ea5-11e2-8a5c-002590591ea6",
+        "role": "reader"
+    }
+},
+{
+    "model": "bookshelf.bookcontributor",
+    "pk": 62,
+    "fields": {
+        "book": "bc5941d6-8feb-11e5-a799-002590591ed2",
+        "contributor": "b286ae34-fc52-102a-9d2a-1f07c3bd69d8",
+        "role": "author"
+    }
+},
+{
+    "model": "bookshelf.bookcontributor",
+    "pk": 63,
+    "fields": {
+        "book": "bc5941d6-8feb-11e5-a799-002590591ed2",
+        "contributor": "b286ae34-fc52-102a-9d2a-1f07c3bd69d8",
+        "role": "reader"
+    }
+},
+{
+    "model": "bookshelf.bookcontributor",
+    "pk": 64,
+    "fields": {
+        "book": "98f3dd89-2f92-11e5-a074-002590591dd6",
+        "contributor": "a9fd8145-2a83-102a-9ae1-2dfe723fe7c7",
+        "role": "author"
+    }
+},
+{
+    "model": "bookshelf.bookcontributor",
+    "pk": 65,
+    "fields": {
+        "book": "98f3dd89-2f92-11e5-a074-002590591dd6",
+        "contributor": "fbf1ed81-8c98-11e1-aac2-5924aae99221",
+        "role": "reader"
+    }
+},
+{
+    "model": "bookshelf.bookcontributor",
+    "pk": 66,
+    "fields": {
+        "book": "27a3f71f-a020-11e5-9ffd-0cc47a52085c",
+        "contributor": "005b2a29-2d50-11e4-9172-0025905a06ea",
+        "role": "author"
+    }
+},
+{
+    "model": "bookshelf.bookcontributor",
+    "pk": 67,
+    "fields": {
+        "book": "27a3f71f-a020-11e5-9ffd-0cc47a52085c",
+        "contributor": "f3d9ea91-0c5e-102c-96f3-af3a14b75ca4",
+        "role": "reader"
+    }
+},
+{
+    "model": "bookshelf.bookcontributor",
+    "pk": 68,
+    "fields": {
+        "book": "99083f95-1338-11e5-b52a-002590591dd6",
+        "contributor": "a9fd8145-2a83-102a-9ae1-2dfe723fe7c7",
+        "role": "author"
+    }
+},
+{
+    "model": "bookshelf.bookcontributor",
+    "pk": 69,
+    "fields": {
+        "book": "99083f95-1338-11e5-b52a-002590591dd6",
+        "contributor": "fbf1ed81-8c98-11e1-aac2-5924aae99221",
+        "role": "reader"
+    }
+},
+{
+    "model": "bookshelf.bookcontributor",
+    "pk": 70,
+    "fields": {
+        "book": "7d0df28e-cb40-11e5-82bb-0cc47a5203ba",
+        "contributor": "40c1c644-2a81-102a-9ae1-2dfe723fe7c7",
+        "role": "author"
+    }
+},
+{
+    "model": "bookshelf.bookcontributor",
+    "pk": 71,
+    "fields": {
+        "book": "7d0df28e-cb40-11e5-82bb-0cc47a5203ba",
+        "contributor": "583f4ce7-0b87-102c-96f3-af3a14b75ca4",
+        "role": "reader"
+    }
+},
+{
+    "model": "bookshelf.bookcontributor",
+    "pk": 72,
+    "fields": {
+        "book": "df1b64ea-9fa1-11e5-a5a5-0cc47a5203ba",
+        "contributor": "16fd8578-c162-102b-8639-bb1d5f8374bd",
+        "role": "author"
+    }
+},
+{
+    "model": "bookshelf.bookcontributor",
+    "pk": 73,
+    "fields": {
+        "book": "df1b64ea-9fa1-11e5-a5a5-0cc47a5203ba",
+        "contributor": "b5cff023-343d-102c-8542-66c29cc710f8",
+        "role": "reader"
+    }
+},
+{
+    "model": "bookshelf.bookcontributor",
+    "pk": 74,
+    "fields": {
+        "book": "d61c1c4d-06c4-102c-99a2-0288a49f2f10",
+        "contributor": "702a7421-aa61-102a-94d5-07de47c81719",
+        "role": "author"
+    }
+},
+{
+    "model": "bookshelf.bookcontributor",
+    "pk": 75,
+    "fields": {
+        "book": "d61c1c4d-06c4-102c-99a2-0288a49f2f10",
+        "contributor": "69008fb0-0b60-102c-96f3-af3a14b75ca4",
+        "role": "reader"
+    }
+},
+{
+    "model": "bookshelf.bookcontributor",
+    "pk": 76,
+    "fields": {
+        "book": "d61c1c4d-06c4-102c-99a2-0288a49f2f10",
+        "contributor": "eec92c4c-e796-11ef-8ce3-0cc47af30fe4",
+        "role": "publisher"
+    }
+}
+]
