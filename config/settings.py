@@ -119,6 +119,13 @@ LANGUAGE_CODE = 'en-us'
 TIME_ZONE = 'UTC'
 
 USE_I18N = True
+LANGUAGES = [
+    ('ru', 'Russian'),
+    ('en', 'English'),
+]
+LOCALE_PATHS = [
+    BASE_DIR / 'locale/',  # Папка, где будут лежать переводы
+]
 
 USE_TZ = True
 
