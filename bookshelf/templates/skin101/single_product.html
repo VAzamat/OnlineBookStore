@@ -49,7 +49,7 @@
             <div class="product-info mt-3">
               <div class="element-header">
                 {% for entry in product.bookcontributor_set.all %}
-                <div class="author"><a href="{% url 'core:author' %}"> {{entry.role}}: {{entry.contributor.full_name}}</a></div>
+                <div class="author"><a href="{% url 'core:author' %}"> {{entry.get_role_display}}: {{entry.contributor.full_name}}</a></div>
                 {% endfor %}
                 <h3 class="product-title">{{product.title}}</h3>
                 <div class="rating-container d-flex align-items-center">
@@ -68,7 +68,7 @@
                   <div class="rating" data-rating="1" onclick="rate(1)">
                     <svg class="bi" width="16" height="16"><use xlink:href="#star-empty"></use></svg>
                   </div>
-                  <span class="rating-count lh-normal">(3.5)</span>
+                  <span class="rating-count lh-normal">(рейтинг {{product.rating.rated_avg}})</span>
                 </div>
               </div>
               <div class="product-price my-3">
@@ -78,28 +78,7 @@
               <p>{{product.html_annotation|safe}}</p>
               <hr>
               <div class="cart-wrap">
-                <div class="product-quantity my-3">
-                  <div class="item-title">
-                    <l>2 in stock</l>
-                  </div>
-                  <div class="stock-button-wrap d-flex flex-wrap align-items-center">
-                    <div class="product-quantity">
-                      <div class="input-group product-qty" style="max-width: 150px;">
-                        <span class="input-group-btn">
-                          <button type="button" class="quantity-left-minus" data-type="minus" data-field="">
-                            <svg width="16" height="16"><use xlink:href="#minus"></use></svg>
-                          </button>
-                        </span>
-                        <input type="text" id="quantity" name="quantity" class="form-control input-number text-center" value="1" min="1" max="100" required="">
-                        <span class="input-group-btn">
-                          <button type="button" class="quantity-right-plus" data-type="plus" data-field="">
-                            <svg width="16" height="16"><use xlink:href="#plus"></use></svg>
-                          </button>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+
                 <div class="action-buttons my-4 d-flex flex-wrap">
                   <a href="{% url 'core:single_product' %}#" class="btn btn-dark me-2 mb-1">Купить</a>
                   <a href="{% url 'core:single_product' %}#" class="btn btn-dark">Добавить в корзину</a>
@@ -107,38 +86,24 @@
               </div>
               <hr>
               <div class="meta-product">
+                {% if product.isbn %}
                 <div class="meta-item d-flex mb-1">
-                  <span class="text-uppercase me-2">SKU:</span>
+                  <span class="text-uppercase me-2">ISBN:</span>
                   <ul class="select-list list-unstyled d-flex mb-0">
-                    <li data-value="S" class="select-item">1223</li>
+                    <li data-value="S" class="select-item">{{ product.isbn }}</li>
                   </ul>
                 </div>
+                {% endif %}
                 <div class="meta-item d-flex mb-1">
-                  <span class="text-uppercase me-2">Category:</span>
+                  <span class="text-uppercase me-2">Категории:</span>
                   <ul class="select-list list-unstyled d-flex mb-0">
-                    <li data-value="S" class="select-item">
-                      <a href="{% url 'core:single_product' %}#">Happy</a>,
-                    </li>
-                    <li data-value="S" class="select-item">
-                      <a href="{% url 'core:single_product' %}#">Tutorial</a>,
-                    </li>
-                    <li data-value="S" class="select-item">
-                      <a href="{% url 'core:single_product' %}#">Tips</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="meta-item d-flex mb-1">
-                  <span class="text-uppercase me-2">Tags:</span>
-                  <ul class="select-list list-unstyled d-flex mb-0">
-                    <li data-value="S" class="select-item">
-                      <a href="{% url 'core:single_product' %}#">Music</a>,
-                    </li>
-                    <li data-value="S" class="select-item">
-                      <a href="{% url 'core:single_product' %}#">Voice</a>,
-                    </li>
-                    <li data-value="S" class="select-item">
-                      <a href="{% url 'core:single_product' %}#">Happy</a>
-                    </li>
+                    {% for entry in product.genres.all %}
+                        <li data-value="S" class="select-item">
+                          <a href="{% url 'core:single_product' %}#">{{entry.name}}</a>
+                          {% if not forloop.last %}, {% endif %}
+                        </li>
+
+                    {% endfor %}
                   </ul>
                 </div>
               </div>
