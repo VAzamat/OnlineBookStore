@@ -6,17 +6,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-01 20:28+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
-"MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 #: bookshelf/models.py:154
 msgid "Author"
 msgstr "Автор"
@@ -44,3 +34,2331 @@ msgstr "Издатель"
 #: bookshelf/models.py:160
 msgid "Reader"
 msgstr "Чтец"
+
+msgid "Et id sapien id enim, sit tempor cursus elit, fusce. Nunc tristique facilisis consectetur at vivamus ut porta porta. Ut nisl, tortor, aliquam blandit vitae vehicula vivamus leo nullam urna, scelerisque unc lectus phasellus adipiscing arcu. Tristique facilisis nunc consectetur at tempor. Et id sapien id enim, sit tempor cursus elit, fusce. Nunc tristique facilisis consectetur at vivamus ut porta porta. Ut nisl, tortor, aliquam blandit vitae vehicula vivamus leo nullam urna, scelerisque unc lectus phasellus adipiscing arcu. Tristique facilisis nunc consectetur at tempor. Et id sapien id enim, sit tempor cursus elit, fusce. Nunc tristique facilisis consectetur at vivamus ut porta porta. Ut nisl, tortor, aliquam blandit vitae vehicula vivamus leo nullam urna, scelerisque unc lectus phasellus adipiscing arcu. Tristique facilisis nunc consectetur at tempor."
+msgstr "И ради этой мудрости пусть ход времени будет темным. Теперь печаль будет легко следовать, но будем жить как ворота. Как игрок, оратор, давайте проживем несколько льстивых средств жизни без каких-либо урн, шоколада, лука unc lectusphasellus adipiscing. Печально, что теперь за этим будет легко следить, но пока. И ради этой мудрости пусть ход времени будет темным. Теперь печаль будет легко следовать, но будем жить как ворота. Как игрок, оратор, давайте проживем несколько льстивых средств жизни без каких-либо урн, шоколада, лука unc lectusphasellus adipiscing. Печально, что теперь за этим будет легко следить, но пока. И ради этой мудрости пусть ход времени будет темным. Теперь печаль будет легко следовать, но будем жить как ворота. Как игрок, оратор, давайте проживем несколько льстивых средств жизни без каких-либо урн, шоколада, лука unc lectusphasellus adipiscing. Печально, что теперь за этим будет легко следить, но пока."
+
+
+msgid "Sit suscipit tortor turpis sed fringilla lectus facilisis amet. Ipsum, amet dolor curabitur non aliquet orci urna volutpat. Id aliquam neque, ut vivamus sit imperdiet enim, lacus, vel. Morbi arcu amet, nulla fermentum vitae mattis arcu mi convallis. Urna in sollicitudin in vestibulum erat. Turpis faucibus augue ipsum, at aliquam. Cras sagittis tellus nunc integer vitae neque bibendum eget. Tempus malesuada et pellentesque maecenas. Sociis porttitor elit tincidunt tellus sit ornare. Purus ut quis sed venenatis eget ut ipsum, enim lacus. Praesent imperdiet vitae eu, eu tincidunt nunc integer sit."
+msgstr "Это может потребовать много усилий, но этому легко научиться. Позаботятся о самой-самой боли, а не о грузовиках клиники. Не для чего мы живём, ибо это финансы, бассейн, или я заболел болезнью, в земле моей долины нет фермента жизни. Урна стояла в вестибюле. Стыдно проповедовать это, но кое-что из этого. Завтра земля будет полна жизни и не будет нуждаться в питье. Пришло время ждать, и дети умрут. Украсить территорию должны партнеры авиакомпании-девелопера. Он так же чист, как и все остальные, но ему нужен яд, как и ему самому, ибо он — озеро. Это вложение всей жизни в футбол, футбольные разработчики теперь должны быть целостными."
+
+
+msgid "Tortor diam dignissim amet, in interdum aliquet. Magnis dictum et eros purus fermentum, massa ullamcorper sit sollicitudin. Nascetur libero elementum adipiscing mauris maecenas et magna. Etiam nec, rutrum a diam lacus, nunc integer etiam. Mattis pulvinar non viverra donec pellentesque. Odio mi consequat libero dolor. Porta ut diam lobortis eget leo, lectus. Nunc tempus feugiat massa laoreet ultrices diam magna quam. Congue auctor auctor luctus neque. Enim lorem ultrices diam donec. Sed id placerat consectetur faucibus."
+msgstr "Tortor diam dignissim amet, иногда грузовики. Великое изречение и чистая закваска земли: пусть масса тела будет sollicudinum. Родится свободный элемент adipiscing mauris maecena и magna. Да-нет, косметика из бассейна на заднем дворе, теперь тоже целая. Мэттис не тянул подушку до тех пор, пока не появились дети. Я ненавижу свои безболезненные результаты. Воротам нужен лев, кровать. Теперь настало время feugiat Massa Laoreet ultrices diam magna quam. Автор домашнего задания не является автором траура. На самом деле, я не собираюсь тебя отпускать. Но за этими инвестициями последует горло."
+
+
+msgid "Morbi arcu amet, nulla fermentum vitae mattis arcu mi convallis. Urna in sollicitudin in vestibulum erat. Turpis faucibus augue ipsum, at aliquam. Cras sagittis tellus nunc integer vitae neque bibendum eget. Tempus malesuada et pellentesque maecenas. Sociis porttitor elit tincidunt tellus sit ornare. Purus ut ipsum, enim lacus. Praesent imperdiet vitae eu, eu tincidunt nunc integer sit."
+msgstr "Я болен болезнью, в земле моей долины нет фермента жизни. Урна стояла в вестибюле. Стыдно проповедовать это, но кое-что из этого. Завтра земля будет полна жизни и не будет нуждаться в питье. Пришло время ждать, и дети умрут. Украсить территорию должны партнеры авиакомпании-девелопера. Чистый, как он сам, для озера. Это вложение всей жизни в футбол, футбольные разработчики теперь должны быть целостными."
+
+
+msgid "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur facilisis vivamus massa magna. Blandit mauris libero condimentum commodo morbi consectetur sociis convallis sit. Magna diam amet justo sed vel dolor et volutpat integer. Iaculis sit sapien hac odio elementum egestas neque. Adipiscing purus euismod orci sem amet, et. Turpis erat ornare nisi laoreet est euismod."
+msgstr "Клиент очень важен, за клиентом пойдет клиент. Пусть великая масса живёт легко. Соус Blandit mauris libero commodo morbi consectetur sici convallis, пусть будет так. Это всего лишь большой двор, но это боль и целая жизнь. В этой ненависти нет необходимости мудрости. Adipiscing чистый Euismod orci sem amet, et Было позором украшать, если euismod не является лаореетом."
+
+
+msgid "Tortor diam dignissim amet, in interdum aliquet. Magnis dictum et eros purus fermentum, massa ullamcorper sit sollicitudin. Nascetur libero elementum adipiscing mauris maecenas et magna. Etiam nec, rutrum a diam lacus, nunc integer etiam. Mattis pulvinar non viverra donec pellentesque. Odio mi consequat libero dolor. Porta ut diam lobortis eget leo, lectus."
+msgstr "Tortor diam dignissim amet, иногда грузовики. Великое изречение и чистая закваска земли: пусть масса тела будет sollicudinum. Родится свободный элемент adipiscing mauris maecena и magna. Да-нет, косметика из бассейна на заднем дворе, теперь тоже целая. Мэттис не тянул подушку до тех пор, пока не появились дети. Я ненавижу свои безболезненные результаты. Воротам нужен лев, кровать."
+
+
+msgid "Tortor diam dignissim amet, in interdum aliquet. Magnis dictum et eros purus fermentum, massa ullamcorper sit sollicitudin. Nascetur libero elementum adipiscing mauris eget ullamcorper maecenas et magna. Etiam nec, rutrum a diam lacus, nunc integer etiam. Porta ut diam lobortis eget leo, lectus."
+msgstr "Tortor diam dignissim amet, иногда грузовики. Великое изречение и чистая закваска земли: пусть масса тела будет sollicudinum. Рождается свободный элемент adipiscing mauris, а телесным меценату и магне нужно родиться. Да-нет, косметика из бассейна на заднем дворе, теперь тоже целая. Воротам нужен лев, кровать."
+
+
+msgid "Et id sapien id enim, sit tempor cursus elit, fusce. Nunc tristique facilisis consectetur at vivamus ut porta porta. Ut nisl, tortor, aliquam blandit vitae vehicula vivamus leo nullam urna, scelerisque unc lectus phasellus adipiscing arcu. Tristique facilisis nunc consectetur at tempor."
+msgstr "И ради этой мудрости пусть ход времени будет темным. Теперь печаль будет легко следовать, но будем жить как ворота. Как игрок, оратор, давайте проживем несколько льстивых средств жизни без каких-либо урн, шоколада, лука unc lectusphasellus adipiscing. Печально, что теперь за этим будет легко следить, но пока."
+
+
+msgid "Velit, praesent pharetra malesuada id pulvinar amet. Consequat potenti mollis massa iaculis et, dolor, eget lectus. Aliquam pellentesque molestie felis fames sed eget non euismod eget. Et eget ullamcorper urna, elit ac diam tellus viverra lacus."
+msgstr "Если захочет, подарит колчан и подушку. Получается мощная, мягкая масса мишеней, а ложе, как ни прискорбно, в ней нуждается. Некоторые люди голодны, но Euismod им не нужен. И ему нужна урна, кашпо и садовый пруд на заднем дворе."
+
+
+msgid "Praesent pharetra malesuada id pulvinar amet. Consequat potenti mollis massa iaculis et, dolor, eget lectus. Aliquam pellentesque molestie felis fames sed eget non euismod eget. Et eget ullamcorper urna, elit ac diam tellus viverra lacus."
+msgstr "Это колчан, который понравится подушке. Получается мощная, мягкая масса мишеней, а ложе, как ни прискорбно, в ней нуждается. Некоторые люди голодны, но Euismod им не нужен. И ему нужна урна, кашпо и садовый пруд на заднем дворе."
+
+
+msgid "Mattis pulvinar non viverra donec pellentesque. Odio mi consequat libero dolor. Porta ut diam lobortis eget leo, lectus. Tortor diam dignissim amet, in interdum aliquet. Nascetur libero elementum adipiscing mauris maecenas et magna."
+msgstr "Мэттис не тянул подушку до тех пор, пока не появились дети. Я ненавижу свои безболезненные результаты. Воротам нужен лев, кровать. Tortor diam dignissim amet, иногда грузовики. Родится свободный элемент adipiscing mauris maecena и magna."
+
+
+msgid "Ullamcorper nunc egestas non. Justo, cum feugiat imperdiet nulla molestie ac vulputate scelerisque amet. Bibendum adipiscing platea blandit sit rhoncus. Id aliquam neque, ut vivamus sit imperdiet enim, lacus, vel."
+msgstr "Это сейчас никому не нужно. Просто, с feugiat imperdiet no molestie и vulputate scelerisque amet. Выпить на улице приятно. Мы живем не ради чего, ибо это финансирование, пул или"
+
+
+msgid "Id pulvinar amet. Consequat potenti mollis massa iaculis et, dolor, eget lectus. Aliquam pellentesque molestie felis fames sed eget non euismod eget. Et eget ullamcorper urna, elit ac diam tellus viverra lacus."
+msgstr "Это подушка. Получается мощная, мягкая масса мишеней, а ложе, как ни прискорбно, в ней нуждается. Некоторые люди голодны, но Euismod им не нужен. И ему нужна урна, кашпо и садовый пруд на заднем дворе."
+
+
+msgid "Et id sapien id enim, sit tempor cursus elit, fusce. Nunc tristique facilisis consectetur at vivamus ut porta porta aliquam blandit vitae vehicula leo nullam urna, scelerisque unc lectus."
+msgstr "И ради этой мудрости пусть ход времени будет темным. Теперь печаль будет легко преследоваться, но будем жить так, как будто дверь в дверь льстит некоторым средствам жизни."
+
+
+msgid "Tristique tempis condimentum diam done ullancomroer sit element henddg sit he consequert.Tristique tempis condimentum diam done ullancomroer sit element henddg sit he consequert."
+msgstr "В печальные времена соус из диам готов ullancomroer сидеть элемент henddg пусть он победит."
+
+
+msgid "Tortor diam dignissim amet, in interdum aliquet. Magnis dictum et eros purus massa ullamcorper sit sollicitudin fermentum, massa ullamcorper sit sollicitudin."
+msgstr "Tortor diam dignissim amet, иногда грузовики. Великая поговорка гласит, что чистая масса души — это фермент души, масса души — это душа души."
+
+
+msgid "Make your payment directly into our bank account. Please use your Order ID. Your order will shipped after funds have cleared in our account."
+msgstr "Произведите оплату непосредственно на наш банковский счет. Пожалуйста, используйте свой идентификатор заказа. Ваш заказ будет отправлен после зачисления средств на наш счет."
+
+
+msgid "Interdum et malesuada fames ac ante ipsum primis in faucibus. In blandit nunc enim, sit amet pharetra erat aliquet ac."
+msgstr "Иногда ожидается чувство голода, и перед ним первым делом першение в горле. В лестное время, пусть будет много колчана, было грузовиков и"
+
+
+msgid "Nunc tristique facilisis consectetur vivamus ut porta porta aliquam vitae vehicula leo nullam urna lectus."
+msgstr "Теперь будем жить легко, как дверь к двери, средства жизни, а не урна-кровать."
+
+
+msgid "Vitae tortor condimentum lacinia quis vel eros donec ac. Nam at lectus urna duis convallis convallis"
+msgstr "Жизненный мучительный соус lacinia quis or eros до ac. Ибо у дна урны двух долин"
+
+
+msgid "Please send a check to Store Name, Store Street, Store Town, Store State / County, Store Postcode."
+msgstr "Отправьте чек по адресу: название магазина, улица магазина, город магазина, штат/округа магазина, почтовый индекс магазина."
+
+
+msgid "Pay via PayPal; you can pay with your credit card if you don’t have a PayPal account."
+msgstr "Оплатить через PayPal; вы можете оплатить с помощью кредитной карты, если у вас нет учетной записи PayPal."
+
+
+msgid "Are there any discounts or loyalty programs available for frequent customers?"
+msgstr "Существуют ли какие-либо скидки или программы лояльности для постоянных клиентов?"
+
+
+msgid "Tortor dignissim convallis aenean et tortor at risus viverra adipiscing."
+msgstr "Tortor dignissim convallis aenean et tortor at risus viverra adipiscing."
+
+
+msgid "Do you offer a book ordering service for titles not available in-store?"
+msgstr "Предлагаете ли вы услугу заказа книг, которых нет в наличии в магазине?"
+
+
+msgid "Your email address will not be published. Required fields are marked *"
+msgstr "Ваш адрес электронной почты не будет опубликован. Обязательные поля отмечены *"
+
+
+msgid "Save my name, email, and website in this browser for the next time."
+msgstr "Сохраните мое имя, адрес электронной почты и веб-сайт в этом браузере для следующего раза."
+
+
+msgid "This book is specially designed by concept of traditional designs."
+msgstr "Эта книга специально разработана на основе концепции традиционного дизайна."
+
+
+msgid "Get latest news, updates and deals directly mailed to your inbox."
+msgstr "Получайте последние новости, обновления и предложения прямо на свой почтовый ящик."
+
+
+msgid "Blandit mauris libero condimentum commodo sociis convallis sit."
+msgstr "Бесплатный соус Blandit mauris подойдет партнерам по долине."
+
+
+msgid "Consectetur adipi elit lorem ipsumcon sectetur dolor sit amet."
+msgstr "Adipi elit lorem ipsumcon sesectetur adipi elit lorem ipsumcon sesectetur adipi пусть будет амет."
+
+
+msgid "Dolor sit amet elit lorem orem ipsu mcons ectetur adipi elit."
+msgstr "Боль должна стоить много денег."
+
+
+msgid "Rem adipi elit lopsum dolor sit amet, consectetur adipi elit."
+msgstr "Проблема потери жира важна, за потерей жира последуют."
+
+
+msgid "What genres of books can I expect to find in your bookstore?"
+msgstr "Книги каких жанров я могу найти в вашем книжном магазине?"
+
+
+msgid "Can I reserve a book in advance before visiting the store?"
+msgstr "Могу ли я забронировать книгу заранее перед посещением магазина?"
+
+
+msgid "Do you host book clubs or author events at your bookstore?"
+msgstr "Вы проводите книжные клубы или авторские мероприятия в своем книжном магазине?"
+
+
+msgid "You can follow us on our social platforms to get updates."
+msgstr "Вы можете следить за нами на наших социальных платформах, чтобы получать обновления."
+
+
+msgid "Reading for Mental Health: How Books Can Heal and Inspire"
+msgstr "Чтение для психического здоровья: как книги могут исцелять и вдохновлять"
+
+
+msgid "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+msgstr "Важно иметь хорошее обслуживание клиентов, поставщика услуг."
+
+
+msgid "Magna diam amet justo sed vel dolor et volutpat integer."
+msgstr "Это всего лишь большой двор, но это боль и целая жизнь."
+
+
+msgid "Laculis sit sapien hac odio elementum egestas neque."
+msgstr "Пусть в этой ненависти не будет необходимости в мудрости."
+
+
+msgid "Amet consectetur adipi elit loreme ipsum dolor sit."
+msgstr "Избавиться от жира очень сложно."
+
+
+msgid "Suspendisse urna viverra non, semper suscipit pede."
+msgstr "Не тащите корзину, всегда берите ее пешком."
+
+
+msgid "You can also directly buy products from our stores."
+msgstr "Вы также можете купить продукцию напрямую в наших магазинах."
+
+
+msgid "Consectetur adipi elit lorem ipsum dolor sit amet."
+msgstr "Важно понимать, что жир – это самое главное в жизни."
+
+
+msgid "Dolor sit amet orem ipsu mcons ectetur adipi elit."
+msgstr "Боль должна быть намного сильнее, или ipsu mcons ectetur fat eletur."
+
+
+msgid "Rem Lopsum dolor sit amet, consectetur adipi elit."
+msgstr "Проблема Lopsum в том, что это важно, за ним будет следить толстый разработчик."
+
+
+msgid "The base type is 15px over 1.6 line height (24px)"
+msgstr "Базовый тип — 15 пикселей при высоте строки 1,6 (24 пикселя)."
+
+
+msgid "Must read books if you like reading Sci-Fi Plot."
+msgstr "Обязательно прочтите книги, если вам нравится читать научно-фантастический сюжет."
+
+
+msgid "Donec nec justo eget felis facilisis fermentum."
+msgstr "Пока для этого не нужно просто запустить легкое брожение."
+
+
+msgid "Book Birds Gonna Be Happy on Digital Book Sales"
+msgstr "Book Birds будут счастливы от продаж цифровых книг"
+
+
+msgid "Why Our Bookstore Should Be Your Literary Oasis"
+msgstr "Почему наш книжный магазин должен стать вашим литературным оазисом"
+
+
+msgid "Why Our Bookstore is Every Book Lover's Dream"
+msgstr "Почему наш книжный магазин — мечта каждого книголюба"
+
+
+msgid "habitant morbi tristique senectus et netus et"
+msgstr "Они живут в старости и внуках и страдают от болезней"
+
+
+msgid "Celebrating the Written Word at Our Bookstore"
+msgstr "Праздник письменного слова в нашем книжном магазине"
+
+
+msgid "We will get back to you as soon as possible."
+msgstr "Мы свяжемся с вами как можно скорее."
+
+
+msgid "Reading books always makes the moments happy"
+msgstr "Чтение книг всегда делает моменты счастливыми"
+
+
+msgid "How Our Store Nurtures the Love for Reading"
+msgstr "Как наш магазин воспитывает любовь к чтению"
+
+
+msgid "Use the form below to get in touch with us."
+msgstr "Используйте форму ниже, чтобы связаться с нами."
+
+
+msgid "How Our Bookstore Brings Literature to Life"
+msgstr "Как наш книжный магазин оживляет литературу"
+
+
+msgid "The Treasures within Our Bookstore's Walls"
+msgstr "Сокровища в стенах нашего книжного магазина"
+
+
+msgid "If you need support? Just give us a call."
+msgstr "Если вам нужна поддержка? Просто позвоните нам."
+
+
+msgid "This is the second item's accordion body."
+msgstr "Это корпус аккордеона второго предмета."
+
+
+msgid "The Unforgettable Finds at Our Bookstore"
+msgstr "Незабываемые находки в нашем книжном магазине"
+
+
+msgid "This is the third item's accordion body."
+msgstr "Это корпус аккордеона третьего предмета."
+
+
+msgid "The Power of Bookstores in a Digital Age"
+msgstr "Сила книжных магазинов в эпоху цифровых технологий"
+
+
+msgid "The Fascinating Realm of Science Fiction"
+msgstr "Увлекательное царство научной фантастики"
+
+
+msgid "This is the first item's accordion body."
+msgstr "Это корпус аккордеона первого предмета."
+
+
+msgid "The Pleasures of Visiting Our Bookstore"
+msgstr "Удовольствие от посещения нашего книжного магазина"
+
+
+msgid "Books to read if you want to earn money"
+msgstr "Книги, которые стоит прочитать, если вы хотите зарабатывать деньги"
+
+
+msgid "Aliquam porttitor mauris sit amet orci."
+msgstr "Некоторые из наиболее важных авиакомпаний являются медицинскими."
+
+
+msgid "Do you have any queries or suggestions?"
+msgstr "У вас есть какие-либо вопросы или предложения?"
+
+
+msgid "Limited stocks available. Grab it now!"
+msgstr "Доступны ограниченные запасы. Возьми это сейчас!"
+
+
+msgid "The Unique Experience of Our Bookstore"
+msgstr "Уникальный опыт нашего книжного магазина"
+
+
+msgid "Unveiling the Charms of Our Bookstore"
+msgstr "Раскрываем прелести нашего книжного магазина"
+
+
+msgid "Professional Quest for the Lost City."
+msgstr "Профессиональный квест по затерянному городу."
+
+
+msgid "The Journey of Books at Our Bookstore"
+msgstr "Путешествие книг в нашем книжном магазине"
+
+
+msgid "Uncover Hidden Gems at Our Bookstore"
+msgstr "Откройте для себя скрытые сокровища в нашем книжном магазине"
+
+
+msgid "Finding Love in the Pages of a Book"
+msgstr "Найти любовь на страницах книги"
+
+
+msgid "North Melbourne VIC 3051, Australia"
+msgstr "Северный Мельбурн, VIC 3051, Австралия"
+
+
+msgid "How Our Bookstore Inspires Readers"
+msgstr "Как наш книжный магазин вдохновляет читателей"
+
+
+msgid "Velit, praesent pharetra malesuada"
+msgstr "Уилл, представь ожидаемый колчан"
+
+
+msgid "Aliquam tincidunt mauris eu risus."
+msgstr "Sometincidunt mauris eu risus."
+
+
+msgid "Best Offer Save 30%. Grab it now!"
+msgstr "Лучшее предложение, скидка 30%. Возьми это сейчас!"
+
+
+msgid "Summer sale discount off 60% off!"
+msgstr "Летняя распродажа, скидка 60%!"
+
+
+msgid "This book is specially designed."
+msgstr "Эта книга создана специально."
+
+
+msgid "Vestibulum auctor dapibus neque."
+msgstr "У автора статьи нет."
+
+
+msgid "Discount available. Grab it now!"
+msgstr "Возможна скидка. Возьми это сейчас!"
+
+
+msgid "Perfect for enlightened people."
+msgstr "Идеально подходит для просвещенных людей."
+
+
+msgid "It will teach you money making."
+msgstr "Он научит вас зарабатывать деньги."
+
+
+msgid "The Fine Print Book Collection"
+msgstr "Коллекция книг с мелким шрифтом"
+
+
+msgid "About us on Digital Book Sales"
+msgstr "О нас в сфере продаж цифровых книг"
+
+
+msgid "Tales of the Enchanted Forest"
+msgstr "Сказки зачарованного леса"
+
+
+msgid "Must read books of this year"
+msgstr "Книги этого года, которые стоит прочитать"
+
+
+msgid "Pay with cash upon delivery."
+msgstr "Оплата наличными при получении."
+
+
+msgid "Legends of the Dragon Isles"
+msgstr "Легенды Драконьих островов"
+
+
+msgid "Subscribe to Our Newsletter"
+msgstr "Подпишитесь на нашу рассылку"
+
+
+msgid "Username or email address *"
+msgstr "Имя пользователя или адрес электронной почты *"
+
+
+msgid "High quality in good price."
+msgstr "Высокое качество по хорошей цене."
+
+
+msgid "Subscribe to our newsletter"
+msgstr "Подпишитесь на нашу рассылку"
+
+
+msgid "Shop on Digital Book Sales"
+msgstr "Делайте покупки в сфере продаж цифровых книг"
+
+
+msgid "It is Comfortable and Best"
+msgstr "Это удобно и лучше всего"
+
+
+msgid "Blog on Digital Book Sales"
+msgstr "Блог о продажах цифровых книг"
+
+
+msgid "Best Bookstore of all time"
+msgstr "Лучший книжный магазин всех времен"
+
+
+msgid "Special discounted price."
+msgstr "Специальная цена со скидкой."
+
+
+msgid "Thanks Digital Book Sales"
+msgstr "Спасибо продажам цифровых книг"
+
+
+msgid "Tea Berry, Marinette, USA"
+msgstr "Чай Берри, Маринетт, США"
+
+
+msgid "Showing 1-9 of 55 results"
+msgstr "Показаны результаты с 1 по 9 из 55"
+
+
+msgid "Showing 1–9 of 55 results"
+msgstr "Показаны 1–9 из 55 результатов"
+
+
+msgid "Opens of Lighbox Gallery"
+msgstr "Открытие галереи Lightbox"
+
+
+msgid "Tips of simple lifestyle"
+msgstr "Советы простого образа жизни"
+
+
+msgid "Janet Wilson - об авторе"
+msgstr "Janet Wilson - об авторе"
+
+
+msgid "Simple way of piece life"
+msgstr "Простой образ жизни"
+
+
+msgid "The lady beauty Scarlett"
+msgstr "Леди-красавица Скарлетт"
+
+
+msgid "This book is about life."
+msgstr "Эта книга о жизни."
+
+
+msgid "Secrets of the Alchemist"
+msgstr "Тайны алхимика"
+
+
+msgid "Quest for the Lost City"
+msgstr "В поисках затерянного города"
+
+
+msgid "What our customers says"
+msgstr "Что говорят наши клиенты"
+
+
+msgid "Company Name(optional)*"
+msgstr "Название компании (необязательно)*"
+
+
+msgid "Send a copy to yourself"
+msgstr "Отправить копию себе"
+
+
+msgid "Order notes (optional)"
+msgstr "Примечания к заказу (необязательно)"
+
+
+msgid "Echoes of the Ancients"
+msgstr "Эхо древних"
+
+
+msgid "Just felt from outside"
+msgstr "Просто почувствовал снаружи"
+
+
+msgid "Toggles and Accordions"
+msgstr "Переключатели и аккордеоны"
+
+
+msgid "The Phoenix Chronicles"
+msgstr "Хроники Феникса"
+
+
+msgid "Life among the pirates"
+msgstr "Жизнь среди пиратов"
+
+
+msgid "Additional information"
+msgstr "Дополнительная информация"
+
+
+msgid "Need any help? Call us"
+msgstr "Нужна помощь? Позвоните нам"
+
+
+msgid "Additional Information"
+msgstr "Дополнительная информация"
+
+
+msgid "Can I get your number?"
+msgstr "Могу ли я получить ваш номер?"
+
+
+msgid "Great travel at desert"
+msgstr "Великое путешествие по пустыне"
+
+
+msgid "Download our app now !"
+msgstr "Загрузите наше приложение прямо сейчас!"
+
+
+msgid "Shadow of the Serpent"
+msgstr "Тень Змея"
+
+
+msgid "Your Heart is the Sea"
+msgstr "Твое сердце – море"
+
+
+msgid "Your e-mail address *"
+msgstr "Ваш электронный адрес *"
+
+
+msgid "Grab your opportunity"
+msgstr "Воспользуйтесь своей возможностью"
+
+
+msgid "Shipping &amp; Return"
+msgstr "Доставка и усиление; Возвращаться"
+
+
+msgid "Images and Lightboxes"
+msgstr "Изображения и лайтбоксы"
+
+
+msgid "Reason for contacting"
+msgstr "Причина обращения"
+
+
+msgid "The Story of Success"
+msgstr "История успеха"
+
+
+msgid "Birds gonna be happy"
+msgstr "Птицы будут счастливы"
+
+
+msgid "Your email address *"
+msgstr "Ваш электронный адрес *"
+
+
+msgid "Write your comment *"
+msgstr "Напишите свой комментарий *"
+
+
+msgid "info@yourcompany.com"
+msgstr "info@yourcompany.com"
+
+
+msgid "Portrait photography"
+msgstr "Портретная фотография"
+
+
+msgid "Birds gonna be Happy"
+msgstr "Птицы будут счастливы"
+
+
+msgid "Help &amp; Info Help"
+msgstr "Помощь &amp; Информационная помощь"
+
+
+msgid "Tales of Tranquility"
+msgstr "Сказки о спокойствии"
+
+
+msgid "Birds Gonna Be Happy"
+msgstr "Птицы будут счастливы"
+
+
+msgid "Direct bank transfer"
+msgstr "Прямой банковский перевод"
+
+
+msgid "The Last Enchantment"
+msgstr "Последнее очарование"
+
+
+msgid "Peaceful Enlightment"
+msgstr "Мирное Просвещение"
+
+
+msgid "How Innovation works"
+msgstr "Как работают инновации"
+
+
+msgid "Ms Jenny Blacksmith"
+msgstr "г-жа Дженни Блэксмит"
+
+
+msgid "Proceed to checkout"
+msgstr "Перейти к оформлению заказа"
+
+
+msgid "Shipping + Delivery"
+msgstr "Доставка + Доставка"
+
+
+msgid "The Midnight Garden"
+msgstr "Полуночный сад"
+
+
+msgid "Product Description"
+msgstr "Описание продукта"
+
+
+msgid "The Forgotten Realm"
+msgstr "Забытое царство"
+
+
+msgid "House of Sky Breath"
+msgstr "Дом Небесного Дыхания"
+
+
+msgid "Best selling items"
+msgstr "Самые продаваемые товары"
+
+
+msgid "The Colors of Life"
+msgstr "Цвета жизни"
+
+
+msgid "Digital Book Sales"
+msgstr "Продажа цифровых книг"
+
+
+msgid "Best selling Items"
+msgstr "Самые продаваемые товары"
+
+
+msgid "Some quality items"
+msgstr "Некоторые качественные вещи"
+
+
+msgid "Dance of Fireflies"
+msgstr "Танец светлячков"
+
+
+msgid "Pill shaped button"
+msgstr "Кнопка в форме таблетки"
+
+
+msgid "Whimsical Whispers"
+msgstr "Причудливый шепот"
+
+
+msgid "The Dirty and Dead"
+msgstr "Грязный и мертвый"
+
+
+msgid "yourinfo@gmail.com"
+msgstr "вашinfo@gmail.com"
+
+
+msgid "The Lost Labyrinth"
+msgstr "Затерянный лабиринт"
+
+
+msgid "Extra Large Button"
+msgstr "Очень большая кнопка"
+
+
+msgid "My Dearest Darkest"
+msgstr "Мой самый дорогой самый темный"
+
+
+msgid "Latest Blog Posts"
+msgstr "Последние сообщения в блоге"
+
+
+msgid "Accordion Item #3"
+msgstr "Аккордеон №3"
+
+
+msgid "Blood on the Snow"
+msgstr "Кровь на снегу"
+
+
+msgid "Quality guarantee"
+msgstr "Гарантия качества"
+
+
+msgid "Aetherial Alchemy"
+msgstr "Эфирная алхимия"
+
+
+msgid "Assistant Manager"
+msgstr "Помощник управляющего"
+
+
+msgid "Browse Categories"
+msgstr "Просмотр категорий"
+
+
+msgid "Accordion Item #2"
+msgstr "Аккордеон № 2"
+
+
+msgid "Customers reviews"
+msgstr "Отзывы клиентов"
+
+
+msgid "info@yourinfo.com"
+msgstr "info@yourinfo.com"
+
+
+msgid "Best Selling Book"
+msgstr "Самая продаваемая книга"
+
+
+msgid "Read our articles"
+msgstr "Прочтите наши статьи"
+
+
+msgid "Starlight Secrets"
+msgstr "Секреты звездного света"
+
+
+msgid "The Emerald Crown"
+msgstr "Изумрудная Корона"
+
+
+msgid "Read All Articles"
+msgstr "Прочитать все статьи"
+
+
+msgid "Continue Shopping"
+msgstr "Продолжить покупки"
+
+
+msgid "Country / Region*"
+msgstr "Страна/регион*"
+
+
+msgid "Felt from outside"
+msgstr "Войлок снаружи"
+
+
+msgid "You may also like"
+msgstr "Вам также может понравиться"
+
+
+msgid "View all products"
+msgstr "Посмотреть все продукты"
+
+
+msgid "Shop collection →"
+msgstr "Коллекция магазина →"
+
+
+msgid "Construction Tips"
+msgstr "Советы по строительству"
+
+
+msgid "Accordion Item #1"
+msgstr "Аккордеон №1"
+
+
+msgid "Suggesting edits"
+msgstr "Предложение изменений"
+
+
+msgid "View all items →"
+msgstr "Посмотреть все товары →"
+
+
+msgid "Report a problem"
+msgstr "Сообщить о проблеме"
+
+
+msgid "Starlight Sonata"
+msgstr "Звездная соната"
+
+
+msgid "Rating (Highest)"
+msgstr "Рейтинг (высший)"
+
+
+msgid "Whispering Winds"
+msgstr "Шепот ветров"
+
+
+msgid "Books with offer"
+msgstr "Книги с предложением"
+
+
+msgid "Latest to oldest"
+msgstr "От последнего к самому старому"
+
+
+msgid "Sample Heading 3"
+msgstr "Пример заголовка 3"
+
+
+msgid "Musical by Karim"
+msgstr "Мюзикл Карима"
+
+
+msgid "Track Your Order"
+msgstr "Отслеживайте свой заказ"
+
+
+msgid "Oldest to latest"
+msgstr "От самого старого до самого последнего"
+
+
+msgid "Price (High-Low)"
+msgstr "Цена (высокая-низкая)"
+
+
+msgid "City of the Dead"
+msgstr "Город мертвых"
+
+
+msgid "Quote of the day"
+msgstr "Цитата дня"
+
+
+msgid "Tabs and Toggles"
+msgstr "Вкладки и переключатели"
+
+
+msgid "Returns Policies"
+msgstr "Политика возврата"
+
+
+msgid "Cash on delivery"
+msgstr "Наложенным платежом"
+
+
+msgid "Story of Success"
+msgstr "История успеха"
+
+
+msgid "Are you amazed ?"
+msgstr "Вы поражены?"
+
+
+msgid "Related Products"
+msgstr "Сопутствующие товары"
+
+
+msgid "Price (Low-High)"
+msgstr "Цена (низкая-высокая)"
+
+
+msgid "Payment options:"
+msgstr "Варианты оплаты:"
+
+
+msgid "Dreams of Avalon"
+msgstr "Мечты об Авалоне"
+
+
+msgid "Life of the Wild"
+msgstr "Жизнь дикой природы"
+
+
+msgid "Once upon a time"
+msgstr "Давным-давно"
+
+
+msgid "Mrs. Nocole Sara"
+msgstr "г-жа Ноколь Сара"
+
+
+msgid "His Saving Grace"
+msgstr "Его спасительная милость"
+
+
+msgid "Sample Heading 4"
+msgstr "Образец заголовка 4"
+
+
+msgid "Your full name *"
+msgstr "Ваше полное имя *"
+
+
+msgid "Heavenly Bodies"
+msgstr "Небесные Тела"
+
+
+msgid "Forgot Password"
+msgstr "Забыли пароль"
+
+
+msgid "Starry Horizons"
+msgstr "Звездные горизонты"
+
+
+msgid "Advanced Search"
+msgstr "Расширенный поиск"
+
+
+msgid "Street Address*"
+msgstr "Адрес улицы*"
+
+
+msgid "Billing Details"
+msgstr "Платежные данные"
+
+
+msgid "Emma Chamberlin"
+msgstr "Эмма Чемберлин"
+
+
+msgid "Shop Collection"
+msgstr "Магазин коллекции"
+
+
+msgid "Crystal Caverns"
+msgstr "Кристальные пещеры"
+
+
+msgid "General Manager"
+msgstr "Главный управляющий"
+
+
+msgid "Heartland Stars"
+msgstr "Хартленд Старс"
+
+
+msgid "Default sorting"
+msgstr "Сортировка по умолчанию"
+
+
+msgid "Enchanted Sands"
+msgstr "Зачарованные пески"
+
+
+msgid "Crimson Destiny"
+msgstr "Багровая судьба"
+
+
+msgid "Add all to cart"
+msgstr "Добавить все в корзину"
+
+
+msgid "Ms Sienna Jolie"
+msgstr "г-жа Сиенна Джоли"
+
+
+msgid "Latest Articles"
+msgstr "Последние статьи"
+
+
+msgid "Leave a Comment"
+msgstr "Оставить комментарий"
+
+
+msgid "Moonlit Secrets"
+msgstr "Лунные тайны"
+
+
+msgid "Latest Products"
+msgstr "Последние продукты"
+
+
+msgid "Email address *"
+msgstr "Адрес электронной почты *"
+
+
+msgid "Rating (Lowest)"
+msgstr "Рейтинг (самый низкий)"
+
+
+msgid "Filter by price"
+msgstr "Фильтровать по цене"
+
+
+msgid "Filter By Price"
+msgstr "Фильтровать по цене"
+
+
+msgid "Scarlet Secrets"
+msgstr "Алые тайны"
+
+
+msgid "The Crystal Key"
+msgstr "Хрустальный ключ"
+
+
+msgid "Returns Policy"
+msgstr "Политика возврата"
+
+
+msgid "Single-Product"
+msgstr "Однопродуктовый"
+
+
+msgid "Outline Accent"
+msgstr "Контурный акцент"
+
+
+msgid "Any questions?"
+msgstr "Есть вопросы?"
+
+
+msgid "Natalie dormer"
+msgstr "Натали Дормер"
+
+
+msgid "Dwayne Johnson"
+msgstr "Дуэйн Джонсон"
+
+
+msgid "Place an order"
+msgstr "Разместить заказ"
+
+
+msgid "I agree to the"
+msgstr "Я согласен на"
+
+
+msgid "Less than $100"
+msgstr "Менее 100 долларов США"
+
+
+msgid "Track My Order"
+msgstr "Отследить мой заказ"
+
+
+msgid "Sample Caption"
+msgstr "Пример подписи"
+
+
+msgid "Featured Books"
+msgstr "Рекомендуемые книги"
+
+
+msgid "Check payments"
+msgstr "Проверить платежи"
+
+
+msgid "Product Single"
+msgstr "Продукт Одиночный"
+
+
+msgid "By Timbur Hood"
+msgstr "Тимбур Худ"
+
+
+msgid "Is This Great?"
+msgstr "Это здорово?"
+
+
+msgid "Twilight Tales"
+msgstr "Сумеречные сказки"
+
+
+msgid "Privacy Policy"
+msgstr "политика конфиденциальности"
+
+
+msgid "Albert E. Beth"
+msgstr "Альберт Э. Бет"
+
+
+msgid "Go to checkout"
+msgstr "Перейти к оформлению заказа"
+
+
+msgid "Unordered List"
+msgstr "Неупорядоченный список"
+
+
+msgid "Single Product"
+msgstr "Одиночный продукт"
+
+
+msgid "Your Message *"
+msgstr "Ваше сообщение *"
+
+
+msgid "HTML Elements"
+msgstr "HTML-элементы"
+
+
+msgid "Your wishlist"
+msgstr "Ваш список желаний"
+
+
+msgid "United States"
+msgstr "Соединенные Штаты"
+
+
+msgid "Town / City *"
+msgstr "Город / Город *"
+
+
+msgid "Your rating *"
+msgstr "Ваша оценка *"
+
+
+msgid "Nicole Wilson"
+msgstr "Николь Уилсон"
+
+
+msgid "Best reviewed"
+msgstr "Лучший обзор"
+
+
+msgid "Model (A - Z)"
+msgstr "Модель (А - Я)"
+
+
+msgid "Less than $10"
+msgstr "Менее 10 долларов США"
+
+
+msgid "Related Items"
+msgstr "Сопутствующие товары"
+
+
+msgid "Free delivery"
+msgstr "Бесплатная доставка"
+
+
+msgid "Outline Light"
+msgstr "Контурный свет"
+
+
+msgid "Button Colors"
+msgstr "Цвета кнопок"
+
+
+msgid "Model (Z - A)"
+msgstr "Модель (Z - А)"
+
+
+msgid "Button Styles"
+msgstr "Стили кнопок"
+
+
+msgid "service terms"
+msgstr "условия обслуживания"
+
+
+msgid "We ship with:"
+msgstr "Мы отправляем с:"
+
+
+msgid "Mask of Death"
+msgstr "Маска Смерти"
+
+
+msgid "Sanchit Howdy"
+msgstr "Санчит Привет"
+
+
+msgid "Popular Books"
+msgstr "Популярные книги"
+
+
+msgid "San Francisco"
+msgstr "Сан-Франциско"
+
+
+msgid "Related Posts"
+msgstr "Похожие сообщения"
+
+
+msgid "Misty Meadows"
+msgstr "Мисти Медоуз"
+
+
+msgid "Misty Mirage"
+msgstr "Туманный Мираж"
+
+
+msgid "Reviews (02)"
+msgstr "Отзывы (02)"
+
+
+msgid "Ordered List"
+msgstr "Упорядоченный список"
+
+
+msgid "Feb 22, 2023"
+msgstr "22 февраля 2023 г."
+
+
+msgid "Latest posts"
+msgstr "Последние сообщения"
+
+
+msgid "Feb 27, 2023"
+msgstr "27 февраля 2023 г."
+
+
+msgid "Pellentesque"
+msgstr "Дети"
+
+
+msgid "My Wishtlist"
+msgstr "Мой список желаний"
+
+
+msgid "Mar 09, 2023"
+msgstr "09 марта 2023 г."
+
+
+msgid "Janet Wilson"
+msgstr "Джанет Уилсон"
+
+
+msgid "Mar 30, 2021"
+msgstr "30 марта 2021 г."
+
+
+msgid "Lufy carlson"
+msgstr "Карлсон бочки"
+
+
+msgid "Dave Gamache"
+msgstr "Дэйв Гамаш"
+
+
+msgid "Armor Ramsey"
+msgstr "Броня Рэмси"
+
+
+msgid "Feb 25, 2023"
+msgstr "25 февраля 2023 г."
+
+
+msgid "Latest items"
+msgstr "Последние товары"
+
+
+msgid "Analisa Nora"
+msgstr "Анализ Норы"
+
+
+msgid "Get in Touch"
+msgstr "Свяжитесь с нами"
+
+
+msgid "Mrs Lora Inn"
+msgstr "Миссис Лора Инн"
+
+
+msgid "Contact info"
+msgstr "Контактная информация"
+
+
+msgid "Arthur Doyle"
+msgstr "Артур Дойл"
+
+
+msgid "Shadow Dance"
+msgstr "Танец теней"
+
+
+msgid "Mar 29, 2021"
+msgstr "29 марта 2021 г."
+
+
+msgid "Social Links"
+msgstr "Социальные ссылки"
+
+
+msgid "Jenny Willis"
+msgstr "Дженни Уиллис"
+
+
+msgid "Add a review"
+msgstr "Добавить отзыв"
+
+
+msgid "Post Comment"
+msgstr "Опубликовать комментарий"
+
+
+msgid "Your Email *"
+msgstr "Ваш адрес электронной почты *"
+
+
+msgid "Outline Dark"
+msgstr "Контур темный"
+
+
+msgid "Feb 22, 2024"
+msgstr "22 февраля 2024 г."
+
+
+msgid "Mar 27, 2021"
+msgstr "27 марта 2021 г."
+
+
+msgid "Siren's Song"
+msgstr "Песня Сирены"
+
+
+msgid "Latest Posts"
+msgstr "Последние сообщения"
+
+
+msgid "Download App"
+msgstr "Скачать приложение"
+
+
+msgid "Apply Coupon"
+msgstr "Применить купон"
+
+
+msgid "Name (A - Z)"
+msgstr "Имя (А–Я)"
+
+
+msgid "Name (Z - A)"
+msgstr "Имя (Я - А)"
+
+
+msgid "Button Sizes"
+msgstr "Размеры кнопок"
+
+
+msgid "Money making"
+msgstr "Заработок денег"
+
+
+msgid "Shop Product"
+msgstr "Магазин продукта"
+
+
+msgid "Lauren Asher"
+msgstr "Лорен Ашер"
+
+
+msgid "Phone Number"
+msgstr "Номер телефона"
+
+
+msgid "Feb 27, 2021"
+msgstr "27 февраля 2021 г."
+
+
+msgid "Daily offers"
+msgstr "Ежедневные предложения"
+
+
+msgid "Whispersong"
+msgstr "Шепот"
+
+
+msgid "Remember Me"
+msgstr "Запомнить меня"
+
+
+msgid "Single Post"
+msgstr "Один пост"
+
+
+msgid "Your Name *"
+msgstr "Ваше имя *"
+
+
+msgid "Post Single"
+msgstr "Опубликовать сингл"
+
+
+msgid "Our Mission"
+msgstr "Наша миссия"
+
+
+msgid "Total (USD)"
+msgstr "Итого (долл. США)"
+
+
+msgid "Update Cart"
+msgstr "Обновить корзину"
+
+
+msgid "Adam Silber"
+msgstr "Адам Сильвер"
+
+
+msgid "Life Flight"
+msgstr "Жизненный полет"
+
+
+msgid "Single-Post"
+msgstr "Одностоечный"
+
+
+msgid "Anna garcia"
+msgstr "Анна Гарсия"
+
+
+msgid "Thomas John"
+msgstr "Томас Джон"
+
+
+msgid "shop it now"
+msgstr "купи это сейчас"
+
+
+msgid "Description"
+msgstr "Описание"
+
+
+msgid "Add to Cart"
+msgstr "добавить в корзину"
+
+
+msgid "Kevin Bryan"
+msgstr "Кевин Брайан"
+
+
+msgid "Anna Younes"
+msgstr "Анна Юнес"
+
+
+msgid "Accessories"
+msgstr "Аксессуары"
+
+
+msgid "Life lesson"
+msgstr "Урок жизни"
+
+
+msgid "Bratt Smith"
+msgstr "Брэтт Смит"
+
+
+msgid "Add to cart"
+msgstr "Добавить в корзину"
+
+
+msgid "Quick Links"
+msgstr "Быстрые ссылки"
+
+
+msgid "inspiration"
+msgstr "вдохновение"
+
+
+msgid "Help center"
+msgstr "Справочный центр"
+
+
+msgid "Hanna Clark"
+msgstr "Ханна Кларк"
+
+
+msgid "Update cart"
+msgstr "Обновить корзину"
+
+
+msgid "Klien Marry"
+msgstr "клиент Мэри"
+
+
+msgid "Marmik Lama"
+msgstr "Мармик Лама"
+
+
+msgid "Recommended"
+msgstr "Рекомендуется"
+
+
+msgid "Tom Johnson"
+msgstr "Том Джонсон"
+
+
+msgid "Remember me"
+msgstr "Запомнить меня"
+
+
+msgid "Cart Totals"
+msgstr "Итоги корзины"
+
+
+msgid "First Name*"
+msgstr "Имя*"
+
+
+msgid "Santie Mary"
+msgstr "Санти Мэри"
+
+
+msgid "Book Author"
+msgstr "Автор книги"
+
+
+msgid "Read Blog →"
+msgstr "Читать блог →"
+
+
+msgid "CEO-Founder"
+msgstr "Генеральный директор-основатель"
+
+
+msgid "Social info"
+msgstr "Социальная информация"
+
+
+msgid "Admiration"
+msgstr "Восхищение"
+
+
+msgid "About us →"
+msgstr "О нас →"
+
+
+msgid "Password *"
+msgstr "Пароль *"
+
+
+msgid "Categories"
+msgstr "Категории"
+
+
+msgid "Underrated"
+msgstr "недооцененный"
+
+
+msgid "Last Name*"
+msgstr "Фамилия*"
+
+
+msgid "Zip Code *"
+msgstr "Почтовый индекс *"
+
+
+msgid "Your email"
+msgstr "Ваш адрес электронной почты"
+
+
+msgid "Shop now →"
+msgstr "Купить сейчас →"
+
+
+msgid "Contact us"
+msgstr "Связаться с нами"
+
+
+msgid "Best Store"
+msgstr "Лучший магазин"
+
+
+msgid "Underlined"
+msgstr "Подчеркнуто"
+
+
+msgid "Italicized"
+msgstr "курсивом"
+
+
+msgid "Cheap Book"
+msgstr "Дешевая книга"
+
+
+msgid "My account"
+msgstr "Мой счет"
+
+
+msgid "Go to shop"
+msgstr "Перейти в магазин"
+
+
+msgid "Our stores"
+msgstr "Наши магазины"
+
+
+msgid "Thank You!"
+msgstr "Спасибо!"
+
+
+msgid "Management"
+msgstr "Управление"
+
+
+msgid "Technology"
+msgstr "Технология"
+
+
+msgid "Contact Us"
+msgstr "Связаться с нами"
+
+
+msgid "Who are we"
+msgstr "Кто мы"
+
+
+msgid "Languages:"
+msgstr "Языки:"
+
+
+msgid "Store Main"
+msgstr "Главная страница магазина"
+
+
+msgid "Lora leigh"
+msgstr "Лора Ли"
+
+
+msgid "Cart Total"
+msgstr "Корзина Всего"
+
+
+msgid "Australia"
+msgstr "Австралия"
+
+
+msgid "Paragraph"
+msgstr "Параграф"
+
+
+msgid "Lifestyle"
+msgstr "Образ жизни"
+
+
+msgid "Our Store"
+msgstr "Наш магазин"
+
+
+msgid "Read More"
+msgstr "Читать далее"
+
+
+msgid "Home &gt;"
+msgstr "Главная страница &gt;"
+
+
+msgid "Spiritual"
+msgstr "Духовный"
+
+
+msgid "View cart"
+msgstr "Посмотреть корзину"
+
+
+msgid "View Cart"
+msgstr "Посмотреть корзину"
+
+
+msgid "Subscribe"
+msgstr "Подписаться"
+
+
+msgid "Some FAQs"
+msgstr "Некоторые часто задаваемые вопросы"
+
+
+msgid "Adventure"
+msgstr "Приключение"
+
+
+msgid "Dr. Seuss"
+msgstr "доктор Сьюз"
+
+
+msgid "Sam Smith"
+msgstr "Сэм Смит"
+
+
+msgid "Pinterest"
+msgstr "Пинтерест"
+
+
+msgid "Questions"
+msgstr "Вопросы"
+
+
+msgid "Thank You"
+msgstr "Спасибо"
+
+
+msgid "Bookstore"
+msgstr "Книжный магазин"
+
+
+msgid "Reply Now"
+msgstr "Ответить сейчас"
+
+
+msgid "Instagram"
+msgstr "Инстаграм"
+
+
+msgid "Your cart"
+msgstr "Ваша корзина"
+
+
+msgid "Category:"
+msgstr "Категория:"
+
+
+msgid "All Genre"
+msgstr "Все жанры"
+
+
+msgid "Biography"
+msgstr "Биография"
+
+
+msgid "Fictional"
+msgstr "Вымышленный"
+
+
+msgid "Subject *"
+msgstr "Предмет *"
+
+
+msgid "Order now"
+msgstr "Заказать сейчас"
+
+
+msgid "Quantity"
+msgstr "Количество"
+
+
+msgid "Checkout"
+msgstr "Проверить"
+
+
+msgid "Location"
+msgstr "Расположение"
+
+
+msgid "Our Team"
+msgstr "Наша команда"
+
+
+msgid "Thriller"
+msgstr "Триллер"
+
+
+msgid "New York"
+msgstr "Нью-Йорк"
+
+
+msgid "About Us"
+msgstr "О нас"
+
+
+msgid "articles"
+msgstr "статьи"
+
+
+msgid "Facebook"
+msgstr "Фейсбук"
+
+
+msgid "Subtotal"
+msgstr "Итого"
+
+
+msgid "English,"
+msgstr "Английский,"
+
+
+msgid "Subjects"
+msgstr "Предметы"
+
+
+msgid "Shipping"
+msgstr "Перевозки"
+
+
+msgid "Shop Now"
+msgstr "Купить сейчас"
+
+
+msgid "Our Blog"
+msgstr "Наш блог"
+
+
+msgid "Romantic"
+msgstr "Романтический"
+
+
+msgid "D.K John"
+msgstr "Д.К. Джон"
+
+
+msgid "Discover"
+msgstr "Обнаружить"
+
+
+msgid "Articles"
+msgstr "Статьи"
+
+
+msgid "Business"
+msgstr "Бизнес"
+
+
+msgid "Featured"
+msgstr "Рекомендуемые"
+
+
+msgid "Comments"
+msgstr "Комментарии"
+
+
+msgid "View All"
+msgstr "Посмотреть все"
+
+
+msgid "Peaceful"
+msgstr "Мирный"
+
+
+msgid "San Jose"
+msgstr "Сан-Хосе"
+
+
+msgid "Register"
+msgstr "Зарегистрироваться"
+
+
+msgid "Revenge"
+msgstr "Месть"
+
+
+msgid "Heading"
+msgstr "Заголовок"
+
+
+msgid "Warning"
+msgstr "Предупреждение"
+
+
+msgid "Cooking"
+msgstr "Кулинария"
+
+
+msgid "Colored"
+msgstr "Цветной"
+
+
+msgid "careers"
+msgstr "карьера"
+
+
+msgid "Fiction"
+msgstr "Вымысел"
+
+
+msgid "Romance"
+msgstr "Романтика"
+
+
+msgid "Youtube"
+msgstr "Ютуб"
+
+
+msgid "On sale"
+msgstr "В продаже"
+
+
+msgid "Vampire"
+msgstr "Вампир"
+
+
+msgid "Store 2"
+msgstr "Магазин 2"
+
+
+msgid "Account"
+msgstr "Счет"
+
+
+msgid "Success"
+msgstr "Успех"
+
+
+msgid "Rounded"
+msgstr "Закругленный"
+
+
+msgid "Reviews"
+msgstr "Отзывы"
+
+
+msgid "Hayward"
+msgstr "Хейворд"
+
+
+msgid "Tablets"
+msgstr "Таблетки"
+
+
+msgid "Finance"
+msgstr "Финансы"
+
+
+msgid "Contact"
+msgstr "Контакт"
+
+
+msgid "Store 3"
+msgstr "Магазин 3"
+
+
+msgid "Authors"
+msgstr "Авторы"
+
+
+msgid "Quisque"
+msgstr "Каждый"
+
+
+msgid "Store 1"
+msgstr "Магазин 1"
+
+
+msgid "Product"
+msgstr "Продукт"
+
+
+msgid "Phone *"
+msgstr "Телефон *"
+
+
+msgid "Popular"
+msgstr "Популярный"
+
+
+msgid "Houston"
+msgstr "Хьюстон"
+
+
+msgid "Sign In"
+msgstr "Войти"
+
+
+msgid "Address"
+msgstr "Адрес"
+
+
+msgid "Message"
+msgstr "Сообщение"
+
+
+msgid "Twitter"
+msgstr "Твиттер"
+
+
+msgid "Watches"
+msgstr "Часы"
+
+
+msgid "State *"
+msgstr "Состояние *"
+
+
+msgid "Chicago"
+msgstr "Чикаго"
+
+
+msgid "Recipie"
+msgstr "Рецепты"
+
+
+msgid "Profile"
+msgstr "Профиль"
+
+
+msgid "Florida"
+msgstr "Флорида"
+
+
+msgid "Canada"
+msgstr "Канада"
+
+
+msgid "Recipe"
+msgstr "Рецепт"
+
+
+msgid "Share:"
+msgstr "Делиться:"
+
+
+msgid "authur"
+msgstr "автор"
+
+
+msgid "Zombie"
+msgstr "Зомби"
+
+
+msgid "xlarge"
+msgstr "большой"
+
+
+msgid "Mobile"
+msgstr "мобильный"
+
+
+msgid "Accent"
+msgstr "Акцент"
+
+
+msgid "Styles"
+msgstr "Стили"
+
+
+msgid "Emails"
+msgstr "Электронная почта"
+
+
+msgid "medium"
+msgstr "середина"
+
+
+msgid "Paypal"
+msgstr "ПайПал"
+
+
+msgid "Phones"
+msgstr "Телефоны"
+
+
+msgid "Author"
+msgstr "Автор"
+
+
+msgid "Stevin"
+msgstr "Стевин"
+
+
+msgid "French"
+msgstr "Французский"
+
+
+msgid "Common"
+msgstr "Общий"
+
+
+msgid "Health"
+msgstr "Здоровье"
+
+
+msgid "Nature"
+msgstr "Природа"
+
+
+msgid "Home /"
+msgstr "Дом /"
+
+
+msgid "Sci-Fi"
+msgstr "Научная фантастика"
+
+
+msgid "France"
+msgstr "Франция"
+
+
+msgid "Submit"
+msgstr "Представлять на рассмотрение"
+
+
+msgid "vision"
+msgstr "зрение"
+
+
+msgid "Latest"
+msgstr "Последний"
+
+
+msgid "Bolded"
+msgstr "Выделено жирным шрифтом"
+
+
+msgid "Sci-fi"
+msgstr "Научная фантастика"
+
+
+msgid "Modern"
+msgstr "Современный"
+
+
+msgid "Jul 10"
+msgstr "10 июля"
+
+
+msgid "donate"
+msgstr "пожертвовать"
+
+
+msgid "Office"
+msgstr "Офис"
+
+
+msgid "Offer"
+msgstr "Предложение"
+
+
+msgid "China"
+msgstr "Китай"
+
+
+msgid "Table"
+msgstr "Стол"
+
+
+msgid "Blogs"
+msgstr "Блоги"
+
+
+msgid "Tags:"
+msgstr "Теги:"
+
+
+msgid "Staff"
+msgstr "Персонал"
+
+
+msgid "Cheap"
+msgstr "Дешевый"
+
+
+msgid "small"
+msgstr "маленький"
+
+
+msgid "Pages"
+msgstr "Страницы"
+
+
+msgid "Books"
+msgstr "Книги"
+
+
+msgid "Color"
+msgstr "Цвет"
+
+
+msgid "Roman"
+msgstr "Роман"
+
+
+msgid "About"
+msgstr "О"
+
+
+msgid "White"
+msgstr "Белый"
+
+
+msgid "Black"
+msgstr "Черный"
+
+
+msgid "large"
+msgstr "большой"
+
+
+msgid "Texas"
+msgstr "Техас"
+
+
+msgid "Login"
+msgstr "Авторизоваться"
+
+
+msgid "Happy"
+msgstr "Счастливый"
+
+
+msgid "Money"
+msgstr "Деньги"
+
+
+msgid "Forms"
+msgstr "Формы"
+
+
+msgid "Reply"
+msgstr "Отвечать"
+
+
+msgid "Total"
+msgstr "Общий"
+
+
+msgid "Story"
+msgstr "История"
+
+
+msgid "Shop"
+msgstr "Магазин"
+
+
+msgid "Help"
+msgstr "Помощь"
+
+
+msgid "Male"
+msgstr "Мужской"
+
+
+msgid "SKU:"
+msgstr "Артикул:"
+
+
+msgid "Age:"
+msgstr "Возраст:"
+
+
+msgid "Menu"
+msgstr "Меню"
+
+
+msgid "Tags"
+msgstr "Теги"
+
+
+msgid "send"
+msgstr "отправлять"
+
+
+msgid "Next"
+msgstr "Следующий"
+
+
+msgid "Grey"
+msgstr "Серый"
+
+
+msgid "Cart"
+msgstr "Корзина"
+
+
+msgid "Blue"
+msgstr "Синий"
+
+
+msgid "Faqs"
+msgstr "Часто задаваемые вопросы"
+
+
+msgid "Life"
+msgstr "Жизнь"
+
+
+msgid "Tips"
+msgstr "Советы"
+
+
+msgid "Prev"
+msgstr "Предыдущий"
+
+
+msgid "Home"
+msgstr "Дом"
+
+
+msgid "Size"
+msgstr "Размер"
+
+
+msgid "Days"
+msgstr "Дни"
+
+
+msgid "Gray"
+msgstr "Серый"
+
+
+msgid "Name"
+msgstr "Имя"
+
+
+msgid "Sex"
+msgstr "Секс"
+
+
+msgid "Hrs"
+msgstr "Часы"
+
+
+msgid "USA"
+msgstr "США"
+
+
+msgid "Sec"
+msgstr "сек."
+
+
+msgid "All"
+msgstr "Все"
+
+
+msgid "Min"
+msgstr "Мин"
+
+
+msgid "Age"
+msgstr "Возраст"
+
+
+msgid "UK"
+msgstr "Великобритания"
+
