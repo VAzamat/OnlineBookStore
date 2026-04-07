@@ -19,8 +19,9 @@ def shop(request):
 
 def single_product(request, product_slug):
     # Ищем товар по полю slug, которое мы заполнили через pytils
-    product = get_object_or_404(Book, slug=product_slug)
-    related_products = product
+    product = get_object_or_404(Product, slug=product_slug)
+    related_products = Product.objects.get_related(current_slug=product_slug, max_count=4)
+    featured_books = Product.objects.get_random_featured(max_count=3)
     return render(request, f'{used_skin}/single_product.html',
     {'product': product, 'products_related': related_products }
     )
