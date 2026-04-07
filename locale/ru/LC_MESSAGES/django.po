@@ -811,7 +811,7 @@ msgstr "Войлок снаружи"
 
 
 msgid "You may also like"
-msgstr "Вам также может понравиться"
+msgstr "Вам также могут понравиться"
 
 
 msgid "View all products"
@@ -911,7 +911,7 @@ msgstr "Вы поражены?"
 
 
 msgid "Related Products"
-msgstr "Сопутствующие товары"
+msgstr "Смотрите также"
 
 
 msgid "Price (Low-High)"

@@ -23,7 +23,11 @@
 
 				<div class="col-md-7 pl-5">
 					<div class="product-detail">
-						<span>{% trans "Fiction" %}</span>
+						{% for entry in product.genres.all %}
+                          <span><a href="#">{{entry.name}}</a></span>
+                          {% if not forloop.last %}, {% endif %}
+                        {% endfor %}
+
 
 						<h1>{{product.title}}</h1>
 						{% for entry in product.bookcontributor_set.all %}
@@ -214,78 +218,27 @@
 				<div class="inner-content">
 					<div class="product-list" data-aos="fade-up">
 						<div class="grid product-grid">
-							<div class="product-item">
-								<figure class="product-style">
-									<img src="{% static 'skin2/images/product-item5.jpg' %}" alt="Books" class="product-item">
-									<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
-										Cart</button>
-								</figure>
-								<figcaption>
-									<h3>{% trans "Simple way of piece life" %}</h3>
-									<span>{% trans "Armor Ramsey" %}</span>
-									<div class="item-price">
-										<span class="prev-price">$ 50.00</span>$ 40.00
-									</div>
-							</div>
-							</figcaption>
+					     {% for entry in products_related %}
 
-							<div class="product-item">
+							<div class="product-item h-100">
 								<figure class="product-style">
-									<img src="{% static 'skin2/images/product-item6.jpg' %}" alt="Books" class="product-item">
-									<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
-										Cart</button>
+									<img src="/{{entry.cover_url}}" alt="{{entry.title}}" class="product-item">
+									<button type="button" class="add-to-cart" data-product-tile="add-to-cart">{% trans "Add to Cart" %}</button>
 								</figure>
 								<figcaption>
-									<h3>{% trans "Great travel at desert" %}</h3>
-									<span>{% trans "Sanchit Howdy" %}</span>
+									<a href="{% url 'core:single_product' entry.slug %}"><h3>{{entry.title}}</h3></a>
+									{% for item in entry.bookcontributor_set.all %}
+										{% if item.role == 'author' %}
+											<span>{{item.contributor.full_name}}</span>
+										{% endif %}
+									{% endfor %}
 									<div class="item-price">
-										<span class="prev-price">$ 30.00</span>$ 38.00
+										<span class="prev-price">{{entry.prices}} руб.</span> {{entry.prices}} руб.
 									</div>
-							</div>
-							</figcaption>
-
-							<div class="product-item">
-								<figure class="product-style">
-									<img src="{% static 'skin2/images/product-item7.jpg' %}" alt="Books" class="product-item">
-									<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
-										Cart</button>
-								</figure>
-								<figcaption>
-									<h3>{% trans "The lady beauty Scarlett" %}</h3>
-									<span>{% trans "Arthur Doyle" %}</span>
-									<div class="item-price">
-										<span class="prev-price">$ 35.00</span>$ 45.00
-									</div>
-							</div>
-							</figcaption>
-
-							<div class="product-item">
-								<figure class="product-style">
-									<img src="{% static 'skin2/images/product-item8.jpg' %}" alt="Books" class="product-item">
-									<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
-										Cart</button>
-								</figure>
-								<figcaption>
-									<h3>{% trans "Once upon a time" %}</h3>
-									<span>{% trans "Klien Marry" %}</span>
-									<div class="item-price">
-										<span class="prev-price">$ 25.00</span>$ 35.00
-									</div>
-							</div>
-							</figcaption>
-
-							<div class="product-item">
-								<figure class="product-style">
-									<img src="{% static 'skin2/images/product-item2.jpg' %}" alt="Books" class="product-item">
-									<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
-										Cart</button>
-								</figure>
-								<figcaption>
-									<h3>{% trans "Simple way of piece life" %}</h3>
-									<span>{% trans "Armor Ramsey" %}</span>
-									<div class="item-price">$ 40.00</div>
 								</figcaption>
 							</div>
+						{% endfor %}
+
 						</div><!--grid-->
 					</div>
 				</div><!--inner-content-->
