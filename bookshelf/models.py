@@ -82,7 +82,6 @@ class Contributor(models.Model):
         return self.full_name
 
 
-
 class Book(models.Model):
     id = models.BigIntegerField(unique=True, verbose_name="ID")
     uuid = models.UUIDField(primary_key=True, editable=False)
@@ -176,13 +175,23 @@ class BookContributor(models.Model):
         return f"{self.contributor.name} - {self.role}"
 
 
-#class BookManager(models.Manager):
-#    def get_related(self, current_slug, count=4):
-#        return super().get_queryset()
+
+class BookManager(models.Manager):
+    def get_related(self, current_slug, max_count=3):
+        genres = self.filter(slug=current_slug).values_list('genres', flat=True)
+
+        return self.get_queryset().filter(
+            genres__in=genres,
+            availability=True
+        ).exclude(slug=current_slug).distinct()[:max_count]
+
+    def get_random_featured(self, max_count=3):
+        return self.get_queryset().filter(availability=True).order_by('?')[:max_count]
+
 
 
 class Product(Book):
-#   objects = BookManager()
+    objects = BookManager()
+
     class Meta:
-        verbose_name = _('Продукт')
-        verbose_name_plural = _('Продукты')
+        proxy = True
