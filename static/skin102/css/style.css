@@ -444,7 +444,7 @@ h1,
 h2,
 h3 {
   margin: 25px 0;
-  text-transform: capitalize;
+  text-transform: none;
 }
 
 h5,

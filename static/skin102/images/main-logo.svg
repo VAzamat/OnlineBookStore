@@ -1,0 +1,8 @@
+<svg width="200" height="100" viewBox="0 0 200 100"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect width="200" height="100" fill="none"/>
+  <g font-family="DejaVu Sans, Arial, sans-serif" font-style="italic" font-weight="bold">
+    <text x="100" y="42" text-anchor="middle" fill="#2C3E50" font-size="22">Библио</text>
+    <text x="100" y="72" text-anchor="middle" fill="#E74C3C" font-size="26">Пульс</text>
+  </g>
+  <path d="M50 85 L80 85 L85 78 L93 92 L100 68 L107 85 L150 85" stroke="#E74C3C" stroke-width="2" fill="none" stroke-linecap="round"/>
+</svg>

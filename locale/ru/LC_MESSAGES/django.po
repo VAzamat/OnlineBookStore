@@ -2383,3 +2383,7 @@ msgstr "Главная &gt"
 
 msgid "Home&nbsp;"
 msgstr "Главная"
+
+msgid "Links"
+msgstr "Ссылки"
+
