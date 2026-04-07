@@ -1,4 +1,5 @@
 {% extends "skin1/base.html" %}
+{% load i18n %}
 
 {% load static %}
 
@@ -18,12 +19,12 @@
         <div class="container">
           <div class="row">
             <div class="text-center padding-medium no-padding-bottom">
-              <h1>Cart</h1>
+              <h1>{% trans "Cart" %}</h1>
               <div class="breadcrumbs">
                 <span class="item">
-                  <a href="{% url 'core:index' %}">Home &gt;</a>
+                  <a href="{% url 'core:index' %}">{% trans "Home &gt;" %}</a>
                 </span>
-                <span class="item">Cart</span>
+                <span class="item">{% trans "Cart" %}</span>
               </div>
             </div>
           </div>
@@ -37,9 +38,9 @@
             <table class="table">
               <thead class="text-uppercase">
                 <tr>
-                  <th scope="col" class="fw-light">Product</th>
-                  <th scope="col" class="fw-light">Quantity</th>
-                  <th scope="col" class="fw-light">Subtotal</th>
+                  <th scope="col" class="fw-light">{% trans "Product" %}</th>
+                  <th scope="col" class="fw-light">{% trans "Quantity" %}</th>
+                  <th scope="col" class="fw-light">{% trans "Subtotal" %}</th>
                   <th scope="col" class="fw-light"></th>
                 </tr>
               </thead>
@@ -52,7 +53,7 @@
                       </div>
                       <div class="card-detail ps-3">
                         <h5 class="card-title fs-4 text-uppercase">
-                          <a href="{% url 'core:single_product' %}">Scarlet Secrets</a>
+                          <a href="{% url 'core:single_product' %}">{% trans "Scarlet Secrets" %}</a>
                         </h5>
                         <span class="item-price text-primary fs-4">$870</span>
                       </div>
@@ -91,7 +92,7 @@
                       </div>
                       <div class="card-detail ps-3">
                         <h5 class="card-title fs-4 text-uppercase">
-                          <a href="{% url 'core:single_product' %}">Crystal Caverns</a>
+                          <a href="{% url 'core:single_product' %}">{% trans "Crystal Caverns" %}</a>
                         </h5>
                         <span class="item-price text-primary fs-4">$870</span>
                       </div>
@@ -126,18 +127,18 @@
             <div class="cart-bottom d-flex flex-wrap justify-content-between align-items-center pt-2">
               <form action="{% url 'core:cart' %}#" class="d-flex flex-wrap justify-content-between">
                 <input type="text" class="bg-gray border-0 p-2 me-1 mb-2" required="" placeholder="Coupon Code">
-                <a href="{% url 'core:cart' %}#" class="btn btn-dark mb-2" type="submit">Apply Coupon</a>
+                <a href="{% url 'core:cart' %}#" class="btn btn-dark mb-2" type="submit">{% trans "Apply Coupon" %}</a>
               </form>
-              <a href="{% url 'core:cart' %}#" class="btn btn-dark mb-2">Update cart</a>
+              <a href="{% url 'core:cart' %}#" class="btn btn-dark mb-2">{% trans "Update cart" %}</a>
             </div>
           </div>
           <div class="cart-totals padding-medium">
-            <h3 class="pb-4">Cart Total</h3>
+            <h3 class="pb-4">{% trans "Cart Total" %}</h3>
             <div class="total-price pb-5">
               <table cellspacing="0" class="table text-uppercase">
                 <tbody>
                   <tr class="subtotal pt-2 pb-2 border-top border-bottom border-gray">
-                    <th class="fw-light">Subtotal</th>
+                    <th class="fw-light">{% trans "Subtotal" %}</th>
                     <td class="align-middle border-0" data-title="Subtotal">
                       <span class="price-amount amount text-primary">
                         <bdi>
@@ -147,7 +148,7 @@
                     </td>
                   </tr>
                   <tr class="order-total pt-2 pb-2 border-bottom border-gray">
-                    <th class="fw-light">Total</th>
+                    <th class="fw-light">{% trans "Total" %}</th>
                     <td class="align-middle border-0" data-title="Total">
                       <span class="price-amount amount text-primary">
                         <bdi>
@@ -160,9 +161,9 @@
               </table>
             </div>
             <div class="button-wrap">
-              <a href="{% url 'core:cart' %}#" class="btn btn-dark me-2 mb-2">Update Cart</a>
-              <a href="{% url 'core:shop' %}" class="btn btn-dark me-2 mb-2">Continue Shopping</a>
-              <a href="{% url 'core:checkout' %}" class="btn btn-primary me-2 mb-2">Proceed to checkout</a>
+              <a href="{% url 'core:cart' %}#" class="btn btn-dark me-2 mb-2">{% trans "Update Cart" %}</a>
+              <a href="{% url 'core:shop' %}" class="btn btn-dark me-2 mb-2">{% trans "Continue Shopping" %}</a>
+              <a href="{% url 'core:checkout' %}" class="btn btn-primary me-2 mb-2">{% trans "Proceed to checkout" %}</a>
             </div>
           </div>
         </div>
@@ -173,13 +174,13 @@
         <div class="newsletter">
           <div class="row">
             <div class="col-lg-6 col-md-12 title">
-              <h3>Subscribe to Our Newsletter</h3>
-              <p>Get latest news, updates and deals directly mailed to your inbox.</p>
+              <h3>{% trans "Subscribe to Our Newsletter" %}</h3>
+              <p>{% trans "Get latest news, updates and deals directly mailed to your inbox." %}</p>
             </div>
             <form class="col-lg-6 col-md-12 d-flex align-items-center">
               <div class="d-flex w-75 border-bottom border-dark py-2">
                 <input id="newsletter1" type="text" class="form-control border-0 p-0" placeholder="Your email address here">
-                <button class="btn border-0 p-0" type="button">Subscribe</button>
+                <button class="btn border-0 p-0" type="button">{% trans "Subscribe" %}</button>
               </div>
             </form>
           </div>

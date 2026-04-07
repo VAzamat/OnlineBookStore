@@ -1,10 +1,11 @@
 {% extends "skin1/base.html" %}
+{% load i18n %}
 
 {% load static %}
 
 {% block titlekeywords %}
     <meta name="keywords" content="купить книги онлайн, интернет-магазин книг, digital book sales, каталог книг, книжный маркетплейс, заказать книги с доставкой.">
-    <title>Janet Wilson - об авторе</title>
+    <title>{% trans "Janet Wilson - об авторе" %}</title>
 {% endblock %}
 
 {% block customstyle %}
@@ -18,12 +19,12 @@
         <div class="container">
           <div class="row">
             <div class="text-center padding-medium no-padding-bottom">
-              <h1>Author</h1>
+              <h1>{% trans "Author" %}</h1>
               <div class="breadcrumbs">
                 <span class="item">
-                  <a href="{% url 'core:index' %}">Home &gt;</a>
+                  <a href="{% url 'core:index' %}">{% trans "Home &gt;" %}</a>
                 </span>
-                <span class="item">Author</span>
+                <span class="item">{% trans "Author" %}</span>
               </div>
             </div>
           </div>
@@ -38,28 +39,28 @@
           </div>
           <div class="col-md-7 d-flex align-items-center">
             <div class="about-author mt-3">
-              <div class="country">USA</div>
-              <h3 class="author-name">Janet Wilson</h3>
+              <div class="country">{% trans "USA" %}</div>
+              <h3 class="author-name">{% trans "Janet Wilson" %}</h3>
               <blockquote>"Sit suscipit tortor turpis sed fringilla lectus facilisis amet. Ipsum, amet dolor curabitur non aliquet orci urna volutpat."</blockquote>
-              <p>Ullamcorper nunc egestas non. Justo, cum feugiat imperdiet nulla molestie ac vulputate scelerisque amet. Bibendum adipiscing platea blandit sit rhoncus. Id aliquam neque, ut vivamus sit imperdiet enim, lacus, vel.</p>
+              <p>{% trans "Ullamcorper nunc egestas non. Justo, cum feugiat imperdiet nulla molestie ac vulputate scelerisque amet. Bibendum adipiscing platea blandit sit rhoncus. Id aliquam neque, ut vivamus sit imperdiet enim, lacus, vel." %}</p>
               <div class="meta-info">
                 <div class="meta-item d-flex mb-1">
-                  <span class="text-uppercase me-2">Age:</span>
+                  <span class="text-uppercase me-2">{% trans "Age:" %}</span>
                   <ul class="select-list list-unstyled d-flex mb-0">
                     <li data-value="S" class="select-item">36</li>
                   </ul>
                 </div>
                 <div class="meta-item d-flex mb-1">
-                  <span class="text-uppercase me-2">Category:</span>
+                  <span class="text-uppercase me-2">{% trans "Category:" %}</span>
                   <ul class="select-list list-unstyled d-flex mb-0">
-                    <li data-value="S" class="select-item">Happy</li>
+                    <li data-value="S" class="select-item">{% trans "Happy" %}</li>
                   </ul>
                 </div>
                 <div class="meta-item d-flex mb-1">
-                  <span class="text-uppercase me-2">Languages:</span>
+                  <span class="text-uppercase me-2">{% trans "Languages:" %}</span>
                   <ul class="select-list list-unstyled d-flex mb-0">
-                    <li data-value="S" class="select-item">English,</li>
-                    <li data-value="S" class="select-item">French</li>
+                    <li data-value="S" class="select-item">{% trans "English," %}</li>
+                    <li data-value="S" class="select-item">{% trans "French" %}</li>
                   </ul>
                 </div>
               </div>
@@ -112,13 +113,13 @@
         <div class="newsletter">
           <div class="row">
             <div class="col-lg-6 col-md-12 title">
-              <h3>Subscribe to Our Newsletter</h3>
-              <p>Get latest news, updates and deals directly mailed to your inbox.</p>
+              <h3>{% trans "Subscribe to Our Newsletter" %}</h3>
+              <p>{% trans "Get latest news, updates and deals directly mailed to your inbox." %}</p>
             </div>
             <form class="col-lg-6 col-md-12 d-flex align-items-center">
               <div class="d-flex w-75 border-bottom border-dark py-2">
                 <input id="newsletter1" type="text" class="form-control border-0 p-0" placeholder="Your email address here">
-                <button class="btn border-0 p-0" type="button">Subscribe</button>
+                <button class="btn border-0 p-0" type="button">{% trans "Subscribe" %}</button>
               </div>
             </form>
           </div>

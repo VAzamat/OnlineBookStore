@@ -1,9 +1,12 @@
 {% extends "skin6/base.html" %}
+
+
+{% load i18n %}
 {% load static %}
 
 {% block titlekeywords %}
     <meta name="keywords" content="о компании Digital Book Sales, купить книги со скидкой, корзина заказов, магазин литературы, оплата книг онлайн, библиотека книг, поиск книг по автору.">
-    <title>Digital Book Sales</title>
+    <title>{% trans "Digital Book Sales" %}</title>
 {% endblock %}
 
 {% block customstyle %}
@@ -38,91 +41,91 @@ single-page
           <main class="col-md-9 mb-4 mb-md-0">
             <div class="filter-blog d-flex flex-wrap justify-content-between mb-4">
               <div class="showing-product">
-                <p>Showing 1-9 of 55 results</p>
+                <p>{% trans "Showing 1-9 of 55 results" %}</p>
               </div>
               <div class="sort-by">
                 <select id="sorting" class="form-select" data-filter-sort="" data-filter-order="">
-                  <option value="" selected="selected">Latest to oldest</option>
-                  <option value="">Oldest to latest</option>
-                  <option value="">Popular</option>
-                  <option value="">Name (A - Z)</option>
-                  <option value="">Name (Z - A)</option>
-                  <option value="">Model (A - Z)</option>
-                  <option value="">Model (Z - A)</option>
+                  <option value="" selected="selected">{% trans "Latest to oldest" %}</option>
+                  <option value="">{% trans "Oldest to latest" %}</option>
+                  <option value="">{% trans "Popular" %}</option>
+                  <option value="">{% trans "Name (A - Z)" %}</option>
+                  <option value="">{% trans "Name (Z - A)" %}</option>
+                  <option value="">{% trans "Model (A - Z)" %}</option>
+                  <option value="">{% trans "Model (Z - A)" %}</option>
                 </select>
               </div>
             </div>
             <div class="row post-contents">
               <div class="col-lg-4 col-md-6 posts mb-5">
                 <img src="{% static 'skin6/images/post-item1.jpg' %}" alt="post image" class="img-fluid rounded-3">
-                <a href="{% url 'core:blog' %}" class="fs-6 text-primary">Books</a>
-                <h4 class="card-title mb-2 text-capitalize text-dark"><a href="{% url 'core:single_post' %}">The Fascinating Realm of Science Fiction</a></h4>
+                <a href="{% url 'core:blog' %}" class="fs-6 text-primary">{% trans "Books" %}</a>
+                <h4 class="card-title mb-2 text-capitalize text-dark"><a href="{% url 'core:single_post' %}">{% trans "The Fascinating Realm of Science Fiction" %}</a></h4>
                 <p class="mb-2">Dive into the world of cutting-edge technology with our latest blog post, where we highlight
-                  five essential gadge. <span><a class="text-decoration-underline text-black-50" href="{% url 'core:single_post' %}">Read More</a></span>
+                  five essential gadge. <span><a class="text-decoration-underline text-black-50" href="{% url 'core:single_post' %}">{% trans "Read More" %}</a></span>
                 </p>
               </div>
               <div class="col-lg-4 col-md-6 posts mb-5">
                 <img src="{% static 'skin6/images/post-item1.jpg' %}" alt="post image" class="img-fluid rounded-3">
-                <a href="{% url 'core:blog' %}" class="fs-6 text-primary">Books</a>
-                <h4 class="card-title mb-2 text-capitalize text-dark"><a href="{% url 'core:single_post' %}">The Fascinating Realm of Science Fiction</a></h4>
+                <a href="{% url 'core:blog' %}" class="fs-6 text-primary">{% trans "Books" %}</a>
+                <h4 class="card-title mb-2 text-capitalize text-dark"><a href="{% url 'core:single_post' %}">{% trans "The Fascinating Realm of Science Fiction" %}</a></h4>
                 <p class="mb-2">Dive into the world of cutting-edge technology with our latest blog post, where we highlight
-                  five essential gadge. <span><a class="text-decoration-underline text-black-50" href="{% url 'core:single_post' %}">Read More</a></span>
+                  five essential gadge. <span><a class="text-decoration-underline text-black-50" href="{% url 'core:single_post' %}">{% trans "Read More" %}</a></span>
                 </p>
               </div>
               <div class="col-lg-4 col-md-6 posts mb-5">
                 <img src="{% static 'skin6/images/post-item2.jpg' %}" alt="post image" class="img-fluid rounded-3">
-                <a href="{% url 'core:blog' %}" class="fs-6 text-primary">Books</a>
-                <h4 class="card-title mb-2 text-capitalize text-dark"><a href="{% url 'core:single_post' %}">The Fascinating Realm of Science Fiction</a></h4>
+                <a href="{% url 'core:blog' %}" class="fs-6 text-primary">{% trans "Books" %}</a>
+                <h4 class="card-title mb-2 text-capitalize text-dark"><a href="{% url 'core:single_post' %}">{% trans "The Fascinating Realm of Science Fiction" %}</a></h4>
                 <p class="mb-2">Dive into the world of cutting-edge technology with our latest blog post, where we highlight
-                  five essential gadge. <span><a class="text-decoration-underline text-black-50" href="{% url 'core:single_post' %}">Read More</a></span>
+                  five essential gadge. <span><a class="text-decoration-underline text-black-50" href="{% url 'core:single_post' %}">{% trans "Read More" %}</a></span>
                 </p>
               </div>
               <div class="col-lg-4 col-md-6 posts mb-5">
                 <img src="{% static 'skin6/images/post-item3.jpg' %}" alt="post image" class="img-fluid rounded-3">
-                <a href="{% url 'core:blog' %}" class="fs-6 text-primary">Books</a>
-                <h4 class="card-title mb-2 text-capitalize text-dark"><a href="{% url 'core:single_post' %}">The Fascinating Realm of Science Fiction</a></h4>
+                <a href="{% url 'core:blog' %}" class="fs-6 text-primary">{% trans "Books" %}</a>
+                <h4 class="card-title mb-2 text-capitalize text-dark"><a href="{% url 'core:single_post' %}">{% trans "The Fascinating Realm of Science Fiction" %}</a></h4>
                 <p class="mb-2">Dive into the world of cutting-edge technology with our latest blog post, where we highlight
-                  five essential gadge. <span><a class="text-decoration-underline text-black-50" href="{% url 'core:single_post' %}">Read More</a></span>
+                  five essential gadge. <span><a class="text-decoration-underline text-black-50" href="{% url 'core:single_post' %}">{% trans "Read More" %}</a></span>
                 </p>
               </div>
               <div class="col-lg-4 col-md-6 posts mb-5">
                 <img src="{% static 'skin6/images/post-item4.jpg' %}" alt="post image" class="img-fluid rounded-3">
-                <a href="{% url 'core:blog' %}" class="fs-6 text-primary">Books</a>
-                <h4 class="card-title mb-2 text-capitalize text-dark"><a href="{% url 'core:single_post' %}">The Fascinating Realm of Science Fiction</a></h4>
+                <a href="{% url 'core:blog' %}" class="fs-6 text-primary">{% trans "Books" %}</a>
+                <h4 class="card-title mb-2 text-capitalize text-dark"><a href="{% url 'core:single_post' %}">{% trans "The Fascinating Realm of Science Fiction" %}</a></h4>
                 <p class="mb-2">Dive into the world of cutting-edge technology with our latest blog post, where we highlight
-                  five essential gadge. <span><a class="text-decoration-underline text-black-50" href="{% url 'core:single_post' %}">Read More</a></span>
+                  five essential gadge. <span><a class="text-decoration-underline text-black-50" href="{% url 'core:single_post' %}">{% trans "Read More" %}</a></span>
                 </p>
               </div>
               <div class="col-lg-4 col-md-6 posts mb-5">
                 <img src="{% static 'skin6/images/post-item5.jpg' %}" alt="post image" class="img-fluid rounded-3">
-                <a href="{% url 'core:blog' %}" class="fs-6 text-primary">Books</a>
-                <h4 class="card-title mb-2 text-capitalize text-dark"><a href="{% url 'core:single_post' %}">The Fascinating Realm of Science Fiction</a></h4>
+                <a href="{% url 'core:blog' %}" class="fs-6 text-primary">{% trans "Books" %}</a>
+                <h4 class="card-title mb-2 text-capitalize text-dark"><a href="{% url 'core:single_post' %}">{% trans "The Fascinating Realm of Science Fiction" %}</a></h4>
                 <p class="mb-2">Dive into the world of cutting-edge technology with our latest blog post, where we highlight
-                  five essential gadge. <span><a class="text-decoration-underline text-black-50" href="{% url 'core:single_post' %}">Read More</a></span>
+                  five essential gadge. <span><a class="text-decoration-underline text-black-50" href="{% url 'core:single_post' %}">{% trans "Read More" %}</a></span>
                 </p>
               </div>
               <div class="col-lg-4 col-md-6 posts mb-5">
                 <img src="{% static 'skin6/images/post-item6.jpg' %}" alt="post image" class="img-fluid rounded-3">
-                <a href="{% url 'core:blog' %}" class="fs-6 text-primary">Books</a>
-                <h4 class="card-title mb-2 text-capitalize text-dark"><a href="{% url 'core:single_post' %}">The Fascinating Realm of Science Fiction</a></h4>
+                <a href="{% url 'core:blog' %}" class="fs-6 text-primary">{% trans "Books" %}</a>
+                <h4 class="card-title mb-2 text-capitalize text-dark"><a href="{% url 'core:single_post' %}">{% trans "The Fascinating Realm of Science Fiction" %}</a></h4>
                 <p class="mb-2">Dive into the world of cutting-edge technology with our latest blog post, where we highlight
-                  five essential gadge. <span><a class="text-decoration-underline text-black-50" href="{% url 'core:single_post' %}">Read More</a></span>
+                  five essential gadge. <span><a class="text-decoration-underline text-black-50" href="{% url 'core:single_post' %}">{% trans "Read More" %}</a></span>
                 </p>
               </div>
               <div class="col-lg-4 col-md-6 posts mb-5">
                 <img src="{% static 'skin6/images/post-item7.jpg' %}" alt="post image" class="img-fluid rounded-3">
-                <a href="{% url 'core:blog' %}" class="fs-6 text-primary">Books</a>
-                <h4 class="card-title mb-2 text-capitalize text-dark"><a href="{% url 'core:single_post' %}">The Fascinating Realm of Science Fiction</a></h4>
+                <a href="{% url 'core:blog' %}" class="fs-6 text-primary">{% trans "Books" %}</a>
+                <h4 class="card-title mb-2 text-capitalize text-dark"><a href="{% url 'core:single_post' %}">{% trans "The Fascinating Realm of Science Fiction" %}</a></h4>
                 <p class="mb-2">Dive into the world of cutting-edge technology with our latest blog post, where we highlight
-                  five essential gadge. <span><a class="text-decoration-underline text-black-50" href="{% url 'core:single_post' %}">Read More</a></span>
+                  five essential gadge. <span><a class="text-decoration-underline text-black-50" href="{% url 'core:single_post' %}">{% trans "Read More" %}</a></span>
                 </p>
               </div>
               <div class="col-lg-4 col-md-6 posts mb-5">
                 <img src="{% static 'skin6/images/post-item8.jpg' %}" alt="post image" class="img-fluid rounded-3">
-                <a href="{% url 'core:blog' %}" class="fs-6 text-primary">Books</a>
-                <h4 class="card-title mb-2 text-capitalize text-dark"><a href="{% url 'core:single_post' %}">The Fascinating Realm of Science Fiction</a></h4>
+                <a href="{% url 'core:blog' %}" class="fs-6 text-primary">{% trans "Books" %}</a>
+                <h4 class="card-title mb-2 text-capitalize text-dark"><a href="{% url 'core:single_post' %}">{% trans "The Fascinating Realm of Science Fiction" %}</a></h4>
                 <p class="mb-2">Dive into the world of cutting-edge technology with our latest blog post, where we highlight
-                  five essential gadge. <span><a class="text-decoration-underline text-black-50" href="{% url 'core:single_post' %}">Read More</a></span>
+                  five essential gadge. <span><a class="text-decoration-underline text-black-50" href="{% url 'core:single_post' %}">{% trans "Read More" %}</a></span>
                 </p>
               </div>
 
@@ -130,7 +133,7 @@ single-page
             <nav class="pt-5" aria-label="Page navigation">
               <ul class="pagination justify-content-center gap-4">
                 <li class="page-item disabled">
-                  <a class="page-link">Prev</a>
+                  <a class="page-link">{% trans "Prev" %}</a>
                 </li>
                 <li class="page-item active" aria-current="page">
                   <span class="page-link">1</span>
@@ -138,7 +141,7 @@ single-page
                 <li class="page-item"><a class="page-link" href="#">2</a></li>
                 <li class="page-item"><a class="page-link" href="#">3</a></li>
                 <li class="page-item">
-                  <a class="page-link" href="#">Next</a>
+                  <a class="page-link" href="#">{% trans "Next" %}</a>
                 </li>
               </ul>
             </nav>
@@ -159,64 +162,64 @@ single-page
               </div>
               <div class="widget-product-categories pt-5">
                 <div class="section-title overflow-hidden mb-2">
-                  <h3 class="d-flex flex-column mb-0">Categories</h3>
+                  <h3 class="d-flex flex-column mb-0">{% trans "Categories" %}</h3>
                 </div>
                 <ul class="product-categories mb-0 sidebar-list list-unstyled">
                   <li class="cat-item">
-                    <a href="%{ static 'core:index' }%">All</a>
+                    <a href="%{ static 'core:index' }%">{% trans "All" %}</a>
                   </li>
                   <li class="cat-item">
-                    <a href="#">Phones</a>
+                    <a href="#">{% trans "Phones" %}</a>
                   </li>
                   <li class="cat-item">
-                    <a href="#">Accessories</a>
+                    <a href="#">{% trans "Accessories" %}</a>
                   </li>
                   <li class="cat-item">
-                    <a href="#">Tablets</a>
+                    <a href="#">{% trans "Tablets" %}</a>
                   </li>
                   <li class="cat-item">
-                    <a href="#">Watches</a>
+                    <a href="#">{% trans "Watches" %}</a>
                   </li>
                 </ul>
               </div>
               <div class="widget-product-tags pt-5">
                 <div class="section-title overflow-hidden mb-2">
-                  <h3 class="d-flex flex-column mb-0">Tags</h3>
+                  <h3 class="d-flex flex-column mb-0">{% trans "Tags" %}</h3>
                 </div>
                 <ul class="product-tags mb-0 sidebar-list list-unstyled">
                   <li class="tags-item">
-                    <a href="#">White</a>
+                    <a href="#">{% trans "White" %}</a>
                   </li>
                   <li class="tags-item">
-                    <a href="#">Cheap</a>
+                    <a href="#">{% trans "Cheap" %}</a>
                   </li>
                   <li class="tags-item">
-                    <a href="#">Mobile</a>
+                    <a href="#">{% trans "Mobile" %}</a>
                   </li>
                   <li class="tags-item">
-                    <a href="#">Modern</a>
+                    <a href="#">{% trans "Modern" %}</a>
                   </li>
                 </ul>
               </div>
               <div class="widget-social-links pt-5">
                 <div class="section-title overflow-hidden mb-2">
-                  <h3 class="d-flex flex-column mb-0">Social Links</h3>
+                  <h3 class="d-flex flex-column mb-0">{% trans "Social Links" %}</h3>
                 </div>
                 <ul class="social-links mb-0 sidebar-list list-unstyled">
                   <li class="links">
-                    <a href="#">Facebook</a>
+                    <a href="#">{% trans "Facebook" %}</a>
                   </li>
                   <li class="links">
-                    <a href="#">Instagram</a>
+                    <a href="#">{% trans "Instagram" %}</a>
                   </li>
                   <li class="links">
-                    <a href="#">Twitter</a>
+                    <a href="#">{% trans "Twitter" %}</a>
                   </li>
                   <li class="links">
-                    <a href="#">Youtube</a>
+                    <a href="#">{% trans "Youtube" %}</a>
                   </li>
                   <li class="links">
-                    <a href="#">Pinterest</a>
+                    <a href="#">{% trans "Pinterest" %}</a>
                   </li>
                 </ul>
               </div>
@@ -240,7 +243,7 @@ single-page
         </svg>
       </div>
       <div class="section-title mb-4 text-center">
-        <h3 class="mb-4">Customers reviews</h3>
+        <h3 class="mb-4">{% trans "Customers reviews" %}</h3>
       </div>
       <div class="swiper testimonial-swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
         <div class="swiper-wrapper" id="swiper-wrapper-b856c0f84f599dec" aria-live="polite">
@@ -267,7 +270,7 @@ atmosphere, friendly staff, and wide selection of books make every visit
                   <use xlink:href="#star-fill"></use>
                 </svg>
               </div>
-              <h5 class="mt-1 fw-normal">Emma Chamberlin</h5>
+              <h5 class="mt-1 fw-normal">{% trans "Emma Chamberlin" %}</h5>
             </div>
           </div>
           <div class="swiper-slide swiper-slide-next" style="width: 616px; margin-right: 20px;" role="group" aria-label="2 / 5">
@@ -293,7 +296,7 @@ for new releases, and this bookstore never disappoints. They always have
                   <use xlink:href="#star-fill"></use>
                 </svg>
               </div>
-              <h5 class="mt-1 fw-normal">Thomas John</h5>
+              <h5 class="mt-1 fw-normal">{% trans "Thomas John" %}</h5>
             </div>
           </div>
           <div class="swiper-slide" style="width: 616px; margin-right: 20px;" role="group" aria-label="3 / 5">
@@ -319,7 +322,7 @@ clear that they prioritize customer satisfaction, and I'll definitely be
                   <use xlink:href="#star-fill"></use>
                 </svg>
               </div>
-              <h5 class="mt-1 fw-normal">Kevin Bryan</h5>
+              <h5 class="mt-1 fw-normal">{% trans "Kevin Bryan" %}</h5>
             </div>
           </div>
           <div class="swiper-slide" style="width: 616px; margin-right: 20px;" role="group" aria-label="4 / 5">
@@ -344,7 +347,7 @@ clear that they prioritize customer satisfaction, and I'll definitely be
                   <use xlink:href="#star-fill"></use>
                 </svg>
               </div>
-              <h5 class="mt-1 fw-normal">Stevin</h5>
+              <h5 class="mt-1 fw-normal">{% trans "Stevin" %}</h5>
             </div>
           </div>
           <div class="swiper-slide" style="width: 616px; margin-right: 20px;" role="group" aria-label="5 / 5">
@@ -369,7 +372,7 @@ clear that they prioritize customer satisfaction, and I'll definitely be
                   <use xlink:href="#star-fill"></use>
                 </svg>
               </div>
-              <h5 class="mt-1 fw-normal">Roman</h5>
+              <h5 class="mt-1 fw-normal">{% trans "Roman" %}</h5>
             </div>
           </div>
         </div>

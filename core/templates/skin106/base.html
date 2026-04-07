@@ -1,4 +1,5 @@
 {% load static %}
+{% load i18n %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,7 +14,7 @@
   <link rel="icon" type="image/svg+xml" href="{% static 'common/images/favicon.svg' %}">
 {% block titlekeywords %}
     <meta name="keywords" content="">
-    <title>Digital Book Sales</title>
+    <title>{% trans "Digital Book Sales" %}</title>
 {% endblock %}
   <link rel="stylesheet" type="text/css" href="{% static 'skin6/css/bootstrap.min.css' %}">
   <link rel="stylesheet" type="text/css" href="{% static 'skin6/css/style.css' %}">
@@ -140,29 +141,29 @@
             </svg></button>
         </form>
 
-        <h5 class="cat-list-title">Browse Categories</h5>
+        <h5 class="cat-list-title">{% trans "Browse Categories" %}</h5>
 
         <ul class="cat-list">
           <li class="cat-list-item">
-            <a href="#" title="Romance">Romance</a>
+            <a href="#" title="Romance">{% trans "Romance" %}</a>
           </li>
           <li class="cat-list-item">
-            <a href="#" title="Thriller">Thriller</a>
+            <a href="#" title="Thriller">{% trans "Thriller" %}</a>
           </li>
           <li class="cat-list-item">
-            <a href="#" title="Sci-fi">Sci-fi</a>
+            <a href="#" title="Sci-fi">{% trans "Sci-fi" %}</a>
           </li>
           <li class="cat-list-item">
-            <a href="#" title="Cooking">Cooking</a>
+            <a href="#" title="Cooking">{% trans "Cooking" %}</a>
           </li>
           <li class="cat-list-item">
-            <a href="#" title="Health">Health</a>
+            <a href="#" title="Health">{% trans "Health" %}</a>
           </li>
           <li class="cat-list-item">
-            <a href="#" title="Lifestyle">Lifestyle</a>
+            <a href="#" title="Lifestyle">{% trans "Lifestyle" %}</a>
           </li>
           <li class="cat-list-item">
-            <a href="#" title="Fiction">Fiction</a>
+            <a href="#" title="Fiction">{% trans "Fiction" %}</a>
           </li>
         </ul>
 
@@ -178,7 +179,7 @@
               <p class="fs-6 my-2 text-center">Need any help? Call us <a href="#">112233344455</a></p>
             </div>
             <div class="col-md-4 border-start border-end">
-              <p class="fs-6 my-2 text-center">Summer sale discount off 60% off! <a class="text-decoration-underline" href="{% url 'core:shop' %}">Shop Now</a></p>
+              <p class="fs-6 my-2 text-center">Summer sale discount off 60% off! <a class="text-decoration-underline" href="{% url 'core:shop' %}">{% trans "Shop Now" %}</a></p>
             </div>
             <div class="col-md-4">
               <p class="fs-6 my-2 text-center">2-3 business days delivery &amp; free returns</p>
@@ -207,48 +208,48 @@
             <div class="offcanvas-body">
               <ul id="navbar" class="navbar-nav text-uppercase justify-content-start justify-content-lg-center align-items-start align-items-lg-center flex-grow-1">
                 <li class="nav-item">
-                  <a class="nav-link me-4 active" href="{% url 'core:index' %}">Home</a>
+                  <a class="nav-link me-4 active" href="{% url 'core:index' %}">{% trans "Home" %}</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link me-4" href="{% url 'core:about_us' %}">About</a>
+                  <a class="nav-link me-4" href="{% url 'core:about_us' %}">{% trans "About" %}</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link me-4" href="{% url 'core:shop' %}">Shop</a>
+                  <a class="nav-link me-4" href="{% url 'core:shop' %}">{% trans "Shop" %}</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link me-4" href="{% url 'core:blog' %}">Blogs</a>
+                  <a class="nav-link me-4" href="{% url 'core:blog' %}">{% trans "Blogs" %}</a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link me-4 dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Pages</a>
+                  <a class="nav-link me-4 dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">{% trans "Pages" %}</a>
                   <ul class="dropdown-menu animate slide border">
                     <li>
-                      <a href="{% url 'core:about_us' %}" class="dropdown-item fw-light">About</a>
+                      <a href="{% url 'core:about_us' %}" class="dropdown-item fw-light">{% trans "About" %}</a>
                     </li>
                     <li>
-                      <a href="{% url 'core:shop' %}" class="dropdown-item fw-light">Shop</a>
+                      <a href="{% url 'core:shop' %}" class="dropdown-item fw-light">{% trans "Shop" %}</a>
                     </li>
                     <li>
-                      <a href="{% url 'core:single_product' %}" class="dropdown-item fw-light">Single Product</a>
+                      <a href="{% url 'core:single_product' %}" class="dropdown-item fw-light">{% trans "Single Product" %}</a>
                     </li>
                     <li>
-                      <a href="{% url 'core:cart' %}" class="dropdown-item fw-light">Cart</a>
+                      <a href="{% url 'core:cart' %}" class="dropdown-item fw-light">{% trans "Cart" %}</a>
                     </li>
                     <li>
-                      <a href="{% url 'core:checkout' %}" class="dropdown-item fw-light">Checkout</a>
+                      <a href="{% url 'core:checkout' %}" class="dropdown-item fw-light">{% trans "Checkout" %}</a>
                     </li>
                     <li>
                       <a href="{% url 'core:blog' %}" class="dropdown-item fw-light">Blog</a>
                     </li>
                     <li>
-                      <a href="{% url 'core:single_post' %}" class="dropdown-item fw-light">Single Post</a>
+                      <a href="{% url 'core:single_post' %}" class="dropdown-item fw-light">{% trans "Single Post" %}</a>
                     </li>
                     <li>
-                      <a href="{% url 'core:contacts' %}" class="dropdown-item fw-light">Contact</a>
+                      <a href="{% url 'core:contacts' %}" class="dropdown-item fw-light">{% trans "Contact" %}</a>
                     </li>
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link me-4" href="{% url 'core:contacts' %}">Contact</a>
+                  <a class="nav-link me-4" href="{% url 'core:contacts' %}">{% trans "Contact" %}</a>
                 </li>
               </ul>
               <div class="user-items d-flex">
@@ -277,8 +278,8 @@
                             <div class="tabs-listing">
                               <nav>
                                 <div class="nav nav-tabs d-flex justify-content-center" id="nav-tab" role="tablist">
-                                  <button class="nav-link text-capitalize active" id="nav-sign-in-tab" data-bs-toggle="tab" data-bs-target="#nav-sign-in" type="button" role="tab" aria-controls="nav-sign-in" aria-selected="true">Sign In</button>
-                                  <button class="nav-link text-capitalize" id="nav-register-tab" data-bs-toggle="tab" data-bs-target="#nav-register" type="button" role="tab" aria-controls="nav-register" aria-selected="false" tabindex="-1">Register</button>
+                                  <button class="nav-link text-capitalize active" id="nav-sign-in-tab" data-bs-toggle="tab" data-bs-target="#nav-sign-in" type="button" role="tab" aria-controls="nav-sign-in" aria-selected="true">{% trans "Sign In" %}</button>
+                                  <button class="nav-link text-capitalize" id="nav-register-tab" data-bs-toggle="tab" data-bs-target="#nav-register" type="button" role="tab" aria-controls="nav-register" aria-selected="false" tabindex="-1">{% trans "Register" %}</button>
                                 </div>
                               </nav>
                               <div class="tab-content" id="nav-tabContent">
@@ -293,10 +294,10 @@
                                   </div>
                                   <label class="py-3">
                                     <input type="checkbox" required="" class="d-inline">
-                                    <span class="label-body">Remember me</span>
-                                    <span class="label-body"><a href="#" class="fw-bold">Forgot Password</a></span>
+                                    <span class="label-body">{% trans "Remember me" %}</span>
+                                    <span class="label-body"><a href="#" class="fw-bold">{% trans "Forgot Password" %}</a></span>
                                   </label>
-                                  <button type="submit" name="submit" class="btn btn-dark w-100 my-3">Login</button>
+                                  <button type="submit" name="submit" class="btn btn-dark w-100 my-3">{% trans "Login" %}</button>
                                 </div>
                                 <div class="tab-pane fade" id="nav-register" role="tabpanel" aria-labelledby="nav-register-tab">
                                   <div class="form-group py-3">
@@ -312,7 +313,7 @@
                                     <span class="label-body">I agree to the <a href="#" class="fw-bold">Privacy
                                         Policy</a></span>
                                   </label>
-                                  <button type="submit" name="submit" class="btn btn-dark w-100 my-3">Register</button>
+                                  <button type="submit" name="submit" class="btn btn-dark w-100 my-3">{% trans "Register" %}</button>
                                 </div>
                               </div>
                             </div>
@@ -329,38 +330,38 @@
                     </a>
                     <div class="dropdown-menu animate slide dropdown-menu-start dropdown-menu-lg-end p-3">
                       <h4 class="d-flex justify-content-between align-items-center mb-3">
-                        <span class="text-primary">Your wishlist</span>
+                        <span class="text-primary">{% trans "Your wishlist" %}</span>
                         <span class="badge bg-primary rounded-pill">2</span>
                       </h4>
                       <ul class="list-group mb-3">
                         <li class="list-group-item bg-transparent d-flex justify-content-between lh-sm">
                           <div>
                             <h5>
-                              <a href="{% url 'core:single_product' %}">The Emerald Crown</a>
+                              <a href="{% url 'core:single_product' %}">{% trans "The Emerald Crown" %}</a>
                             </h5>
-                            <small>Special discounted price.</small>
-                            <a href="#" class="d-block fw-medium text-capitalize mt-2">Add to cart</a>
+                            <small>{% trans "Special discounted price." %}</small>
+                            <a href="#" class="d-block fw-medium text-capitalize mt-2">{% trans "Add to cart" %}</a>
                           </div>
                           <span class="text-primary">$2000</span>
                         </li>
                         <li class="list-group-item bg-transparent d-flex justify-content-between lh-sm">
                           <div>
                             <h5>
-                              <a href="{% url 'core:single_product' %}">The Last Enchantment</a>
+                              <a href="{% url 'core:single_product' %}">{% trans "The Last Enchantment" %}</a>
                             </h5>
-                            <small>Perfect for enlightened people.</small>
-                            <a href="#" class="d-block fw-medium text-capitalize mt-2">Add to cart</a>
+                            <small>{% trans "Perfect for enlightened people." %}</small>
+                            <a href="#" class="d-block fw-medium text-capitalize mt-2">{% trans "Add to cart" %}</a>
                           </div>
                           <span class="text-primary">$400</span>
                         </li>
                         <li class="list-group-item bg-transparent d-flex justify-content-between">
-                          <span class="text-capitalize"><b>Total (USD)</b></span>
+                          <span class="text-capitalize"><b>{% trans "Total (USD)" %}</b></span>
                           <strong>$1470</strong>
                         </li>
                       </ul>
                       <div class="d-flex flex-wrap justify-content-center">
-                        <a href="#" class="w-100 btn btn-dark mb-1" type="submit">Add all to cart</a>
-                        <a href="{% url 'core:cart' %}" class="w-100 btn btn-primary" type="submit">View cart</a>
+                        <a href="#" class="w-100 btn btn-dark mb-1" type="submit">{% trans "Add all to cart" %}</a>
+                        <a href="{% url 'core:cart' %}" class="w-100 btn btn-primary" type="submit">{% trans "View cart" %}</a>
                       </div>
                     </div>
                   </li>
@@ -372,36 +373,36 @@
                     </a>
                     <div class="dropdown-menu animate slide dropdown-menu-start dropdown-menu-lg-end p-3">
                       <h4 class="d-flex justify-content-between align-items-center mb-3">
-                        <span class="text-primary">Your cart</span>
+                        <span class="text-primary">{% trans "Your cart" %}</span>
                         <span class="badge bg-primary rounded-pill">2</span>
                       </h4>
                       <ul class="list-group mb-3">
                         <li class="list-group-item bg-transparent d-flex justify-content-between lh-sm">
                           <div>
                             <h5>
-                              <a href="{% url 'core:single_product' %}">Secrets of the Alchemist</a>
+                              <a href="{% url 'core:single_product' %}">{% trans "Secrets of the Alchemist" %}</a>
                             </h5>
-                            <small>High quality in good price.</small>
+                            <small>{% trans "High quality in good price." %}</small>
                           </div>
                           <span class="text-primary">$870</span>
                         </li>
                         <li class="list-group-item bg-transparent d-flex justify-content-between lh-sm">
                           <div>
                             <h5>
-                              <a href="{% url 'core:single_product' %}">Quest for the Lost City</a>
+                              <a href="{% url 'core:single_product' %}">{% trans "Quest for the Lost City" %}</a>
                             </h5>
-                            <small>Professional Quest for the Lost City.</small>
+                            <small>{% trans "Professional Quest for the Lost City." %}</small>
                           </div>
                           <span class="text-primary">$600</span>
                         </li>
                         <li class="list-group-item bg-transparent d-flex justify-content-between">
-                          <span class="text-capitalize"><b>Total (USD)</b></span>
+                          <span class="text-capitalize"><b>{% trans "Total (USD)" %}</b></span>
                           <strong>$1470</strong>
                         </li>
                       </ul>
                       <div class="d-flex flex-wrap justify-content-center">
-                        <a href="{% url 'core:cart' %}" class="w-100 btn btn-dark mb-1" type="submit">View Cart</a>
-                        <a href="{% url 'core:checkout' %}" class="w-100 btn btn-primary" type="submit">Go to checkout</a>
+                        <a href="{% url 'core:cart' %}" class="w-100 btn btn-dark mb-1" type="submit">{% trans "View Cart" %}</a>
+                        <a href="{% url 'core:checkout' %}" class="w-100 btn btn-primary" type="submit">{% trans "Go to checkout" %}</a>
                       </div>
                     </div>
                   </li>
@@ -421,7 +422,7 @@
     <section id="instagram">
       <div class="container">
         <div class="text-center mb-4">
-          <h3>Instagram</h3>
+          <h3>{% trans "Instagram" %}</h3>
         </div>
         <div class="row">
           <div class="col-md-2">
@@ -553,52 +554,52 @@
               </div>
               <div class="col-lg-2 col-sm-6 pb-3">
                 <div class="footer-menu text-capitalize">
-                  <h5 class="widget-title pb-2">Quick Links</h5>
+                  <h5 class="widget-title pb-2">{% trans "Quick Links" %}</h5>
                   <ul class="menu-list list-unstyled text-capitalize">
                     <li class="menu-item mb-1">
-                      <a href="#">Home</a>
+                      <a href="#">{% trans "Home" %}</a>
                     </li>
                     <li class="menu-item mb-1">
-                      <a href="#">About</a>
+                      <a href="#">{% trans "About" %}</a>
                     </li>
                     <li class="menu-item mb-1">
-                      <a href="#">Shop</a>
+                      <a href="#">{% trans "Shop" %}</a>
                     </li>
                     <li class="menu-item mb-1">
-                      <a href="#">Blogs</a>
+                      <a href="#">{% trans "Blogs" %}</a>
                     </li>
                     <li class="menu-item mb-1">
-                      <a href="#">Contact</a>
+                      <a href="#">{% trans "Contact" %}</a>
                     </li>
                   </ul>
                 </div>
               </div>
               <div class="col-lg-3 col-sm-6 pb-3">
                 <div class="footer-menu text-capitalize">
-                  <h5 class="widget-title pb-2">Help &amp; Info Help</h5>
+                  <h5 class="widget-title pb-2">{% trans "Help &amp; Info Help" %}</h5>
                   <ul class="menu-list list-unstyled">
                     <li class="menu-item mb-1">
-                      <a href="#">Track Your Order</a>
+                      <a href="#">{% trans "Track Your Order" %}</a>
                     </li>
                     <li class="menu-item mb-1">
-                      <a href="#">Returns Policies</a>
+                      <a href="#">{% trans "Returns Policies" %}</a>
                     </li>
                     <li class="menu-item mb-1">
-                      <a href="#">Shipping + Delivery</a>
+                      <a href="#">{% trans "Shipping + Delivery" %}</a>
                     </li>
                     <li class="menu-item mb-1">
-                      <a href="#">Contact Us</a>
+                      <a href="#">{% trans "Contact Us" %}</a>
                     </li>
                     <li class="menu-item mb-1">
-                      <a href="#">Faqs</a>
+                      <a href="#">{% trans "Faqs" %}</a>
                     </li>
                   </ul>
                 </div>
               </div>
               <div class="col-lg-3 col-sm-6 pb-3">
                 <div class="footer-menu contact-item">
-                  <h5 class="widget-title text-capitalize pb-2">Contact Us</h5>
-                  <p>Do you have any queries or suggestions? <a href="mailto:" class="text-decoration-underline">yourinfo@gmail.com</a></p>
+                  <h5 class="widget-title text-capitalize pb-2">{% trans "Contact Us" %}</h5>
+                  <p>Do you have any queries or suggestions? <a href="mailto:" class="text-decoration-underline">{% trans "yourinfo@gmail.com" %}</a></p>
                   <p>If you need support? Just give us a call. <a href="#" class="text-decoration-underline">+55 111 222
                       333 44</a></p>
                 </div>
@@ -614,14 +615,14 @@
         <div class="d-flex flex-wrap justify-content-between">
           <div class="ship-and-payment d-flex gap-md-5 flex-wrap">
             <div class="shipping d-flex">
-              <p>We ship with:</p>
+              <p>{% trans "We ship with:" %}</p>
               <div class="card-wrap ps-2">
                 <img src="{% static 'skin6/images/dhl.png' %}" alt="visa">
                 <img src="{% static 'skin6/images/shippingcard.png' %}" alt="mastercard">
               </div>
             </div>
             <div class="payment-method d-flex">
-              <p>Payment options:</p>
+              <p>{% trans "Payment options:" %}</p>
               <div class="card-wrap ps-2">
                 <img src="{% static 'skin6/images/visa.jpg' %}" alt="visa">
                 <img src="{% static 'skin6/images/mastercard.jpg' %}" alt="mastercard">

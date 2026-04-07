@@ -1,9 +1,12 @@
 {% extends "skin6/base.html" %}
+
+
+{% load i18n %}
 {% load static %}
 
 {% block titlekeywords %}
     <meta name="keywords" content="о компании Digital Book Sales, купить книги со скидкой, корзина заказов, магазин литературы, оплата книг онлайн, библиотека книг, поиск книг по автору.">
-    <title>Digital Book Sales</title>
+    <title>{% trans "Digital Book Sales" %}</title>
 {% endblock %}
 
 {% block customstyle %}
@@ -17,12 +20,12 @@
         <div class="container">
           <div class="row">
             <div class="text-center">
-              <h1>Cart</h1>
+              <h1>{% trans "Cart" %}</h1>
               <div class="breadcrumbs">
                 <span class="item">
                   <a href="{% url 'core:index' %}">Home &gt; </a>
                 </span>
-                <span class="item text-decoration-underline">Cart</span>
+                <span class="item text-decoration-underline">{% trans "Cart" %}</span>
               </div>
             </div>
           </div>
@@ -36,9 +39,9 @@
           <div class="cart-table">
             <div class="cart-header border-bottom border-top">
               <div class="row d-flex text-capitalize">
-                <h4 class="col-lg-4 py-3 m-0">Product</h4>
-                <h4 class="col-lg-3 py-3 m-0">Quantity</h4>
-                <h4 class="col-lg-4 py-3 m-0">Subtotal</h4>
+                <h4 class="col-lg-4 py-3 m-0">{% trans "Product" %}</h4>
+                <h4 class="col-lg-3 py-3 m-0">{% trans "Quantity" %}</h4>
+                <h4 class="col-lg-4 py-3 m-0">{% trans "Subtotal" %}</h4>
               </div>
             </div>
 
@@ -53,7 +56,7 @@
                     </div>
                     <div class="col-lg-4">
                       <div class="card-detail">
-                        <h5 class="mt-2"><a href="{% url 'core:single_product' %}">The Emerald Crown</a></h5>
+                        <h5 class="mt-2"><a href="{% url 'core:single_product' %}">{% trans "The Emerald Crown" %}</a></h5>
                         <div class="card-price">
                           <span class="price text-primary fw-light" data-currency-usd="$2000.00">$2000.00</span>
                         </div>
@@ -113,7 +116,7 @@
                     </div>
                     <div class="col-lg-4">
                       <div class="card-detail">
-                        <h5 class="mt-2"><a href="{% url 'core:single_product' %}">The Last Enchantment</a></h5>
+                        <h5 class="mt-2"><a href="{% url 'core:single_product' %}">{% trans "The Last Enchantment" %}</a></h5>
                         <div class="card-price">
                           <span class="price text-primary fw-light" data-currency-usd="$2000.00">$400.00</span>
                         </div>
@@ -164,12 +167,12 @@
             </div>
           </div>
           <div class="cart-totals padding-medium pb-0">
-            <h3 class="mb-3">Cart Totals</h3>
+            <h3 class="mb-3">{% trans "Cart Totals" %}</h3>
             <div class="total-price pb-3">
               <table cellspacing="0" class="table text-capitalize">
                 <tbody>
                   <tr class="subtotal pt-2 pb-2 border-top border-bottom">
-                    <th>Subtotal</th>
+                    <th>{% trans "Subtotal" %}</th>
                     <td data-title="Subtotal">
                       <span class="price-amount amount text-primary ps-5 fw-light">
                         <bdi>
@@ -179,7 +182,7 @@
                     </td>
                   </tr>
                   <tr class="order-total pt-2 pb-2 border-bottom">
-                    <th>Total</th>
+                    <th>{% trans "Total" %}</th>
                     <td data-title="Total">
                       <span class="price-amount amount text-primary ps-5 fw-light">
                         <bdi>
@@ -191,9 +194,9 @@
               </table>
             </div>
             <div class="button-wrap d-flex flex-wrap gap-3">
-              <button class="btn">Update Cart</button>
-              <button class="btn">Continue Shopping</button>
-              <button class="btn">Proceed to checkout</button>
+              <button class="btn">{% trans "Update Cart" %}</button>
+              <button class="btn">{% trans "Continue Shopping" %}</button>
+              <button class="btn">{% trans "Proceed to checkout" %}</button>
             </div>
           </div>
         </div>
@@ -213,7 +216,7 @@
           </svg>
         </div>
         <div class="section-title mb-4 text-center">
-          <h3 class="mb-4">Customers reviews</h3>
+          <h3 class="mb-4">{% trans "Customers reviews" %}</h3>
         </div>
         <div class="swiper testimonial-swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
           <div class="swiper-wrapper" id="swiper-wrapper-ba03b1013194bee95" aria-live="polite">
@@ -240,7 +243,7 @@ atmosphere, friendly staff, and wide selection of books make every visit
                     <use xlink:href="#star-fill"></use>
                   </svg>
                 </div>
-                <h5 class="mt-1 fw-normal">Emma Chamberlin</h5>
+                <h5 class="mt-1 fw-normal">{% trans "Emma Chamberlin" %}</h5>
               </div>
             </div>
             <div class="swiper-slide swiper-slide-next" style="width: 616px; margin-right: 20px;" role="group" aria-label="2 / 5">
@@ -266,7 +269,7 @@ always have the latest titles, and their recommendations have introduced
                     <use xlink:href="#star-fill"></use>
                   </svg>
                 </div>
-                <h5 class="mt-1 fw-normal">Thomas John</h5>
+                <h5 class="mt-1 fw-normal">{% trans "Thomas John" %}</h5>
               </div>
             </div>
             <div class="swiper-slide" style="width: 616px; margin-right: 20px;" role="group" aria-label="3 / 5">
@@ -292,7 +295,7 @@ definitely be shopping here again!"</blockquote>
                     <use xlink:href="#star-fill"></use>
                   </svg>
                 </div>
-                <h5 class="mt-1 fw-normal">Kevin Bryan</h5>
+                <h5 class="mt-1 fw-normal">{% trans "Kevin Bryan" %}</h5>
               </div>
             </div>
             <div class="swiper-slide" style="width: 616px; margin-right: 20px;" role="group" aria-label="4 / 5">
@@ -317,7 +320,7 @@ definitely be shopping here again!"</blockquote>
                     <use xlink:href="#star-fill"></use>
                   </svg>
                 </div>
-                <h5 class="mt-1 fw-normal">Stevin</h5>
+                <h5 class="mt-1 fw-normal">{% trans "Stevin" %}</h5>
               </div>
             </div>
             <div class="swiper-slide" style="width: 616px; margin-right: 20px;" role="group" aria-label="5 / 5">
@@ -342,7 +345,7 @@ definitely be shopping here again!"</blockquote>
                     <use xlink:href="#star-fill"></use>
                   </svg>
                 </div>
-                <h5 class="mt-1 fw-normal">Roman</h5>
+                <h5 class="mt-1 fw-normal">{% trans "Roman" %}</h5>
               </div>
             </div>
           </div>
@@ -353,39 +356,39 @@ definitely be shopping here again!"</blockquote>
     <section id="latest-posts" class="padding-large">
       <div class="container">
         <div class="section-title d-md-flex justify-content-between align-items-center mb-4">
-          <h3 class="d-flex align-items-center">Latest posts</h3>
-          <a href="{% url 'core:shop' %}" class="btn">View All</a>
+          <h3 class="d-flex align-items-center">{% trans "Latest posts" %}</h3>
+          <a href="{% url 'core:shop' %}" class="btn">{% trans "View All" %}</a>
         </div>
         <div class="row">
           <div class="col-md-3 posts mb-4">
             <img src="{% static 'skin6/images/post-item1.jpg' %}" alt="post image" class="img-fluid rounded-3">
-            <a href="{% url 'core:blog' %}" class="fs-6 text-primary">Books</a>
+            <a href="{% url 'core:blog' %}" class="fs-6 text-primary">{% trans "Books" %}</a>
             <h4 class="card-title mb-2 text-capitalize text-dark"><a href="{% url 'core:single_post' %}">10 Must-Read Books of the Year: Our Top Picks!</a></h4>
             <p class="mb-2">Dive into the world of cutting-edge technology with our latest blog post, where we highlight
-              five essential gadg <span><a class="text-decoration-underline text-black-50" href="{% url 'core:single_post' %}">Read More</a></span>
+              five essential gadg <span><a class="text-decoration-underline text-black-50" href="{% url 'core:single_post' %}">{% trans "Read More" %}</a></span>
             </p>
           </div>
           <div class="col-md-3 posts mb-4">
             <img src="{% static 'skin6/images/post-item2.jpg' %}" alt="post image" class="img-fluid rounded-3">
-            <a href="{% url 'core:blog' %}" class="fs-6 text-primary">Books</a>
-            <h4 class="card-title mb-2 text-capitalize text-dark"><a href="{% url 'core:single_post' %}">The Fascinating Realm of Science Fiction</a></h4>
+            <a href="{% url 'core:blog' %}" class="fs-6 text-primary">{% trans "Books" %}</a>
+            <h4 class="card-title mb-2 text-capitalize text-dark"><a href="{% url 'core:single_post' %}">{% trans "The Fascinating Realm of Science Fiction" %}</a></h4>
             <p class="mb-2">Explore the intersection of technology and sustainability in our latest blog post. Learn about
-              the innovative <span><a class="text-decoration-underline text-black-50" href="{% url 'core:single_post' %}">Read More</a></span> </p>
+              the innovative <span><a class="text-decoration-underline text-black-50" href="{% url 'core:single_post' %}">{% trans "Read More" %}</a></span> </p>
           </div>
           <div class="col-md-3 posts mb-4">
             <img src="{% static 'skin6/images/post-item3.jpg' %}" alt="post image" class="img-fluid rounded-3">
-            <a href="{% url 'core:blog' %}" class="fs-6 text-primary">Books</a>
-            <h4 class="card-title mb-2 text-capitalize text-dark"><a href="{% url 'core:single_post' %}">Finding Love in the Pages of a Book</a></h4>
+            <a href="{% url 'core:blog' %}" class="fs-6 text-primary">{% trans "Books" %}</a>
+            <h4 class="card-title mb-2 text-capitalize text-dark"><a href="{% url 'core:single_post' %}">{% trans "Finding Love in the Pages of a Book" %}</a></h4>
             <p class="mb-2">Stay ahead of the curve with our insightful look into the rapidly evolving landscape of
-              wearable technology. <span><a class="text-decoration-underline text-black-50" href="{% url 'core:single_post' %}">Read More</a></span>
+              wearable technology. <span><a class="text-decoration-underline text-black-50" href="{% url 'core:single_post' %}">{% trans "Read More" %}</a></span>
             </p>
           </div>
           <div class="col-md-3 posts mb-4">
             <img src="{% static 'skin6/images/post-item4.jpg' %}" alt="post image" class="img-fluid rounded-3">
-            <a href="{% url 'core:blog' %}" class="fs-6 text-primary">Books</a>
-            <h4 class="card-title mb-2 text-capitalize text-dark"><a href="{% url 'core:single_post' %}">Reading for Mental Health: How Books Can Heal and Inspire</a></h4>
+            <a href="{% url 'core:blog' %}" class="fs-6 text-primary">{% trans "Books" %}</a>
+            <h4 class="card-title mb-2 text-capitalize text-dark"><a href="{% url 'core:single_post' %}">{% trans "Reading for Mental Health: How Books Can Heal and Inspire" %}</a></h4>
             <p class="mb-2">In today's remote work environment, productivity is key. Discover the top apps and tools that
-              can help you stay <span><a class="text-decoration-underline text-black-50" href="{% url 'core:single_post' %}">Read More</a></span>
+              can help you stay <span><a class="text-decoration-underline text-black-50" href="{% url 'core:single_post' %}">{% trans "Read More" %}</a></span>
             </p>
           </div>
         </div>

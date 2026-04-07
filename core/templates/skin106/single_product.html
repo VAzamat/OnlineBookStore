@@ -1,9 +1,12 @@
 {% extends "skin6/base.html" %}
+
+
+{% load i18n %}
 {% load static %}
 
 {% block titlekeywords %}
     <meta name="keywords" content="о компании Digital Book Sales, купить книги со скидкой, корзина заказов, магазин литературы, оплата книг онлайн, библиотека книг, поиск книг по автору.">
-    <title>Digital Book Sales</title>
+    <title>{% trans "Digital Book Sales" %}</title>
 {% endblock %}
 
 {% block customstyle %}
@@ -18,12 +21,12 @@
         <div class="container">
           <div class="row">
             <div class="text-center">
-              <h1>Single-Product</h1>
+              <h1>{% trans "Single-Product" %}</h1>
               <div class="breadcrumbs">
                 <span class="item">
                   <a href="{% url 'core:index' %}">Home &gt; </a>
                 </span>
-                <span class="item text-decoration-underline">Single-Product</span>
+                <span class="item text-decoration-underline">{% trans "Single-Product" %}</span>
               </div>
             </div>
           </div>
@@ -67,7 +70,7 @@
           <div class="col-lg-6">
             <div class="product-info ps-lg-5 pt-3 pt-lg-0">
               <div class="element-header">
-                <h1 class="product-title">The Emerald Crown</h1>
+                <h1 class="product-title">{% trans "The Emerald Crown" %}</h1>
                 <div class="product-price d-flex align-items-center mt-2">
                   <span class="fs-2 fw-light text-primary me-2">$200</span>
                   <del>$260</del>
@@ -97,22 +100,22 @@ quam semper rhoncus.</p>
               <div class="cart-wrap">
                 <div class="color-options product-select my-3">
                   <div class="color-toggle" data-option-index="0">
-                    <h4 class="item-title text-decoration-underline text-capitalize">Color</h4>
+                    <h4 class="item-title text-decoration-underline text-capitalize">{% trans "Color" %}</h4>
                     <ul class="select-list list-unstyled d-flex mb-0">
                       <li class="select-item me-3" data-val="Green" title="Green">
-                        <a href="#">Gray</a>
+                        <a href="#">{% trans "Gray" %}</a>
                       </li>
                       <li class="select-item me-3" data-val="Orange" title="Orange">
-                        <a href="#">Blue</a>
+                        <a href="#">{% trans "Blue" %}</a>
                       </li>
                       <li class="select-item me-3" data-val="Red" title="Red">
-                        <a href="#">White</a>
+                        <a href="#">{% trans "White" %}</a>
                       </li>
                     </ul>
                   </div>
                 </div>
                 <div class="swatch product-select" data-option-index="1">
-                  <h4 class="item-title text-decoration-underline text-capitalize">Size</h4>
+                  <h4 class="item-title text-decoration-underline text-capitalize">{% trans "Size" %}</h4>
                   <ul class="select-list list-unstyled d-flex mb-0">
                     <li data-value="S" class="select-item me-3">
                       <a href="#">S</a>
@@ -148,8 +151,8 @@ quam semper rhoncus.</p>
                   </div>
                 </div>
                 <div class="action-buttons my-3 d-flex flex-wrap gap-3">
-                  <a href="#" class="btn">Order now</a>
-                  <a href="#" class="btn btn-dark">Add to cart</a>
+                  <a href="#" class="btn">{% trans "Order now" %}</a>
+                  <a href="#" class="btn btn-dark">{% trans "Add to cart" %}</a>
                   <a href="#" class="btn btn-dark">
                     <svg class="heart" width="21" height="21">
                       <use xlink:href="#heart"></use>
@@ -160,36 +163,36 @@ quam semper rhoncus.</p>
 <hr>
               <div class="meta-product my-3">
                 <div class="meta-item d-flex mb-1">
-                  <span class="fw-medium me-2">SKU:</span>
+                  <span class="fw-medium me-2">{% trans "SKU:" %}</span>
                   <ul class="select-list list-unstyled d-flex mb-0">
                     <li data-value="S" class="select-item">1223</li>
                   </ul>
                 </div>
                 <div class="meta-item d-flex mb-1">
-                  <span class="fw-medium me-2">Category:</span>
+                  <span class="fw-medium me-2">{% trans "Category:" %}</span>
                   <ul class="select-list list-unstyled d-flex mb-0">
                     <li data-value="S" class="select-item">
-                      <a href="#">Romance</a>,
+                      <a href="#">{% trans "Romance" %}</a>,
                     </li>
                     <li data-value="S" class="select-item">
-                      <a href="#">Sci-Fi</a>,
+                      <a href="#">{% trans "Sci-Fi" %}</a>,
                     </li>
                     <li data-value="S" class="select-item">
-                      <a href="#">Fiction</a>
+                      <a href="#">{% trans "Fiction" %}</a>
                     </li>
                   </ul>
                 </div>
                 <div class="meta-item d-flex mb-1">
-                  <span class="fw-medium me-2">Tags:</span>
+                  <span class="fw-medium me-2">{% trans "Tags:" %}</span>
                   <ul class="select-list list-unstyled d-flex mb-0">
                     <li data-value="S" class="select-item">
-                      <a href="#">Revenge</a>,
+                      <a href="#">{% trans "Revenge" %}</a>,
                     </li>
                     <li data-value="S" class="select-item">
-                      <a href="#">Vampire</a>,
+                      <a href="#">{% trans "Vampire" %}</a>,
                     </li>
                     <li data-value="S" class="select-item">
-                      <a href="#">Life</a>
+                      <a href="#">{% trans "Life" %}</a>
                     </li>
                   </ul>
                 </div>
@@ -206,15 +209,15 @@ quam semper rhoncus.</p>
           <div class="tabs-listing">
             <nav>
               <div class="nav nav-tabs d-flex justify-content-center py-3" id="nav-tab" role="tablist">
-                <button class="nav-link text-capitalize active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Description</button>
-                <button class="nav-link text-capitalize" id="nav-information-tab" data-bs-toggle="tab" data-bs-target="#nav-information" type="button" role="tab" aria-controls="nav-information" aria-selected="false" tabindex="-1">Additional information</button>
-                <button class="nav-link text-capitalize" id="nav-shipping-tab" data-bs-toggle="tab" data-bs-target="#nav-shipping" type="button" role="tab" aria-controls="nav-shipping" aria-selected="false" tabindex="-1">Shipping &amp; Return</button>
-                <button class="nav-link text-capitalize" id="nav-review-tab" data-bs-toggle="tab" data-bs-target="#nav-review" type="button" role="tab" aria-controls="nav-review" aria-selected="false" tabindex="-1">Reviews (02)</button>
+                <button class="nav-link text-capitalize active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">{% trans "Description" %}</button>
+                <button class="nav-link text-capitalize" id="nav-information-tab" data-bs-toggle="tab" data-bs-target="#nav-information" type="button" role="tab" aria-controls="nav-information" aria-selected="false" tabindex="-1">{% trans "Additional information" %}</button>
+                <button class="nav-link text-capitalize" id="nav-shipping-tab" data-bs-toggle="tab" data-bs-target="#nav-shipping" type="button" role="tab" aria-controls="nav-shipping" aria-selected="false" tabindex="-1">{% trans "Shipping &amp; Return" %}</button>
+                <button class="nav-link text-capitalize" id="nav-review-tab" data-bs-toggle="tab" data-bs-target="#nav-review" type="button" role="tab" aria-controls="nav-review" aria-selected="false" tabindex="-1">{% trans "Reviews (02)" %}</button>
               </div>
             </nav>
             <div class="tab-content border-bottom py-4" id="nav-tabContent">
               <div class="tab-pane fade active show" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                <p>Product Description</p>
+                <p>{% trans "Product Description" %}</p>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing
 elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut
  turpis. Suspendisse urna viverra non, semper suscipit, posuere a, pede.
@@ -223,9 +226,9 @@ mauris sit amet orci. Aenean dignissim pellentesque felis. Phasellus
 ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula
 vulputate sem tristique cursus.
                 </p><ul class="fw-light">
-                  <li>Donec nec justo eget felis facilisis fermentum.</li>
-                  <li>Suspendisse urna viverra non, semper suscipit pede.</li>
-                  <li>Aliquam porttitor mauris sit amet orci.</li>
+                  <li>{% trans "Donec nec justo eget felis facilisis fermentum." %}</li>
+                  <li>{% trans "Suspendisse urna viverra non, semper suscipit pede." %}</li>
+                  <li>{% trans "Aliquam porttitor mauris sit amet orci." %}</li>
                 </ul>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing
 elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut
@@ -236,7 +239,7 @@ ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula
 vulputate sem tristique cursus.</p>
               </div>
               <div class="tab-pane fade" id="nav-information" role="tabpanel" aria-labelledby="nav-information-tab">
-                <p>It is Comfortable and Best</p>
+                <p>{% trans "It is Comfortable and Best" %}</p>
                 <p>Duis aute irure dolor in reprehenderit in voluptate
 velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
 occaecat cupidatat non proident, sunt in culpa qui officia deserunt
@@ -246,14 +249,14 @@ sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
  mollit anim id est laborum.</p>
               </div>
               <div class="tab-pane fade" id="nav-shipping" role="tabpanel" aria-labelledby="nav-shipping-tab">
-                <p>Returns Policy</p>
+                <p>{% trans "Returns Policy" %}</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing
 elit. Fusce eros justo, accumsan non dui sit amet. Phasellus semper
 volutpat mi sed imperdiet. Ut odio lectus, vulputate non ex non, mattis
 sollicitudin purus. Mauris consequat justo a enim interdum, in consequat
  dolor accumsan. Nulla iaculis diam purus, ut vehicula leo efficitur at.</p>
-                <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. In blandit nunc enim, sit amet pharetra erat aliquet ac.</p>
-                <p>Shipping</p>
+                <p>{% trans "Interdum et malesuada fames ac ante ipsum primis in faucibus. In blandit nunc enim, sit amet pharetra erat aliquet ac." %}</p>
+                <p>{% trans "Shipping" %}</p>
                 <p>Pellentesque ultrices ut sem sit amet lacinia. Sed
 nisi dui, ultrices ut turpis pulvinar. Sed fringilla ex eget lorem
 consectetur, consectetur blandit lacus varius. Duis vel scelerisque
@@ -287,10 +290,10 @@ interdum augue. Nam ut nibh mauris.</p>
                         </svg>
                       </div>
                       <div class="review-header">
-                        <span class="author-name fw-medium">Tom Johnson</span>
+                        <span class="author-name fw-medium">{% trans "Tom Johnson" %}</span>
                         <span class="review-date">- 07/05/2022</span>
                       </div>
-                      <p>Vitae tortor condimentum lacinia quis vel eros donec ac. Nam at lectus urna duis convallis convallis</p>
+                      <p>{% trans "Vitae tortor condimentum lacinia quis vel eros donec ac. Nam at lectus urna duis convallis convallis" %}</p>
                     </div>
                   </div>
                   <div class="review-item d-flex">
@@ -316,15 +319,15 @@ interdum augue. Nam ut nibh mauris.</p>
                         </svg>
                       </div>
                       <div class="review-header">
-                        <span class="author-name fw-medium">Jenny Willis</span>
+                        <span class="author-name fw-medium">{% trans "Jenny Willis" %}</span>
                         <span class="review-date">- 07/05/2022</span>
                       </div>
-                      <p>Vitae tortor condimentum lacinia quis vel eros donec ac. Nam at lectus urna duis convallis convallis</p>
+                      <p>{% trans "Vitae tortor condimentum lacinia quis vel eros donec ac. Nam at lectus urna duis convallis convallis" %}</p>
                     </div>
                   </div>
                 </div>
                 <div class="add-review margin-small">
-                  <h3>Add a review</h3>
+                  <h3>{% trans "Add a review" %}</h3>
                   <p>Your email address will not be published. Required fields are marked *</p>
                   <div class="review-rating py-2">
                     <span class="my-2">Your rating *</span>
@@ -361,9 +364,9 @@ interdum augue. Nam ut nibh mauris.</p>
                     </div>
                     <label class="w-100">
                       <input type="checkbox" required="" class="d-inline">
-                      <span>Save my name, email, and website in this browser for the next time.</span>
+                      <span>{% trans "Save my name, email, and website in this browser for the next time." %}</span>
                     </label>
-                    <button type="submit" name="submit" class="btn my-3">Submit</button>
+                    <button type="submit" name="submit" class="btn my-3">{% trans "Submit" %}</button>
                   </form>
                 </div>
               </div>
@@ -376,8 +379,8 @@ interdum augue. Nam ut nibh mauris.</p>
     <section id="related-items" class="position-relative padding-large ">
       <div class="container">
         <div class="section-title d-md-flex justify-content-between align-items-center mb-4">
-          <h3 class="d-flex align-items-center">Related Items</h3>
-          <a href="{% url 'core:shop' %}" class="btn">View All</a>
+          <h3 class="d-flex align-items-center">{% trans "Related Items" %}</h3>
+          <a href="{% url 'core:shop' %}" class="btn">{% trans "View All" %}</a>
         </div>
         <div class="position-absolute top-50 end-0 pe-0 pe-xxl-5 me-0 me-xxl-5 swiper-next product-slider-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-837614fb917523d2" aria-disabled="false">
           <svg class="chevron-forward-circle d-flex justify-content-center align-items-center p-2" width="80" height="80">
@@ -397,9 +400,9 @@ interdum augue. Nam ut nibh mauris.</p>
                   <p class="bg-primary py-1 px-3 fs-6 text-white rounded-2">10% off</p>
                 </div>
                 <img src="{% static 'skin6/images/product-item1.png' %}" class="img-fluid shadow-sm" alt="product item">
-                <h6 class="mt-4 mb-0 fw-bold"><a href="{% url 'core:single_product' %}">Secrets of the Alchemist</a></h6>
+                <h6 class="mt-4 mb-0 fw-bold"><a href="{% url 'core:single_product' %}">{% trans "Secrets of the Alchemist" %}</a></h6>
                 <div class="review-content d-flex">
-                  <p class="my-2 me-2 fs-6 text-black-50">Lauren Asher</p>
+                  <p class="my-2 me-2 fs-6 text-black-50">{% trans "Lauren Asher" %}</p>
 
                   <div class="rating text-warning d-flex align-items-center">
                     <svg class="star star-fill">
@@ -439,9 +442,9 @@ interdum augue. Nam ut nibh mauris.</p>
             <div class="swiper-slide swiper-slide-next" style="width: 264px; margin-right: 20px;" role="group" aria-label="2 / 6">
               <div class="card position-relative p-4 border rounded-3">
                 <img src="{% static 'skin6/images/product-item2.png' %}" class="img-fluid shadow-sm" alt="product item">
-                <h6 class="mt-4 mb-0 fw-bold"><a href="{% url 'core:single_product' %}">Secrets of the Alchemist</a></h6>
+                <h6 class="mt-4 mb-0 fw-bold"><a href="{% url 'core:single_product' %}">{% trans "Secrets of the Alchemist" %}</a></h6>
                 <div class="review-content d-flex">
-                  <p class="my-2 me-2 fs-6 text-black-50">Lauren Asher</p>
+                  <p class="my-2 me-2 fs-6 text-black-50">{% trans "Lauren Asher" %}</p>
 
                   <div class="rating text-warning d-flex align-items-center">
                     <svg class="star star-fill">
@@ -482,9 +485,9 @@ interdum augue. Nam ut nibh mauris.</p>
             <div class="swiper-slide" style="width: 264px; margin-right: 20px;" role="group" aria-label="3 / 6">
               <div class="card position-relative p-4 border rounded-3">
                 <img src="{% static 'skin6/images/product-item3.png' %}" class="img-fluid shadow-sm" alt="product item">
-                <h6 class="mt-4 mb-0 fw-bold"><a href="{% url 'core:single_product' %}">Secrets of the Alchemist</a></h6>
+                <h6 class="mt-4 mb-0 fw-bold"><a href="{% url 'core:single_product' %}">{% trans "Secrets of the Alchemist" %}</a></h6>
                 <div class="review-content d-flex">
-                  <p class="my-2 me-2 fs-6 text-black-50">Lauren Asher</p>
+                  <p class="my-2 me-2 fs-6 text-black-50">{% trans "Lauren Asher" %}</p>
 
                   <div class="rating text-warning d-flex align-items-center">
                     <svg class="star star-fill">
@@ -528,9 +531,9 @@ interdum augue. Nam ut nibh mauris.</p>
                   <p class="bg-primary py-1 px-3 fs-6 text-white rounded-2">10% off</p>
                 </div>
                 <img src="{% static 'skin6/images/product-item4.png' %}" class="img-fluid shadow-sm" alt="product item">
-                <h6 class="mt-4 mb-0 fw-bold"><a href="{% url 'core:single_product' %}">Secrets of the Alchemist</a></h6>
+                <h6 class="mt-4 mb-0 fw-bold"><a href="{% url 'core:single_product' %}">{% trans "Secrets of the Alchemist" %}</a></h6>
                 <div class="review-content d-flex">
-                  <p class="my-2 me-2 fs-6 text-black-50">Lauren Asher</p>
+                  <p class="my-2 me-2 fs-6 text-black-50">{% trans "Lauren Asher" %}</p>
 
                   <div class="rating text-warning d-flex align-items-center">
                     <svg class="star star-fill">
@@ -571,9 +574,9 @@ interdum augue. Nam ut nibh mauris.</p>
             <div class="swiper-slide" style="width: 264px; margin-right: 20px;" role="group" aria-label="5 / 6">
               <div class="card position-relative p-4 border rounded-3">
                 <img src="{% static 'skin6/images/product-item5.png' %}" class="img-fluid shadow-sm" alt="product item">
-                <h6 class="mt-4 mb-0 fw-bold"><a href="{% url 'core:single_product' %}">Secrets of the Alchemist</a></h6>
+                <h6 class="mt-4 mb-0 fw-bold"><a href="{% url 'core:single_product' %}">{% trans "Secrets of the Alchemist" %}</a></h6>
                 <div class="review-content d-flex">
-                  <p class="my-2 me-2 fs-6 text-black-50">Lauren Asher</p>
+                  <p class="my-2 me-2 fs-6 text-black-50">{% trans "Lauren Asher" %}</p>
 
                   <div class="rating text-warning d-flex align-items-center">
                     <svg class="star star-fill">
@@ -614,9 +617,9 @@ interdum augue. Nam ut nibh mauris.</p>
             <div class="swiper-slide" style="width: 264px; margin-right: 20px;" role="group" aria-label="6 / 6">
               <div class="card position-relative p-4 border rounded-3">
                 <img src="{% static 'skin6/images/product-item6.png' %}" class="img-fluid shadow-sm" alt="product item">
-                <h6 class="mt-4 mb-0 fw-bold"><a href="{% url 'core:single_product' %}">Secrets of the Alchemist</a></h6>
+                <h6 class="mt-4 mb-0 fw-bold"><a href="{% url 'core:single_product' %}">{% trans "Secrets of the Alchemist" %}</a></h6>
                 <div class="review-content d-flex">
-                  <p class="my-2 me-2 fs-6 text-black-50">Lauren Asher</p>
+                  <p class="my-2 me-2 fs-6 text-black-50">{% trans "Lauren Asher" %}</p>
 
                   <div class="rating text-warning d-flex align-items-center">
                     <svg class="star star-fill">
@@ -673,7 +676,7 @@ interdum augue. Nam ut nibh mauris.</p>
         </svg>
       </div>
       <div class="section-title mb-4 text-center">
-        <h3 class="mb-4">Customers reviews</h3>
+        <h3 class="mb-4">{% trans "Customers reviews" %}</h3>
       </div>
       <div class="swiper testimonial-swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
         <div class="swiper-wrapper" id="swiper-wrapper-dc6a41089f12cd95" aria-live="polite">
@@ -700,7 +703,7 @@ atmosphere, friendly staff, and wide selection of books make every visit
                   <use xlink:href="#star-fill"></use>
                 </svg>
               </div>
-              <h5 class="mt-1 fw-normal">Emma Chamberlin</h5>
+              <h5 class="mt-1 fw-normal">{% trans "Emma Chamberlin" %}</h5>
             </div>
           </div>
           <div class="swiper-slide swiper-slide-next" style="width: 616px; margin-right: 20px;" role="group" aria-label="2 / 5">
@@ -726,7 +729,7 @@ for new releases, and this bookstore never disappoints. They always have
                   <use xlink:href="#star-fill"></use>
                 </svg>
               </div>
-              <h5 class="mt-1 fw-normal">Thomas John</h5>
+              <h5 class="mt-1 fw-normal">{% trans "Thomas John" %}</h5>
             </div>
           </div>
           <div class="swiper-slide" style="width: 616px; margin-right: 20px;" role="group" aria-label="3 / 5">
@@ -752,7 +755,7 @@ clear that they prioritize customer satisfaction, and I'll definitely be
                   <use xlink:href="#star-fill"></use>
                 </svg>
               </div>
-              <h5 class="mt-1 fw-normal">Kevin Bryan</h5>
+              <h5 class="mt-1 fw-normal">{% trans "Kevin Bryan" %}</h5>
             </div>
           </div>
           <div class="swiper-slide" style="width: 616px; margin-right: 20px;" role="group" aria-label="4 / 5">
@@ -777,7 +780,7 @@ clear that they prioritize customer satisfaction, and I'll definitely be
                   <use xlink:href="#star-fill"></use>
                 </svg>
               </div>
-              <h5 class="mt-1 fw-normal">Stevin</h5>
+              <h5 class="mt-1 fw-normal">{% trans "Stevin" %}</h5>
             </div>
           </div>
           <div class="swiper-slide" style="width: 616px; margin-right: 20px;" role="group" aria-label="5 / 5">
@@ -802,7 +805,7 @@ clear that they prioritize customer satisfaction, and I'll definitely be
                   <use xlink:href="#star-fill"></use>
                 </svg>
               </div>
-              <h5 class="mt-1 fw-normal">Roman</h5>
+              <h5 class="mt-1 fw-normal">{% trans "Roman" %}</h5>
             </div>
           </div>
         </div>
@@ -813,39 +816,39 @@ clear that they prioritize customer satisfaction, and I'll definitely be
   <section id="latest-posts" class="padding-large">
     <div class="container">
       <div class="section-title d-md-flex justify-content-between align-items-center mb-4">
-        <h3 class="d-flex align-items-center">Latest posts</h3>
-        <a href="{% url 'core:shop' %}" class="btn">View All</a>
+        <h3 class="d-flex align-items-center">{% trans "Latest posts" %}</h3>
+        <a href="{% url 'core:shop' %}" class="btn">{% trans "View All" %}</a>
       </div>
       <div class="row">
         <div class="col-md-3 posts mb-4">
           <img src="{% static 'skin6/images/post-item1.jpg' %}" alt="post image" class="img-fluid rounded-3">
-          <a href="{% url 'core:blog' %}" class="fs-6 text-primary">Books</a>
+          <a href="{% url 'core:blog' %}" class="fs-6 text-primary">{% trans "Books" %}</a>
           <h4 class="card-title mb-2 text-capitalize text-dark"><a href="{% url 'core:single_post' %}">10 Must-Read Books of the Year: Our Top Picks!</a></h4>
           <p class="mb-2">Dive into the world of cutting-edge technology with our latest blog post, where we highlight
-            five essential gadg <span><a class="text-decoration-underline text-black-50" href="{% url 'core:single_post' %}">Read More</a></span>
+            five essential gadg <span><a class="text-decoration-underline text-black-50" href="{% url 'core:single_post' %}">{% trans "Read More" %}</a></span>
           </p>
         </div>
         <div class="col-md-3 posts mb-4">
           <img src="{% static 'skin6/images/post-item2.jpg' %}" alt="post image" class="img-fluid rounded-3">
-          <a href="{% url 'core:blog' %}" class="fs-6 text-primary">Books</a>
-          <h4 class="card-title mb-2 text-capitalize text-dark"><a href="{% url 'core:single_post' %}">The Fascinating Realm of Science Fiction</a></h4>
+          <a href="{% url 'core:blog' %}" class="fs-6 text-primary">{% trans "Books" %}</a>
+          <h4 class="card-title mb-2 text-capitalize text-dark"><a href="{% url 'core:single_post' %}">{% trans "The Fascinating Realm of Science Fiction" %}</a></h4>
           <p class="mb-2">Explore the intersection of technology and sustainability in our latest blog post. Learn about
-            the innovative <span><a class="text-decoration-underline text-black-50" href="{% url 'core:single_post' %}">Read More</a></span> </p>
+            the innovative <span><a class="text-decoration-underline text-black-50" href="{% url 'core:single_post' %}">{% trans "Read More" %}</a></span> </p>
         </div>
         <div class="col-md-3 posts mb-4">
           <img src="{% static 'skin6/images/post-item3.jpg' %}" alt="post image" class="img-fluid rounded-3">
-          <a href="{% url 'core:blog' %}" class="fs-6 text-primary">Books</a>
-          <h4 class="card-title mb-2 text-capitalize text-dark"><a href="{% url 'core:single_post' %}">Finding Love in the Pages of a Book</a></h4>
+          <a href="{% url 'core:blog' %}" class="fs-6 text-primary">{% trans "Books" %}</a>
+          <h4 class="card-title mb-2 text-capitalize text-dark"><a href="{% url 'core:single_post' %}">{% trans "Finding Love in the Pages of a Book" %}</a></h4>
           <p class="mb-2">Stay ahead of the curve with our insightful look into the rapidly evolving landscape of
-            wearable technology. <span><a class="text-decoration-underline text-black-50" href="{% url 'core:single_post' %}">Read More</a></span>
+            wearable technology. <span><a class="text-decoration-underline text-black-50" href="{% url 'core:single_post' %}">{% trans "Read More" %}</a></span>
           </p>
         </div>
         <div class="col-md-3 posts mb-4">
           <img src="{% static 'skin6/images/post-item4.jpg' %}" alt="post image" class="img-fluid rounded-3">
-          <a href="{% url 'core:blog' %}" class="fs-6 text-primary">Books</a>
-          <h4 class="card-title mb-2 text-capitalize text-dark"><a href="{% url 'core:single_post' %}">Reading for Mental Health: How Books Can Heal and Inspire</a></h4>
+          <a href="{% url 'core:blog' %}" class="fs-6 text-primary">{% trans "Books" %}</a>
+          <h4 class="card-title mb-2 text-capitalize text-dark"><a href="{% url 'core:single_post' %}">{% trans "Reading for Mental Health: How Books Can Heal and Inspire" %}</a></h4>
           <p class="mb-2">In today's remote work environment, productivity is key. Discover the top apps and tools that
-            can help you stay <span><a class="text-decoration-underline text-black-50" href="{% url 'core:single_post' %}">Read More</a></span>
+            can help you stay <span><a class="text-decoration-underline text-black-50" href="{% url 'core:single_post' %}">{% trans "Read More" %}</a></span>
           </p>
         </div>
       </div>

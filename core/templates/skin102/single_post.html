@@ -1,4 +1,5 @@
 {% extends "skin2/base.html" %}
+{% load i18n %}
 
 {% load static %}
 
@@ -18,8 +19,8 @@
 				<div class="col-md-12">
 					<h1 class="page-title">10 Benefits of Reading Books: Why You Should Read Every Day</h1>
 					<div class="breadcrumbs">
-						<span class="item"><a href="{% url 'core:index' %}">Home /</a></span>
-						<span class="item">Construction Tips</span>
+						<span class="item"><a href="{% url 'core:index' %}">{% trans "Home /" %}</a></span>
+						<span class="item">{% trans "Construction Tips" %}</span>
 					</div>
 				</div>
 			</div>
@@ -74,8 +75,8 @@
 							<div class="col-lg-9">
 								<div class="post-author-content">
 									<div class="element-title d-flex align-items-center gap-3">
-										<h4><a itemprop="url" href="{% url 'core:single_post' %}">Anna Younes</a></h4>
-										<span class="author-position"><em>Book Author</em></span>
+										<h4><a itemprop="url" href="{% url 'core:single_post' %}">{% trans "Anna Younes" %}</a></h4>
+										<span class="author-position"><em>{% trans "Book Author" %}</em></span>
 									</div>
 									<p>Nascetur libero elementum adipiscing mauris maecenas et magna. Etiam nec,
 										rutrum a diam lacus, nunc integer etiam. Mattis pulvinar non viverra donec
@@ -99,15 +100,15 @@
 								<div class="col-lg-10">
 									<div class="author-post">
 										<div class="comment-meta d-flex gap-3">
-											<h5 class="author-name">Lufy carlson</h5>
-											<span class="meta-date">Jul 10</span>
+											<h5 class="author-name">{% trans "Lufy carlson" %}</h5>
+											<span class="meta-date">{% trans "Jul 10" %}</span>
 										</div>
 										<p>Tristique tempis condimentum diam done ullancomroer sit
 											element henddg sit he consequert.Tristique tempis
 											condimentum diam done ullancomroer sit element henddg sit he
 											consequert.</p>
 										<div class="comments-reply">
-											<a href="{% url 'core:single_post' %}#">Reply</a>
+											<a href="{% url 'core:single_post' %}#">{% trans "Reply" %}</a>
 										</div>
 									</div>
 									<article class="comment-item pb-3 row child-comments">
@@ -117,15 +118,15 @@
 										<div class="col-lg-10">
 											<div class="author-post">
 												<div class="comment-meta d-flex gap-3">
-													<h5 class="author-name">Lora leigh</h5>
-													<span class="meta-date">Jul 10</span>
+													<h5 class="author-name">{% trans "Lora leigh" %}</h5>
+													<span class="meta-date">{% trans "Jul 10" %}</span>
 												</div>
 												<p>Tristique tempis condimentum diam done ullancomroer
 													sit element henddg sit he consequert.Tristique
 													tempis condimentum diam done ullancomroer sit
 													element henddg sit he consequert.</p>
 												<div class="comments-reply">
-													<a href="{% url 'core:single_post' %}#">Reply</a>
+													<a href="{% url 'core:single_post' %}#">{% trans "Reply" %}</a>
 												</div>
 											</div>
 										</div>
@@ -137,15 +138,15 @@
 										<div class="col-lg-10">
 											<div class="author-post">
 												<div class="comment-meta d-flex gap-3">
-													<h5 class="author-name">Natalie dormer</h5>
-													<span class="meta-date">Jul 10</span>
+													<h5 class="author-name">{% trans "Natalie dormer" %}</h5>
+													<span class="meta-date">{% trans "Jul 10" %}</span>
 												</div>
 												<p>Tristique tempis condimentum diam done ullancomroer
 													sit element henddg sit he consequert.Tristique
 													tempis condimentum diam done ullancomroer sit
 													element henddg sit he consequert.</p>
 												<div class="comments-reply">
-													<a href="{% url 'core:single_post' %}#">Reply</a>
+													<a href="{% url 'core:single_post' %}#">{% trans "Reply" %}</a>
 												</div>
 											</div>
 										</div>
@@ -159,15 +160,15 @@
 								<div class="col-lg-10">
 									<div class="author-post">
 										<div class="comment-meta d-flex gap-3">
-											<h5 class="author-name">Lora leigh</h5>
-											<span class="meta-date">Jul 10</span>
+											<h5 class="author-name">{% trans "Lora leigh" %}</h5>
+											<span class="meta-date">{% trans "Jul 10" %}</span>
 										</div>
 										<p>Tristique tempis condimentum diam done ullancomroer sit
 											element henddg sit he consequert.Tristique tempis
 											condimentum diam done ullancomroer sit element henddg sit he
 											consequert.</p>
 										<div class="comments-reply">
-											<a href="{% url 'core:single_post' %}#">Reply</a>
+											<a href="{% url 'core:single_post' %}#">{% trans "Reply" %}</a>
 										</div>
 									</div>
 								</div>
@@ -179,15 +180,15 @@
 								<div class="col-lg-10">
 									<div class="author-post">
 										<div class="comment-meta d-flex gap-3">
-											<h5 class="author-name">Natalie dormer</h5>
-											<span class="meta-date">Jul 10</span>
+											<h5 class="author-name">{% trans "Natalie dormer" %}</h5>
+											<span class="meta-date">{% trans "Jul 10" %}</span>
 										</div>
 										<p>Tristique tempis condimentum diam done ullancomroer sit
 											element henddg sit he consequert.Tristique tempis
 											condimentum diam done ullancomroer sit element henddg sit he
 											consequert.</p>
 										<div class="comments-reply">
-											<a href="{% url 'core:single_post' %}#">Reply</a>
+											<a href="{% url 'core:single_post' %}#">{% trans "Reply" %}</a>
 										</div>
 									</div>
 								</div>
@@ -196,7 +197,7 @@
 					</div>
 
 					<section class="comment-respond  mb-5">
-						<h3>Leave a Comment</h3>
+						<h3>{% trans "Leave a Comment" %}</h3>
 						<form method="post" class="form-group mt-3">
 
 							<div class="row">

@@ -1,4 +1,5 @@
 {% load static %}
+{% load i18n %}
 <!DOCTYPE html>
 <htmlbootstrap.bundle.min.js lang="en">
 
@@ -12,7 +13,7 @@
     <meta name="description" content="Digital Book Sales: библиотека, экспертный блог и онлайн-магазин книг в одном месте. Удобный поиск, честные обзоры и быстрая покупка литературы в пару кликов.">
 {% block titlekeywords %}
     <meta name="keywords" content="">
-    <title>Digital Book Sales</title>
+    <title>{% trans "Digital Book Sales" %}</title>
 {% endblock %}
 	<link rel="icon" type="image/x-icon" href="{% static 'common/images/favicon.ico' %}">
 	<link rel="stylesheet" type="text/css" href="{% static 'skin2/css/bootstrap.min.css' %}">
@@ -52,7 +53,7 @@
 					</div>
 					<div class="col-md-6">
 						<div class="right-element">
-							<a href="{% url 'core:index' %}#" class="user-account for-buy"><i class="icon icon-user"></i><span>Account</span></a>
+							<a href="{% url 'core:index' %}#" class="user-account for-buy"><i class="icon icon-user"></i><span>{% trans "Account" %}</span></a>
 							<a href="{% url 'core:index' %}#" class="cart for-buy"><i class="icon icon-clipboard"></i><span>Cart:(0
 									$)</span></a>
 
@@ -91,12 +92,12 @@
 						<nav id="navbar">
 							<div class="main-menu stellarnav desktop"><a href="{% url 'core:index' %}#" class="menu-toggle full"><span class="bars"><span></span><span></span><span></span></span> Menu</a>
 								<ul class="menu-list">
-									<li class="menu-item active"><a href="{% url 'core:index' %}#home">Home</a></li>
+									<li class="menu-item active"><a href="{% url 'core:index' %}#home">{% trans "Home" %}</a></li>
 									<li class="menu-item has-sub">
-										<a href="{% url 'core:index' %}#pages" class="nav-link">Pages</a>
+										<a href="{% url 'core:index' %}#pages" class="nav-link">{% trans "Pages" %}</a>
 
 										<ul>
-											<li class="active"><a href="{% url 'core:index' %}">Home</a></li>
+											<li class="active"><a href="{% url 'core:index' %}">{% trans "Home" %}</a></li>
 											<li><a href="{% url 'core:about_us' %}">About </a></li>
 											<li><a href="{% url 'core:styles' %}">Styles </a></li>
 											<li><a href="{% url 'core:blog' %}">Blog </a></li>
@@ -108,11 +109,11 @@
 										</ul>
 
 									<a class="dd-toggle" href="{% url 'core:index' %}#"><span class="icon-plus"></span></a></li>
-									<li class="menu-item"><a href="{% url 'core:index' %}#featured-books" class="nav-link">Featured</a></li>
-									<li class="menu-item"><a href="{% url 'core:index' %}#popular-books" class="nav-link">Popular</a></li>
-									<li class="menu-item"><a href="{% url 'core:index' %}#special-offer" class="nav-link">Offer</a></li>
-									<li class="menu-item"><a href="{% url 'core:index' %}#latest-blog" class="nav-link">Articles</a></li>
-									<li class="menu-item"><a href="{% url 'core:index' %}#download-app" class="nav-link">Download App</a></li>
+									<li class="menu-item"><a href="{% url 'core:index' %}#featured-books" class="nav-link">{% trans "Featured" %}</a></li>
+									<li class="menu-item"><a href="{% url 'core:index' %}#popular-books" class="nav-link">{% trans "Popular" %}</a></li>
+									<li class="menu-item"><a href="{% url 'core:index' %}#special-offer" class="nav-link">{% trans "Offer" %}</a></li>
+									<li class="menu-item"><a href="{% url 'core:index' %}#latest-blog" class="nav-link">{% trans "Articles" %}</a></li>
+									<li class="menu-item"><a href="{% url 'core:index' %}#download-app" class="nav-link">{% trans "Download App" %}</a></li>
 
 								</ul>
 
@@ -156,46 +157,22 @@
 				<div class="col-md-2">
 
 					<div class="footer-menu">
-						<h5>About Us</h5>
+						<h5>{% trans "About Us" %}</h5>
 						<ul class="menu-list">
 							<li class="menu-item">
-								<a href="{% url 'core:index' %}#">vision</a>
+								<a href="{% url 'core:index' %}#">{% trans "vision" %}</a>
 							</li>
 							<li class="menu-item">
 								<a href="{% url 'core:index' %}#">articles </a>
 							</li>
 							<li class="menu-item">
-								<a href="{% url 'core:index' %}#">careers</a>
+								<a href="{% url 'core:index' %}#">{% trans "careers" %}</a>
 							</li>
 							<li class="menu-item">
-								<a href="{% url 'core:index' %}#">service terms</a>
+								<a href="{% url 'core:index' %}#">{% trans "service terms" %}</a>
 							</li>
 							<li class="menu-item">
-								<a href="{% url 'core:index' %}#">donate</a>
-							</li>
-						</ul>
-					</div>
-
-				</div>
-				<div class="col-md-2">
-
-					<div class="footer-menu">
-						<h5>Discover</h5>
-						<ul class="menu-list">
-							<li class="menu-item">
-								<a href="{% url 'core:index' %}#">Home</a>
-							</li>
-							<li class="menu-item">
-								<a href="{% url 'core:index' %}#">Books</a>
-							</li>
-							<li class="menu-item">
-								<a href="{% url 'core:index' %}#">Authors</a>
-							</li>
-							<li class="menu-item">
-								<a href="{% url 'core:index' %}#">Subjects</a>
-							</li>
-							<li class="menu-item">
-								<a href="{% url 'core:index' %}#">Advanced Search</a>
+								<a href="{% url 'core:index' %}#">{% trans "donate" %}</a>
 							</li>
 						</ul>
 					</div>
@@ -204,19 +181,22 @@
 				<div class="col-md-2">
 
 					<div class="footer-menu">
-						<h5>My account</h5>
+						<h5>{% trans "Discover" %}</h5>
 						<ul class="menu-list">
 							<li class="menu-item">
-								<a href="{% url 'core:index' %}#">Sign In</a>
+								<a href="{% url 'core:index' %}#">{% trans "Home" %}</a>
 							</li>
 							<li class="menu-item">
-								<a href="{% url 'core:index' %}#">View Cart</a>
+								<a href="{% url 'core:index' %}#">{% trans "Books" %}</a>
 							</li>
 							<li class="menu-item">
-								<a href="{% url 'core:index' %}#">My Wishtlist</a>
+								<a href="{% url 'core:index' %}#">{% trans "Authors" %}</a>
 							</li>
 							<li class="menu-item">
-								<a href="{% url 'core:index' %}#">Track My Order</a>
+								<a href="{% url 'core:index' %}#">{% trans "Subjects" %}</a>
+							</li>
+							<li class="menu-item">
+								<a href="{% url 'core:index' %}#">{% trans "Advanced Search" %}</a>
 							</li>
 						</ul>
 					</div>
@@ -225,19 +205,40 @@
 				<div class="col-md-2">
 
 					<div class="footer-menu">
-						<h5>Help</h5>
+						<h5>{% trans "My account" %}</h5>
 						<ul class="menu-list">
 							<li class="menu-item">
-								<a href="{% url 'core:index' %}#">Help center</a>
+								<a href="{% url 'core:index' %}#">{% trans "Sign In" %}</a>
 							</li>
 							<li class="menu-item">
-								<a href="{% url 'core:index' %}#">Report a problem</a>
+								<a href="{% url 'core:index' %}#">{% trans "View Cart" %}</a>
 							</li>
 							<li class="menu-item">
-								<a href="{% url 'core:index' %}#">Suggesting edits</a>
+								<a href="{% url 'core:index' %}#">{% trans "My Wishtlist" %}</a>
 							</li>
 							<li class="menu-item">
-								<a href="{% url 'core:index' %}#">Contact us</a>
+								<a href="{% url 'core:index' %}#">{% trans "Track My Order" %}</a>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+				<div class="col-md-2">
+
+					<div class="footer-menu">
+						<h5>{% trans "Help" %}</h5>
+						<ul class="menu-list">
+							<li class="menu-item">
+								<a href="{% url 'core:index' %}#">{% trans "Help center" %}</a>
+							</li>
+							<li class="menu-item">
+								<a href="{% url 'core:index' %}#">{% trans "Report a problem" %}</a>
+							</li>
+							<li class="menu-item">
+								<a href="{% url 'core:index' %}#">{% trans "Suggesting edits" %}</a>
+							</li>
+							<li class="menu-item">
+								<a href="{% url 'core:index' %}#">{% trans "Contact us" %}</a>
 							</li>
 						</ul>
 					</div>

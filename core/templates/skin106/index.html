@@ -1,9 +1,12 @@
 {% extends "skin6/base.html" %}
+
+
+{% load i18n %}
 {% load static %}
 
 {% block titlekeywords %}
     <meta name="keywords" content="о компании Digital Book Sales, купить книги со скидкой, корзина заказов, магазин литературы, оплата книг онлайн, библиотека книг, поиск книг по автору.">
-    <title>Digital Book Sales</title>
+    <title>{% trans "Digital Book Sales" %}</title>
 {% endblock %}
 
 {% block customstyle %}
@@ -30,9 +33,9 @@
               <div class="row d-flex flex-column-reverse flex-md-row align-items-center">
                 <div class="col-md-5 offset-md-1 mt-5 mt-md-0 text-center text-md-start">
                   <div class="banner-content">
-                    <h2>The Fine Print Book Collection</h2>
-                    <p>Best Offer Save 30%. Grab it now!</p>
-                    <a href="{% url 'core:shop' %}" class="btn mt-3">Shop Collection</a>
+                    <h2>{% trans "The Fine Print Book Collection" %}</h2>
+                    <p>{% trans "Best Offer Save 30%. Grab it now!" %}</p>
+                    <a href="{% url 'core:shop' %}" class="btn mt-3">{% trans "Shop Collection" %}</a>
                   </div>
                 </div>
                 <div class="col-md-6 text-center">
@@ -48,9 +51,9 @@
               <div class="row d-flex flex-column-reverse flex-md-row align-items-center">
                 <div class="col-md-5 offset-md-1 mt-5 mt-md-0 text-center text-md-start">
                   <div class="banner-content">
-                    <h2>How Innovation works</h2>
-                    <p>Discount available. Grab it now!</p>
-                    <a href="{% url 'core:shop' %}" class="btn mt-3">Shop Product</a>
+                    <h2>{% trans "How Innovation works" %}</h2>
+                    <p>{% trans "Discount available. Grab it now!" %}</p>
+                    <a href="{% url 'core:shop' %}" class="btn mt-3">{% trans "Shop Product" %}</a>
                   </div>
                 </div>
                 <div class="col-md-6 text-center">
@@ -66,9 +69,9 @@
               <div class="row d-flex flex-column-reverse flex-md-row align-items-center">
                 <div class="col-md-5 offset-md-1 mt-5 mt-md-0 text-center text-md-start">
                   <div class="banner-content">
-                    <h2>Your Heart is the Sea</h2>
-                    <p>Limited stocks available. Grab it now!</p>
-                    <a href="{% url 'core:shop' %}" class="btn mt-3">Shop Collection</a>
+                    <h2>{% trans "Your Heart is the Sea" %}</h2>
+                    <p>{% trans "Limited stocks available. Grab it now!" %}</p>
+                    <a href="{% url 'core:shop' %}" class="btn mt-3">{% trans "Shop Collection" %}</a>
                   </div>
                 </div>
                 <div class="col-md-6 text-center">
@@ -94,8 +97,8 @@
                 </svg>
               </div>
               <div class="icon-box-content">
-                <h4 class="card-title mb-1 text-capitalize text-dark">Free delivery</h4>
-                <p>Consectetur adipi elit lorem ipsum dolor sit amet.</p>
+                <h4 class="card-title mb-1 text-capitalize text-dark">{% trans "Free delivery" %}</h4>
+                <p>{% trans "Consectetur adipi elit lorem ipsum dolor sit amet." %}</p>
               </div>
             </div>
           </div>
@@ -107,8 +110,8 @@
                 </svg>
               </div>
               <div class="icon-box-content">
-                <h4 class="card-title mb-1 text-capitalize text-dark">Quality guarantee</h4>
-                <p>Dolor sit amet orem ipsu mcons ectetur adipi elit.</p>
+                <h4 class="card-title mb-1 text-capitalize text-dark">{% trans "Quality guarantee" %}</h4>
+                <p>{% trans "Dolor sit amet orem ipsu mcons ectetur adipi elit." %}</p>
               </div>
             </div>
           </div>
@@ -120,8 +123,8 @@
                 </svg>
               </div>
               <div class="icon-box-content">
-                <h4 class="card-title mb-1 text-capitalize text-dark">Daily offers</h4>
-                <p>Amet consectetur adipi elit loreme ipsum dolor sit.</p>
+                <h4 class="card-title mb-1 text-capitalize text-dark">{% trans "Daily offers" %}</h4>
+                <p>{% trans "Amet consectetur adipi elit loreme ipsum dolor sit." %}</p>
               </div>
             </div>
           </div>
@@ -134,7 +137,7 @@
               </div>
               <div class="icon-box-content">
                 <h4 class="card-title mb-1 text-capitalize text-dark">100% secure payment</h4>
-                <p>Rem Lopsum dolor sit amet, consectetur adipi elit.</p>
+                <p>{% trans "Rem Lopsum dolor sit amet, consectetur adipi elit." %}</p>
               </div>
             </div>
           </div>
@@ -145,8 +148,8 @@
     <section id="best-selling-items" class="position-relative padding-large ">
       <div class="container">
         <div class="section-title d-md-flex justify-content-between align-items-center mb-4">
-          <h3 class="d-flex align-items-center">Best selling items</h3>
-          <a href="{% url 'core:shop' %}" class="btn">View All</a>
+          <h3 class="d-flex align-items-center">{% trans "Best selling items" %}</h3>
+          <a href="{% url 'core:shop' %}" class="btn">{% trans "View All" %}</a>
         </div>
         <div class="position-absolute top-50 end-0 pe-0 pe-xxl-5 me-0 me-xxl-5 swiper-next product-slider-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-c36103c10bb23e58c7" aria-disabled="false">
           <svg class="chevron-forward-circle d-flex justify-content-center align-items-center p-2" width="80" height="80">
@@ -166,9 +169,9 @@
                   <p class="bg-primary py-1 px-3 fs-6 text-white rounded-2">10% off</p>
                 </div>
                 <img src="{% static 'skin6/images/product-item1.png' %}" class="img-fluid shadow-sm" alt="product item">
-                <h6 class="mt-4 mb-0 fw-bold"><a href="{% url 'core:single_product' %}">House of Sky Breath</a></h6>
+                <h6 class="mt-4 mb-0 fw-bold"><a href="{% url 'core:single_product' %}">{% trans "House of Sky Breath" %}</a></h6>
                 <div class="review-content d-flex">
-                  <p class="my-2 me-2 fs-6 text-black-50">Lauren Asher</p>
+                  <p class="my-2 me-2 fs-6 text-black-50">{% trans "Lauren Asher" %}</p>
 
                   <div class="rating text-warning d-flex align-items-center">
                     <svg class="star star-fill">
@@ -208,9 +211,9 @@
             <div class="swiper-slide swiper-slide-next" style="width: 264px; margin-right: 20px;" role="group" aria-label="2 / 6">
               <div class="card position-relative p-4 border rounded-3">
                 <img src="{% static 'skin6/images/product-item2.png' %}" class="img-fluid shadow-sm" alt="product item">
-                <h6 class="mt-4 mb-0 fw-bold"><a href="{% url 'core:single_product' %}">Heartland Stars</a></h6>
+                <h6 class="mt-4 mb-0 fw-bold"><a href="{% url 'core:single_product' %}">{% trans "Heartland Stars" %}</a></h6>
                 <div class="review-content d-flex">
-                  <p class="my-2 me-2 fs-6 text-black-50">Lauren Asher</p>
+                  <p class="my-2 me-2 fs-6 text-black-50">{% trans "Lauren Asher" %}</p>
 
                   <div class="rating text-warning d-flex align-items-center">
                     <svg class="star star-fill">
@@ -251,9 +254,9 @@
             <div class="swiper-slide" style="width: 264px; margin-right: 20px;" role="group" aria-label="3 / 6">
               <div class="card position-relative p-4 border rounded-3">
                 <img src="{% static 'skin6/images/product-item3.png' %}" class="img-fluid shadow-sm" alt="product item">
-                <h6 class="mt-4 mb-0 fw-bold"><a href="{% url 'core:single_product' %}">Heavenly Bodies</a></h6>
+                <h6 class="mt-4 mb-0 fw-bold"><a href="{% url 'core:single_product' %}">{% trans "Heavenly Bodies" %}</a></h6>
                 <div class="review-content d-flex">
-                  <p class="my-2 me-2 fs-6 text-black-50">Lauren Asher</p>
+                  <p class="my-2 me-2 fs-6 text-black-50">{% trans "Lauren Asher" %}</p>
 
                   <div class="rating text-warning d-flex align-items-center">
                     <svg class="star star-fill">
@@ -297,9 +300,9 @@
                   <p class="bg-primary py-1 px-3 fs-6 text-white rounded-2">10% off</p>
                 </div>
                 <img src="{% static 'skin6/images/product-item4.png' %}" class="img-fluid shadow-sm" alt="product item">
-                <h6 class="mt-4 mb-0 fw-bold"><a href="{% url 'core:single_product' %}">His Saving Grace</a></h6>
+                <h6 class="mt-4 mb-0 fw-bold"><a href="{% url 'core:single_product' %}">{% trans "His Saving Grace" %}</a></h6>
                 <div class="review-content d-flex">
-                  <p class="my-2 me-2 fs-6 text-black-50">Lauren Asher</p>
+                  <p class="my-2 me-2 fs-6 text-black-50">{% trans "Lauren Asher" %}</p>
 
                   <div class="rating text-warning d-flex align-items-center">
                     <svg class="star star-fill">
@@ -340,9 +343,9 @@
             <div class="swiper-slide" style="width: 264px; margin-right: 20px;" role="group" aria-label="5 / 6">
               <div class="card position-relative p-4 border rounded-3">
                 <img src="{% static 'skin6/images/product-item5.png' %}" class="img-fluid shadow-sm" alt="product item">
-                <h6 class="mt-4 mb-0 fw-bold"><a href="{% url 'core:single_product' %}">My Dearest Darkest</a></h6>
+                <h6 class="mt-4 mb-0 fw-bold"><a href="{% url 'core:single_product' %}">{% trans "My Dearest Darkest" %}</a></h6>
                 <div class="review-content d-flex">
-                  <p class="my-2 me-2 fs-6 text-black-50">Lauren Asher</p>
+                  <p class="my-2 me-2 fs-6 text-black-50">{% trans "Lauren Asher" %}</p>
 
                   <div class="rating text-warning d-flex align-items-center d-flex align-items-center">
                     <svg class="star star-fill">
@@ -383,9 +386,9 @@
             <div class="swiper-slide" style="width: 264px; margin-right: 20px;" role="group" aria-label="6 / 6">
               <div class="card position-relative p-4 border rounded-3">
                 <img src="{% static 'skin6/images/product-item6.png' %}" class="img-fluid shadow-sm" alt="product item">
-                <h6 class="mt-4 mb-0 fw-bold"><a href="{% url 'core:single_product' %}">The Story of Success</a></h6>
+                <h6 class="mt-4 mb-0 fw-bold"><a href="{% url 'core:single_product' %}">{% trans "The Story of Success" %}</a></h6>
                 <div class="review-content d-flex">
-                  <p class="my-2 me-2 fs-6 text-black-50">Lauren Asher</p>
+                  <p class="my-2 me-2 fs-6 text-black-50">{% trans "Lauren Asher" %}</p>
 
                   <div class="rating text-warning d-flex align-items-center">
                     <svg class="star star-fill">
@@ -442,25 +445,25 @@
             <div id="countdown-clock" class="text-dark d-flex align-items-center my-3">
               <div class="time d-grid pe-3">
                 <span class="days fs-1 fw-normal">27</span>
-                <small>Days</small>
+                <small>{% trans "Days" %}</small>
               </div>
               <span class="fs-1 text-primary">:</span>
               <div class="time d-grid pe-3 ps-3">
                 <span class="hours fs-1 fw-normal">23</span>
-                <small>Hrs</small>
+                <small>{% trans "Hrs" %}</small>
               </div>
               <span class="fs-1 text-primary">:</span>
               <div class="time d-grid pe-3 ps-3">
                 <span class="minutes fs-1 fw-normal">59</span>
-                <small>Min</small>
+                <small>{% trans "Min" %}</small>
               </div>
               <span class="fs-1 text-primary">:</span>
               <div class="time d-grid ps-3">
                 <span class="seconds fs-1 fw-normal">53</span>
-                <small>Sec</small>
+                <small>{% trans "Sec" %}</small>
               </div>
             </div>
-            <a href="{% url 'core:shop' %}" class="btn mt-3">Shop Collection</a>
+            <a href="{% url 'core:shop' %}" class="btn mt-3">{% trans "Shop Collection" %}</a>
           </div>
         </div>
       </div>
@@ -473,15 +476,15 @@
           <div class="col-md-6 mb-4 mb-lg-0 col-lg-3">
             <div class="featured border rounded-3 p-4">
               <div class="section-title overflow-hidden mb-5 mt-2">
-                <h3 class="d-flex flex-column mb-0">Featured</h3>
+                <h3 class="d-flex flex-column mb-0">{% trans "Featured" %}</h3>
               </div>
               <div class="items-lists">
                 <div class="item d-flex">
                   <img src="{% static 'skin6/images/product-item2.png' %}" class="img-fluid shadow-sm" alt="product item">
                   <div class="item-content ms-3">
-                    <h6 class="mb-0 fw-bold"><a href="{% url 'core:single_product' %}">Echoes of the Ancients</a></h6>
+                    <h6 class="mb-0 fw-bold"><a href="{% url 'core:single_product' %}">{% trans "Echoes of the Ancients" %}</a></h6>
                     <div class="review-content d-flex">
-                      <p class="my-2 me-2 fs-6 text-black-50">Lauren Asher</p>
+                      <p class="my-2 me-2 fs-6 text-black-50">{% trans "Lauren Asher" %}</p>
 
                       <div class="rating text-warning d-flex align-items-center">
                         <svg class="star star-fill">
@@ -508,9 +511,9 @@
                 <div class="item d-flex">
                   <img src="{% static 'skin6/images/product-item1.png' %}" class="img-fluid shadow-sm" alt="product item">
                   <div class="item-content ms-3">
-                    <h6 class="mb-0 fw-bold"><a href="{% url 'core:single_product' %}">The Midnight Garden</a></h6>
+                    <h6 class="mb-0 fw-bold"><a href="{% url 'core:single_product' %}">{% trans "The Midnight Garden" %}</a></h6>
                     <div class="review-content d-flex">
-                      <p class="my-2 me-2 fs-6 text-black-50">Lauren Asher</p>
+                      <p class="my-2 me-2 fs-6 text-black-50">{% trans "Lauren Asher" %}</p>
                       <div class="rating text-warning d-flex align-items-center">
                         <svg class="star star-fill">
                           <use xlink:href="#star-fill"></use>
@@ -536,9 +539,9 @@
                 <div class="item d-flex">
                   <img src="{% static 'skin6/images/product-item3.png' %}" class="img-fluid shadow-sm" alt="product item">
                   <div class="item-content ms-3">
-                    <h6 class="mb-0 fw-bold"><a href="{% url 'core:single_product' %}">Shadow of the Serpent</a></h6>
+                    <h6 class="mb-0 fw-bold"><a href="{% url 'core:single_product' %}">{% trans "Shadow of the Serpent" %}</a></h6>
                     <div class="review-content d-flex">
-                      <p class="my-2 me-2 fs-6 text-black-50">Lauren Asher</p>
+                      <p class="my-2 me-2 fs-6 text-black-50">{% trans "Lauren Asher" %}</p>
 
                       <div class="rating text-warning d-flex align-items-center">
                         <svg class="star star-fill">
@@ -567,15 +570,15 @@
           <div class="col-md-6 mb-4 mb-lg-0 col-lg-3">
             <div class="latest-items border rounded-3 p-4">
               <div class="section-title overflow-hidden mb-5 mt-2">
-                <h3 class="d-flex flex-column mb-0">Latest items</h3>
+                <h3 class="d-flex flex-column mb-0">{% trans "Latest items" %}</h3>
               </div>
               <div class="items-lists">
                 <div class="item d-flex">
                   <img src="{% static 'skin6/images/product-item4.png' %}" class="img-fluid shadow-sm" alt="product item">
                   <div class="item-content ms-3">
-                    <h6 class="mb-0 fw-bold"><a href="{% url 'core:single_product' %}">Whispering Winds</a></h6>
+                    <h6 class="mb-0 fw-bold"><a href="{% url 'core:single_product' %}">{% trans "Whispering Winds" %}</a></h6>
                     <div class="review-content d-flex">
-                      <p class="my-2 me-2 fs-6 text-black-50">Lauren Asher</p>
+                      <p class="my-2 me-2 fs-6 text-black-50">{% trans "Lauren Asher" %}</p>
                       <div class="rating text-warning d-flex align-items-center">
                         <svg class="star star-fill">
                           <use xlink:href="#star-fill"></use>
@@ -601,9 +604,9 @@
                 <div class="item d-flex">
                   <img src="{% static 'skin6/images/product-item5.png' %}" class="img-fluid shadow-sm" alt="product item">
                   <div class="item-content ms-3">
-                    <h6 class="mb-0 fw-bold"><a href="{% url 'core:single_product' %}">The Forgotten Realm</a></h6>
+                    <h6 class="mb-0 fw-bold"><a href="{% url 'core:single_product' %}">{% trans "The Forgotten Realm" %}</a></h6>
                     <div class="review-content d-flex">
-                      <p class="my-2 me-2 fs-6 text-black-50">Lauren Asher</p>
+                      <p class="my-2 me-2 fs-6 text-black-50">{% trans "Lauren Asher" %}</p>
                       <div class="rating text-warning d-flex align-items-center">
                         <svg class="star star-fill">
                           <use xlink:href="#star-fill"></use>
@@ -629,9 +632,9 @@
                 <div class="item d-flex">
                   <img src="{% static 'skin6/images/product-item6.png' %}" class="img-fluid shadow-sm" alt="product item">
                   <div class="item-content ms-3">
-                    <h6 class="mb-0 fw-bold"><a href="{% url 'core:single_product' %}">Moonlit Secrets</a></h6>
+                    <h6 class="mb-0 fw-bold"><a href="{% url 'core:single_product' %}">{% trans "Moonlit Secrets" %}</a></h6>
                     <div class="review-content d-flex">
-                      <p class="my-2 me-2 fs-6 text-black-50">Lauren Asher</p>
+                      <p class="my-2 me-2 fs-6 text-black-50">{% trans "Lauren Asher" %}</p>
                       <div class="rating text-warning d-flex align-items-center">
                         <svg class="star star-fill">
                           <use xlink:href="#star-fill"></use>
@@ -659,15 +662,15 @@
           <div class="col-md-6 mb-4 mb-lg-0 col-lg-3">
             <div class="best-reviewed border rounded-3 p-4">
               <div class="section-title overflow-hidden mb-5 mt-2">
-                <h3 class="d-flex flex-column mb-0">Best reviewed</h3>
+                <h3 class="d-flex flex-column mb-0">{% trans "Best reviewed" %}</h3>
               </div>
               <div class="items-lists">
                 <div class="item d-flex">
                   <img src="{% static 'skin6/images/product-item7.png' %}" class="img-fluid shadow-sm" alt="product item">
                   <div class="item-content ms-3">
-                    <h6 class="mb-0 fw-bold"><a href="{% url 'core:single_product' %}">The Crystal Key</a></h6>
+                    <h6 class="mb-0 fw-bold"><a href="{% url 'core:single_product' %}">{% trans "The Crystal Key" %}</a></h6>
                     <div class="review-content d-flex">
-                      <p class="my-2 me-2 fs-6 text-black-50">Lauren Asher</p>
+                      <p class="my-2 me-2 fs-6 text-black-50">{% trans "Lauren Asher" %}</p>
                       <div class="rating text-warning d-flex align-items-center">
                         <svg class="star star-fill">
                           <use xlink:href="#star-fill"></use>
@@ -693,9 +696,9 @@
                 <div class="item d-flex">
                   <img src="{% static 'skin6/images/product-item8.png' %}" class="img-fluid shadow-sm" alt="product item">
                   <div class="item-content ms-3">
-                    <h6 class="mb-0 fw-bold"><a href="{% url 'core:single_product' %}">Starlight Sonata</a></h6>
+                    <h6 class="mb-0 fw-bold"><a href="{% url 'core:single_product' %}">{% trans "Starlight Sonata" %}</a></h6>
                     <div class="review-content d-flex">
-                      <p class="my-2 me-2 fs-6 text-black-50">Lauren Asher</p>
+                      <p class="my-2 me-2 fs-6 text-black-50">{% trans "Lauren Asher" %}</p>
                       <div class="rating text-warning d-flex align-items-center">
                         <svg class="star star-fill">
                           <use xlink:href="#star-fill"></use>
@@ -721,9 +724,9 @@
                 <div class="item d-flex">
                   <img src="{% static 'skin6/images/product-item9.png' %}" class="img-fluid shadow-sm" alt="product item">
                   <div class="item-content ms-3">
-                    <h6 class="mb-0 fw-bold"><a href="{% url 'core:single_product' %}">Tales of the Enchanted Forest</a></h6>
+                    <h6 class="mb-0 fw-bold"><a href="{% url 'core:single_product' %}">{% trans "Tales of the Enchanted Forest" %}</a></h6>
                     <div class="review-content d-flex">
-                      <p class="my-2 me-2 fs-6 text-black-50">Lauren Asher</p>
+                      <p class="my-2 me-2 fs-6 text-black-50">{% trans "Lauren Asher" %}</p>
                       <div class="rating text-warning d-flex align-items-center">
                         <svg class="star star-fill">
                           <use xlink:href="#star-fill"></use>
@@ -751,15 +754,15 @@
           <div class="col-md-6 mb-4 mb-lg-0 col-lg-3">
             <div class="on-sale border rounded-3 p-4">
               <div class="section-title overflow-hidden mb-5 mt-2">
-                <h3 class="d-flex flex-column mb-0">On sale</h3>
+                <h3 class="d-flex flex-column mb-0">{% trans "On sale" %}</h3>
               </div>
               <div class="items-lists">
                 <div class="item d-flex">
                   <img src="{% static 'skin6/images/product-item10.png' %}" class="img-fluid shadow-sm" alt="product item">
                   <div class="item-content ms-3">
-                    <h6 class="mb-0 fw-bold"><a href="{% url 'core:single_product' %}">The Phoenix Chronicles</a></h6>
+                    <h6 class="mb-0 fw-bold"><a href="{% url 'core:single_product' %}">{% trans "The Phoenix Chronicles" %}</a></h6>
                     <div class="review-content d-flex">
-                      <p class="my-2 me-2 fs-6 text-black-50">Lauren Asher</p>
+                      <p class="my-2 me-2 fs-6 text-black-50">{% trans "Lauren Asher" %}</p>
                       <div class="rating text-warning d-flex align-items-center">
                         <svg class="star star-fill">
                           <use xlink:href="#star-fill"></use>
@@ -786,9 +789,9 @@
                 <div class="item d-flex">
                   <img src="{% static 'skin6/images/product-item11.png' %}" class="img-fluid shadow-sm" alt="product item">
                   <div class="item-content ms-3">
-                    <h6 class="mb-0 fw-bold"><a href="{% url 'core:single_product' %}">Dreams of Avalon</a></h6>
+                    <h6 class="mb-0 fw-bold"><a href="{% url 'core:single_product' %}">{% trans "Dreams of Avalon" %}</a></h6>
                     <div class="review-content d-flex">
-                      <p class="my-2 me-2 fs-6 text-black-50">Lauren Asher</p>
+                      <p class="my-2 me-2 fs-6 text-black-50">{% trans "Lauren Asher" %}</p>
                       <div class="rating text-warning d-flex align-items-center">
                         <svg class="star star-fill">
                           <use xlink:href="#star-fill"></use>
@@ -815,9 +818,9 @@
                 <div class="item d-flex">
                   <img src="{% static 'skin6/images/product-item12.png' %}" class="img-fluid shadow-sm" alt="product item">
                   <div class="item-content ms-3">
-                    <h6 class="mb-0 fw-bold"><a href="{% url 'core:single_product' %}">Legends of the Dragon Isles</a></h6>
+                    <h6 class="mb-0 fw-bold"><a href="{% url 'core:single_product' %}">{% trans "Legends of the Dragon Isles" %}</a></h6>
                     <div class="review-content d-flex">
-                      <p class="my-2 me-2 fs-6 text-black-50">Lauren Asher</p>
+                      <p class="my-2 me-2 fs-6 text-black-50">{% trans "Lauren Asher" %}</p>
                       <div class="rating text-warning d-flex align-items-center">
                         <svg class="star star-fill">
                           <use xlink:href="#star-fill"></use>
@@ -850,14 +853,14 @@
     <section id="categories" class="padding-large pt-0">
       <div class="container">
         <div class="section-title overflow-hidden mb-4">
-          <h3 class="d-flex align-items-center">Categories</h3>
+          <h3 class="d-flex align-items-center">{% trans "Categories" %}</h3>
         </div>
         <div class="row">
           <div class="col-md-4">
             <div class="card mb-4 border-0 rounded-3 position-relative">
               <a href="{% url 'core:shop' %}">
                 <img src="{% static 'skin6/images/category1.jpg' %}" class="img-fluid rounded-3" alt="cart item">
-                </a><h6 class=" position-absolute bottom-0 bg-primary m-4 py-2 px-3 rounded-3"><a href="{% url 'core:shop' %}"></a><a href="{% url 'core:shop' %}" class="text-white">Romance</a></h6>
+                </a><h6 class=" position-absolute bottom-0 bg-primary m-4 py-2 px-3 rounded-3"><a href="{% url 'core:shop' %}"></a><a href="{% url 'core:shop' %}" class="text-white">{% trans "Romance" %}</a></h6>
 
             </div>
           </div>
@@ -865,7 +868,7 @@
             <div class="card text-center mb-4 border-0 rounded-3">
               <a href="{% url 'core:shop' %}">
                 <img src="{% static 'skin6/images/category2.jpg' %}" class="img-fluid rounded-3" alt="cart item">
-                </a><h6 class=" position-absolute bottom-0 bg-primary m-4 py-2 px-3 rounded-3"><a href="{% url 'core:shop' %}"></a><a href="{% url 'core:shop' %}" class="text-white">Lifestyle</a></h6>
+                </a><h6 class=" position-absolute bottom-0 bg-primary m-4 py-2 px-3 rounded-3"><a href="{% url 'core:shop' %}"></a><a href="{% url 'core:shop' %}" class="text-white">{% trans "Lifestyle" %}</a></h6>
 
             </div>
           </div>
@@ -873,7 +876,7 @@
             <div class="card text-center mb-4 border-0 rounded-3">
               <a href="{% url 'core:shop' %}">
                 <img src="{% static 'skin6/images/category3.jpg' %}" class="img-fluid rounded-3" alt="cart item">
-                </a><h6 class=" position-absolute bottom-0 bg-primary m-4 py-2 px-3 rounded-3"><a href="{% url 'core:shop' %}"></a><a href="{% url 'core:shop' %}" class="text-white">Recipe</a></h6>
+                </a><h6 class=" position-absolute bottom-0 bg-primary m-4 py-2 px-3 rounded-3"><a href="{% url 'core:shop' %}"></a><a href="{% url 'core:shop' %}" class="text-white">{% trans "Recipe" %}</a></h6>
 
             </div>
           </div>
@@ -894,7 +897,7 @@
           </svg>
         </div>
         <div class="section-title mb-4 text-center">
-          <h3 class="mb-4">Customers reviews</h3>
+          <h3 class="mb-4">{% trans "Customers reviews" %}</h3>
         </div>
         <div class="swiper testimonial-swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
           <div class="swiper-wrapper" id="swiper-wrapper-3108c4e3ce169f488" aria-live="polite">
@@ -921,7 +924,7 @@ atmosphere, friendly staff, and wide selection of books make every visit
                     <use xlink:href="#star-fill"></use>
                   </svg>
                 </div>
-                <h5 class="mt-1 fw-normal">Emma Chamberlin</h5>
+                <h5 class="mt-1 fw-normal">{% trans "Emma Chamberlin" %}</h5>
               </div>
             </div>
             <div class="swiper-slide swiper-slide-next" style="width: 616px; margin-right: 20px;" role="group" aria-label="2 / 5">
@@ -947,7 +950,7 @@ always have the latest titles, and their recommendations have introduced
                     <use xlink:href="#star-fill"></use>
                   </svg>
                 </div>
-                <h5 class="mt-1 fw-normal">Thomas John</h5>
+                <h5 class="mt-1 fw-normal">{% trans "Thomas John" %}</h5>
               </div>
             </div>
             <div class="swiper-slide" style="width: 616px; margin-right: 20px;" role="group" aria-label="3 / 5">
@@ -973,7 +976,7 @@ definitely be shopping here again!"</blockquote>
                     <use xlink:href="#star-fill"></use>
                   </svg>
                 </div>
-                <h5 class="mt-1 fw-normal">Kevin Bryan</h5>
+                <h5 class="mt-1 fw-normal">{% trans "Kevin Bryan" %}</h5>
               </div>
             </div>
             <div class="swiper-slide" style="width: 616px; margin-right: 20px;" role="group" aria-label="4 / 5">
@@ -998,7 +1001,7 @@ definitely be shopping here again!"</blockquote>
                     <use xlink:href="#star-fill"></use>
                   </svg>
                 </div>
-                <h5 class="mt-1 fw-normal">Stevin</h5>
+                <h5 class="mt-1 fw-normal">{% trans "Stevin" %}</h5>
               </div>
             </div>
             <div class="swiper-slide" style="width: 616px; margin-right: 20px;" role="group" aria-label="5 / 5">
@@ -1023,7 +1026,7 @@ definitely be shopping here again!"</blockquote>
                     <use xlink:href="#star-fill"></use>
                   </svg>
                 </div>
-                <h5 class="mt-1 fw-normal">Roman</h5>
+                <h5 class="mt-1 fw-normal">{% trans "Roman" %}</h5>
               </div>
             </div>
           </div>
@@ -1034,39 +1037,39 @@ definitely be shopping here again!"</blockquote>
     <section id="latest-posts" class="padding-large">
       <div class="container">
         <div class="section-title d-md-flex justify-content-between align-items-center mb-4">
-          <h3 class="d-flex align-items-center">Latest posts</h3>
-          <a href="{% url 'core:shop' %}" class="btn">View All</a>
+          <h3 class="d-flex align-items-center">{% trans "Latest posts" %}</h3>
+          <a href="{% url 'core:shop' %}" class="btn">{% trans "View All" %}</a>
         </div>
         <div class="row">
           <div class="col-md-3 posts mb-4">
             <img src="{% static 'skin6/images/post-item1.jpg' %}" alt="post image" class="img-fluid rounded-3">
-            <a href="{% url 'core:blog' %}" class="fs-6 text-primary">Books</a>
+            <a href="{% url 'core:blog' %}" class="fs-6 text-primary">{% trans "Books" %}</a>
             <h4 class="card-title mb-2 text-capitalize text-dark"><a href="{% url 'core:single_post' %}">10 Must-Read Books of the Year: Our Top Picks!</a></h4>
             <p class="mb-2">Dive into the world of cutting-edge technology with our latest blog post, where we highlight
-              five essential gadge. <span><a class="text-decoration-underline text-black-50" href="{% url 'core:single_post' %}">Read More</a></span>
+              five essential gadge. <span><a class="text-decoration-underline text-black-50" href="{% url 'core:single_post' %}">{% trans "Read More" %}</a></span>
             </p>
           </div>
           <div class="col-md-3 posts mb-4">
             <img src="{% static 'skin6/images/post-item2.jpg' %}" alt="post image" class="img-fluid rounded-3">
-            <a href="{% url 'core:blog' %}" class="fs-6 text-primary">Books</a>
-            <h4 class="card-title mb-2 text-capitalize text-dark"><a href="{% url 'core:single_post' %}">The Fascinating Realm of Science Fiction</a></h4>
+            <a href="{% url 'core:blog' %}" class="fs-6 text-primary">{% trans "Books" %}</a>
+            <h4 class="card-title mb-2 text-capitalize text-dark"><a href="{% url 'core:single_post' %}">{% trans "The Fascinating Realm of Science Fiction" %}</a></h4>
             <p class="mb-2">Explore the intersection of technology and sustainability in our latest blog post. Learn about
-              the innovative <span><a class="text-decoration-underline text-black-50" href="{% url 'core:single_post' %}">Read More</a></span> </p>
+              the innovative <span><a class="text-decoration-underline text-black-50" href="{% url 'core:single_post' %}">{% trans "Read More" %}</a></span> </p>
           </div>
           <div class="col-md-3 posts mb-4">
             <img src="{% static 'skin6/images/post-item3.jpg' %}" alt="post image" class="img-fluid rounded-3">
-            <a href="{% url 'core:blog' %}" class="fs-6 text-primary">Books</a>
-            <h4 class="card-title mb-2 text-capitalize text-dark"><a href="{% url 'core:single_post' %}">Finding Love in the Pages of a Book</a></h4>
+            <a href="{% url 'core:blog' %}" class="fs-6 text-primary">{% trans "Books" %}</a>
+            <h4 class="card-title mb-2 text-capitalize text-dark"><a href="{% url 'core:single_post' %}">{% trans "Finding Love in the Pages of a Book" %}</a></h4>
             <p class="mb-2">Stay ahead of the curve with our insightful look into the rapidly evolving landscape of
-              wearable technology. <span><a class="text-decoration-underline text-black-50" href="{% url 'core:single_post' %}">Read More</a></span>
+              wearable technology. <span><a class="text-decoration-underline text-black-50" href="{% url 'core:single_post' %}">{% trans "Read More" %}</a></span>
             </p>
           </div>
           <div class="col-md-3 posts mb-4">
             <img src="{% static 'skin6/images/post-item4.jpg' %}" alt="post image" class="img-fluid rounded-3">
-            <a href="{% url 'core:blog' %}" class="fs-6 text-primary">Books</a>
-            <h4 class="card-title mb-2 text-capitalize text-dark"><a href="{% url 'core:single_post' %}">Reading for Mental Health: How Books Can Heal and Inspire</a></h4>
+            <a href="{% url 'core:blog' %}" class="fs-6 text-primary">{% trans "Books" %}</a>
+            <h4 class="card-title mb-2 text-capitalize text-dark"><a href="{% url 'core:single_post' %}">{% trans "Reading for Mental Health: How Books Can Heal and Inspire" %}</a></h4>
             <p class="mb-2">In today's remote work environment, productivity is key. Discover the top apps and tools that
-              can help you stay <span><a class="text-decoration-underline text-black-50" href="{% url 'core:single_post' %}">Read More</a></span>
+              can help you stay <span><a class="text-decoration-underline text-black-50" href="{% url 'core:single_post' %}">{% trans "Read More" %}</a></span>
             </p>
           </div>
         </div>

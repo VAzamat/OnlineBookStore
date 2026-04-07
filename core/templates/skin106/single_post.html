@@ -1,9 +1,12 @@
 {% extends "skin6/base.html" %}
+
+
+{% load i18n %}
 {% load static %}
 
 {% block titlekeywords %}
     <meta name="keywords" content="о компании Digital Book Sales, купить книги со скидкой, корзина заказов, магазин литературы, оплата книг онлайн, библиотека книг, поиск книг по автору.">
-    <title>Digital Book Sales</title>
+    <title>{% trans "Digital Book Sales" %}</title>
 {% endblock %}
 
 {% block customstyle %}
@@ -17,12 +20,12 @@
       <div class="container">
         <div class="row">
           <div class="text-center">
-            <h1>Single-Post</h1>
+            <h1>{% trans "Single-Post" %}</h1>
             <div class="breadcrumbs">
               <span class="item">
                 <a href="{% url 'core:index' %}">Home &gt; </a>
               </span>
-              <span class="item text-decoration-underline">Single-Post</span>
+              <span class="item text-decoration-underline">{% trans "Single-Post" %}</span>
             </div>
           </div>
         </div>
@@ -38,7 +41,7 @@
               <article class="post-item">
                 <div class="post-content">
                   <div class="post-meta mt-4">
-                    <span class="post-category">Feb 22, 2024 </span> - <span class="meta-date"><a href="{% url 'core:blog' %}">Books</a></span>
+                    <span class="post-category">Feb 22, 2024 </span> - <span class="meta-date"><a href="{% url 'core:blog' %}">{% trans "Books" %}</a></span>
                   </div>
                   <h1 class="post-title my-4">Must read books if you like reading Sci-Fi Plot. </h1>
                   <div class="hero-image col-lg-12">
@@ -66,26 +69,26 @@ enim lacus. Praesent imperdiet vitae eu, eu tincidunt nunc integer sit.</p>
  sed fringilla lectus facilisis amet. Ipsum, amet dolor curabitur non
 aliquet orci urna volutpat. Id aliquam neque, ut vivamus sit imperdiet
 enim, lacus, vel.</blockquote>
-                    <h3 class="mt-3">Is This Great?</h3>
+                    <h3 class="mt-3">{% trans "Is This Great?" %}</h3>
                     <div class="row">
                       <div class="col-md-6">
                         <ul style="list-style-type:disc;" class="inner-list">
-                      <li>Blandit mauris libero condimentum commodo sociis convallis sit.</li>
-                      <li>Laculis sit sapien hac odio elementum egestas neque.</li>
-                      <li>Blandit mauris libero condimentum commodo sociis convallis sit.</li>
-                      <li>Magna diam amet justo sed vel dolor et volutpat integer.</li>
-                      <li>Laculis sit sapien hac odio elementum egestas neque.</li>
-                      <li>Magna diam amet justo sed vel dolor et volutpat integer.</li>
+                      <li>{% trans "Blandit mauris libero condimentum commodo sociis convallis sit." %}</li>
+                      <li>{% trans "Laculis sit sapien hac odio elementum egestas neque." %}</li>
+                      <li>{% trans "Blandit mauris libero condimentum commodo sociis convallis sit." %}</li>
+                      <li>{% trans "Magna diam amet justo sed vel dolor et volutpat integer." %}</li>
+                      <li>{% trans "Laculis sit sapien hac odio elementum egestas neque." %}</li>
+                      <li>{% trans "Magna diam amet justo sed vel dolor et volutpat integer." %}</li>
                     </ul>
                       </div>
                       <div class="col-md-6">
                         <ul style="list-style-type:disc;" class="inner-list">
-                      <li>Blandit mauris libero condimentum commodo sociis convallis sit.</li>
-                      <li>Laculis sit sapien hac odio elementum egestas neque.</li>
-                      <li>Blandit mauris libero condimentum commodo sociis convallis sit.</li>
-                      <li>Magna diam amet justo sed vel dolor et volutpat integer.</li>
-                      <li>Laculis sit sapien hac odio elementum egestas neque.</li>
-                      <li>Magna diam amet justo sed vel dolor et volutpat integer.</li>
+                      <li>{% trans "Blandit mauris libero condimentum commodo sociis convallis sit." %}</li>
+                      <li>{% trans "Laculis sit sapien hac odio elementum egestas neque." %}</li>
+                      <li>{% trans "Blandit mauris libero condimentum commodo sociis convallis sit." %}</li>
+                      <li>{% trans "Magna diam amet justo sed vel dolor et volutpat integer." %}</li>
+                      <li>{% trans "Laculis sit sapien hac odio elementum egestas neque." %}</li>
+                      <li>{% trans "Magna diam amet justo sed vel dolor et volutpat integer." %}</li>
                     </ul>
                       </div>
                     </div>
@@ -105,7 +108,7 @@ pulvinar non viverra donec pellentesque. Odio mi consequat libero dolor.
 laoreet ultrices diam magna quam. Congue auctor auctor luctus neque.
 Enim lorem ultrices diam donec. Sed id placerat consectetur faucibus.</p>
                     <img src="{% static 'skin6/images/post-img.jpg' %}" alt="post-image" class="img-fluid float-start me-3 col-md-5">
-                    <h3 class="mt-3">Velit, praesent pharetra malesuada</h3>
+                    <h3 class="mt-3">{% trans "Velit, praesent pharetra malesuada" %}</h3>
                     <p>Id pulvinar amet. Consequat potenti mollis massa
 iaculis et, dolor, eget lectus. Aliquam pellentesque molestie felis
 fames sed eget non euismod eget. Et eget ullamcorper urna, elit ac diam
@@ -144,18 +147,18 @@ incidunt, a commodi neque.</p>
                       <div class="block-tag">
                         <ul class="list-unstyled d-flex">
                           <li class="pe-3">
-                            <a href="#">Books</a>
+                            <a href="#">{% trans "Books" %}</a>
                           </li>
                           <li class="pe-3">
-                            <a href="#">Story</a>
+                            <a href="#">{% trans "Story" %}</a>
                           </li>
                           <li class="pe-3">
-                            <a href="#">Fictional</a>
+                            <a href="#">{% trans "Fictional" %}</a>
                           </li>
                         </ul>
                       </div>
                       <div class="social-links d-flex">
-                        <div class="element-title pe-2">Share:</div>
+                        <div class="element-title pe-2">{% trans "Share:" %}</div>
                         <ul class="d-flex list-unstyled">
                           <li>
                             <a href="#">
@@ -202,10 +205,10 @@ incidunt, a commodi neque.</p>
                         <svg class="alt-arrow-left-bold" width="44" height="44">
                           <use xlink:href="#alt-arrow-left-bold"></use>
                         </svg>
-                        <h4 class="card-title text-capitalize text-dark">Must read books of this year</h4>
+                        <h4 class="card-title text-capitalize text-dark">{% trans "Must read books of this year" %}</h4>
                       </a>
                       <a itemprop="url" class="post-next d-flex align-items-center" href="#">
-                        <h4 class="card-title text-capitalize text-dark">Books to read if you want to earn money</h4>
+                        <h4 class="card-title text-capitalize text-dark">{% trans "Books to read if you want to earn money" %}</h4>
                         <svg class="alt-arrow-right-bold" width="44" height="44">
                           <use xlink:href="#alt-arrow-right-bold"></use>
                         </svg>
@@ -228,15 +231,15 @@ incidunt, a commodi neque.</p>
                             <div class="col-lg-10 col-sm-9 author-wrap">
                               <div class="author-post">
                                 <div class="comment-meta d-flex">
-                                  <div class="author-name fw-medium pe-1">Sam Smith</div>
-                                  <span class="meta-date">Jul 10</span>
+                                  <div class="author-name fw-medium pe-1">{% trans "Sam Smith" %}</div>
+                                  <span class="meta-date">{% trans "Jul 10" %}</span>
                                 </div>
                                 <p class="no-margin">Mattis pulvinar non
  viverra donec pellentesque. Odio mi consequat libero dolor. Porta ut
 diam lobortis eget leo, lectus. Tortor diam dignissim amet, in interdum
 aliquet. Nascetur libero elementum adipiscing mauris maecenas et magna.</p>
                                 <div class="comments-reply">
-                                  <a href="#" class="text-primary">Reply Now</a>
+                                  <a href="#" class="text-primary">{% trans "Reply Now" %}</a>
                                 </div>
                               </div>
                             </div>
@@ -248,15 +251,15 @@ aliquet. Nascetur libero elementum adipiscing mauris maecenas et magna.</p>
                             <div class="col-lg-10 col-sm-9 author-wrap">
                               <div class="author-post">
                                 <div class="comment-meta d-flex">
-                                  <div class="author-name fw-medium pe-1">Santie Mary</div>
-                                  <span class="meta-date">Jul 10</span>
+                                  <div class="author-name fw-medium pe-1">{% trans "Santie Mary" %}</div>
+                                  <span class="meta-date">{% trans "Jul 10" %}</span>
                                 </div>
                                 <p class="no-margin">Tristique tempis
 condimentum diam done ullancomroer sit element henddg sit he
 consequert.Tristique tempis condimentum diam done ullancomroer sit
 element henddg sit he consequert.</p>
                                 <div class="comments-reply">
-                                  <a href="#" class="text-primary">Reply Now</a>
+                                  <a href="#" class="text-primary">{% trans "Reply Now" %}</a>
                                 </div>
                               </div>
                             </div>
@@ -268,15 +271,15 @@ element henddg sit he consequert.</p>
                             <div class="col-lg-10 col-sm-9 author-wrap">
                               <div class="author-post">
                                 <div class="comment-meta d-flex">
-                                  <div class="author-name fw-medium pe-1">Analisa Nora</div>
-                                  <span class="meta-date">Jul 10</span>
+                                  <div class="author-name fw-medium pe-1">{% trans "Analisa Nora" %}</div>
+                                  <span class="meta-date">{% trans "Jul 10" %}</span>
                                 </div>
                                 <p class="no-margin">Tristique tempis
 condimentum diam done ullancomroer sit element henddg sit he
 consequert.Tristique tempis condimentum diam done ullancomroer sit
 element henddg sit he consequert.</p>
                                 <div class="comments-reply">
-                                  <a href="#" class="text-primary">Reply Now</a>
+                                  <a href="#" class="text-primary">{% trans "Reply Now" %}</a>
                                 </div>
                               </div>
                             </div>
@@ -285,7 +288,7 @@ element henddg sit he consequert.</p>
                       </div>
 
                       <div class="comment-respond mt-5">
-                        <h3>Leave a Comment</h3>
+                        <h3>{% trans "Leave a Comment" %}</h3>
                         <p>Your email address will not be published. Required fields are marked *</p>
                         <form id="form" class="d-flex gap-3 flex-wrap">
                           <div class="w-100 d-flex gap-3">
@@ -301,9 +304,9 @@ element henddg sit he consequert.</p>
                           </div>
                           <label class="w-100">
                             <input type="checkbox" required="" class="d-inline">
-                            <span>Save my name, email, and website in this browser for the next time.</span>
+                            <span>{% trans "Save my name, email, and website in this browser for the next time." %}</span>
                           </label>
-                          <button type="submit" name="submit" class="btn my-3">Post Comment</button>
+                          <button type="submit" name="submit" class="btn my-3">{% trans "Post Comment" %}</button>
                         </form>
                       </div>
                     </div>
@@ -319,43 +322,43 @@ element henddg sit he consequert.</p>
     <section id="latest-posts" class="padding-large pt-0">
       <div class="container">
         <div class="section-title d-md-flex justify-content-between align-items-center mb-4">
-          <h3 class="d-flex align-items-center">Latest posts</h3>
-          <a href="{% url 'core:shop' %}" class="btn">View All</a>
+          <h3 class="d-flex align-items-center">{% trans "Latest posts" %}</h3>
+          <a href="{% url 'core:shop' %}" class="btn">{% trans "View All" %}</a>
         </div>
         <div class="row">
           <div class="col-md-3 posts mb-4">
             <img src="{% static 'skin6/images/post-item1.jpg' %}" alt="post image" class="img-fluid rounded-3">
-            <a href="{% url 'core:blog' %}" class="fs-6 text-primary">Books</a>
+            <a href="{% url 'core:blog' %}" class="fs-6 text-primary">{% trans "Books" %}</a>
             <h4 class="card-title mb-2 text-capitalize text-dark"><a href="{% url 'core:single_post' %}">5 Must-Have Gadgets for
                 the Modern Home</a></h4>
             <p class="mb-2">Dive into the world of cutting-edge technology with our latest blog post, where we highlight
-              five essential gadge. <span><a class="text-decoration-underline text-black-50" href="{% url 'core:single_post' %}">Read More</a></span>
+              five essential gadge. <span><a class="text-decoration-underline text-black-50" href="{% url 'core:single_post' %}">{% trans "Read More" %}</a></span>
             </p>
           </div>
           <div class="col-md-3 posts mb-4">
             <img src="{% static 'skin6/images/post-item2.jpg' %}" alt="post image" class="img-fluid rounded-3">
-            <a href="{% url 'core:blog' %}" class="fs-6 text-primary">Books</a>
+            <a href="{% url 'core:blog' %}" class="fs-6 text-primary">{% trans "Books" %}</a>
             <h4 class="card-title mb-2 text-capitalize text-dark"><a href="{% url 'core:single_post' %}">Eco-Friendly Innovations
                 Making a Difference</a></h4>
             <p class="mb-2">Explore the intersection of technology and sustainability in our latest blog post. Learn about
-              the innovative <span><a class="text-decoration-underline text-black-50" href="{% url 'core:single_post' %}">Read More</a></span> </p>
+              the innovative <span><a class="text-decoration-underline text-black-50" href="{% url 'core:single_post' %}">{% trans "Read More" %}</a></span> </p>
           </div>
           <div class="col-md-3 posts mb-4">
             <img src="{% static 'skin6/images/post-item3.jpg' %}" alt="post image" class="img-fluid rounded-3">
-            <a href="{% url 'core:blog' %}" class="fs-6 text-primary">Books</a>
+            <a href="{% url 'core:blog' %}" class="fs-6 text-primary">{% trans "Books" %}</a>
             <h4 class="card-title mb-2 text-capitalize text-dark"><a href="{% url 'core:single_post' %}">The Future of Wearable
                 Tech: Trends to Watch</a></h4>
             <p class="mb-2">Stay ahead of the curve with our insightful look into the rapidly evolving landscape of
-              wearable technology. <span><a class="text-decoration-underline text-black-50" href="{% url 'core:single_post' %}">Read More</a></span>
+              wearable technology. <span><a class="text-decoration-underline text-black-50" href="{% url 'core:single_post' %}">{% trans "Read More" %}</a></span>
             </p>
           </div>
           <div class="col-md-3 posts mb-4">
             <img src="{% static 'skin6/images/post-item4.jpg' %}" alt="post image" class="img-fluid rounded-3">
-            <a href="{% url 'core:blog' %}" class="fs-6 text-primary">Books</a>
+            <a href="{% url 'core:blog' %}" class="fs-6 text-primary">{% trans "Books" %}</a>
             <h4 class="card-title mb-2 text-capitalize text-dark"><a href="{% url 'core:single_post' %}">Top Apps and Tools for
                 Remote Work</a></h4>
             <p class="mb-2">In today's remote work environment, productivity is key. Discover the top apps and tools that
-              can help you stay <span><a class="text-decoration-underline text-black-50" href="{% url 'core:single_post' %}">Read More</a></span>
+              can help you stay <span><a class="text-decoration-underline text-black-50" href="{% url 'core:single_post' %}">{% trans "Read More" %}</a></span>
             </p>
           </div>
         </div>

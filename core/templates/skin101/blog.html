@@ -1,4 +1,5 @@
 {% extends "skin1/base.html" %}
+{% load i18n %}
 
 {% load static %}
 
@@ -21,7 +22,7 @@
               <h1>Blog</h1>
               <div class="breadcrumbs">
                 <span class="item">
-                  <a href="{% url 'core:index' %}">Home &gt;</a>
+                  <a href="{% url 'core:index' %}">{% trans "Home &gt;" %}</a>
                 </span>
                 <span class="item">Blog</span>
               </div>
@@ -50,44 +51,44 @@
                 </div>
               </div>
               <div class="widget-product-categories pt-5">
-                <h5 class="widget-title text-uppercase">Categories</h5>
+                <h5 class="widget-title text-uppercase">{% trans "Categories" %}</h5>
                 <ul class="product-categories sidebar-list list-unstyled">
                   <li class="cat-item">
-                    <a href="{% url 'core:blog' %}#">All</a>
+                    <a href="{% url 'core:blog' %}#">{% trans "All" %}</a>
                   </li>
                   <li class="cat-item">
-                    <a href="{% url 'core:blog' %}#">Tips</a>
+                    <a href="{% url 'core:blog' %}#">{% trans "Tips" %}</a>
                   </li>
                   <li class="cat-item">
-                    <a href="{% url 'core:blog' %}#">Bookstore</a>
+                    <a href="{% url 'core:blog' %}#">{% trans "Bookstore" %}</a>
                   </li>
                   <li class="cat-item">
-                    <a href="{% url 'core:blog' %}#">Authors</a>
+                    <a href="{% url 'core:blog' %}#">{% trans "Authors" %}</a>
                   </li>
                   <li class="cat-item">
-                    <a href="{% url 'core:blog' %}#">Spiritual</a>
+                    <a href="{% url 'core:blog' %}#">{% trans "Spiritual" %}</a>
                   </li>
                 </ul>
               </div>
               <div class="widget-product-tags pt-3">
-                <h5 class="widget-title text-uppercase">Tags</h5>
+                <h5 class="widget-title text-uppercase">{% trans "Tags" %}</h5>
                 <ul class="product-tags sidebar-list list-unstyled">
                   <li class="tags-item">
-                    <a href="{% url 'core:blog' %}#">Best Store</a>
+                    <a href="{% url 'core:blog' %}#">{% trans "Best Store" %}</a>
                   </li>
                   <li class="tags-item">
-                    <a href="{% url 'core:blog' %}#">Cheap Book</a>
+                    <a href="{% url 'core:blog' %}#">{% trans "Cheap Book" %}</a>
                   </li>
                   <li class="tags-item">
-                    <a href="{% url 'core:blog' %}#">Underrated</a>
+                    <a href="{% url 'core:blog' %}#">{% trans "Underrated" %}</a>
                   </li>
                   <li class="tags-item">
-                    <a href="{% url 'core:blog' %}#">Latest</a>
+                    <a href="{% url 'core:blog' %}#">{% trans "Latest" %}</a>
                   </li>
                 </ul>
               </div>
               <div class="widget sidebar-recent-post pt-3">
-                <h5 class="widget-title text-uppercase">Latest Posts</h5>
+                <h5 class="widget-title text-uppercase">{% trans "Latest Posts" %}</h5>
                 <div class="sidebar-post-item">
                   <div class="d-flex flex-wrap align-items-top mb-3">
                     <div class="col-lg-4">
@@ -100,7 +101,7 @@
                     <div class="col-lg-8">
                       <div class="card-content">
                         <h4 class="card-title">
-                          <a href="{% url 'core:single_post' %}">The Power of Bookstores in a Digital Age</a>
+                          <a href="{% url 'core:single_post' %}">{% trans "The Power of Bookstores in a Digital Age" %}</a>
                         </h4>
                       </div>
                     </div>
@@ -118,7 +119,7 @@
                     <div class="col-lg-8">
                       <div class="card-content">
                         <h4 class="card-title">
-                          <a href="{% url 'core:single_post' %}">How Our Bookstore Brings Literature to Life</a>
+                          <a href="{% url 'core:single_post' %}">{% trans "How Our Bookstore Brings Literature to Life" %}</a>
                         </h4>
                       </div>
                     </div>
@@ -136,7 +137,7 @@
                     <div class="col-lg-8">
                       <div class="card-content">
                         <h4 class="card-title">
-                          <a href="{% url 'core:single_post' %}">The Treasures within Our Bookstore's Walls</a>
+                          <a href="{% url 'core:single_post' %}">{% trans "The Treasures within Our Bookstore's Walls" %}</a>
                         </h4>
                       </div>
                     </div>
@@ -144,22 +145,22 @@
                 </div>
               </div>
               <div class="widget sidebar-social-links pt-3">
-                <h5 class="widget-title text-uppercase">Social Links</h5>
+                <h5 class="widget-title text-uppercase">{% trans "Social Links" %}</h5>
                 <ul class="sidebar-list list-unstyled">
                   <li class="tags-item">
-                    <a href="{% url 'core:blog' %}#">Facebook</a>
+                    <a href="{% url 'core:blog' %}#">{% trans "Facebook" %}</a>
                   </li>
                   <li class="tags-item">
-                    <a href="{% url 'core:blog' %}#">Instagram</a>
+                    <a href="{% url 'core:blog' %}#">{% trans "Instagram" %}</a>
                   </li>
                   <li class="tags-item">
-                    <a href="{% url 'core:blog' %}#">Twitter</a>
+                    <a href="{% url 'core:blog' %}#">{% trans "Twitter" %}</a>
                   </li>
                   <li class="tags-item">
-                    <a href="{% url 'core:blog' %}#">Pinterest</a>
+                    <a href="{% url 'core:blog' %}#">{% trans "Pinterest" %}</a>
                   </li>
                   <li class="tags-item">
-                    <a href="{% url 'core:blog' %}#">Youtube</a>
+                    <a href="{% url 'core:blog' %}#">{% trans "Youtube" %}</a>
                   </li>
                 </ul>
               </div>
@@ -175,11 +176,11 @@
                 </div>
                 <div class="card-body text-capitalize">
                   <div class="card-meta fs-6">
-                    <span class="meta-date">Feb 22, 2023</span>
-                    <span class="meta-category">/ <a href="{% url 'core:blog' %}">Tips</a></span>
+                    <span class="meta-date">{% trans "Feb 22, 2023" %}</span>
+                    <span class="meta-category">/ <a href="{% url 'core:blog' %}">{% trans "Tips" %}</a></span>
                   </div>
                   <h4 class="card-title">
-                    <a href="{% url 'core:single_post' %}">Why Our Bookstore Should Be Your Literary Oasis</a>
+                    <a href="{% url 'core:single_post' %}">{% trans "Why Our Bookstore Should Be Your Literary Oasis" %}</a>
                   </h4>
                 </div>
               </div>
@@ -191,11 +192,11 @@
                 </div>
                 <div class="card-body text-capitalize">
                   <div class="card-meta fs-6">
-                    <span class="meta-date">Feb 22, 2023</span>
-                    <span class="meta-category">/ <a href="{% url 'core:blog' %}">Tips</a></span>
+                    <span class="meta-date">{% trans "Feb 22, 2023" %}</span>
+                    <span class="meta-category">/ <a href="{% url 'core:blog' %}">{% trans "Tips" %}</a></span>
                   </div>
                   <h4 class="card-title">
-                    <a href="{% url 'core:single_post' %}">Uncover Hidden Gems at Our Bookstore</a>
+                    <a href="{% url 'core:single_post' %}">{% trans "Uncover Hidden Gems at Our Bookstore" %}</a>
                   </h4>
                 </div>
               </div>
@@ -207,11 +208,11 @@
                 </div>
                 <div class="card-body text-capitalize">
                   <div class="card-meta fs-6">
-                    <span class="meta-date">Feb 25, 2023</span>
-                    <span class="meta-category">/ <a href="{% url 'core:blog' %}">Tips</a></span>
+                    <span class="meta-date">{% trans "Feb 25, 2023" %}</span>
+                    <span class="meta-category">/ <a href="{% url 'core:blog' %}">{% trans "Tips" %}</a></span>
                   </div>
                   <h4 class="card-title">
-                    <a href="{% url 'core:single_post' %}">How Our Store Nurtures the Love for Reading</a>
+                    <a href="{% url 'core:single_post' %}">{% trans "How Our Store Nurtures the Love for Reading" %}</a>
                   </h4>
                 </div>
               </div>
@@ -223,11 +224,11 @@
                 </div>
                 <div class="card-body text-capitalize">
                   <div class="card-meta fs-6">
-                    <span class="meta-date">Feb 27, 2023</span>
-                    <span class="meta-category">/ <a href="{% url 'core:blog' %}">Tips</a></span>
+                    <span class="meta-date">{% trans "Feb 27, 2023" %}</span>
+                    <span class="meta-category">/ <a href="{% url 'core:blog' %}">{% trans "Tips" %}</a></span>
                   </div>
                   <h4 class="card-title">
-                    <a href="{% url 'core:single_post' %}">The Pleasures of Visiting Our Bookstore</a>
+                    <a href="{% url 'core:single_post' %}">{% trans "The Pleasures of Visiting Our Bookstore" %}</a>
                   </h4>
                 </div>
               </div>
@@ -239,11 +240,11 @@
                 </div>
                 <div class="card-body text-capitalize">
                   <div class="card-meta fs-6">
-                    <span class="meta-date">Mar 09, 2023</span>
-                    <span class="meta-category">/ <a href="{% url 'core:blog' %}">Tips</a></span>
+                    <span class="meta-date">{% trans "Mar 09, 2023" %}</span>
+                    <span class="meta-category">/ <a href="{% url 'core:blog' %}">{% trans "Tips" %}</a></span>
                   </div>
                   <h4 class="card-title">
-                    <a href="{% url 'core:single_post' %}">How Our Bookstore Inspires Readers</a>
+                    <a href="{% url 'core:single_post' %}">{% trans "How Our Bookstore Inspires Readers" %}</a>
                   </h4>
                 </div>
               </div>
@@ -255,11 +256,11 @@
                 </div>
                 <div class="card-body text-capitalize">
                   <div class="card-meta fs-6">
-                    <span class="meta-date">Mar 09, 2023</span>
-                    <span class="meta-category">/ <a href="{% url 'core:blog' %}">Tips</a></span>
+                    <span class="meta-date">{% trans "Mar 09, 2023" %}</span>
+                    <span class="meta-category">/ <a href="{% url 'core:blog' %}">{% trans "Tips" %}</a></span>
                   </div>
                   <h4 class="card-title">
-                    <a href="{% url 'core:single_post' %}">The Unforgettable Finds at Our Bookstore</a>
+                    <a href="{% url 'core:single_post' %}">{% trans "The Unforgettable Finds at Our Bookstore" %}</a>
                   </h4>
                 </div>
               </div>
@@ -271,11 +272,11 @@
                 </div>
                 <div class="card-body text-capitalize">
                   <div class="card-meta fs-6">
-                    <span class="meta-date">Mar 09, 2023</span>
-                    <span class="meta-category">/ <a href="{% url 'core:blog' %}">Tips</a></span>
+                    <span class="meta-date">{% trans "Mar 09, 2023" %}</span>
+                    <span class="meta-category">/ <a href="{% url 'core:blog' %}">{% trans "Tips" %}</a></span>
                   </div>
                   <h4 class="card-title">
-                    <a href="{% url 'core:single_post' %}">The Unique Experience of Our Bookstore</a>
+                    <a href="{% url 'core:single_post' %}">{% trans "The Unique Experience of Our Bookstore" %}</a>
                   </h4>
                 </div>
               </div>
@@ -287,11 +288,11 @@
                 </div>
                 <div class="card-body text-capitalize">
                   <div class="card-meta fs-6">
-                    <span class="meta-date">Mar 09, 2023</span>
-                    <span class="meta-category">/ <a href="{% url 'core:blog' %}">Tips</a></span>
+                    <span class="meta-date">{% trans "Mar 09, 2023" %}</span>
+                    <span class="meta-category">/ <a href="{% url 'core:blog' %}">{% trans "Tips" %}</a></span>
                   </div>
                   <h4 class="card-title">
-                    <a href="{% url 'core:single_post' %}">The Pleasures of Visiting Our Bookstore</a>
+                    <a href="{% url 'core:single_post' %}">{% trans "The Pleasures of Visiting Our Bookstore" %}</a>
                   </h4>
                 </div>
               </div>
@@ -303,11 +304,11 @@
                 </div>
                 <div class="card-body text-capitalize">
                   <div class="card-meta fs-6">
-                    <span class="meta-date">Mar 09, 2023</span>
-                    <span class="meta-category">/ <a href="{% url 'core:blog' %}">Tips</a></span>
+                    <span class="meta-date">{% trans "Mar 09, 2023" %}</span>
+                    <span class="meta-category">/ <a href="{% url 'core:blog' %}">{% trans "Tips" %}</a></span>
                   </div>
                   <h4 class="card-title">
-                    <a href="{% url 'core:single_post' %}">The Journey of Books at Our Bookstore</a>
+                    <a href="{% url 'core:single_post' %}">{% trans "The Journey of Books at Our Bookstore" %}</a>
                   </h4>
                 </div>
               </div>
@@ -319,11 +320,11 @@
                 </div>
                 <div class="card-body text-capitalize">
                   <div class="card-meta fs-6">
-                    <span class="meta-date">Mar 09, 2023</span>
-                    <span class="meta-category">/ <a href="{% url 'core:blog' %}">Tips</a></span>
+                    <span class="meta-date">{% trans "Mar 09, 2023" %}</span>
+                    <span class="meta-category">/ <a href="{% url 'core:blog' %}">{% trans "Tips" %}</a></span>
                   </div>
                   <h4 class="card-title">
-                    <a href="{% url 'core:single_post' %}">Unveiling the Charms of Our Bookstore</a>
+                    <a href="{% url 'core:single_post' %}">{% trans "Unveiling the Charms of Our Bookstore" %}</a>
                   </h4>
                 </div>
               </div>
@@ -335,11 +336,11 @@
                 </div>
                 <div class="card-body text-capitalize">
                   <div class="card-meta fs-6">
-                    <span class="meta-date">Mar 09, 2023</span>
-                    <span class="meta-category">/ <a href="{% url 'core:blog' %}">Tips</a></span>
+                    <span class="meta-date">{% trans "Mar 09, 2023" %}</span>
+                    <span class="meta-category">/ <a href="{% url 'core:blog' %}">{% trans "Tips" %}</a></span>
                   </div>
                   <h4 class="card-title">
-                    <a href="{% url 'core:single_post' %}">Celebrating the Written Word at Our Bookstore</a>
+                    <a href="{% url 'core:single_post' %}">{% trans "Celebrating the Written Word at Our Bookstore" %}</a>
                   </h4>
                 </div>
               </div>
@@ -351,11 +352,11 @@
                 </div>
                 <div class="card-body text-capitalize">
                   <div class="card-meta fs-6">
-                    <span class="meta-date">Mar 09, 2023</span>
-                    <span class="meta-category">/ <a href="{% url 'core:blog' %}">Tips</a></span>
+                    <span class="meta-date">{% trans "Mar 09, 2023" %}</span>
+                    <span class="meta-category">/ <a href="{% url 'core:blog' %}">{% trans "Tips" %}</a></span>
                   </div>
                   <h4 class="card-title">
-                    <a href="{% url 'core:single_post' %}">Why Our Bookstore is Every Book Lover's Dream</a>
+                    <a href="{% url 'core:single_post' %}">{% trans "Why Our Bookstore is Every Book Lover's Dream" %}</a>
                   </h4>
                 </div>
               </div>
@@ -384,13 +385,13 @@
         <div class="newsletter">
           <div class="row">
             <div class="col-lg-6 col-md-12 title">
-              <h3>Subscribe to Our Newsletter</h3>
-              <p>Get latest news, updates and deals directly mailed to your inbox.</p>
+              <h3>{% trans "Subscribe to Our Newsletter" %}</h3>
+              <p>{% trans "Get latest news, updates and deals directly mailed to your inbox." %}</p>
             </div>
             <form class="col-lg-6 col-md-12 d-flex align-items-center">
               <div class="d-flex w-75 border-bottom border-dark py-2">
                 <input id="newsletter1" type="text" class="form-control border-0 p-0" placeholder="Your email address here">
-                <button class="btn border-0 p-0" type="button">Subscribe</button>
+                <button class="btn border-0 p-0" type="button">{% trans "Subscribe" %}</button>
               </div>
             </form>
           </div>

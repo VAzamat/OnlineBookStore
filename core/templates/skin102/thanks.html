@@ -1,10 +1,11 @@
 {% extends "skin2/base.html" %}
+{% load i18n %}
 
 {% load static %}
 
 {% block titlekeywords %}
     <meta name="keywords" content="купить книги онлайн, интернет-магазин книг, digital book sales, каталог книг, книжный маркетплейс, заказать книги с доставкой.">
-    <title>Thanks Digital Book Sales</title>
+    <title>{% trans "Thanks Digital Book Sales" %}</title>
 {% endblock %}
 
 {% block customstyle %}
@@ -18,8 +19,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h1 class="page-title">Thank You!</h1>
-					<p>We will get back to you as soon as possible.</p>
+					<h1 class="page-title">{% trans "Thank You!" %}</h1>
+					<p>{% trans "We will get back to you as soon as possible." %}</p>
 				</div>
 			</div>
 		</div>
@@ -31,14 +32,14 @@
 			<div class="row">
 				<div class="col-md-12">
 
-					<h2>Get in Touch</h2>
+					<h2>{% trans "Get in Touch" %}</h2>
 
 					<div class="contact-detail d-flex flex-wrap mt-4">
 						<div class="row">
 
 							<div class="col-md-3">
 								<div class="detail">
-									<h3>Phones</h3>
+									<h3>{% trans "Phones" %}</h3>
 									<ul class="list-unstyled">
 										<li><i class="icon icon-phone"></i>+1650-243-00023</li>
 										<li><i class="icon icon-phone"></i>+1650-243-00021</li>
@@ -48,11 +49,11 @@
 
 							<div class="col-md-3">
 								<div class="detail">
-									<h3>Emails</h3>
+									<h3>{% trans "Emails" %}</h3>
 									<ul class="list-unstyled">
 										<li>
 											<i class="icon icon-envelope-o"></i>
-											<a href="mailto:info@yourcompany.com">info@yourcompany.com</a>
+											<a href="mailto:info@yourcompany.com">{% trans "info@yourcompany.com" %}</a>
 										</li>
 									</ul>
 								</div><!--detail-->
@@ -60,18 +61,18 @@
 
 							<div class="col-md-3">
 								<div class="address detail">
-									<h3>Address</h3>
+									<h3>{% trans "Address" %}</h3>
 									<ul class="list-unstyled">
 										<li>
 											<i class="icon icon-map-marker"></i>
-											<span>North Melbourne VIC 3051, Australia</span>
+											<span>{% trans "North Melbourne VIC 3051, Australia" %}</span>
 										</li>
 									</ul>
 								</div><!--detail-->
 							</div>
 							<div class="col-md-3">
 								<div class="detail">
-									<h3>Social Links</h3>
+									<h3>{% trans "Social Links" %}</h3>
 									<div class="social-links flex-container">
 										<a href="{% url 'core:thanks' %}#" class="icon icon-facebook"></a>
 										<a href="{% url 'core:thanks' %}#" class="icon icon-twitter"></a>

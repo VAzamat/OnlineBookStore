@@ -1,4 +1,5 @@
 {% extends "skin1/base.html" %}
+{% load i18n %}
 
 {% load static %}
 
@@ -18,12 +19,12 @@
         <div class="container">
           <div class="row">
             <div class="text-center padding-medium no-padding-bottom">
-              <h1>Checkout</h1>
+              <h1>{% trans "Checkout" %}</h1>
               <div class="breadcrumbs">
                 <span class="item">
-                  <a href="{% url 'core:index' %}">Home &gt;</a>
+                  <a href="{% url 'core:index' %}">{% trans "Home &gt;" %}</a>
                 </span>
-                <span class="item">Checkout</span>
+                <span class="item">{% trans "Checkout" %}</span>
               </div>
             </div>
           </div>
@@ -35,7 +36,7 @@
         <form class="form-group">
           <div class="row d-flex flex-wrap">
             <div class="col-lg-6">
-              <h3 class="pb-4">Billing Details</h3>
+              <h3 class="pb-4">{% trans "Billing Details" %}</h3>
               <div class="billing-details">
                 <div class="py-3">
                   <label for="fname">First Name*</label>
@@ -55,10 +56,10 @@
                 <div class="py-3">
                   <label for="cname">Country / Region*</label>
                   <select class="w-100" aria-label="Default select example">
-                    <option selected="" hidden="">United States</option>
-                    <option value="1">UK</option>
-                    <option value="2">Australia</option>
-                    <option value="3">Canada</option>
+                    <option selected="" hidden="">{% trans "United States" %}</option>
+                    <option value="1">{% trans "UK" %}</option>
+                    <option value="2">{% trans "Australia" %}</option>
+                    <option value="3">{% trans "Canada" %}</option>
                   </select>
                 </div>
 
@@ -76,12 +77,12 @@
                 <div class="py-3">
                   <label for="state">State *</label>
                   <select class="w-100" aria-label="Default select example">
-                    <option selected="" hidden="">Florida</option>
-                    <option value="1">New York</option>
-                    <option value="2">Chicago</option>
-                    <option value="3">Texas</option>
-                    <option value="3">San Jose</option>
-                    <option value="3">Houston</option>
+                    <option selected="" hidden="">{% trans "Florida" %}</option>
+                    <option value="1">{% trans "New York" %}</option>
+                    <option value="2">{% trans "Chicago" %}</option>
+                    <option value="3">{% trans "Texas" %}</option>
+                    <option value="3">{% trans "San Jose" %}</option>
+                    <option value="3">{% trans "Houston" %}</option>
                   </select>
                 </div>
 
@@ -102,18 +103,18 @@
               </div>
             </div>
             <div class="col-lg-6">
-              <h3 class="pb-4">Additional Information</h3>
+              <h3 class="pb-4">{% trans "Additional Information" %}</h3>
               <div class="billing-details">
-                <label for="fname">Order notes (optional)</label>
+                <label for="fname">{% trans "Order notes (optional)" %}</label>
                 <textarea class="w-100" placeholder="Notes about your order. Like special notes for delivery."></textarea>
               </div>
               <div class="your-order mt-5">
-                <h3 class="pb-4">Cart Totals</h3>
+                <h3 class="pb-4">{% trans "Cart Totals" %}</h3>
                 <div class="total-price">
                   <table cellspacing="0" class="table">
                     <tbody>
                       <tr class="subtotal border-top border-bottom border-dark pt-2 pb-2 text-uppercase">
-                        <th class="fw-light">Subtotal</th>
+                        <th class="fw-light">{% trans "Subtotal" %}</th>
                         <td data-title="Subtotal">
                           <span class="price-amount amount text-primary ps-5">
                             <bdi>
@@ -122,7 +123,7 @@
                         </td>
                       </tr>
                       <tr class="order-total border-bottom border-dark pt-2 pb-2 text-uppercase">
-                        <th class="fw-light">Total</th>
+                        <th class="fw-light">{% trans "Total" %}</th>
                         <td data-title="Total">
                           <span class="price-amount amount text-primary ps-5">
                             <bdi>
@@ -136,33 +137,33 @@
                     <label class="list-group-item p-0 bg-transparent d-flex gap-2 border-0">
                       <input class="form-check-input p-0 flex-shrink-0" type="radio" name="listGroupRadios" id="listGroupRadios1" value="" checked="">
                       <span>
-                        <div class="fw-300 text-uppercase">Direct bank transfer</div>
-                        <p class="d-block">Make your payment directly into our bank account. Please use your Order ID. Your order will shipped after funds have cleared in our account.</p>
+                        <div class="fw-300 text-uppercase">{% trans "Direct bank transfer" %}</div>
+                        <p class="d-block">{% trans "Make your payment directly into our bank account. Please use your Order ID. Your order will shipped after funds have cleared in our account." %}</p>
                       </span>
                     </label>
                     <label class="list-group-item p-0 bg-transparent d-flex gap-2 border-0">
                       <input class="form-check-input p-0 flex-shrink-0" type="radio" name="listGroupRadios" id="listGroupRadios2" value="">
                       <span>
-                        <div class="fw-300 text-uppercase">Check payments</div>
-                        <p class="d-block">Please send a check to Store Name, Store Street, Store Town, Store State / County, Store Postcode.</p>
+                        <div class="fw-300 text-uppercase">{% trans "Check payments" %}</div>
+                        <p class="d-block">{% trans "Please send a check to Store Name, Store Street, Store Town, Store State / County, Store Postcode." %}</p>
                       </span>
                     </label>
                     <label class="list-group-item p-0 bg-transparent d-flex gap-2 border-0">
                       <input class="form-check-input p-0 flex-shrink-0" type="radio" name="listGroupRadios" id="listGroupRadios3" value="">
                       <span>
-                        <div class="fw-300 text-uppercase">Cash on delivery</div>
-                        <p class="d-block">Pay with cash upon delivery.</p>
+                        <div class="fw-300 text-uppercase">{% trans "Cash on delivery" %}</div>
+                        <p class="d-block">{% trans "Pay with cash upon delivery." %}</p>
                       </span>
                     </label>
                     <label class="list-group-item p-0 bg-transparent d-flex gap-2 border-0">
                       <input class="form-check-input p-0 flex-shrink-0" type="radio" name="listGroupRadios" id="listGroupRadios3" value="">
                       <span>
-                        <div class="fw-300 text-uppercase">Paypal</div>
-                        <p class="d-block">Pay via PayPal; you can pay with your credit card if you don’t have a PayPal account.</p>
+                        <div class="fw-300 text-uppercase">{% trans "Paypal" %}</div>
+                        <p class="d-block">{% trans "Pay via PayPal; you can pay with your credit card if you don’t have a PayPal account." %}</p>
                       </span>
                     </label>
                   </div>
-                  <button type="submit" name="submit" class="btn btn-dark w-100">Place an order</button>
+                  <button type="submit" name="submit" class="btn btn-dark w-100">{% trans "Place an order" %}</button>
                 </div>
               </div>
             </div>
@@ -175,13 +176,13 @@
         <div class="newsletter">
           <div class="row">
             <div class="col-lg-6 col-md-12 title">
-              <h3>Subscribe to Our Newsletter</h3>
-              <p>Get latest news, updates and deals directly mailed to your inbox.</p>
+              <h3>{% trans "Subscribe to Our Newsletter" %}</h3>
+              <p>{% trans "Get latest news, updates and deals directly mailed to your inbox." %}</p>
             </div>
             <form class="col-lg-6 col-md-12 d-flex align-items-center">
               <div class="d-flex w-75 border-bottom border-dark py-2">
                 <input id="newsletter1" type="text" class="form-control border-0 p-0" placeholder="Your email address here">
-                <button class="btn border-0 p-0" type="button">Subscribe</button>
+                <button class="btn border-0 p-0" type="button">{% trans "Subscribe" %}</button>
               </div>
             </form>
           </div>

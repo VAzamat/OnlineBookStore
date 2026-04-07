@@ -1,9 +1,12 @@
 {% extends "skin6/base.html" %}
+
+
+{% load i18n %}
 {% load static %}
 
 {% block titlekeywords %}
     <meta name="keywords" content="о компании Digital Book Sales, купить книги со скидкой, корзина заказов, магазин литературы, оплата книг онлайн, библиотека книг, поиск книг по автору.">
-    <title>Digital Book Sales</title>
+    <title>{% trans "Digital Book Sales" %}</title>
 {% endblock %}
 
 {% block customstyle %}
@@ -16,12 +19,12 @@
         <div class="container">
           <div class="row">
             <div class="text-center">
-              <h1>About Us</h1>
+              <h1>{% trans "About Us" %}</h1>
               <div class="breadcrumbs">
                 <span class="item">
                   <a href="{% url 'core:index' %}">Home &gt; </a>
                 </span>
-                <span class="item text-decoration-underline">About Us</span>
+                <span class="item text-decoration-underline">{% trans "About Us" %}</span>
               </div>
             </div>
           </div>
@@ -40,8 +43,8 @@
                 </svg>
               </div>
               <div class="icon-box-content">
-                <h4 class="card-title mb-1 text-capitalize text-dark">Free delivery</h4>
-                <p>Consectetur adipi elit lorem ipsum dolor sit amet.</p>
+                <h4 class="card-title mb-1 text-capitalize text-dark">{% trans "Free delivery" %}</h4>
+                <p>{% trans "Consectetur adipi elit lorem ipsum dolor sit amet." %}</p>
               </div>
             </div>
           </div>
@@ -53,8 +56,8 @@
                 </svg>
               </div>
               <div class="icon-box-content">
-                <h4 class="card-title mb-1 text-capitalize text-dark">Quality guarantee</h4>
-                <p>Dolor sit amet orem ipsu mcons ectetur adipi elit.</p>
+                <h4 class="card-title mb-1 text-capitalize text-dark">{% trans "Quality guarantee" %}</h4>
+                <p>{% trans "Dolor sit amet orem ipsu mcons ectetur adipi elit." %}</p>
               </div>
             </div>
           </div>
@@ -66,8 +69,8 @@
                 </svg>
               </div>
               <div class="icon-box-content">
-                <h4 class="card-title mb-1 text-capitalize text-dark">Daily offers</h4>
-                <p>Amet consectetur adipi elit loreme ipsum dolor sit.</p>
+                <h4 class="card-title mb-1 text-capitalize text-dark">{% trans "Daily offers" %}</h4>
+                <p>{% trans "Amet consectetur adipi elit loreme ipsum dolor sit." %}</p>
               </div>
             </div>
           </div>
@@ -80,7 +83,7 @@
               </div>
               <div class="icon-box-content">
                 <h4 class="card-title mb-1 text-capitalize text-dark">100% secure payment</h4>
-                <p>Rem Lopsum dolor sit amet, consectetur adipi elit.</p>
+                <p>{% trans "Rem Lopsum dolor sit amet, consectetur adipi elit." %}</p>
               </div>
             </div>
           </div>
@@ -108,7 +111,7 @@
           <div class="col-md-6">
             <div class="detail ps-md-5 mt-5">
               <div class="display-header">
-                <h3 class="mb-3">Best Bookstore of all time</h3>
+                <h3 class="mb-3">{% trans "Best Bookstore of all time" %}</h3>
                 <p class="pb-1">Risus augue curabitur diam senectus
 congue velit et. Sed vitae metus nibh sit era. Nulla adipiscing pharetra
  pellentesque maecenas odio eros at. Et libero vulputate amet duis erat
@@ -118,7 +121,7 @@ pharetra eros at.
 odio eros at. Et libero vulputate amet duis erat volutpat vitae eget.
 Quam libero etiam et in ac at quis. Risus augue curabitur diam senectus
 congue velit et. </p>
-                <a href="{% url 'core:shop' %}" class="btn mt-3">Go to shop</a>
+                <a href="{% url 'core:shop' %}" class="btn mt-3">{% trans "Go to shop" %}</a>
               </div>
             </div>
           </div>
@@ -139,7 +142,7 @@ congue velit et. </p>
         </svg>
       </div>
       <div class="section-title mb-4 text-center">
-        <h3 class="mb-4">Customers reviews</h3>
+        <h3 class="mb-4">{% trans "Customers reviews" %}</h3>
       </div>
       <div class="swiper testimonial-swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
         <div class="swiper-wrapper" id="swiper-wrapper-929e5e342b9312108" aria-live="polite">
@@ -166,7 +169,7 @@ atmosphere, friendly staff, and wide selection of books make every visit
                   <use xlink:href="#star-fill"></use>
                 </svg>
               </div>
-              <h5 class="mt-1 fw-normal">Emma Chamberlin</h5>
+              <h5 class="mt-1 fw-normal">{% trans "Emma Chamberlin" %}</h5>
             </div>
           </div>
           <div class="swiper-slide swiper-slide-next" style="width: 616px; margin-right: 20px;" role="group" aria-label="2 / 5">
@@ -192,7 +195,7 @@ for new releases, and this bookstore never disappoints. They always have
                   <use xlink:href="#star-fill"></use>
                 </svg>
               </div>
-              <h5 class="mt-1 fw-normal">Thomas John</h5>
+              <h5 class="mt-1 fw-normal">{% trans "Thomas John" %}</h5>
             </div>
           </div>
           <div class="swiper-slide" style="width: 616px; margin-right: 20px;" role="group" aria-label="3 / 5">
@@ -218,7 +221,7 @@ clear that they prioritize customer satisfaction, and I'll definitely be
                   <use xlink:href="#star-fill"></use>
                 </svg>
               </div>
-              <h5 class="mt-1 fw-normal">Kevin Bryan</h5>
+              <h5 class="mt-1 fw-normal">{% trans "Kevin Bryan" %}</h5>
             </div>
           </div>
           <div class="swiper-slide" style="width: 616px; margin-right: 20px;" role="group" aria-label="4 / 5">
@@ -243,7 +246,7 @@ clear that they prioritize customer satisfaction, and I'll definitely be
                   <use xlink:href="#star-fill"></use>
                 </svg>
               </div>
-              <h5 class="mt-1 fw-normal">Stevin</h5>
+              <h5 class="mt-1 fw-normal">{% trans "Stevin" %}</h5>
             </div>
           </div>
           <div class="swiper-slide" style="width: 616px; margin-right: 20px;" role="group" aria-label="5 / 5">
@@ -268,7 +271,7 @@ clear that they prioritize customer satisfaction, and I'll definitely be
                   <use xlink:href="#star-fill"></use>
                 </svg>
               </div>
-              <h5 class="mt-1 fw-normal">Roman</h5>
+              <h5 class="mt-1 fw-normal">{% trans "Roman" %}</h5>
             </div>
           </div>
         </div>
@@ -279,39 +282,39 @@ clear that they prioritize customer satisfaction, and I'll definitely be
   <section id="latest-posts" class="padding-large">
     <div class="container">
       <div class="section-title d-md-flex justify-content-between align-items-center mb-4">
-        <h3 class="d-flex align-items-center">Latest posts</h3>
-        <a href="{% url 'core:shop' %}" class="btn">View All</a>
+        <h3 class="d-flex align-items-center">{% trans "Latest posts" %}</h3>
+        <a href="{% url 'core:shop' %}" class="btn">{% trans "View All" %}</a>
       </div>
       <div class="row">
         <div class="col-md-3 posts mb-4">
           <img src="{% static 'skin6/images/post-item1.jpg' %}" alt="post image" class="img-fluid rounded-3">
-          <a href="{% url 'core:blog' %}" class="fs-6 text-primary">Books</a>
+          <a href="{% url 'core:blog' %}" class="fs-6 text-primary">{% trans "Books" %}</a>
           <h4 class="card-title mb-2 text-capitalize text-dark"><a href="{% url 'core:single_post' %}">10 Must-Read Books of the Year: Our Top Picks!</a></h4>
           <p class="mb-2">Dive into the world of cutting-edge technology with our latest blog post, where we highlight
-            five essential gadg <span><a class="text-decoration-underline text-black-50" href="{% url 'core:single_post' %}">Read More</a></span>
+            five essential gadg <span><a class="text-decoration-underline text-black-50" href="{% url 'core:single_post' %}">{% trans "Read More" %}</a></span>
           </p>
         </div>
         <div class="col-md-3 posts mb-4">
           <img src="{% static 'skin6/images/post-item2.jpg' %}" alt="post image" class="img-fluid rounded-3">
-          <a href="{% url 'core:blog' %}" class="fs-6 text-primary">Books</a>
-          <h4 class="card-title mb-2 text-capitalize text-dark"><a href="{% url 'core:single_post' %}">The Fascinating Realm of Science Fiction</a></h4>
+          <a href="{% url 'core:blog' %}" class="fs-6 text-primary">{% trans "Books" %}</a>
+          <h4 class="card-title mb-2 text-capitalize text-dark"><a href="{% url 'core:single_post' %}">{% trans "The Fascinating Realm of Science Fiction" %}</a></h4>
           <p class="mb-2">Explore the intersection of technology and sustainability in our latest blog post. Learn about
-            the innovative <span><a class="text-decoration-underline text-black-50" href="{% url 'core:single_post' %}">Read More</a></span> </p>
+            the innovative <span><a class="text-decoration-underline text-black-50" href="{% url 'core:single_post' %}">{% trans "Read More" %}</a></span> </p>
         </div>
         <div class="col-md-3 posts mb-4">
           <img src="{% static 'skin6/images/post-item3.jpg' %}" alt="post image" class="img-fluid rounded-3">
-          <a href="{% url 'core:blog' %}" class="fs-6 text-primary">Books</a>
-          <h4 class="card-title mb-2 text-capitalize text-dark"><a href="{% url 'core:single_post' %}">Finding Love in the Pages of a Book</a></h4>
+          <a href="{% url 'core:blog' %}" class="fs-6 text-primary">{% trans "Books" %}</a>
+          <h4 class="card-title mb-2 text-capitalize text-dark"><a href="{% url 'core:single_post' %}">{% trans "Finding Love in the Pages of a Book" %}</a></h4>
           <p class="mb-2">Stay ahead of the curve with our insightful look into the rapidly evolving landscape of
-            wearable technology. <span><a class="text-decoration-underline text-black-50" href="{% url 'core:single_post' %}">Read More</a></span>
+            wearable technology. <span><a class="text-decoration-underline text-black-50" href="{% url 'core:single_post' %}">{% trans "Read More" %}</a></span>
           </p>
         </div>
         <div class="col-md-3 posts mb-4">
           <img src="{% static 'skin6/images/post-item4.jpg' %}" alt="post image" class="img-fluid rounded-3">
-          <a href="{% url 'core:blog' %}" class="fs-6 text-primary">Books</a>
-          <h4 class="card-title mb-2 text-capitalize text-dark"><a href="{% url 'core:single_post' %}">Reading for Mental Health: How Books Can Heal and Inspire</a></h4>
+          <a href="{% url 'core:blog' %}" class="fs-6 text-primary">{% trans "Books" %}</a>
+          <h4 class="card-title mb-2 text-capitalize text-dark"><a href="{% url 'core:single_post' %}">{% trans "Reading for Mental Health: How Books Can Heal and Inspire" %}</a></h4>
           <p class="mb-2">In today's remote work environment, productivity is key. Discover the top apps and tools that
-            can help you stay <span><a class="text-decoration-underline text-black-50" href="{% url 'core:single_post' %}">Read More</a></span>
+            can help you stay <span><a class="text-decoration-underline text-black-50" href="{% url 'core:single_post' %}">{% trans "Read More" %}</a></span>
           </p>
         </div>
       </div>

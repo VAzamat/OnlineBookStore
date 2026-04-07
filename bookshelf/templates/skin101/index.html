@@ -1,11 +1,10 @@
 {% extends "skin1/base.html" %}
-{% load i18n %}
 
 {% load static %}
 
 {% block titlekeywords %}
     <meta name="keywords" content="купить книги онлайн, интернет-магазин книг, digital book sales, каталог книг, книжный маркетплейс, заказать книги с доставкой.">
-    <title>{% trans "Digital Book Sales" %}</title>
+    <title>Книжный маяк - главная</title>
 {% endblock %}
 
 {% block customstyle %}
@@ -17,54 +16,26 @@
     <section id="billboard" class="bg-gray padding-large">
       <div class="swiper main-swiper">
         <div class="swiper-wrapper">
+          {% for entry in books_advertisement%}
           <div class="swiper-slide">
             <div class="container">
               <div class="row">
                 <div class="offset-md-1 col-md-5">
-                  <img src="{% static 'skin1/images/book1.png' %}" alt="product-img" class="img-fluid mb-3">
+                  <img src="/{{entry.cover_url}}" alt="{{entry.title}}" class="img-fluid mb-3">
                 </div>
                 <div class="col-md-6 d-flex align-items-center">
                   <div class="banner-content">
-                    <h2>{% trans "Once upon a time" %}</h2>
-                    <p class="fs-3">{% trans "This book is specially designed by concept of traditional designs." %}</p>
-                    <a href="single-product.html" class="btn">{% trans "Shop now →" %}</a>
+                    <h3>{{entry.title}}</h3>
+                    {{product.html_annotation|truncatechars_html:250|safe}}
+                    <a href="{% url 'bookshelf:single_product' entry.slug %}"  class="btn">Купить →</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="swiper-slide">
-            <div class="container">
-              <div class="row">
-                <div class="offset-md-1 col-md-5">
-                  <img src="{% static 'skin1/images/book2.png' %}" alt="product-img" class="img-fluid mb-3">
-                </div>
-                <div class="col-md-6 d-flex align-items-center">
-                  <div class="banner-content">
-                    <h2>{% trans "Felt from outside" %}</h2>
-                    <p class="fs-3">{% trans "This book is specially designed by concept of traditional designs." %}</p>
-                    <a href="single-product.html" class="btn">{% trans "Shop now →" %}</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="container">
-              <div class="row">
-                <div class="offset-md-1 col-md-5">
-                  <img src="{% static 'skin1/images/book3.png' %}" alt="product-img" class="img-fluid mb-3">
-                </div>
-                <div class="col-md-6 d-flex align-items-center">
-                  <div class="banner-content">
-                    <h2>{% trans "Musical by Karim" %}</h2>
-                    <p class="fs-3">{% trans "This book is specially designed by concept of traditional designs." %}</p>
-                    <a href="single-product.html" class="btn">{% trans "Shop now →" %}</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          {% endfor %}
+
+
         </div>
       </div>
       <div class="main-slider-pagination text-center mt-3"></div>
@@ -80,8 +51,8 @@
                 </svg>
               </span>
               <div class="icon-box-content">
-                <h4 class="card-title">{% trans "Free delivery" %}</h4>
-                <p>{% trans "Consectetur adipi elit lorem ipsumcon sectetur dolor sit amet." %}</p>
+                <h4 class="card-title">Free delivery</h4>
+                <p>Consectetur adipi elit lorem ipsumcon sectetur dolor sit amet.</p>
               </div>
             </div>
           </div>
@@ -93,8 +64,8 @@
                 </svg>
               </div>
               <div class="icon-box-content">
-                <h4 class="card-title">{% trans "Quality guarantee" %}</h4>
-                <p>{% trans "Dolor sit amet elit lorem orem ipsu mcons ectetur adipi elit." %}</p>
+                <h4 class="card-title">Quality guarantee</h4>
+                <p>Dolor sit amet elit lorem orem ipsu mcons ectetur adipi elit.</p>
               </div>
             </div>
           </div>
@@ -106,8 +77,8 @@
                 </svg>
               </div>
               <div class="icon-box-content">
-                <h4 class="card-title">{% trans "Daily offers" %}</h4>
-                <p>{% trans "Amet consectetur adipi elit loreme ipsum dolor sit." %}</p>
+                <h4 class="card-title">Daily offers</h4>
+                <p>Amet consectetur adipi elit loreme ipsum dolor sit.</p>
               </div>
             </div>
           </div>
@@ -120,7 +91,7 @@
               </div>
               <div class="icon-box-content">
                 <h4 class="card-title">100% secure payment</h3>
-                <p>{% trans "Rem adipi elit lopsum dolor sit amet, consectetur adipi elit." %}</p>
+                <p>Rem adipi elit lopsum dolor sit amet, consectetur adipi elit.</p>
               </div>
             </div>
           </div>
@@ -136,18 +107,18 @@
             </div>
           </div>
           <div class="about-content bg-gray col-lg-4 m-auto top-0 end-0 bottom-0">
-            <h3 class="py-3">{% trans "Who are we" %}</h3>
-            <p>{% trans "Et id sapien id enim, sit tempor cursus elit, fusce. Nunc tristique facilisis consectetur at vivamus ut porta porta. Ut nisl, tortor, aliquam blandit vitae vehicula vivamus leo nullam urna, scelerisque unc lectus phasellus adipiscing arcu. Tristique facilisis nunc consectetur at tempor." %}</p>
-            <a href="about.html" class="btn">{% trans "About us →" %}</a>
+            <h3 class="py-3">Who are we</h3>
+            <p>Et id sapien id enim, sit tempor cursus elit, fusce. Nunc tristique facilisis consectetur at vivamus ut porta porta. Ut nisl, tortor, aliquam blandit vitae vehicula vivamus leo nullam urna, scelerisque unc lectus phasellus adipiscing arcu. Tristique facilisis nunc consectetur at tempor.</p>
+            <a href="about.html" class="btn">About us →</a>
           </div>
         </div>
       </div>
     </section>
     <section id="products" class="product-store position-relative padding-xlarge pb-0">
       <div class="container display-header d-flex flex-wrap justify-content-between pb-4">
-        <h3 class="mt-3">{% trans "Best selling Items" %}</h3>
+        <h3 class="mt-3">Best selling Items</h3>
         <div class="btn-right d-flex flex-wrap align-items-center">
-          <a href="shop.html" class="btn me-5">{% trans "View all items →" %}</a>
+          <a href="shop.html" class="btn me-5">View all items →</a>
           <div class="swiper-buttons">
             <button class="swiper-prev product-carousel-prev me-2">
               <svg width="41" height="41"><use xlink:href="#angle-left"></use></svg>
@@ -167,11 +138,11 @@
               </div>
               <div class="card-detail text-center pt-3 pb-2">
                 <h5 class="card-title fs-4 text-uppercase m-0">
-                  <a href="single-product.html">{% trans "Whispersong" %}</a>
+                  <a href="single-product.html">Whispersong</a>
                 </h5>
                 <span class="item-price text-primary fs-4">$870</span>
                 <div class="cart-button mt-1">
-                  <a href="#" class="btn">{% trans "Add to cart" %}</a>
+                  <a href="#" class="btn">Add to cart</a>
                 </div>
               </div>
             </div>
@@ -183,11 +154,11 @@
               </div>
               <div class="card-detail text-center pt-3 pb-2">
                 <h5 class="card-title fs-4 text-uppercase m-0">
-                  <a href="single-product.html">{% trans "Starlight Secrets" %}</a>
+                  <a href="single-product.html">Starlight Secrets</a>
                 </h5>
                 <span class="item-price text-primary fs-4">$870</span>
                 <div class="cart-button mt-1">
-                  <a href="#" class="btn">{% trans "Add to cart" %}</a>
+                  <a href="#" class="btn">Add to cart</a>
                 </div>
               </div>
             </div>
@@ -199,11 +170,11 @@
               </div>
               <div class="card-detail text-center pt-3 pb-2">
                 <h5 class="card-title fs-4 text-uppercase m-0">
-                  <a href="single-product.html">{% trans "Shadow Dance" %}</a>
+                  <a href="single-product.html">Shadow Dance</a>
                 </h5>
                 <span class="item-price text-primary fs-4">$870</span>
                 <div class="cart-button mt-1">
-                  <a href="#" class="btn">{% trans "Add to cart" %}</a>
+                  <a href="#" class="btn">Add to cart</a>
                 </div>
               </div>
             </div>
@@ -215,11 +186,11 @@
               </div>
               <div class="card-detail text-center pt-3 pb-2">
                 <h5 class="card-title fs-4 text-uppercase m-0">
-                  <a href="single-product.html">{% trans "Crimson Destiny" %}</a>
+                  <a href="single-product.html">Crimson Destiny</a>
                 </h5>
                 <span class="item-price text-primary fs-4">$870</span>
                 <div class="cart-button mt-1">
-                  <a href="#" class="btn">{% trans "Add to cart" %}</a>
+                  <a href="#" class="btn">Add to cart</a>
                 </div>
               </div>
             </div>
@@ -231,11 +202,11 @@
               </div>
               <div class="card-detail text-center pt-3 pb-2">
                 <h5 class="card-title fs-4 text-uppercase m-0">
-                  <a href="single-product.html">{% trans "Enchanted Sands" %}</a>
+                  <a href="single-product.html">Enchanted Sands</a>
                 </h5>
                 <span class="item-price text-primary fs-4">$870</span>
                 <div class="cart-button mt-1">
-                  <a href="#" class="btn">{% trans "Add to cart" %}</a>
+                  <a href="#" class="btn">Add to cart</a>
                 </div>
               </div>
             </div>
@@ -247,11 +218,11 @@
               </div>
               <div class="card-detail text-center pt-3 pb-2">
                 <h5 class="card-title fs-4 text-uppercase m-0">
-                  <a href="single-product.html">{% trans "Misty Meadows" %}</a>
+                  <a href="single-product.html">Misty Meadows</a>
                 </h5>
                 <span class="item-price text-primary fs-4">$870</span>
                 <div class="cart-button mt-1">
-                  <a href="#" class="btn">{% trans "Add to cart" %}</a>
+                  <a href="#" class="btn">Add to cart</a>
                 </div>
               </div>
             </div>
@@ -263,11 +234,11 @@
               </div>
               <div class="card-detail text-center pt-3 pb-2">
                 <h5 class="card-title fs-4 text-uppercase m-0">
-                  <a href="single-product.html">{% trans "Whimsical Whispers" %}</a>
+                  <a href="single-product.html">Whimsical Whispers</a>
                 </h5>
                 <span class="item-price text-primary fs-4">$870</span>
                 <div class="cart-button mt-1">
-                  <a href="#" class="btn">{% trans "Add to cart" %}</a>
+                  <a href="#" class="btn">Add to cart</a>
                 </div>
               </div>
             </div>
@@ -279,11 +250,11 @@
               </div>
               <div class="card-detail text-center pt-3 pb-2">
                 <h5 class="card-title fs-4 text-uppercase m-0">
-                  <a href="single-product.html">{% trans "Twilight Tales" %}</a>
+                  <a href="single-product.html">Twilight Tales</a>
                 </h5>
                 <span class="item-price text-primary fs-4">$870</span>
                 <div class="cart-button mt-1">
-                  <a href="#" class="btn">{% trans "Add to cart" %}</a>
+                  <a href="#" class="btn">Add to cart</a>
                 </div>
               </div>
             </div>
@@ -295,7 +266,7 @@
       <div class="container">
         <div class="row">
           <div class="offset-md-2 col-md-8">
-            <h3 class="text-center mb-5">{% trans "What our customers says" %}</h3>
+            <h3 class="text-center mb-5">What our customers says</h3>
             <div class="review-content position-relative">
               <div class="swiper testimonial-swiper">
                 <div class="swiper-wrapper">
@@ -303,7 +274,7 @@
                     <div class="review-item">
                       <blockquote class="fs-1 fw-light">“A pellen tesque pretium feugiat vel morbi sagittis lorem habi tasse cursus. Suspen dise tempus oncu enim pellen tesque este pretium in neque, elit morbi sagittis lorem habi mattis.”</blockquote>
                       <div class="author-detail">
-                        <div class="name fw-bold text-uppercase pt-2">{% trans "Anna garcia" %}</div>
+                        <div class="name fw-bold text-uppercase pt-2">Anna garcia</div>
                       </div>
                     </div>
                   </div>
@@ -311,7 +282,7 @@
                     <div class="review-item">
                       <blockquote class="fs-1 fw-light">“A pellen tesque pretium feugiat vel morbi sagittis lorem habi tasse cursus. Suspen dise tempus oncu enim pellen tesque este pretium in neque, elit morbi sagittis lorem habi mattis.”</blockquote>
                       <div class="author-detail">
-                        <div class="name fw-bold text-uppercase pt-2">{% trans "Anna garcia" %}</div>
+                        <div class="name fw-bold text-uppercase pt-2">Anna garcia</div>
                       </div>
                     </div>
                   </div>
@@ -319,7 +290,7 @@
                     <div class="review-item">
                       <blockquote class="fs-1 fw-light">“A pellen tesque pretium feugiat vel morbi sagittis lorem habi tasse cursus. Suspen dise tempus oncu enim pellen tesque este pretium in neque, elit morbi sagittis lorem habi mattis.”</blockquote>
                       <div class="author-detail">
-                        <div class="name fw-bold text-uppercase pt-2">{% trans "Anna garcia" %}</div>
+                        <div class="name fw-bold text-uppercase pt-2">Anna garcia</div>
                       </div>
                     </div>
                   </div>
@@ -360,9 +331,9 @@
               </div>
               <div class="banner-content-text ms-md-4 d-flex align-items-center">
                 <div class="banner-text">
-                  <h3>{% trans "Spiritual" %}</h3>
-                  <p>{% trans "This book is specially designed." %}</p>
-                  <a href="shop.html" class="btn">{% trans "Shop collection →" %}</a>
+                  <h3>Spiritual</h3>
+                  <p>This book is specially designed.</p>
+                  <a href="shop.html" class="btn">Shop collection →</a>
                 </div>
               </div>
             </div>
@@ -374,9 +345,9 @@
               </div>
               <div class="banner-content-text ms-md-4 d-flex align-items-center">
                 <div class="banner-text">
-                  <h3>{% trans "Life" %}</h3>
-                  <p>{% trans "This book is specially designed." %}</p>
-                  <a href="shop.html" class="btn">{% trans "Shop collection →" %}</a>
+                  <h3>Life</h3>
+                  <p>This book is specially designed.</p>
+                  <a href="shop.html" class="btn">Shop collection →</a>
                 </div>
               </div>
             </div>
@@ -390,9 +361,9 @@
               </div>
               <div class="banner-content-text ms-md-4 d-flex align-items-center">
                 <div class="banner-text">
-                  <h3>{% trans "Peaceful" %}</h3>
-                  <p>{% trans "This book is specially designed." %}</p>
-                  <a href="shop.html" class="btn">{% trans "Shop collection →" %}</a>
+                  <h3>Peaceful</h3>
+                  <p>This book is specially designed.</p>
+                  <a href="shop.html" class="btn">Shop collection →</a>
                 </div>
               </div>
             </div>
@@ -404,9 +375,9 @@
               </div>
               <div class="banner-content-text ms-md-4 d-flex align-items-center">
                 <div class="banner-text">
-                  <h3>{% trans "Nature" %}</h3>
-                  <p>{% trans "This book is specially designed." %}</p>
-                  <a href="shop.html" class="btn">{% trans "Shop collection →" %}</a>
+                  <h3>Nature</h3>
+                  <p>This book is specially designed.</p>
+                  <a href="shop.html" class="btn">Shop collection →</a>
                 </div>
               </div>
             </div>
@@ -416,9 +387,9 @@
     </section>
     <section id="products" class="product-store padding-xlarge pt-0 position-relative">
       <div class="container display-header d-flex flex-wrap justify-content-between pb-4">
-        <h3 class="mt-3">{% trans "Recommended" %}</h3>
+        <h3 class="mt-3">Recommended</h3>
         <div class="btn-right d-flex flex-wrap align-items-center">
-          <a href="shop.html" class="btn me-5">{% trans "View all items →" %}</a>
+          <a href="shop.html" class="btn me-5">View all items →</a>
           <div class="swiper-buttons">
             <button class="swiper-prev product-carousel-prev2 me-2">
               <svg width="41" height="41"><use xlink:href="#angle-left"></use></svg>
@@ -438,11 +409,11 @@
               </div>
               <div class="card-detail text-center pt-3 pb-2">
                 <h5 class="card-title fs-4 text-uppercase m-0">
-                  <a href="single-product.html">{% trans "Aetherial Alchemy" %}</a>
+                  <a href="single-product.html">Aetherial Alchemy</a>
                 </h5>
                 <span class="item-price text-primary fs-4">$870</span>
                 <div class="cart-button mt-1">
-                  <a href="#" class="btn">{% trans "Add to cart" %}</a>
+                  <a href="#" class="btn">Add to cart</a>
                 </div>
               </div>
             </div>
@@ -454,11 +425,11 @@
               </div>
               <div class="card-detail text-center pt-3 pb-2">
                 <h5 class="card-title fs-4 text-uppercase m-0">
-                  <a href="single-product.html">{% trans "The Lost Labyrinth" %}</a>
+                  <a href="single-product.html">The Lost Labyrinth</a>
                 </h5>
                 <span class="item-price text-primary fs-4">$870</span>
                 <div class="cart-button mt-1">
-                  <a href="#" class="btn">{% trans "Add to cart" %}</a>
+                  <a href="#" class="btn">Add to cart</a>
                 </div>
               </div>
             </div>
@@ -470,11 +441,11 @@
               </div>
               <div class="card-detail text-center pt-3 pb-2">
                 <h5 class="card-title fs-4 text-uppercase m-0">
-                  <a href="single-product.html">{% trans "Crystal Caverns" %}</a>
+                  <a href="single-product.html">Crystal Caverns</a>
                 </h5>
                 <span class="item-price text-primary fs-4">$870</span>
                 <div class="cart-button mt-1">
-                  <a href="#" class="btn">{% trans "Add to cart" %}</a>
+                  <a href="#" class="btn">Add to cart</a>
                 </div>
               </div>
             </div>
@@ -486,11 +457,11 @@
               </div>
               <div class="card-detail text-center pt-3 pb-2">
                 <h5 class="card-title fs-4 text-uppercase m-0">
-                  <a href="single-product.html">{% trans "Scarlet Secrets" %}</a>
+                  <a href="single-product.html">Scarlet Secrets</a>
                 </h5>
                 <span class="item-price text-primary fs-4">$870</span>
                 <div class="cart-button mt-1">
-                  <a href="#" class="btn">{% trans "Add to cart" %}</a>
+                  <a href="#" class="btn">Add to cart</a>
                 </div>
               </div>
             </div>
@@ -502,11 +473,11 @@
               </div>
               <div class="card-detail text-center pt-3 pb-2">
                 <h5 class="card-title fs-4 text-uppercase m-0">
-                  <a href="single-product.html">{% trans "Starry Horizons" %}</a>
+                  <a href="single-product.html">Starry Horizons</a>
                 </h5>
                 <span class="item-price text-primary fs-4">$870</span>
                 <div class="cart-button mt-1">
-                  <a href="#" class="btn">{% trans "Add to cart" %}</a>
+                  <a href="#" class="btn">Add to cart</a>
                 </div>
               </div>
             </div>
@@ -518,11 +489,11 @@
               </div>
               <div class="card-detail text-center pt-3 pb-2">
                 <h5 class="card-title fs-4 text-uppercase m-0">
-                  <a href="single-product.html">{% trans "Dance of Fireflies" %}</a>
+                  <a href="single-product.html">Dance of Fireflies</a>
                 </h5>
                 <span class="item-price text-primary fs-4">$870</span>
                 <div class="cart-button mt-1">
-                  <a href="#" class="btn">{% trans "Add to cart" %}</a>
+                  <a href="#" class="btn">Add to cart</a>
                 </div>
               </div>
             </div>
@@ -534,11 +505,11 @@
               </div>
               <div class="card-detail text-center pt-3 pb-2">
                 <h5 class="card-title fs-4 text-uppercase m-0">
-                  <a href="single-product.html">{% trans "Siren's Song" %}</a>
+                  <a href="single-product.html">Siren's Song</a>
                 </h5>
                 <span class="item-price text-primary fs-4">$870</span>
                 <div class="cart-button mt-1">
-                  <a href="#" class="btn">{% trans "Add to cart" %}</a>
+                  <a href="#" class="btn">Add to cart</a>
                 </div>
               </div>
             </div>
@@ -550,11 +521,11 @@
               </div>
               <div class="card-detail text-center pt-3 pb-2">
                 <h5 class="card-title fs-4 text-uppercase m-0">
-                  <a href="single-product.html">{% trans "Misty Mirage" %}</a>
+                  <a href="single-product.html">Misty Mirage</a>
                 </h5>
                 <span class="item-price text-primary fs-4">$870</span>
                 <div class="cart-button mt-1">
-                  <a href="#" class="btn">{% trans "Add to cart" %}</a>
+                  <a href="#" class="btn">Add to cart</a>
                 </div>
               </div>
             </div>
@@ -566,7 +537,7 @@
       <div class="container">
         <div class="row">
           <div class="offset-md-2 col-md-8">
-            <h3 class="text-center mb-5">{% trans "Some FAQs" %}</h3>
+            <h3 class="text-center mb-5">Some FAQs</h3>
             <div class="accordion accordion-flush" id="accordionFlush">
               <div class="accordion-item">
                 <h4 class="accordion-header" id="flush-headingOne3">
@@ -576,7 +547,7 @@
                 </h4>
                 <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                   <div class="accordion-body">
-                    <p>{% trans "Et id sapien id enim, sit tempor cursus elit, fusce. Nunc tristique facilisis consectetur at vivamus ut porta porta aliquam blandit vitae vehicula leo nullam urna, scelerisque unc lectus." %}</p>
+                    <p>Et id sapien id enim, sit tempor cursus elit, fusce. Nunc tristique facilisis consectetur at vivamus ut porta porta aliquam blandit vitae vehicula leo nullam urna, scelerisque unc lectus.</p>
                   </div>
                 </div>
               </div>
@@ -589,7 +560,7 @@
                 </h4>
                 <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
                   <div class="accordion-body">
-                    <p>{% trans "Et id sapien id enim, sit tempor cursus elit, fusce. Nunc tristique facilisis consectetur at vivamus ut porta porta aliquam blandit vitae vehicula leo nullam urna, scelerisque unc lectus." %}</p>
+                    <p>Et id sapien id enim, sit tempor cursus elit, fusce. Nunc tristique facilisis consectetur at vivamus ut porta porta aliquam blandit vitae vehicula leo nullam urna, scelerisque unc lectus.</p>
                   </div>
                 </div>
               </div>
@@ -602,7 +573,7 @@
                 </h4>
                 <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
                   <div class="accordion-body">
-                    <p>{% trans "Et id sapien id enim, sit tempor cursus elit, fusce. Nunc tristique facilisis consectetur at vivamus ut porta porta aliquam blandit vitae vehicula leo nullam urna, scelerisque unc lectus." %}</p>
+                    <p>Et id sapien id enim, sit tempor cursus elit, fusce. Nunc tristique facilisis consectetur at vivamus ut porta porta aliquam blandit vitae vehicula leo nullam urna, scelerisque unc lectus.</p>
                   </div>
                 </div>
               </div>
@@ -615,7 +586,7 @@
                 </h4>
                 <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
                   <div class="accordion-body">
-                    <p>{% trans "Et id sapien id enim, sit tempor cursus elit, fusce. Nunc tristique facilisis consectetur at vivamus ut porta porta aliquam blandit vitae vehicula leo nullam urna, scelerisque unc lectus." %}</p>
+                    <p>Et id sapien id enim, sit tempor cursus elit, fusce. Nunc tristique facilisis consectetur at vivamus ut porta porta aliquam blandit vitae vehicula leo nullam urna, scelerisque unc lectus.</p>
                   </div>
                 </div>
               </div>
@@ -628,7 +599,7 @@
                 </h4>
                 <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
                   <div class="accordion-body">
-                    <p>{% trans "Et id sapien id enim, sit tempor cursus elit, fusce. Nunc tristique facilisis consectetur at vivamus ut porta porta aliquam blandit vitae vehicula leo nullam urna, scelerisque unc lectus." %}</p>
+                    <p>Et id sapien id enim, sit tempor cursus elit, fusce. Nunc tristique facilisis consectetur at vivamus ut porta porta aliquam blandit vitae vehicula leo nullam urna, scelerisque unc lectus.</p>
                   </div>
                 </div>
               </div>
@@ -641,8 +612,8 @@
     <section id="posts" class="product-store padding-xlarge">
       <div class="container">
         <div class="display-header d-flex flex-wrap justify-content-between align-items-center pb-4">
-          <h3 class="mt-3">{% trans "Latest Blog Posts" %}</h3>
-          <a href="blog.html" class="btn">{% trans "Read Blog →" %}</a>
+          <h3 class="mt-3">Latest Blog Posts</h3>
+          <a href="blog.html" class="btn">Read Blog →</a>
         </div>
         <div class="row">
           <div class="col-lg-3 mb-2">
@@ -653,11 +624,11 @@
             </div>
             <div class="card-body text-capitalize">
               <div class="card-meta fs-6">
-                <span class="meta-date">{% trans "Feb 22, 2023" %}</span>
-                <span class="meta-category">/ <a href="blog.html">{% trans "Tips" %}</a></span>
+                <span class="meta-date">Feb 22, 2023</span>
+                <span class="meta-category">/ <a href="blog.html">Tips</a></span>
               </div>
               <h4 class="card-title">
-                <a href="single-post.html">{% trans "Why Our Bookstore Should Be Your Literary Oasis" %}</a>
+                <a href="single-post.html">Why Our Bookstore Should Be Your Literary Oasis</a>
               </h4>
             </div>
           </div>
@@ -669,11 +640,11 @@
             </div>
             <div class="card-body text-capitalize">
               <div class="card-meta fs-6">
-                <span class="meta-date">{% trans "Feb 22, 2023" %}</span>
-                <span class="meta-category">/ <a href="blog.html">{% trans "Tips" %}</a></span>
+                <span class="meta-date">Feb 22, 2023</span>
+                <span class="meta-category">/ <a href="blog.html">Tips</a></span>
               </div>
               <h4 class="card-title">
-                <a href="single-post.html">{% trans "Uncover Hidden Gems at Our Bookstore" %}</a>
+                <a href="single-post.html">Uncover Hidden Gems at Our Bookstore</a>
               </h4>
             </div>
           </div>
@@ -685,11 +656,11 @@
             </div>
             <div class="card-body text-capitalize">
               <div class="card-meta fs-6">
-                <span class="meta-date">{% trans "Feb 25, 2023" %}</span>
-                <span class="meta-category">/ <a href="blog.html">{% trans "Tips" %}</a></span>
+                <span class="meta-date">Feb 25, 2023</span>
+                <span class="meta-category">/ <a href="blog.html">Tips</a></span>
               </div>
               <h4 class="card-title">
-                <a href="single-post.html">{% trans "How Our Store Nurtures the Love for Reading" %}</a>
+                <a href="single-post.html">How Our Store Nurtures the Love for Reading</a>
               </h4>
             </div>
           </div>
@@ -701,11 +672,11 @@
             </div>
             <div class="card-body text-capitalize">
               <div class="card-meta fs-6">
-                <span class="meta-date">{% trans "Feb 27, 2023" %}</span>
-                <span class="meta-category">/ <a href="blog.html">{% trans "Tips" %}</a></span>
+                <span class="meta-date">Feb 27, 2023</span>
+                <span class="meta-category">/ <a href="blog.html">Tips</a></span>
               </div>
               <h4 class="card-title">
-                <a href="single-post.html">{% trans "The Pleasures of Visiting Our Bookstore" %}</a>
+                <a href="single-post.html">The Pleasures of Visiting Our Bookstore</a>
               </h4>
             </div>
           </div>
@@ -718,64 +689,64 @@
         <div class="row">
           <div class="col-md-3">
             <div class="contact-item text-center">
-              <h4 class="widget-title pb-2">{% trans "Store Main" %}</h4>
+              <h4 class="widget-title pb-2">Store Main</h4>
               <ul class="menu-list list-unstyled">
                 <li class="menu-item pb-2">
-                  <a href="#">{% trans "Tea Berry, Marinette, USA" %}</a>
+                  <a href="#">Tea Berry, Marinette, USA</a>
                 </li>
                 <li class="menu-item pb-2">
                   <a href="#">+55 111 222 333 44</a>
                 </li>
                 <li class="menu-item pb-2">
-                  <a href="mailto:">{% trans "yourinfo@gmail.com" %}</a>
+                  <a href="mailto:">yourinfo@gmail.com</a>
                 </li>
               </ul>
             </div>
           </div>
           <div class="col-md-3">
             <div class="contact-item text-center">
-              <h4 class="widget-title pb-2">{% trans "Store 1" %}</h4>
+              <h4 class="widget-title pb-2">Store 1</h4>
               <ul class="menu-list list-unstyled">
                 <li class="menu-item pb-2">
-                  <a href="#">{% trans "Tea Berry, Marinette, USA" %}</a>
+                  <a href="#">Tea Berry, Marinette, USA</a>
                 </li>
                 <li class="menu-item pb-2">
                   <a href="#">+55 111 222 333 44</a>
                 </li>
                 <li class="menu-item pb-2">
-                  <a href="mailto:">{% trans "yourinfo@gmail.com" %}</a>
+                  <a href="mailto:">yourinfo@gmail.com</a>
                 </li>
               </ul>
             </div>
           </div>
           <div class="col-md-3">
             <div class="contact-item text-center">
-              <h4 class="widget-title pb-2">{% trans "Store 2" %}</h4>
+              <h4 class="widget-title pb-2">Store 2</h4>
               <ul class="menu-list list-unstyled">
                 <li class="menu-item pb-2">
-                  <a href="#">{% trans "Tea Berry, Marinette, USA" %}</a>
+                  <a href="#">Tea Berry, Marinette, USA</a>
                 </li>
                 <li class="menu-item pb-2">
                   <a href="#">+55 111 222 333 44</a>
                 </li>
                 <li class="menu-item pb-2">
-                  <a href="mailto:">{% trans "yourinfo@gmail.com" %}</a>
+                  <a href="mailto:">yourinfo@gmail.com</a>
                 </li>
               </ul>
             </div>
           </div>
           <div class="col-md-3">
             <div class="contact-item text-center">
-              <h4 class="widget-title pb-2">{% trans "Store 3" %}</h4>
+              <h4 class="widget-title pb-2">Store 3</h4>
               <ul class="menu-list list-unstyled">
                 <li class="menu-item pb-2">
-                  <a href="#">{% trans "Tea Berry, Marinette, USA" %}</a>
+                  <a href="#">Tea Berry, Marinette, USA</a>
                 </li>
                 <li class="menu-item pb-2">
                   <a href="#">+55 111 222 333 44</a>
                 </li>
                 <li class="menu-item pb-2">
-                  <a href="mailto:">{% trans "yourinfo@gmail.com" %}</a>
+                  <a href="mailto:">yourinfo@gmail.com</a>
                 </li>
               </ul>
             </div>
@@ -788,13 +759,13 @@
         <div class="newsletter">
           <div class="row">
             <div class="col-lg-6 col-md-12 title">
-              <h3>{% trans "Subscribe to Our Newsletter" %}</h3>
-              <p>{% trans "Get latest news, updates and deals directly mailed to your inbox." %}</p>
+              <h3>Subscribe to Our Newsletter</h3>
+              <p>Get latest news, updates and deals directly mailed to your inbox.</p>
             </div>
             <form class="col-lg-6 col-md-12 d-flex align-items-center">
               <div class="d-flex w-75 border-bottom border-dark py-2">
                 <input id="newsletter1" type="text" class="form-control border-0 p-0" placeholder="Your email address here">
-                <button class="btn border-0 p-0" type="button">{% trans "Subscribe" %}</button>
+                <button class="btn border-0 p-0" type="button">Subscribe</button>
               </div>
             </form>
           </div>

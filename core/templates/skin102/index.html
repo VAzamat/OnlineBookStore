@@ -1,10 +1,11 @@
 {% extends "skin2/base.html" %}
+{% load i18n %}
 
 {% load static %}
 
 {% block titlekeywords %}
     <meta name="keywords" content="купить книги онлайн, интернет-магазин книг, digital book sales, каталог книг, книжный маркетплейс, заказать книги с доставкой.">
-    <title>Digital Book Sales</title>
+    <title>{% trans "Digital Book Sales" %}</title>
 {% endblock %}
 
 {% block customstyle %}
@@ -26,12 +27,12 @@
 					<div class="main-slider pattern-overlay">
 						<div class="slider-item">
 							<div class="banner-content">
-								<h2 class="banner-title">Life of the Wild</h2>
+								<h2 class="banner-title">{% trans "Life of the Wild" %}</h2>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu feugiat amet, libero
 									ipsum enim pharetra hac. Urna commodo, lacus ut magna velit eleifend. Amet, quis
 									urna, a eu.</p>
 								<div class="btn-wrap">
-									<a href="#" class="btn btn-outline-accent btn-accent-arrow">Read More<i
+									<a href="#" class="btn btn-outline-accent btn-accent-arrow">{% trans "Read More" %}<i
 											class="icon icon-ns-arrow-right"></i></a>
 								</div>
 							</div><!--banner-content-->
@@ -40,12 +41,12 @@
 
 						<div class="slider-item">
 							<div class="banner-content">
-								<h2 class="banner-title">Birds gonna be Happy</h2>
+								<h2 class="banner-title">{% trans "Birds gonna be Happy" %}</h2>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu feugiat amet, libero
 									ipsum enim pharetra hac. Urna commodo, lacus ut magna velit eleifend. Amet, quis
 									urna, a eu.</p>
 								<div class="btn-wrap">
-									<a href="#" class="btn btn-outline-accent btn-accent-arrow">Read More<i
+									<a href="#" class="btn btn-outline-accent btn-accent-arrow">{% trans "Read More" %}<i
 											class="icon icon-ns-arrow-right"></i></a>
 								</div>
 							</div><!--banner-content-->
@@ -89,9 +90,9 @@
 
 					<div class="section-header align-center">
 						<div class="title">
-							<span>Some quality items</span>
+							<span>{% trans "Some quality items" %}</span>
 						</div>
-						<h2 class="section-title">Featured Books</h2>
+						<h2 class="section-title">{% trans "Featured Books" %}</h2>
 					</div>
 
 					<div class="product-list" data-aos="fade-up">
@@ -105,8 +106,8 @@
 											Cart</button>
 									</figure>
 									<figcaption>
-										<h3>Simple way of piece life</h3>
-										<span>Armor Ramsey</span>
+										<h3>{% trans "Simple way of piece life" %}</h3>
+										<span>{% trans "Armor Ramsey" %}</span>
 										<div class="item-price">$ 40.00</div>
 									</figcaption>
 								</div>
@@ -120,8 +121,8 @@
 											Cart</button>
 									</figure>
 									<figcaption>
-										<h3>Great travel at desert</h3>
-										<span>Sanchit Howdy</span>
+										<h3>{% trans "Great travel at desert" %}</h3>
+										<span>{% trans "Sanchit Howdy" %}</span>
 										<div class="item-price">$ 38.00</div>
 									</figcaption>
 								</div>
@@ -135,8 +136,8 @@
 											Cart</button>
 									</figure>
 									<figcaption>
-										<h3>The lady beauty Scarlett</h3>
-										<span>Arthur Doyle</span>
+										<h3>{% trans "The lady beauty Scarlett" %}</h3>
+										<span>{% trans "Arthur Doyle" %}</span>
 										<div class="item-price">$ 45.00</div>
 									</figcaption>
 								</div>
@@ -150,8 +151,8 @@
 											Cart</button>
 									</figure>
 									<figcaption>
-										<h3>Once upon a time</h3>
-										<span>Klien Marry</span>
+										<h3>{% trans "Once upon a time" %}</h3>
+										<span>{% trans "Klien Marry" %}</span>
 										<div class="item-price">$ 35.00</div>
 									</figcaption>
 								</div>
@@ -194,11 +195,11 @@
 
 						<div class="col-md-6">
 							<div class="product-entry">
-								<h2 class="section-title divider">Best Selling Book</h2>
+								<h2 class="section-title divider">{% trans "Best Selling Book" %}</h2>
 
 								<div class="products-content">
-									<div class="author-name">By Timbur Hood</div>
-									<h3 class="item-title">Birds gonna be happy</h3>
+									<div class="author-name">{% trans "By Timbur Hood" %}</div>
+									<h3 class="item-title">{% trans "Birds gonna be happy" %}</h3>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu feugiat amet,
 										libero ipsum enim pharetra hac.</p>
 									<div class="item-price">$ 45.00</div>
@@ -227,18 +228,18 @@
 
 					<div class="section-header align-center">
 						<div class="title">
-							<span>Some quality items</span>
+							<span>{% trans "Some quality items" %}</span>
 						</div>
-						<h2 class="section-title">Popular Books</h2>
+						<h2 class="section-title">{% trans "Popular Books" %}</h2>
 					</div>
 
 					<ul class="tabs">
-						<li data-tab-target="#all-genre" class="active tab">All Genre</li>
-						<li data-tab-target="#business" class="tab">Business</li>
-						<li data-tab-target="#technology" class="tab">Technology</li>
-						<li data-tab-target="#romantic" class="tab">Romantic</li>
-						<li data-tab-target="#adventure" class="tab">Adventure</li>
-						<li data-tab-target="#fictional" class="tab">Fictional</li>
+						<li data-tab-target="#all-genre" class="active tab">{% trans "All Genre" %}</li>
+						<li data-tab-target="#business" class="tab">{% trans "Business" %}</li>
+						<li data-tab-target="#technology" class="tab">{% trans "Technology" %}</li>
+						<li data-tab-target="#romantic" class="tab">{% trans "Romantic" %}</li>
+						<li data-tab-target="#adventure" class="tab">{% trans "Adventure" %}</li>
+						<li data-tab-target="#fictional" class="tab">{% trans "Fictional" %}</li>
 					</ul>
 
 					<div class="tab-content">
@@ -253,8 +254,8 @@
 												Cart</button>
 										</figure>
 										<figcaption>
-											<h3>Portrait photography</h3>
-											<span>Adam Silber</span>
+											<h3>{% trans "Portrait photography" %}</h3>
+											<span>{% trans "Adam Silber" %}</span>
 											<div class="item-price">$ 40.00</div>
 										</figcaption>
 									</div>
@@ -268,8 +269,8 @@
 												Cart</button>
 										</figure>
 										<figcaption>
-											<h3>Once upon a time</h3>
-											<span>Klien Marry</span>
+											<h3>{% trans "Once upon a time" %}</h3>
+											<span>{% trans "Klien Marry" %}</span>
 											<div class="item-price">$ 35.00</div>
 										</figcaption>
 									</div>
@@ -283,8 +284,8 @@
 												Cart</button>
 										</figure>
 										<figcaption>
-											<h3>Tips of simple lifestyle</h3>
-											<span>Bratt Smith</span>
+											<h3>{% trans "Tips of simple lifestyle" %}</h3>
+											<span>{% trans "Bratt Smith" %}</span>
 											<div class="item-price">$ 40.00</div>
 										</figcaption>
 									</div>
@@ -298,8 +299,8 @@
 												Cart</button>
 										</figure>
 										<figcaption>
-											<h3>Just felt from outside</h3>
-											<span>Nicole Wilson</span>
+											<h3>{% trans "Just felt from outside" %}</h3>
+											<span>{% trans "Nicole Wilson" %}</span>
 											<div class="item-price">$ 40.00</div>
 										</figcaption>
 									</div>
@@ -316,8 +317,8 @@
 												Cart</button>
 										</figure>
 										<figcaption>
-											<h3>Peaceful Enlightment</h3>
-											<span>Marmik Lama</span>
+											<h3>{% trans "Peaceful Enlightment" %}</h3>
+											<span>{% trans "Marmik Lama" %}</span>
 											<div class="item-price">$ 40.00</div>
 										</figcaption>
 									</div>
@@ -331,8 +332,8 @@
 												Cart</button>
 										</figure>
 										<figcaption>
-											<h3>Great travel at desert</h3>
-											<span>Sanchit Howdy</span>
+											<h3>{% trans "Great travel at desert" %}</h3>
+											<span>{% trans "Sanchit Howdy" %}</span>
 											<div class="item-price">$ 40.00</div>
 										</figcaption>
 									</div>
@@ -346,8 +347,8 @@
 												Cart</button>
 										</figure>
 										<figcaption>
-											<h3>Life among the pirates</h3>
-											<span>Armor Ramsey</span>
+											<h3>{% trans "Life among the pirates" %}</h3>
+											<span>{% trans "Armor Ramsey" %}</span>
 											<div class="item-price">$ 40.00</div>
 										</figcaption>
 									</div>
@@ -361,8 +362,8 @@
 												Cart</button>
 										</figure>
 										<figcaption>
-											<h3>Simple way of piece life</h3>
-											<span>Armor Ramsey</span>
+											<h3>{% trans "Simple way of piece life" %}</h3>
+											<span>{% trans "Armor Ramsey" %}</span>
 											<div class="item-price">$ 40.00</div>
 										</figcaption>
 									</div>
@@ -381,8 +382,8 @@
 												Cart</button>
 										</figure>
 										<figcaption>
-											<h3>Peaceful Enlightment</h3>
-											<span>Marmik Lama</span>
+											<h3>{% trans "Peaceful Enlightment" %}</h3>
+											<span>{% trans "Marmik Lama" %}</span>
 											<div class="item-price">$ 40.00</div>
 										</figcaption>
 									</div>
@@ -396,8 +397,8 @@
 												Cart</button>
 										</figure>
 										<figcaption>
-											<h3>Great travel at desert</h3>
-											<span>Sanchit Howdy</span>
+											<h3>{% trans "Great travel at desert" %}</h3>
+											<span>{% trans "Sanchit Howdy" %}</span>
 											<div class="item-price">$ 40.00</div>
 										</figcaption>
 									</div>
@@ -411,8 +412,8 @@
 												Cart</button>
 										</figure>
 										<figcaption>
-											<h3>Life among the pirates</h3>
-											<span>Armor Ramsey</span>
+											<h3>{% trans "Life among the pirates" %}</h3>
+											<span>{% trans "Armor Ramsey" %}</span>
 											<div class="item-price">$ 40.00</div>
 										</figcaption>
 									</div>
@@ -426,8 +427,8 @@
 												Cart</button>
 										</figure>
 										<figcaption>
-											<h3>Simple way of piece life</h3>
-											<span>Armor Ramsey</span>
+											<h3>{% trans "Simple way of piece life" %}</h3>
+											<span>{% trans "Armor Ramsey" %}</span>
 											<div class="item-price">$ 40.00</div>
 										</figcaption>
 									</div>
@@ -446,8 +447,8 @@
 												Cart</button>
 										</figure>
 										<figcaption>
-											<h3>Peaceful Enlightment</h3>
-											<span>Marmik Lama</span>
+											<h3>{% trans "Peaceful Enlightment" %}</h3>
+											<span>{% trans "Marmik Lama" %}</span>
 											<div class="item-price">$ 40.00</div>
 										</figcaption>
 									</div>
@@ -461,8 +462,8 @@
 												Cart</button>
 										</figure>
 										<figcaption>
-											<h3>Great travel at desert</h3>
-											<span>Sanchit Howdy</span>
+											<h3>{% trans "Great travel at desert" %}</h3>
+											<span>{% trans "Sanchit Howdy" %}</span>
 											<div class="item-price">$ 40.00</div>
 										</figcaption>
 									</div>
@@ -476,8 +477,8 @@
 												Cart</button>
 										</figure>
 										<figcaption>
-											<h3>Life among the pirates</h3>
-											<span>Armor Ramsey</span>
+											<h3>{% trans "Life among the pirates" %}</h3>
+											<span>{% trans "Armor Ramsey" %}</span>
 											<div class="item-price">$ 40.00</div>
 										</figcaption>
 									</div>
@@ -491,8 +492,8 @@
 												Cart</button>
 										</figure>
 										<figcaption>
-											<h3>Simple way of piece life</h3>
-											<span>Armor Ramsey</span>
+											<h3>{% trans "Simple way of piece life" %}</h3>
+											<span>{% trans "Armor Ramsey" %}</span>
 											<div class="item-price">$ 40.00</div>
 										</figcaption>
 									</div>
@@ -510,8 +511,8 @@
 												Cart</button>
 										</figure>
 										<figcaption>
-											<h3>Peaceful Enlightment</h3>
-											<span>Marmik Lama</span>
+											<h3>{% trans "Peaceful Enlightment" %}</h3>
+											<span>{% trans "Marmik Lama" %}</span>
 											<div class="item-price">$ 40.00</div>
 										</figcaption>
 									</div>
@@ -525,8 +526,8 @@
 												Cart</button>
 										</figure>
 										<figcaption>
-											<h3>Great travel at desert</h3>
-											<span>Sanchit Howdy</span>
+											<h3>{% trans "Great travel at desert" %}</h3>
+											<span>{% trans "Sanchit Howdy" %}</span>
 											<div class="item-price">$ 40.00</div>
 										</figcaption>
 									</div>
@@ -540,8 +541,8 @@
 												Cart</button>
 										</figure>
 										<figcaption>
-											<h3>Life among the pirates</h3>
-											<span>Armor Ramsey</span>
+											<h3>{% trans "Life among the pirates" %}</h3>
+											<span>{% trans "Armor Ramsey" %}</span>
 											<div class="item-price">$ 40.00</div>
 										</figcaption>
 									</div>
@@ -555,8 +556,8 @@
 												Cart</button>
 										</figure>
 										<figcaption>
-											<h3>Simple way of piece life</h3>
-											<span>Armor Ramsey</span>
+											<h3>{% trans "Simple way of piece life" %}</h3>
+											<span>{% trans "Armor Ramsey" %}</span>
 											<div class="item-price">$ 40.00</div>
 										</figcaption>
 									</div>
@@ -574,8 +575,8 @@
 												Cart</button>
 										</figure>
 										<figcaption>
-											<h3>Life among the pirates</h3>
-											<span>Armor Ramsey</span>
+											<h3>{% trans "Life among the pirates" %}</h3>
+											<span>{% trans "Armor Ramsey" %}</span>
 											<div class="item-price">$ 40.00</div>
 										</figcaption>
 									</div>
@@ -589,8 +590,8 @@
 												Cart</button>
 										</figure>
 										<figcaption>
-											<h3>Simple way of piece life</h3>
-											<span>Armor Ramsey</span>
+											<h3>{% trans "Simple way of piece life" %}</h3>
+											<span>{% trans "Armor Ramsey" %}</span>
 											<div class="item-price">$ 40.00</div>
 										</figcaption>
 									</div>
@@ -608,8 +609,8 @@
 												Cart</button>
 										</figure>
 										<figcaption>
-											<h3>Life among the pirates</h3>
-											<span>Armor Ramsey</span>
+											<h3>{% trans "Life among the pirates" %}</h3>
+											<span>{% trans "Armor Ramsey" %}</span>
 											<div class="item-price">$ 40.00</div>
 										</figcaption>
 									</div>
@@ -623,8 +624,8 @@
 												Cart</button>
 										</figure>
 										<figcaption>
-											<h3>Simple way of piece life</h3>
-											<span>Armor Ramsey</span>
+											<h3>{% trans "Simple way of piece life" %}</h3>
+											<span>{% trans "Armor Ramsey" %}</span>
 											<div class="item-price">$ 40.00</div>
 										</figcaption>
 									</div>
@@ -642,11 +643,11 @@
 
 	<section id="quotation" class="align-center pb-5 mb-5">
 		<div class="inner-content">
-			<h2 class="section-title divider">Quote of the day</h2>
+			<h2 class="section-title divider">{% trans "Quote of the day" %}</h2>
 			<blockquote data-aos="fade-up">
 				<q>“The more that you read, the more things you will know. The more that you learn, the more places
 					you’ll go.”</q>
-				<div class="author-name">Dr. Seuss</div>
+				<div class="author-name">{% trans "Dr. Seuss" %}</div>
 			</blockquote>
 		</div>
 	</section>
@@ -655,9 +656,9 @@
 
 		<div class="section-header align-center">
 			<div class="title">
-				<span>Grab your opportunity</span>
+				<span>{% trans "Grab your opportunity" %}</span>
 			</div>
-			<h2 class="section-title">Books with offer</h2>
+			<h2 class="section-title">{% trans "Books with offer" %}</h2>
 		</div>
 
 		<div class="container">
@@ -672,8 +673,8 @@
 										Cart</button>
 								</figure>
 								<figcaption>
-									<h3>Simple way of piece life</h3>
-									<span>Armor Ramsey</span>
+									<h3>{% trans "Simple way of piece life" %}</h3>
+									<span>{% trans "Armor Ramsey" %}</span>
 									<div class="item-price">
 										<span class="prev-price">$ 50.00</span>$ 40.00
 									</div>
@@ -687,8 +688,8 @@
 										Cart</button>
 								</figure>
 								<figcaption>
-									<h3>Great travel at desert</h3>
-									<span>Sanchit Howdy</span>
+									<h3>{% trans "Great travel at desert" %}</h3>
+									<span>{% trans "Sanchit Howdy" %}</span>
 									<div class="item-price">
 										<span class="prev-price">$ 30.00</span>$ 38.00
 									</div>
@@ -702,8 +703,8 @@
 										Cart</button>
 								</figure>
 								<figcaption>
-									<h3>The lady beauty Scarlett</h3>
-									<span>Arthur Doyle</span>
+									<h3>{% trans "The lady beauty Scarlett" %}</h3>
+									<span>{% trans "Arthur Doyle" %}</span>
 									<div class="item-price">
 										<span class="prev-price">$ 35.00</span>$ 45.00
 									</div>
@@ -717,8 +718,8 @@
 										Cart</button>
 								</figure>
 								<figcaption>
-									<h3>Once upon a time</h3>
-									<span>Klien Marry</span>
+									<h3>{% trans "Once upon a time" %}</h3>
+									<span>{% trans "Klien Marry" %}</span>
 									<div class="item-price">
 										<span class="prev-price">$ 25.00</span>$ 35.00
 									</div>
@@ -732,8 +733,8 @@
 										Cart</button>
 								</figure>
 								<figcaption>
-									<h3>Simple way of piece life</h3>
-									<span>Armor Ramsey</span>
+									<h3>{% trans "Simple way of piece life" %}</h3>
+									<span>{% trans "Armor Ramsey" %}</span>
 									<div class="item-price">$ 40.00</div>
 								</figcaption>
 							</div>
@@ -754,7 +755,7 @@
 						<div class="col-md-6">
 
 							<div class="title-element">
-								<h2 class="section-title divider">Subscribe to our newsletter</h2>
+								<h2 class="section-title divider">{% trans "Subscribe to our newsletter" %}</h2>
 							</div>
 
 						</div>
@@ -766,7 +767,7 @@
 								<form id="form">
 									<input type="text" name="email" placeholder="Enter your email addresss here">
 									<button class="btn-subscribe">
-										<span>send</span>
+										<span>{% trans "send" %}</span>
 										<i class="icon icon-send"></i>
 									</button>
 								</form>
@@ -788,9 +789,9 @@
 
 					<div class="section-header align-center">
 						<div class="title">
-							<span>Read our articles</span>
+							<span>{% trans "Read our articles" %}</span>
 						</div>
-						<h2 class="section-title">Latest Articles</h2>
+						<h2 class="section-title">{% trans "Latest Articles" %}</h2>
 					</div>
 
 					<div class="row">
@@ -806,11 +807,11 @@
 								</figure>
 
 								<div class="post-item">
-									<div class="meta-date">Mar 30, 2021</div>
-									<h3><a href="#">Reading books always makes the moments happy</a></h3>
+									<div class="meta-date">{% trans "Mar 30, 2021" %}</div>
+									<h3><a href="#">{% trans "Reading books always makes the moments happy" %}</a></h3>
 
 									<div class="links-element">
-										<div class="categories">inspiration</div>
+										<div class="categories">{% trans "inspiration" %}</div>
 										<div class="social-links">
 											<ul>
 												<li>
@@ -839,11 +840,11 @@
 									</a>
 								</figure>
 								<div class="post-item">
-									<div class="meta-date">Mar 29, 2021</div>
-									<h3><a href="#">Reading books always makes the moments happy</a></h3>
+									<div class="meta-date">{% trans "Mar 29, 2021" %}</div>
+									<h3><a href="#">{% trans "Reading books always makes the moments happy" %}</a></h3>
 
 									<div class="links-element">
-										<div class="categories">inspiration</div>
+										<div class="categories">{% trans "inspiration" %}</div>
 										<div class="social-links">
 											<ul>
 												<li>
@@ -872,11 +873,11 @@
 									</a>
 								</figure>
 								<div class="post-item">
-									<div class="meta-date">Feb 27, 2021</div>
-									<h3><a href="#">Reading books always makes the moments happy</a></h3>
+									<div class="meta-date">{% trans "Feb 27, 2021" %}</div>
+									<h3><a href="#">{% trans "Reading books always makes the moments happy" %}</a></h3>
 
 									<div class="links-element">
-										<div class="categories">inspiration</div>
+										<div class="categories">{% trans "inspiration" %}</div>
 										<div class="social-links">
 											<ul>
 												<li>
@@ -902,7 +903,7 @@
 					<div class="row">
 
 						<div class="btn-wrap align-center">
-							<a href="#" class="btn btn-outline-accent btn-accent-arrow" tabindex="0">Read All Articles<i
+							<a href="#" class="btn btn-outline-accent btn-accent-arrow" tabindex="0">{% trans "Read All Articles" %}<i
 									class="icon icon-ns-arrow-right"></i></a>
 						</div>
 					</div>
@@ -927,7 +928,7 @@
 
 						<div class="col-md-7">
 							<div class="app-info">
-								<h2 class="section-title divider">Download our app now !</h2>
+								<h2 class="section-title divider">{% trans "Download our app now !" %}</h2>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis sed ptibus
 									liberolectus nonet psryroin. Amet sed lorem posuere sit iaculis amet, ac urna.
 									Adipiscing fames semper erat ac in suspendisse iaculis.</p>

@@ -1,9 +1,12 @@
 {% extends "skin6/base.html" %}
+
+
+{% load i18n %}
 {% load static %}
 
 {% block titlekeywords %}
     <meta name="keywords" content="о компании Digital Book Sales, купить книги со скидкой, корзина заказов, магазин литературы, оплата книг онлайн, библиотека книг, поиск книг по автору.">
-    <title>Digital Book Sales</title>
+    <title>{% trans "Digital Book Sales" %}</title>
 {% endblock %}
 
 {% block customstyle %}
@@ -16,12 +19,12 @@
       <div class="container">
         <div class="row">
           <div class="text-center">
-            <h1>Contact</h1>
+            <h1>{% trans "Contact" %}</h1>
             <div class="breadcrumbs">
               <span class="item">
                 <a href="{% url 'core:index' %}">Home &gt; </a>
               </span>
-              <span class="item text-decoration-underline">Contact</span>
+              <span class="item text-decoration-underline">{% trans "Contact" %}</span>
             </div>
           </div>
         </div>
@@ -33,12 +36,12 @@
       <div class="container">
         <div class="row">
           <div class="contact-info col-lg-6 pb-3">
-            <h3>Contact info</h3>
-            <p class="mb-5">Tortor dignissim convallis aenean et tortor at risus viverra adipiscing.</p>
+            <h3>{% trans "Contact info" %}</h3>
+            <p class="mb-5">{% trans "Tortor dignissim convallis aenean et tortor at risus viverra adipiscing." %}</p>
             <div class="page-content d-flex flex-wrap">
               <div class="col-lg-6 col-sm-12">
                 <div class="content-box text-dark pe-4 mb-5">
-                  <h5 class="fw-bold">Office</h5>
+                  <h5 class="fw-bold">{% trans "Office" %}</h5>
                   <div class="contact-address pt-3">
                     <p>730 Glenstone Ave 65802, Springfield, US</p>
                   </div>
@@ -52,14 +55,14 @@
                   </div>
                   <div class="email-address">
                     <p>
-                      <a href="#">info@yourinfo.com</a>
+                      <a href="#">{% trans "info@yourinfo.com" %}</a>
                     </p>
                   </div>
                 </div>
               </div>
               <div class="col-lg-6 col-sm-12">
                 <div class="content-box">
-                  <h5 class="fw-bold">Management</h5>
+                  <h5 class="fw-bold">{% trans "Management" %}</h5>
                   <div class="contact-address pt-3">
                     <p>730 Glenstone Ave 65802, Springfield, US</p>
                   </div>
@@ -73,7 +76,7 @@
                   </div>
                   <div class="email-address">
                     <p>
-                      <a href="#">info@yourinfo.com</a>
+                      <a href="#">{% trans "info@yourinfo.com" %}</a>
                     </p>
                   </div>
                 </div>
@@ -81,8 +84,8 @@
             </div>
           </div>
           <div class="inquiry-item col-lg-6">
-            <h3>Any questions?</h3>
-            <p class="mb-5">Use the form below to get in touch with us.</p>
+            <h3>{% trans "Any questions?" %}</h3>
+            <p class="mb-5">{% trans "Use the form below to get in touch with us." %}</p>
 
             <form id="form" class="d-flex gap-3 flex-wrap">
               <div class="w-100 d-flex gap-3">
@@ -102,7 +105,7 @@
               <div class="w-100">
                 <textarea placeholder="Write your message here *" class="form-control w-100"></textarea>
               </div>
-              <button type="submit" name="submit" class="btn my-3">Submit</button>
+              <button type="submit" name="submit" class="btn my-3">{% trans "Submit" %}</button>
             </form>
           </div>
         </div>
@@ -120,13 +123,13 @@
           <div class="col-lg-6">
             <div class="locations-wrap ms-lg-5">
               <div class="display-header">
-                <h3>Our stores</h3>
-                <p class="mb-5">You can also directly buy products from our stores.</p>
+                <h3>{% trans "Our stores" %}</h3>
+                <p class="mb-5">{% trans "You can also directly buy products from our stores." %}</p>
               </div>
               <div class="location-content d-flex flex-wrap">
                 <div class="col-lg-6 col-sm-12">
                   <div class="content-box text-dark pe-4 mb-5">
-                    <h5 class="fw-bold">USA</h5>
+                    <h5 class="fw-bold">{% trans "USA" %}</h5>
                     <div class="contact-address pt-3">
                       <p>730 Glenstone Ave 65802, US</p>
                     </div>
@@ -137,14 +140,14 @@
                     </div>
                     <div class="email-address">
                       <p>
-                        <a href="#">info@yourinfo.com</a>
+                        <a href="#">{% trans "info@yourinfo.com" %}</a>
                       </p>
                     </div>
                   </div>
                 </div>
                 <div class="col-lg-6 col-sm-12">
                   <div class="content-box">
-                    <h5 class="fw-bold">France</h5>
+                    <h5 class="fw-bold">{% trans "France" %}</h5>
                     <div class="contact-address pt-3">
                       <p>13 Rue Montmartre 75001, Paris, France</p>
                     </div>
@@ -155,14 +158,14 @@
                     </div>
                     <div class="email-address">
                       <p>
-                        <a href="#">info@yourinfo.com</a>
+                        <a href="#">{% trans "info@yourinfo.com" %}</a>
                       </p>
                     </div>
                   </div>
                 </div>
                 <div class="col-lg-6 col-sm-12">
                   <div class="content-box text-dark pe-4 mb-5">
-                    <h5 class="fw-bold">Canada</h5>
+                    <h5 class="fw-bold">{% trans "Canada" %}</h5>
                     <div class="contact-address pt-3">
                       <p>730 Glenstone Ave 65802, US</p>
                     </div>
@@ -173,14 +176,14 @@
                     </div>
                     <div class="email-address">
                       <p>
-                        <a href="#">info@yourinfo.com</a>
+                        <a href="#">{% trans "info@yourinfo.com" %}</a>
                       </p>
                     </div>
                   </div>
                 </div>
                 <div class="col-lg-6 col-sm-12">
                   <div class="content-box">
-                    <h5 class="fw-bold">China</h5>
+                    <h5 class="fw-bold">{% trans "China" %}</h5>
                     <div class="contact-address pt-3">
                       <p>13 Rue Montmartre 75001, Paris, France</p>
                     </div>
@@ -191,7 +194,7 @@
                     </div>
                     <div class="email-address">
                       <p>
-                        <a href="#">info@yourinfo.com</a>
+                        <a href="#">{% trans "info@yourinfo.com" %}</a>
                       </p>
                     </div>
                   </div>
@@ -216,7 +219,7 @@
         </svg>
       </div>
       <div class="section-title mb-4 text-center">
-        <h3 class="mb-4">Customers reviews</h3>
+        <h3 class="mb-4">{% trans "Customers reviews" %}</h3>
       </div>
       <div class="swiper testimonial-swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
         <div class="swiper-wrapper" id="swiper-wrapper-eb106f618293fccf7" aria-live="polite">
@@ -243,7 +246,7 @@ atmosphere, friendly staff, and wide selection of books make every visit
                   <use xlink:href="#star-fill"></use>
                 </svg>
               </div>
-              <h5 class="mt-1 fw-normal">Emma Chamberlin</h5>
+              <h5 class="mt-1 fw-normal">{% trans "Emma Chamberlin" %}</h5>
             </div>
           </div>
           <div class="swiper-slide swiper-slide-next" style="width: 616px; margin-right: 20px;" role="group" aria-label="2 / 5">
@@ -269,7 +272,7 @@ for new releases, and this bookstore never disappoints. They always have
                   <use xlink:href="#star-fill"></use>
                 </svg>
               </div>
-              <h5 class="mt-1 fw-normal">Thomas John</h5>
+              <h5 class="mt-1 fw-normal">{% trans "Thomas John" %}</h5>
             </div>
           </div>
           <div class="swiper-slide" style="width: 616px; margin-right: 20px;" role="group" aria-label="3 / 5">
@@ -295,7 +298,7 @@ clear that they prioritize customer satisfaction, and I'll definitely be
                   <use xlink:href="#star-fill"></use>
                 </svg>
               </div>
-              <h5 class="mt-1 fw-normal">Kevin Bryan</h5>
+              <h5 class="mt-1 fw-normal">{% trans "Kevin Bryan" %}</h5>
             </div>
           </div>
           <div class="swiper-slide" style="width: 616px; margin-right: 20px;" role="group" aria-label="4 / 5">
@@ -320,7 +323,7 @@ clear that they prioritize customer satisfaction, and I'll definitely be
                   <use xlink:href="#star-fill"></use>
                 </svg>
               </div>
-              <h5 class="mt-1 fw-normal">Stevin</h5>
+              <h5 class="mt-1 fw-normal">{% trans "Stevin" %}</h5>
             </div>
           </div>
           <div class="swiper-slide" style="width: 616px; margin-right: 20px;" role="group" aria-label="5 / 5">
@@ -345,7 +348,7 @@ clear that they prioritize customer satisfaction, and I'll definitely be
                   <use xlink:href="#star-fill"></use>
                 </svg>
               </div>
-              <h5 class="mt-1 fw-normal">Roman</h5>
+              <h5 class="mt-1 fw-normal">{% trans "Roman" %}</h5>
             </div>
           </div>
         </div>
@@ -356,39 +359,39 @@ clear that they prioritize customer satisfaction, and I'll definitely be
   <section id="latest-posts" class="padding-large">
     <div class="container">
       <div class="section-title d-md-flex justify-content-between align-items-center mb-4">
-        <h3 class="d-flex align-items-center">Latest posts</h3>
-        <a href="{% url 'core:shop' %}" class="btn">View All</a>
+        <h3 class="d-flex align-items-center">{% trans "Latest posts" %}</h3>
+        <a href="{% url 'core:shop' %}" class="btn">{% trans "View All" %}</a>
       </div>
       <div class="row">
         <div class="col-md-3 posts mb-4">
           <img src="{% static 'skin6/images/post-item1.jpg' %}" alt="post image" class="img-fluid rounded-3">
-          <a href="{% url 'core:blog' %}" class="fs-6 text-primary">Books</a>
+          <a href="{% url 'core:blog' %}" class="fs-6 text-primary">{% trans "Books" %}</a>
           <h4 class="card-title mb-2 text-capitalize text-dark"><a href="{% url 'core:single_post' %}">10 Must-Read Books of the Year: Our Top Picks!</a></h4>
           <p class="mb-2">Dive into the world of cutting-edge technology with our latest blog post, where we highlight
-            five essential gadge. <span><a class="text-decoration-underline text-black-50" href="{% url 'core:single_post' %}">Read More</a></span>
+            five essential gadge. <span><a class="text-decoration-underline text-black-50" href="{% url 'core:single_post' %}">{% trans "Read More" %}</a></span>
           </p>
         </div>
         <div class="col-md-3 posts mb-4">
           <img src="{% static 'skin6/images/post-item2.jpg' %}" alt="post image" class="img-fluid rounded-3">
-          <a href="{% url 'core:blog' %}" class="fs-6 text-primary">Books</a>
-          <h4 class="card-title mb-2 text-capitalize text-dark"><a href="{% url 'core:single_post' %}">The Fascinating Realm of Science Fiction</a></h4>
+          <a href="{% url 'core:blog' %}" class="fs-6 text-primary">{% trans "Books" %}</a>
+          <h4 class="card-title mb-2 text-capitalize text-dark"><a href="{% url 'core:single_post' %}">{% trans "The Fascinating Realm of Science Fiction" %}</a></h4>
           <p class="mb-2">Explore the intersection of technology and sustainability in our latest blog post. Learn about
-            the innovative <span><a class="text-decoration-underline text-black-50" href="{% url 'core:single_post' %}">Read More</a></span> </p>
+            the innovative <span><a class="text-decoration-underline text-black-50" href="{% url 'core:single_post' %}">{% trans "Read More" %}</a></span> </p>
         </div>
         <div class="col-md-3 posts mb-4">
           <img src="{% static 'skin6/images/post-item3.jpg' %}" alt="post image" class="img-fluid rounded-3">
-          <a href="{% url 'core:blog' %}" class="fs-6 text-primary">Books</a>
-          <h4 class="card-title mb-2 text-capitalize text-dark"><a href="{% url 'core:single_post' %}">Finding Love in the Pages of a Book</a></h4>
+          <a href="{% url 'core:blog' %}" class="fs-6 text-primary">{% trans "Books" %}</a>
+          <h4 class="card-title mb-2 text-capitalize text-dark"><a href="{% url 'core:single_post' %}">{% trans "Finding Love in the Pages of a Book" %}</a></h4>
           <p class="mb-2">Stay ahead of the curve with our insightful look into the rapidly evolving landscape of
-            wearable technology. <span><a class="text-decoration-underline text-black-50" href="{% url 'core:single_post' %}">Read More</a></span>
+            wearable technology. <span><a class="text-decoration-underline text-black-50" href="{% url 'core:single_post' %}">{% trans "Read More" %}</a></span>
           </p>
         </div>
         <div class="col-md-3 posts mb-4">
           <img src="{% static 'skin6/images/post-item4.jpg' %}" alt="post image" class="img-fluid rounded-3">
-          <a href="{% url 'core:blog' %}" class="fs-6 text-primary">Books</a>
-          <h4 class="card-title mb-2 text-capitalize text-dark"><a href="{% url 'core:single_post' %}">Reading for Mental Health: How Books Can Heal and Inspire</a></h4>
+          <a href="{% url 'core:blog' %}" class="fs-6 text-primary">{% trans "Books" %}</a>
+          <h4 class="card-title mb-2 text-capitalize text-dark"><a href="{% url 'core:single_post' %}">{% trans "Reading for Mental Health: How Books Can Heal and Inspire" %}</a></h4>
           <p class="mb-2">In today's remote work environment, productivity is key. Discover the top apps and tools that
-            can help you stay <span><a class="text-decoration-underline text-black-50" href="{% url 'core:single_post' %}">Read More</a></span>
+            can help you stay <span><a class="text-decoration-underline text-black-50" href="{% url 'core:single_post' %}">{% trans "Read More" %}</a></span>
           </p>
         </div>
       </div>

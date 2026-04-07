@@ -1,4 +1,5 @@
 {% extends "skin1/base.html" %}
+{% load i18n %}
 
 {% load static %}
 
@@ -18,12 +19,12 @@
         <div class="container">
           <div class="row">
             <div class="text-center padding-medium no-padding-bottom">
-              <h1>Shop</h1>
+              <h1>{% trans "Shop" %}</h1>
               <div class="breadcrumbs">
                 <span class="item">
-                  <a href="{% url 'core:index' %}">Home &gt;</a>
+                  <a href="{% url 'core:index' %}">{% trans "Home &gt;" %}</a>
                 </span>
-                <span class="item">Shop</span>
+                <span class="item">{% trans "Shop" %}</span>
               </div>
             </div>
           </div>
@@ -36,19 +37,19 @@
           <main class="col-md-9">
             <div class="filter-shop d-flex flex-wrap justify-content-between">
               <div class="showing-product">
-                <p>Showing 1-9 of 55 results</p>
+                <p>{% trans "Showing 1-9 of 55 results" %}</p>
               </div>
               <div class="sort-by">
                 <select id="input-sort" class="form-control" data-filter-sort="" data-filter-order="">
-                  <option value="">Default sorting</option>
-                  <option value="">Name (A - Z)</option>
-                  <option value="">Name (Z - A)</option>
-                  <option value="">Price (Low-High)</option>
-                  <option value="">Price (High-Low)</option>
-                  <option value="">Rating (Highest)</option>
-                  <option value="">Rating (Lowest)</option>
-                  <option value="">Model (A - Z)</option>
-                  <option value="">Model (Z - A)</option>
+                  <option value="">{% trans "Default sorting" %}</option>
+                  <option value="">{% trans "Name (A - Z)" %}</option>
+                  <option value="">{% trans "Name (Z - A)" %}</option>
+                  <option value="">{% trans "Price (Low-High)" %}</option>
+                  <option value="">{% trans "Price (High-Low)" %}</option>
+                  <option value="">{% trans "Rating (Highest)" %}</option>
+                  <option value="">{% trans "Rating (Lowest)" %}</option>
+                  <option value="">{% trans "Model (A - Z)" %}</option>
+                  <option value="">{% trans "Model (Z - A)" %}</option>
                 </select>
               </div>
             </div>
@@ -60,11 +61,11 @@
                   </div>
                   <div class="card-detail text-center pt-3 pb-2">
                     <h5 class="card-title fs-4 text-uppercase m-0">
-                      <a href="{% url 'core:single_product' %}">Whispersong</a>
+                      <a href="{% url 'core:single_product' %}">{% trans "Whispersong" %}</a>
                     </h5>
                     <span class="item-price text-primary fs-4">$870</span>
                     <div class="cart-button mt-1">
-                      <a href="{% url 'core:shop' %}#" class="btn">Add to cart</a>
+                      <a href="{% url 'core:shop' %}#" class="btn">{% trans "Add to cart" %}</a>
                     </div>
                   </div>
                 </div>
@@ -76,11 +77,11 @@
                   </div>
                   <div class="card-detail text-center pt-3 pb-2">
                     <h5 class="card-title fs-4 text-uppercase m-0">
-                      <a href="{% url 'core:single_product' %}">Starlight Secrets</a>
+                      <a href="{% url 'core:single_product' %}">{% trans "Starlight Secrets" %}</a>
                     </h5>
                     <span class="item-price text-primary fs-4">$870</span>
                     <div class="cart-button mt-1">
-                      <a href="{% url 'core:shop' %}#" class="btn">Add to cart</a>
+                      <a href="{% url 'core:shop' %}#" class="btn">{% trans "Add to cart" %}</a>
                     </div>
                   </div>
                 </div>
@@ -92,11 +93,11 @@
                   </div>
                   <div class="card-detail text-center pt-3 pb-2">
                     <h5 class="card-title fs-4 text-uppercase m-0">
-                      <a href="{% url 'core:single_product' %}">Shadow Dance</a>
+                      <a href="{% url 'core:single_product' %}">{% trans "Shadow Dance" %}</a>
                     </h5>
                     <span class="item-price text-primary fs-4">$870</span>
                     <div class="cart-button mt-1">
-                      <a href="{% url 'core:shop' %}#" class="btn">Add to cart</a>
+                      <a href="{% url 'core:shop' %}#" class="btn">{% trans "Add to cart" %}</a>
                     </div>
                   </div>
                 </div>
@@ -108,11 +109,11 @@
                   </div>
                   <div class="card-detail text-center pt-3 pb-2">
                     <h5 class="card-title fs-4 text-uppercase m-0">
-                      <a href="{% url 'core:single_product' %}">Crimson Destiny</a>
+                      <a href="{% url 'core:single_product' %}">{% trans "Crimson Destiny" %}</a>
                     </h5>
                     <span class="item-price text-primary fs-4">$870</span>
                     <div class="cart-button mt-1">
-                      <a href="{% url 'core:shop' %}#" class="btn">Add to cart</a>
+                      <a href="{% url 'core:shop' %}#" class="btn">{% trans "Add to cart" %}</a>
                     </div>
                   </div>
                 </div>
@@ -124,11 +125,11 @@
                   </div>
                   <div class="card-detail text-center pt-3 pb-2">
                     <h5 class="card-title fs-4 text-uppercase m-0">
-                      <a href="{% url 'core:single_product' %}">Enchanted Sands</a>
+                      <a href="{% url 'core:single_product' %}">{% trans "Enchanted Sands" %}</a>
                     </h5>
                     <span class="item-price text-primary fs-4">$870</span>
                     <div class="cart-button mt-1">
-                      <a href="{% url 'core:shop' %}#" class="btn">Add to cart</a>
+                      <a href="{% url 'core:shop' %}#" class="btn">{% trans "Add to cart" %}</a>
                     </div>
                   </div>
                 </div>
@@ -140,11 +141,11 @@
                   </div>
                   <div class="card-detail text-center pt-3 pb-2">
                     <h5 class="card-title fs-4 text-uppercase m-0">
-                      <a href="{% url 'core:single_product' %}">Aetherial Alchemy</a>
+                      <a href="{% url 'core:single_product' %}">{% trans "Aetherial Alchemy" %}</a>
                     </h5>
                     <span class="item-price text-primary fs-4">$870</span>
                     <div class="cart-button mt-1">
-                      <a href="{% url 'core:shop' %}#" class="btn">Add to cart</a>
+                      <a href="{% url 'core:shop' %}#" class="btn">{% trans "Add to cart" %}</a>
                     </div>
                   </div>
                 </div>
@@ -156,11 +157,11 @@
                   </div>
                   <div class="card-detail text-center pt-3 pb-2">
                     <h5 class="card-title fs-4 text-uppercase m-0">
-                      <a href="{% url 'core:single_product' %}">The Lost Labyrinth</a>
+                      <a href="{% url 'core:single_product' %}">{% trans "The Lost Labyrinth" %}</a>
                     </h5>
                     <span class="item-price text-primary fs-4">$870</span>
                     <div class="cart-button mt-1">
-                      <a href="{% url 'core:shop' %}#" class="btn">Add to cart</a>
+                      <a href="{% url 'core:shop' %}#" class="btn">{% trans "Add to cart" %}</a>
                     </div>
                   </div>
                 </div>
@@ -172,11 +173,11 @@
                   </div>
                   <div class="card-detail text-center pt-3 pb-2">
                     <h5 class="card-title fs-4 text-uppercase m-0">
-                      <a href="{% url 'core:single_product' %}">Crystal Caverns</a>
+                      <a href="{% url 'core:single_product' %}">{% trans "Crystal Caverns" %}</a>
                     </h5>
                     <span class="item-price text-primary fs-4">$870</span>
                     <div class="cart-button mt-1">
-                      <a href="{% url 'core:shop' %}#" class="btn">Add to cart</a>
+                      <a href="{% url 'core:shop' %}#" class="btn">{% trans "Add to cart" %}</a>
                     </div>
                   </div>
                 </div>
@@ -188,11 +189,11 @@
                   </div>
                   <div class="card-detail text-center pt-3 pb-2">
                     <h5 class="card-title fs-4 text-uppercase m-0">
-                      <a href="{% url 'core:single_product' %}">Scarlet Secrets</a>
+                      <a href="{% url 'core:single_product' %}">{% trans "Scarlet Secrets" %}</a>
                     </h5>
                     <span class="item-price text-primary fs-4">$870</span>
                     <div class="cart-button mt-1">
-                      <a href="{% url 'core:shop' %}#" class="btn">Add to cart</a>
+                      <a href="{% url 'core:shop' %}#" class="btn">{% trans "Add to cart" %}</a>
                     </div>
                   </div>
                 </div>
@@ -231,58 +232,58 @@
                 </div>
               </div>
               <div class="widget-product-categories pt-5">
-                <h5 class="widget-title text-uppercase">Categories</h5>
+                <h5 class="widget-title text-uppercase">{% trans "Categories" %}</h5>
                 <ul class="product-categories sidebar-list list-unstyled">
                   <li class="cat-item">
-                    <a href="{% url 'core:shop' %}#">All</a>
+                    <a href="{% url 'core:shop' %}#">{% trans "All" %}</a>
                   </li>
                   <li class="cat-item">
-                    <a href="{% url 'core:shop' %}#">Spiritual</a>
+                    <a href="{% url 'core:shop' %}#">{% trans "Spiritual" %}</a>
                   </li>
                   <li class="cat-item">
-                    <a href="{% url 'core:shop' %}#">Money</a>
+                    <a href="{% url 'core:shop' %}#">{% trans "Money" %}</a>
                   </li>
                   <li class="cat-item">
-                    <a href="{% url 'core:shop' %}#">Life</a>
+                    <a href="{% url 'core:shop' %}#">{% trans "Life" %}</a>
                   </li>
                 </ul>
               </div>
               <div class="widget-product-tags pt-3">
-                <h5 class="widget-title text-uppercase">Tags</h5>
+                <h5 class="widget-title text-uppercase">{% trans "Tags" %}</h5>
                 <ul class="product-tags sidebar-list list-unstyled">
                   <li class="tags-item">
-                    <a href="{% url 'core:shop' %}#">Finance</a>
+                    <a href="{% url 'core:shop' %}#">{% trans "Finance" %}</a>
                   </li>
                   <li class="tags-item">
-                    <a href="{% url 'core:shop' %}#">Cheap</a>
+                    <a href="{% url 'core:shop' %}#">{% trans "Cheap" %}</a>
                   </li>
                   <li class="tags-item">
-                    <a href="{% url 'core:shop' %}#">Story</a>
+                    <a href="{% url 'core:shop' %}#">{% trans "Story" %}</a>
                   </li>
                   <li class="tags-item">
-                    <a href="{% url 'core:shop' %}#">Biography</a>
+                    <a href="{% url 'core:shop' %}#">{% trans "Biography" %}</a>
                   </li>
                 </ul>
               </div>
               <div class="widget-product-brands pt-3">
-                <h5 class="widget-title text-uppercase">Latest Products</h5>
+                <h5 class="widget-title text-uppercase">{% trans "Latest Products" %}</h5>
                 <ul class="product-tags sidebar-list list-unstyled">
                   <li class="tags-item">
-                    <a href="{% url 'core:shop' %}#">Dance of Fireflies</a>
+                    <a href="{% url 'core:shop' %}#">{% trans "Dance of Fireflies" %}</a>
                   </li>
                   <li class="tags-item">
-                    <a href="{% url 'core:shop' %}#">Starry Horizons</a>
+                    <a href="{% url 'core:shop' %}#">{% trans "Starry Horizons" %}</a>
                   </li>
                   <li class="tags-item">
-                    <a href="{% url 'core:shop' %}#">Tales of Tranquility</a>
+                    <a href="{% url 'core:shop' %}#">{% trans "Tales of Tranquility" %}</a>
                   </li>
                 </ul>
               </div>
               <div class="widget-price-filter pt-3">
-                <h5 class="widget-title text-uppercase">Filter By Price</h5>
+                <h5 class="widget-title text-uppercase">{% trans "Filter By Price" %}</h5>
                 <ul class="product-tags sidebar-list list-unstyled">
                   <li class="tags-item">
-                    <a href="{% url 'core:shop' %}#">Less than $100</a>
+                    <a href="{% url 'core:shop' %}#">{% trans "Less than $100" %}</a>
                   </li>
                   <li class="tags-item">
                     <a href="{% url 'core:shop' %}#">$100 - $200</a>
@@ -308,13 +309,13 @@
         <div class="newsletter">
           <div class="row">
             <div class="col-lg-6 col-md-12 title">
-              <h3>Subscribe to Our Newsletter</h3>
-              <p>Get latest news, updates and deals directly mailed to your inbox.</p>
+              <h3>{% trans "Subscribe to Our Newsletter" %}</h3>
+              <p>{% trans "Get latest news, updates and deals directly mailed to your inbox." %}</p>
             </div>
             <form class="col-lg-6 col-md-12 d-flex align-items-center">
               <div class="d-flex w-75 border-bottom border-dark py-2">
                 <input id="newsletter1" type="text" class="form-control border-0 p-0" placeholder="Your email address here">
-                <button class="btn border-0 p-0" type="button">Subscribe</button>
+                <button class="btn border-0 p-0" type="button">{% trans "Subscribe" %}</button>
               </div>
             </form>
           </div>

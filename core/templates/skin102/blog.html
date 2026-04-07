@@ -1,10 +1,11 @@
 {% extends "skin2/base.html" %}
+{% load i18n %}
 
 {% load static %}
 
 {% block titlekeywords %}
     <meta name="keywords" content="купить книги онлайн, интернет-магазин книг, digital book sales, каталог книг, книжный маркетплейс, заказать книги с доставкой.">
-    <title>Blog on Digital Book Sales</title>
+    <title>{% trans "Blog on Digital Book Sales" %}</title>
 {% endblock %}
 
 {% block customstyle %}
@@ -17,10 +18,10 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h1 class="page-title">Our Blog</h1>
+					<h1 class="page-title">{% trans "Our Blog" %}</h1>
 					<div class="breadcrumbs">
-						<span class="item"><a href="{% url 'core:index' %}">Home /</a></span>
-						<span class="item">Our Blog</span>
+						<span class="item"><a href="{% url 'core:index' %}">{% trans "Home /" %}</a></span>
+						<span class="item">{% trans "Our Blog" %}</span>
 					</div>
 				</div>
 			</div>
@@ -49,7 +50,7 @@
 									</figure>
 
 									<div class="post-content">
-										<div class="meta-date">Mar 30, 2021</div>
+										<div class="meta-date">{% trans "Mar 30, 2021" %}</div>
 										<h3 class="post-title"><a href="{% url 'core:blog' %}#">modern vibes bedrooms, todays trending
 												design</a></h3>
 										<p>Lectus molestie id enim ipsum. Netus sed cursus nibh iaculis ipsum turpis
@@ -68,7 +69,7 @@
 										</a>
 									</figure>
 									<div class="post-content">
-										<div class="meta-date">Mar 29, 2021</div>
+										<div class="meta-date">{% trans "Mar 29, 2021" %}</div>
 										<h3 class="post-title"><a href="{% url 'core:blog' %}#">How to make minimalist living rooms
 												pop-out</a></h3>
 										<p>Lectus molestie id enim ipsum. Netus sed cursus nibh iaculis ipsum turpis
@@ -85,7 +86,7 @@
 										</a>
 									</figure>
 									<div class="post-content">
-										<div class="meta-date">Mar 27, 2021</div>
+										<div class="meta-date">{% trans "Mar 27, 2021" %}</div>
 										<h3 class="post-title"><a href="{% url 'core:blog' %}#">how to make your resort that looks
 												outstanding</a></h3>
 										<p>Lectus molestie id enim ipsum. Netus sed cursus nibh iaculis ipsum turpis
@@ -104,7 +105,7 @@
 									</figure>
 
 									<div class="post-content">
-										<div class="meta-date">Mar 30, 2021</div>
+										<div class="meta-date">{% trans "Mar 30, 2021" %}</div>
 										<h3 class="post-title"><a href="{% url 'core:blog' %}#">modern vibes bedrooms, todays trending
 												design</a></h3>
 										<p>Lectus molestie id enim ipsum. Netus sed cursus nibh iaculis ipsum turpis
@@ -123,7 +124,7 @@
 										</a>
 									</figure>
 									<div class="post-content">
-										<div class="meta-date">Mar 29, 2021</div>
+										<div class="meta-date">{% trans "Mar 29, 2021" %}</div>
 										<h3 class="post-title"><a href="{% url 'core:blog' %}#">How to make minimalist living rooms
 												pop-out</a></h3>
 										<p>Lectus molestie id enim ipsum. Netus sed cursus nibh iaculis ipsum turpis
@@ -140,7 +141,7 @@
 										</a>
 									</figure>
 									<div class="post-content">
-										<div class="meta-date">Mar 27, 2021</div>
+										<div class="meta-date">{% trans "Mar 27, 2021" %}</div>
 										<h3 class="post-title"><a href="{% url 'core:blog' %}#">how to make your resort that looks
 												outstanding</a></h3>
 										<p>Lectus molestie id enim ipsum. Netus sed cursus nibh iaculis ipsum turpis
@@ -160,7 +161,7 @@
 									</figure>
 
 									<div class="post-content">
-										<div class="meta-date">Mar 30, 2021</div>
+										<div class="meta-date">{% trans "Mar 30, 2021" %}</div>
 										<h3 class="post-title"><a href="{% url 'core:blog' %}#">modern vibes bedrooms, todays trending
 												design</a></h3>
 										<p>Lectus molestie id enim ipsum. Netus sed cursus nibh iaculis ipsum turpis
@@ -179,7 +180,7 @@
 										</a>
 									</figure>
 									<div class="post-content">
-										<div class="meta-date">Mar 29, 2021</div>
+										<div class="meta-date">{% trans "Mar 29, 2021" %}</div>
 										<h3 class="post-title"><a href="{% url 'core:blog' %}#">How to make minimalist living rooms
 												pop-out</a></h3>
 										<p>Lectus molestie id enim ipsum. Netus sed cursus nibh iaculis ipsum turpis
@@ -196,7 +197,7 @@
 										</a>
 									</figure>
 									<div class="post-content">
-										<div class="meta-date">Mar 27, 2021</div>
+										<div class="meta-date">{% trans "Mar 27, 2021" %}</div>
 										<h3 class="post-title"><a href="{% url 'core:blog' %}#">how to make your resort that looks
 												outstanding</a></h3>
 										<p>Lectus molestie id enim ipsum. Netus sed cursus nibh iaculis ipsum turpis

@@ -1,10 +1,11 @@
 {% extends "skin2/base.html" %}
+{% load i18n %}
 
 {% load static %}
 
 {% block titlekeywords %}
     <meta name="keywords" content="купить книги онлайн, интернет-магазин книг, digital book sales, каталог книг, книжный маркетплейс, заказать книги с доставкой.">
-    <title>Shop on Digital Book Sales</title>
+    <title>{% trans "Shop on Digital Book Sales" %}</title>
 {% endblock %}
 
 {% block customstyle %}
@@ -18,10 +19,10 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="colored">
-						<h1 class="page-title">Shop</h1>
+						<h1 class="page-title">{% trans "Shop" %}</h1>
 						<div class="breadcum-items">
-							<span class="item"><a href="{% url 'core:index' %}">Home /</a></span>
-							<span class="item colored">Shop</span>
+							<span class="item"><a href="{% url 'core:index' %}">{% trans "Home /" %}</a></span>
+							<span class="item colored">{% trans "Shop" %}</span>
 						</div>
 					</div>
 				</div>
@@ -37,11 +38,11 @@
 					<div class="product-item">
 						<figure class="product-style">
 							<img src="{% static 'skin2/images/tab-item1.jpg' %}" alt="Books" class="product-item">
-							<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button>
+							<button type="button" class="add-to-cart" data-product-tile="add-to-cart">{% trans "Add to Cart" %}</button>
 						</figure>
 						<figcaption>
-							<h3>Portrait photography</h3>
-							<p>Adam Silber</p>
+							<h3>{% trans "Portrait photography" %}</h3>
+							<p>{% trans "Adam Silber" %}</p>
 							<div class="item-price">$ 40.00</div>
 						</figcaption>
 					</div>
@@ -51,11 +52,11 @@
 					<div class="product-item">
 						<figure class="product-style">
 							<img src="{% static 'skin2/images/tab-item2.jpg' %}" alt="Books" class="product-item">
-							<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button>
+							<button type="button" class="add-to-cart" data-product-tile="add-to-cart">{% trans "Add to Cart" %}</button>
 						</figure>
 						<figcaption>
-							<h3>Once upon a time</h3>
-							<p>Klien Marry</p>
+							<h3>{% trans "Once upon a time" %}</h3>
+							<p>{% trans "Klien Marry" %}</p>
 							<div class="item-price">$ 35.00</div>
 						</figcaption>
 					</div>
@@ -65,11 +66,11 @@
 					<div class="product-item">
 						<figure class="product-style">
 							<img src="{% static 'skin2/images/tab-item3.jpg' %}" alt="Books" class="product-item">
-							<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button>
+							<button type="button" class="add-to-cart" data-product-tile="add-to-cart">{% trans "Add to Cart" %}</button>
 						</figure>
 						<figcaption>
-							<h3>Tips of simple lifestyle</h3>
-							<p>Bratt Smith</p>
+							<h3>{% trans "Tips of simple lifestyle" %}</h3>
+							<p>{% trans "Bratt Smith" %}</p>
 							<div class="item-price">$ 40.00</div>
 						</figcaption>
 					</div>
@@ -79,11 +80,11 @@
 					<div class="product-item">
 						<figure class="product-style">
 							<img src="{% static 'skin2/images/tab-item4.jpg' %}" alt="Books" class="product-item">
-							<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button>
+							<button type="button" class="add-to-cart" data-product-tile="add-to-cart">{% trans "Add to Cart" %}</button>
 						</figure>
 						<figcaption>
-							<h3>Just felt from outside</h3>
-							<p>Nicole Wilson</p>
+							<h3>{% trans "Just felt from outside" %}</h3>
+							<p>{% trans "Nicole Wilson" %}</p>
 							<div class="item-price">$ 40.00</div>
 						</figcaption>
 					</div>
@@ -93,11 +94,11 @@
 					<div class="product-item">
 						<figure class="product-style">
 							<img src="{% static 'skin2/images/tab-item5.jpg' %}" alt="Books" class="product-item">
-							<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button>
+							<button type="button" class="add-to-cart" data-product-tile="add-to-cart">{% trans "Add to Cart" %}</button>
 						</figure>
 						<figcaption>
-							<h3>Peaceful Enlightment</h3>
-							<p>Marmik Lama</p>
+							<h3>{% trans "Peaceful Enlightment" %}</h3>
+							<p>{% trans "Marmik Lama" %}</p>
 							<div class="item-price">$ 40.00</div>
 						</figcaption>
 					</div>
@@ -107,11 +108,11 @@
 					<div class="product-item">
 						<figure class="product-style">
 							<img src="{% static 'skin2/images/tab-item6.jpg' %}" alt="Books" class="product-item">
-							<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button>
+							<button type="button" class="add-to-cart" data-product-tile="add-to-cart">{% trans "Add to Cart" %}</button>
 						</figure>
 						<figcaption>
-							<h3>Great travel at desert</h3>
-							<p>Sanchit Howdy</p>
+							<h3>{% trans "Great travel at desert" %}</h3>
+							<p>{% trans "Sanchit Howdy" %}</p>
 							<div class="item-price">$ 40.00</div>
 						</figcaption>
 					</div>
@@ -121,11 +122,11 @@
 					<div class="product-item">
 						<figure class="product-style">
 							<img src="{% static 'skin2/images/tab-item7.jpg' %}" alt="Books" class="product-item">
-							<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button>
+							<button type="button" class="add-to-cart" data-product-tile="add-to-cart">{% trans "Add to Cart" %}</button>
 						</figure>
 						<figcaption>
-							<h3>Life among the pirates</h3>
-							<p>Armor Ramsey</p>
+							<h3>{% trans "Life among the pirates" %}</h3>
+							<p>{% trans "Armor Ramsey" %}</p>
 							<div class="item-price">$ 40.00</div>
 						</figcaption>
 					</div>
@@ -135,11 +136,11 @@
 					<div class="product-item">
 						<figure class="product-style">
 							<img src="{% static 'skin2/images/tab-item8.jpg' %}" alt="Books" class="product-item">
-							<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button>
+							<button type="button" class="add-to-cart" data-product-tile="add-to-cart">{% trans "Add to Cart" %}</button>
 						</figure>
 						<figcaption>
-							<h3>Simple way of piece life</h3>
-							<p>Armor Ramsey</p>
+							<h3>{% trans "Simple way of piece life" %}</h3>
+							<p>{% trans "Armor Ramsey" %}</p>
 							<div class="item-price">$ 40.00</div>
 						</figcaption>
 					</div>
