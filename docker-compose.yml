@@ -1,0 +1,19 @@
+#
+#start using: docker compose up -d
+#
+version: '3.8'
+
+services:
+  db:
+    image: postgres:18.3-alpine
+    container_name: alpine18-${POSTGRES_DATABASE_NAME}
+    restart: always
+    environment:
+      POSTGRES_DB: ${POSTGRES_DATABASE_NAME}
+      POSTGRES_USER: ${POSTGRES_DATABASE_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_DATABASE_USER_PASSWORD}
+      PGDATA: /var/lib/postgresql/data
+    ports:
+      - "${POSTGRES_DATABASE_PORT}:5432"
+    volumes:
+      - ./.ai_log/postgresql:/var/lib/postgresql/
