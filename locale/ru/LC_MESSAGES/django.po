@@ -6,7 +6,17 @@
 #, fuzzy
 msgid ""
 msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-01 20:28+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: bookshelf/models.py:154
 msgid "Author"
@@ -177,11 +187,11 @@ msgstr "Могу ли я забронировать книгу заранее п
 
 
 msgid "Do you host book clubs or author events at your bookstore?"
-msgstr "Вы проводите книжные клубы или авторские мероприятия в своем книжном магазине?"
+msgstr "Вы проводите книжные клубы или авторские мероприятия в своем книжном магазине? "
 
 
 msgid "You can follow us on our social platforms to get updates."
-msgstr "Вы можете следить за нами на наших социальных платформах, чтобы получать обновления."
+msgstr "Вы можете следить за нами на наших социальных платформах, чтобы получать обновления. "
 
 
 msgid "Reading for Mental Health: How Books Can Heal and Inspire"
@@ -581,7 +591,7 @@ msgstr "Воспользуйтесь своей возможностью"
 
 
 msgid "Shipping &amp; Return"
-msgstr "Доставка и усиление; Возвращаться"
+msgstr "Доставка &amp; Возврат товара"
 
 
 msgid "Images and Lightboxes"
@@ -1169,7 +1179,7 @@ msgstr "Модель (А - Я)"
 
 
 msgid "Less than $10"
-msgstr "Менее 10 долларов США"
+msgstr "Менее 10 долларов США"
 
 
 msgid "Related Items"
@@ -1413,7 +1423,7 @@ msgstr "Запомнить меня"
 
 
 msgid "Single Post"
-msgstr "Один пост"
+msgstr "Единичный пост"
 
 
 msgid "Your Name *"
@@ -1421,7 +1431,7 @@ msgstr "Ваше имя *"
 
 
 msgid "Post Single"
-msgstr "Опубликовать сингл"
+msgstr "Опубликовать один"
 
 
 msgid "Our Mission"
@@ -1445,7 +1455,7 @@ msgstr "Жизненный полет"
 
 
 msgid "Single-Post"
-msgstr "Одностоечный"
+msgstr "Публикация"
 
 
 msgid "Anna garcia"
@@ -1617,7 +1627,7 @@ msgstr "Дешевая книга"
 
 
 msgid "My account"
-msgstr "Мой счет"
+msgstr "Мой аккаунт"
 
 
 msgid "Go to shop"
@@ -2080,8 +2090,6 @@ msgid "Phones"
 msgstr "Телефоны"
 
 
-
-
 msgid "Stevin"
 msgstr "Стевин"
 
@@ -2361,3 +2369,14 @@ msgstr "Возраст"
 msgid "UK"
 msgstr "Великобритания"
 
+msgid "Main&nbsp;page"
+msgstr "Главная"
+
+msgid "About&nbsp;us"
+msgstr "О нас"
+
+msgid "Home &gt"
+msgstr "Главная &gt"
+
+msgid "Home /&gt"
+msgstr "Главная &gt"
