@@ -175,3 +175,14 @@ class BookContributor(models.Model):
     def __str__(self):
         return f"{self.contributor.name} - {self.role}"
 
+
+#class BookManager(models.Manager):
+#    def get_related(self, current_slug, count=4):
+#        return super().get_queryset()
+
+
+class Product(Book):
+#   objects = BookManager()
+    class Meta:
+        verbose_name = _('Продукт')
+        verbose_name_plural = _('Продукты')

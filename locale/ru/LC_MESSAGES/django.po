@@ -123,7 +123,7 @@ msgstr "Теперь будем жить легко, как дверь к две
 
 
 msgid "Vitae tortor condimentum lacinia quis vel eros donec ac. Nam at lectus urna duis convallis convallis"
-msgstr "Жизненный мучительный соус lacinia quis or eros до ac. Ибо у дна урны двух долин"
+msgstr "Жизни изгиб приправы нужен тем, кто хочет, пока не наступит конец. Ведь в ложе чтения города — это долины сменяющих друг друга событий"
 
 
 msgid "Please send a check to Store Name, Store Street, Store Town, Store State / County, Store Postcode."
@@ -1935,7 +1935,7 @@ msgstr "Магазин 2"
 
 
 msgid "Account"
-msgstr "Счет"
+msgstr "Аккаунт"
 
 
 msgid "Success"
@@ -2380,3 +2380,6 @@ msgstr "Главная &gt"
 
 msgid "Home /&gt"
 msgstr "Главная &gt"
+
+msgid "Home&nbsp;"
+msgstr "Главная"

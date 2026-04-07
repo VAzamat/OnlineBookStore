@@ -14,4 +14,4 @@ if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 admin.AdminSite.site_header = 'Моя админка'
-admin.AdminSite.index_title = 'Главная страница настройки администрования приложения'
+admin.AdminSite.index_title = 'Главная страница настройки администрирования приложения'

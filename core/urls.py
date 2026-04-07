@@ -4,12 +4,13 @@ from core.views import contacts, about_us, cart, my_account, checkout, classes, 
 from core.views import pricing, wishlist, faqs, author, styles, thanks, comming_soon, error_page, order_tracking
 from core.apps import CoreConfig
 
+
 app_name = CoreConfig.name
 
 urlpatterns = [
     path("", index, name='index'),
     path("shop.html", shop, name='shop'),
-    path("single_product.html", single_product, name='single_product'),
+    path("book/<slug:product_slug>/", single_product, name='single_product'),
     path("blog.html", blog, name='blog'),
     path("blog_with_sidebar.html", blog_with_sidebar, name='blog_with_sidebar'),
     path("single_post.html", blog_single_post, name='single_post'),

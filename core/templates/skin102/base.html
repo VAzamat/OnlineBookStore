@@ -54,7 +54,7 @@
 					<div class="col-md-6">
 						<div class="right-element">
 							<a href="{% url 'core:index' %}#" class="user-account for-buy"><i class="icon icon-user"></i><span>{% trans "Account" %}</span></a>
-							<a href="{% url 'core:index' %}#" class="cart for-buy"><i class="icon icon-clipboard"></i><span>Cart:(0
+							<a href="{% url 'core:index' %}#" class="cart for-buy"><i class="icon icon-clipboard"></i><span>{% trans  "Cart" %}:(0
 									$)</span></a>
 
 							<div class="action-menu">
@@ -92,18 +92,18 @@
 						<nav id="navbar">
 							<div class="main-menu stellarnav desktop"><a href="{% url 'core:index' %}#" class="menu-toggle full"><span class="bars"><span></span><span></span><span></span></span> Menu</a>
 								<ul class="menu-list">
-									<li class="menu-item active"><a href="{% url 'core:index' %}#home">{% trans "Home &gt" %}</a></li>
+									<li class="menu-item active"><a href="{% url 'core:index' %}#home">{% trans "Home&nbsp;" %}</a></li>
 									<li class="menu-item has-sub">
 										<a href="{% url 'core:index' %}#pages" class="nav-link">{% trans "Pages" %}</a>
 
 										<ul>
-											<li class="active"><a href="{% url 'core:index' %}">{% trans "Home &gt" %}</a></li>
+											<li class="active"><a href="{% url 'core:index' %}">{% trans "Home&nbsp;" %}</a></li>
 											<li><a href="{% url 'core:about_us' %}">{% trans "About&nbsp;us" %}</a></li>
 											<li><a href="{% url 'core:styles' %}">Styles </a></li>
 											<li><a href="{% url 'core:blog' %}">Blog </a></li>
 											<li><a href="{% url 'core:single_post' %}">Post Single </a></li>
 											<li><a href="{% url 'core:shop' %}">Our Store </a></li>
-											<li><a href="{% url 'core:single_product' %}">Product Single </a></li>
+											<li><a href="{% url 'core:single_product' '10864637moi-muzhchinyi-sbornik' %}">Product Single </a></li>
 											<li><a href="{% url 'core:contacts' %}">Contact </a></li>
 											<li><a href="{% url 'core:thanks' %}">Thank You </a></li>
 										</ul>

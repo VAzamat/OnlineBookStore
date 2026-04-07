@@ -1,7 +1,11 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.conf import settings
 
+from bookshelf.models import Product, Book
+
 used_skin = settings.USED_SKIN
+
+
 
 # Create your views here.
 def home(request):
@@ -13,8 +17,14 @@ def index(request):
 def shop(request):
     return render(request, f'{used_skin}/shop.html')
 
-def single_product(request):
-    return render(request, f'{used_skin}/single_product.html')
+def single_product(request, product_slug):
+    # Ищем товар по полю slug, которое мы заполнили через pytils
+    product = get_object_or_404(Book, slug=product_slug)
+    related_products = product
+    return render(request, f'{used_skin}/single_product.html',
+    {'product': product, 'products_related': related_products }
+    )
+
 
 def blog(request):
     return render(request, f'{used_skin}/blog.html')
