@@ -855,7 +855,7 @@ msgstr "Шепот ветров"
 
 
 msgid "Books with offer"
-msgstr "Книги с предложением"
+msgstr "Книги со скидкой"
 
 
 msgid "Latest to oldest"

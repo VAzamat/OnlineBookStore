@@ -193,11 +193,18 @@ class BookManager(models.Manager):
         Возвращает самые популярные книги на основе рейтинга и количества оценок.
         """
         return self.get_queryset().filter(
+            is_draft=False,
             availability=True
         ).order_by('-rating__rated_total_count', '-rating__rated_avg')[:max_count]
-        #).order_by('-livelib_rated_count', '-livelib_rated_avg')[:max_count]
 
-
+    def get_new_arrivals(self, max_count=4):
+        """
+        Возвращает недавно опубликованные и доступные книги.
+        """
+        return self.get_queryset().filter(
+            is_draft=False,
+            availability=True
+        ).order_by('-publication_date')[:max_count]
 
 class Product(Book):
     objects = BookManager()

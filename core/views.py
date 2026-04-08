@@ -13,9 +13,13 @@ def home(request):
 
 def index(request):
     products_best_selling = Product.objects.get_best_sellers(max_count=10)
+    product_new_arrivals = Product.objects.get_new_arrivals(max_count=4)
+    product_recommendations = Product.objects.get_random_featured(max_count=4)
 
     return render(request, f'{used_skin}/index.html',
-                  {'products_best_selling': products_best_selling}
+                  {'products_best_selling': products_best_selling,
+                   'product_new_arrivals': product_new_arrivals,
+                   'product_recommendations': product_recommendations}
                   )
 
 
