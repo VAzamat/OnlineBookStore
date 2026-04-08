@@ -2387,3 +2387,14 @@ msgstr "Главная"
 msgid "Links"
 msgstr "Ссылки"
 
+msgid "on the BiblioRhythm"
+msgstr "на БиблиоПульсе"
+
+msgid "BiblioRhythm"
+msgstr "на БиблиоПульсе"
+
+
+msgid "When reading is no longer just a hobby, but the vital rhythm of your soul"
+msgstr "Когда чтение становится не просто хобби, а жизненно важным ритмом твоей души"
+
+
