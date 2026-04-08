@@ -21,21 +21,19 @@ style="width: 264px; margin-right: 20px;" role="group" aria-label="{{num_iter}} 
       </p>
 
       <div class="rating text-warning d-flex align-items-center">
-        <svg class="star star-fill">
-          <use xlink:href="#star-fill"></use>
-        </svg>
-        <svg class="star star-fill">
-          <use xlink:href="#star-fill"></use>
-        </svg>
-        <svg class="star star-fill">
-          <use xlink:href="#star-fill"></use>
-        </svg>
-        <svg class="star star-fill">
-          <use xlink:href="#star-fill"></use>
-        </svg>
-        <svg class="star star-fill">
-          <use xlink:href="#star-fill"></use>
-        </svg>
+        {% for i in "12345" %}
+           {% if entry.rating.rated_avg >= forloop.counter %}
+              {# Заполненная звезда #}
+              <svg class="star star-fill">
+                <use xlink:href="#star-fill"></use>
+              </svg>
+           {% else %}
+              {# незаполненная звезда #}
+              <svg class="star star-empty">
+                <use xlink:href="#star-empty"></use>
+              </svg>
+           {% endif %}
+        {% endfor %}
       </div>
     </div>
 
