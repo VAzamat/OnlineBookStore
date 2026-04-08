@@ -1,5 +1,6 @@
 from types import NoneType
 
+from pygments.lexer import default
 from pytils.translit import slugify
 from django.core.management import BaseCommand
 from bookshelf.models import Publisher, Copyrighter, Rightholder, Genre, Rating
@@ -139,6 +140,8 @@ class Command(BaseCommand):
                     'isbn': library_data.get('isbn',''),
                     'publication_date': library_data['publication_date'],
                     'contents_url': library_data['contents_url'],
+                    'is_bestseller': library_data.get('is_bestseller', False),
+                    'is_sales_hit': library_data.get('is_sales_hit', False),
 
                     'rating': rating,
                     'publisher': publisher,

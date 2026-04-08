@@ -129,6 +129,8 @@ class Book(models.Model):
     last_released_at = models.DateTimeField(verbose_name="Дата последнего релиза")
     availability = models.BooleanField(default=False, verbose_name="Доступность")
     available_from = models.DateTimeField(verbose_name="Доступна с")
+    is_bestseller = models.BooleanField(default=False, verbose_name="Бестселлер ли?")
+    is_sales_hit = models.BooleanField(default=False, verbose_name="Хорошо продаваема?")
 
     rating = models.ForeignKey(Rating, on_delete=models.CASCADE, related_name="books", verbose_name="Рейтинг")
 
@@ -194,6 +196,7 @@ class BookManager(models.Manager):
         """
         return self.get_queryset().filter(
             is_draft=False,
+            is_bestseller=True,
             availability=True
         ).order_by('-rating__rated_total_count', '-rating__rated_avg')[:max_count]
 
@@ -205,6 +208,7 @@ class BookManager(models.Manager):
             is_draft=False,
             availability=True
         ).order_by('-publication_date')[:max_count]
+
 
 class Product(Book):
     objects = BookManager()
