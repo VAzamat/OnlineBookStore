@@ -2409,3 +2409,5 @@ msgstr "О продукте"
 msgid "&nbsp;Let your soul read and your heart listen. Uncover key answers through the wisdom of books."
 msgstr "&nbsp;Читай душой, слушай сердцем. Найди ответы на главные вопросы в мудрости книг."
 
+msgid "Bestsellers"
+msgstr "Книги-бестселлеры"

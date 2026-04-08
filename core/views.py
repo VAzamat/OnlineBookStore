@@ -12,14 +12,25 @@ def home(request):
     return render(request, 'test_home.html')
 
 def index(request):
-    products_best_selling = Product.objects.get_best_sellers(max_count=10)
+    products_best_selling = Product.objects.get_best_sellers(max_count=4)
     product_new_arrivals = Product.objects.get_new_arrivals(max_count=4)
     product_recommendations = Product.objects.get_random_featured(max_count=4)
+    product_best_reviews = Product.objects.get_best_reviews(max_count=4)
+
+    product_hit_of_sales = Product.objects.get_hit_of_sales(max_count=10)
+    print("here",products_best_selling.count())
+    if products_best_selling.count()==0:
+        products_best_selling = Product.objects.get_hit_of_sales(max_count=4)
+
 
     return render(request, f'{used_skin}/index.html',
-                  {'products_best_selling': products_best_selling,
+                  {
+                   'products_best_selling': products_best_selling,
                    'product_new_arrivals': product_new_arrivals,
-                   'product_recommendations': product_recommendations}
+                   'product_recommendations': product_recommendations,
+                   'product_best_reviews': product_best_reviews,
+                   'product_hit_of_sales': product_hit_of_sales
+                   }
                   )
 
 

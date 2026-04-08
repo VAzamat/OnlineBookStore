@@ -163,8 +163,8 @@
         </div>
         <div class="swiper product-swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
           <div class="swiper-wrapper" id="swiper-wrapper-c36103c10bb23e58c7" aria-live="polite">
-            {% for entry in products_best_selling %}
-              {% include "skin6/cards/related_card.html" with entry=entry num_iter=forloop.counter num_max=products_best_selling|length %}
+            {% for entry in product_hit_of_sales %}
+              {% include "skin6/cards/related_card.html" with entry=entry num_iter=forloop.counter num_max=product_hit_of_sales|length %}
             {% endfor %}
 
           </div>
@@ -251,184 +251,27 @@
                 <h3 class="d-flex flex-column mb-0">{% trans "Best reviewed" %}</h3>
               </div>
               <div class="items-lists">
-                <div class="item d-flex">
-                  <img src="{% static 'skin6/images/product-item7.png' %}" class="img-fluid shadow-sm" alt="product item">
-                  <div class="item-content ms-3">
-                    <h6 class="mb-0 fw-bold"><a href="{% url 'core:single_product' '10864637moi-muzhchinyi-sbornik' %}">{% trans "The Crystal Key" %}</a></h6>
-                    <div class="review-content d-flex">
-                      <p class="my-2 me-2 fs-6 text-black-50">{% trans "Lauren Asher" %}</p>
-                      <div class="rating text-warning d-flex align-items-center">
-                        <svg class="star star-fill">
-                          <use xlink:href="#star-fill"></use>
-                        </svg>
-                        <svg class="star star-fill">
-                          <use xlink:href="#star-fill"></use>
-                        </svg>
-                        <svg class="star star-fill">
-                          <use xlink:href="#star-fill"></use>
-                        </svg>
-                        <svg class="star star-fill">
-                          <use xlink:href="#star-fill"></use>
-                        </svg>
-                        <svg class="star star-fill">
-                          <use xlink:href="#star-fill"></use>
-                        </svg>
-                      </div>
-                    </div>
-                    <span class="price text-primary fw-bold mb-2 fs-5">$870</span>
-                  </div>
-                </div>
-                <hr class="gray-400">
-                <div class="item d-flex">
-                  <img src="{% static 'skin6/images/product-item8.png' %}" class="img-fluid shadow-sm" alt="product item">
-                  <div class="item-content ms-3">
-                    <h6 class="mb-0 fw-bold"><a href="{% url 'core:single_product' '10864637moi-muzhchinyi-sbornik' %}">{% trans "Starlight Sonata" %}</a></h6>
-                    <div class="review-content d-flex">
-                      <p class="my-2 me-2 fs-6 text-black-50">{% trans "Lauren Asher" %}</p>
-                      <div class="rating text-warning d-flex align-items-center">
-                        <svg class="star star-fill">
-                          <use xlink:href="#star-fill"></use>
-                        </svg>
-                        <svg class="star star-fill">
-                          <use xlink:href="#star-fill"></use>
-                        </svg>
-                        <svg class="star star-fill">
-                          <use xlink:href="#star-fill"></use>
-                        </svg>
-                        <svg class="star star-fill">
-                          <use xlink:href="#star-fill"></use>
-                        </svg>
-                        <svg class="star star-fill">
-                          <use xlink:href="#star-fill"></use>
-                        </svg>
-                      </div>
-                    </div>
-                    <span class="price text-primary fw-bold mb-2 fs-5">$870</span>
-                  </div>
-                </div>
-                <hr>
-                <div class="item d-flex">
-                  <img src="{% static 'skin6/images/product-item9.png' %}" class="img-fluid shadow-sm" alt="product item">
-                  <div class="item-content ms-3">
-                    <h6 class="mb-0 fw-bold"><a href="{% url 'core:single_product' '10864637moi-muzhchinyi-sbornik' %}">{% trans "Tales of the Enchanted Forest" %}</a></h6>
-                    <div class="review-content d-flex">
-                      <p class="my-2 me-2 fs-6 text-black-50">{% trans "Lauren Asher" %}</p>
-                      <div class="rating text-warning d-flex align-items-center">
-                        <svg class="star star-fill">
-                          <use xlink:href="#star-fill"></use>
-                        </svg>
-                        <svg class="star star-fill">
-                          <use xlink:href="#star-fill"></use>
-                        </svg>
-                        <svg class="star star-fill">
-                          <use xlink:href="#star-fill"></use>
-                        </svg>
-                        <svg class="star star-fill">
-                          <use xlink:href="#star-fill"></use>
-                        </svg>
-                        <svg class="star star-fill">
-                          <use xlink:href="#star-fill"></use>
-                        </svg>
-                      </div>
-                    </div>
-                    <span class="price text-primary fw-bold mb-2 fs-5">$870</span>
-                  </div>
-                </div>
+                {% for entry in product_best_reviews %}
+                    {% include "skin6/cards/listing_card.html" with entry=entry %}
+                    {% if not forloop.last %}
+                      <hr class="gray-400">
+                    {% endif %}
+                {% endfor %}
               </div>
             </div>
           </div>
           <div class="col-md-6 mb-4 mb-lg-0 col-lg-3">
             <div class="on-sale border rounded-3 p-4">
               <div class="section-title overflow-hidden mb-5 mt-2">
-                <h3 class="d-flex flex-column mb-0">{% trans "On sale" %}</h3>
+                <h3 class="d-flex flex-column mb-0">{% trans "Bestsellers" %}</h3>
               </div>
               <div class="items-lists">
-                <div class="item d-flex">
-                  <img src="{% static 'skin6/images/product-item10.png' %}" class="img-fluid shadow-sm" alt="product item">
-                  <div class="item-content ms-3">
-                    <h6 class="mb-0 fw-bold"><a href="{% url 'core:single_product' '10864637moi-muzhchinyi-sbornik' %}">{% trans "The Phoenix Chronicles" %}</a></h6>
-                    <div class="review-content d-flex">
-                      <p class="my-2 me-2 fs-6 text-black-50">{% trans "Lauren Asher" %}</p>
-                      <div class="rating text-warning d-flex align-items-center">
-                        <svg class="star star-fill">
-                          <use xlink:href="#star-fill"></use>
-                        </svg>
-                        <svg class="star star-fill">
-                          <use xlink:href="#star-fill"></use>
-                        </svg>
-                        <svg class="star star-fill">
-                          <use xlink:href="#star-fill"></use>
-                        </svg>
-                        <svg class="star star-fill">
-                          <use xlink:href="#star-fill"></use>
-                        </svg>
-                        <svg class="star star-fill">
-                          <use xlink:href="#star-fill"></use>
-                        </svg>
-                      </div>
-                    </div>
-                    <span class="price text-primary fw-bold mb-2 fs-5"><s class="text-black-50">$1666</s>
-                      $999</span>
-                  </div>
-                </div>
-                <hr class="gray-400">
-                <div class="item d-flex">
-                  <img src="{% static 'skin6/images/product-item11.png' %}" class="img-fluid shadow-sm" alt="product item">
-                  <div class="item-content ms-3">
-                    <h6 class="mb-0 fw-bold"><a href="{% url 'core:single_product' '10864637moi-muzhchinyi-sbornik' %}">{% trans "Dreams of Avalon" %}</a></h6>
-                    <div class="review-content d-flex">
-                      <p class="my-2 me-2 fs-6 text-black-50">{% trans "Lauren Asher" %}</p>
-                      <div class="rating text-warning d-flex align-items-center">
-                        <svg class="star star-fill">
-                          <use xlink:href="#star-fill"></use>
-                        </svg>
-                        <svg class="star star-fill">
-                          <use xlink:href="#star-fill"></use>
-                        </svg>
-                        <svg class="star star-fill">
-                          <use xlink:href="#star-fill"></use>
-                        </svg>
-                        <svg class="star star-fill">
-                          <use xlink:href="#star-fill"></use>
-                        </svg>
-                        <svg class="star star-fill">
-                          <use xlink:href="#star-fill"></use>
-                        </svg>
-                      </div>
-                    </div>
-                    <span class="price text-primary fw-bold mb-2 fs-5"><s class="text-black-50">$500</s>
-                      $410</span>
-                  </div>
-                </div>
-                <hr>
-                <div class="item d-flex">
-                  <img src="{% static 'skin6/images/product-item12.png' %}" class="img-fluid shadow-sm" alt="product item">
-                  <div class="item-content ms-3">
-                    <h6 class="mb-0 fw-bold"><a href="{% url 'core:single_product' '10864637moi-muzhchinyi-sbornik' %}">{% trans "Legends of the Dragon Isles" %}</a></h6>
-                    <div class="review-content d-flex">
-                      <p class="my-2 me-2 fs-6 text-black-50">{% trans "Lauren Asher" %}</p>
-                      <div class="rating text-warning d-flex align-items-center">
-                        <svg class="star star-fill">
-                          <use xlink:href="#star-fill"></use>
-                        </svg>
-                        <svg class="star star-fill">
-                          <use xlink:href="#star-fill"></use>
-                        </svg>
-                        <svg class="star star-fill">
-                          <use xlink:href="#star-fill"></use>
-                        </svg>
-                        <svg class="star star-fill">
-                          <use xlink:href="#star-fill"></use>
-                        </svg>
-                        <svg class="star star-fill">
-                          <use xlink:href="#star-fill"></use>
-                        </svg>
-                      </div>
-                    </div>
-                    <span class="price text-primary fw-bold mb-2 fs-5"><s class="text-black-50">$600</s>
-                      $500</span>
-                  </div>
-                </div>
+                {% for entry in products_best_selling %}
+                    {% include "skin6/cards/listing_card.html" with entry=entry %}
+                    {% if not forloop.last %}
+                      <hr class="gray-400">
+                    {% endif %}
+                {% endfor %}
               </div>
             </div>
           </div>

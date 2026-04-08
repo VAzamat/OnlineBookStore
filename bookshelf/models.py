@@ -192,13 +192,12 @@ class BookManager(models.Manager):
 
     def get_best_sellers(self, max_count=4):
         """
-        Возвращает самые популярные книги на основе рейтинга и количества оценок.
+        Возвращает книги-бестселлеры на основе флага
         """
         return self.get_queryset().filter(
             is_draft=False,
-            is_bestseller=True,
-            availability=True
-        ).order_by('-rating__rated_total_count', '-rating__rated_avg')[:max_count]
+            is_bestseller=True
+        ).order_by('?')[:max_count]
 
     def get_new_arrivals(self, max_count=4):
         """
@@ -208,6 +207,23 @@ class BookManager(models.Manager):
             is_draft=False,
             availability=True
         ).order_by('-publication_date')[:max_count]
+
+    def get_best_reviews(self, max_count=4):
+        """
+        Возвращает самые хорошо оцененные книги на основе рейтинга и количества оценок.
+        """
+        return self.get_queryset().filter(
+            is_draft=False,
+            availability=True
+        ).order_by('-rating__rated_total_count', '-rating__rated_avg')[:max_count]
+
+    def get_hit_of_sales(self, max_count=4):
+        """
+        Возвращает самые хорошо продаваемые книги на основе флага
+        """
+        return self.get_queryset().filter(
+            is_sales_hit=True
+        ).order_by('?')[:max_count]
 
 
 class Product(Book):
