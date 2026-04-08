@@ -14,7 +14,7 @@
   <link rel="icon" type="image/svg+xml" href="{% static 'common/images/favicon.svg' %}">
 {% block titlekeywords %}
     <meta name="keywords" content="">
-    <title>{% trans "Digital Book Sales" %}</title>
+    <title>{% trans "MediaLibrary Vibrant Word" %}</title>
 {% endblock %}
   <link rel="stylesheet" type="text/css" href="{% static 'skin6/css/bootstrap.min.css' %}">
   <link rel="stylesheet" type="text/css" href="{% static 'skin6/css/style.css' %}">
@@ -229,7 +229,7 @@
                       <a href="{% url 'core:shop' %}" class="dropdown-item fw-light">{% trans "Shop" %}</a>
                     </li>
                     <li>
-                      <a href="{% url 'core:single_product' %}" class="dropdown-item fw-light">{% trans "Single Product" %}</a>
+                      <a href="{% url 'core:single_product' '10864637moi-muzhchinyi-sbornik' %}" class="dropdown-item fw-light">{% trans "Single Product" %}</a>
                     </li>
                     <li>
                       <a href="{% url 'core:cart' %}" class="dropdown-item fw-light">{% trans "Cart" %}</a>
@@ -337,7 +337,7 @@
                         <li class="list-group-item bg-transparent d-flex justify-content-between lh-sm">
                           <div>
                             <h5>
-                              <a href="{% url 'core:single_product' %}">{% trans "The Emerald Crown" %}</a>
+                              <a href="{% url 'core:single_product' '10864637moi-muzhchinyi-sbornik' %}">{% trans "The Emerald Crown" %}</a>
                             </h5>
                             <small>{% trans "Special discounted price." %}</small>
                             <a href="#" class="d-block fw-medium text-capitalize mt-2">{% trans "Add to cart" %}</a>
@@ -347,7 +347,7 @@
                         <li class="list-group-item bg-transparent d-flex justify-content-between lh-sm">
                           <div>
                             <h5>
-                              <a href="{% url 'core:single_product' %}">{% trans "The Last Enchantment" %}</a>
+                              <a href="{% url 'core:single_product' '10864637moi-muzhchinyi-sbornik' %}">{% trans "The Last Enchantment" %}</a>
                             </h5>
                             <small>{% trans "Perfect for enlightened people." %}</small>
                             <a href="#" class="d-block fw-medium text-capitalize mt-2">{% trans "Add to cart" %}</a>
@@ -380,7 +380,7 @@
                         <li class="list-group-item bg-transparent d-flex justify-content-between lh-sm">
                           <div>
                             <h5>
-                              <a href="{% url 'core:single_product' %}">{% trans "Secrets of the Alchemist" %}</a>
+                              <a href="{% url 'core:single_product' '10864637moi-muzhchinyi-sbornik' %}">{% trans "Secrets of the Alchemist" %}</a>
                             </h5>
                             <small>{% trans "High quality in good price." %}</small>
                           </div>
@@ -389,7 +389,7 @@
                         <li class="list-group-item bg-transparent d-flex justify-content-between lh-sm">
                           <div>
                             <h5>
-                              <a href="{% url 'core:single_product' %}">{% trans "Quest for the Lost City" %}</a>
+                              <a href="{% url 'core:single_product' '10864637moi-muzhchinyi-sbornik' %}">{% trans "Quest for the Lost City" %}</a>
                             </h5>
                             <small>{% trans "Professional Quest for the Lost City." %}</small>
                           </div>
@@ -509,8 +509,9 @@
               <div class="col-lg-3 col-sm-6 pb-3">
                 <div class="footer-menu">
                   <img src="{% static 'skin6/images/main-logo.png' %}" alt="logo" class="img-fluid mb-2">
-                  <p>Nisi, purus vitae, ultrices nunc. Sit ac sit suscipit hendrerit. Gravida massa volutpat aenean odio
-                    erat nullam fringilla.</p>
+                  <p>
+                    {% trans "&nbsp;Let your soul read and your heart listen. Uncover key answers through the wisdom of books." %}
+                  </p>
                   <div class="social-links">
                     <ul class="d-flex list-unstyled">
                       <li>

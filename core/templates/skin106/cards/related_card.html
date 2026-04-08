@@ -1,0 +1,61 @@
+<div
+{% if num_iter == 1 %} class="swiper-slide swiper-slide-active" {% else %} class="swiper-slide swiper-slide-next" {% endif %}
+style="width: 264px; margin-right: 20px;" role="group" aria-label="{{num_iter}} / {{num_max}}">
+  <div class="card position-relative p-4 border rounded-3">
+    <div class="position-absolute">
+      <p class="bg-primary py-1 px-3 fs-6 text-white rounded-2">10% off</p>
+    </div>
+    <img src="/{{entry.cover_url}}" class="img-fluid shadow-sm" alt="product item">
+    <h6 class="mt-4 mb-0 fw-bold">
+      <a href="{% url 'core:single_product' entry.slug %}">
+        {{entry.title}}
+       </a>
+    </h6>
+    <div class="review-content d-flex">
+      <p class="my-2 me-2 fs-6 text-black-50">
+        {% for entry in product.bookcontributor_set.all %}
+            {% if entry.role == 'author' %}
+            <a href="{% url 'core:author' %}">{{entry.contributor.full_name}}</a>
+            {% endif %}
+        {% endfor %}
+      </p>
+
+      <div class="rating text-warning d-flex align-items-center">
+        <svg class="star star-fill">
+          <use xlink:href="#star-fill"></use>
+        </svg>
+        <svg class="star star-fill">
+          <use xlink:href="#star-fill"></use>
+        </svg>
+        <svg class="star star-fill">
+          <use xlink:href="#star-fill"></use>
+        </svg>
+        <svg class="star star-fill">
+          <use xlink:href="#star-fill"></use>
+        </svg>
+        <svg class="star star-fill">
+          <use xlink:href="#star-fill"></use>
+        </svg>
+      </div>
+    </div>
+
+        <span class="price text-primary fw-bold mb-2 fs-5"> {{product.prices}} руб. </span>
+        <div class="card-concern position-absolute start-0 end-0 d-flex gap-2">
+      <button type="button" href="#" class="btn btn-dark" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top">
+        <svg class="cart">
+          <use xlink:href="#cart"></use>
+        </svg>
+      </button>
+      <a href="#" class="btn btn-dark">
+        <span>
+          <svg class="wishlist">
+            <use xlink:href="#heart"></use>
+          </svg>
+        </span>
+      </a>
+
+    </div>
+
+
+  </div>
+</div>

@@ -2393,8 +2393,19 @@ msgstr "на БиблиоПульсе"
 msgid "BiblioRhythm"
 msgstr "на БиблиоПульсе"
 
+msgid "MediaLibrary Vibrant Word"
+msgstr "Медиатека Живое Слово"
+
+msgid "on MediaLibrary"
+msgstr "на Медиотеке"
 
 msgid "When reading is no longer just a hobby, but the vital rhythm of your soul"
 msgstr "Когда чтение становится не просто хобби, а жизненно важным ритмом твоей души"
 
+
+msgid "About product"
+msgstr "О продукте"
+
+msgid "&nbsp;Let your soul read and your heart listen. Uncover key answers through the wisdom of books."
+msgstr "&nbsp;Читай душой, слушай сердцем. Найди ответы на главные вопросы в мудрости книг."
 

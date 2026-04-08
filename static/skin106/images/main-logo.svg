@@ -1,0 +1,8 @@
+<svg width="350" height="80" viewBox="0 0 200 100"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect width="350" height="80" fill="none"/>
+  <g text-anchor="start">
+    <text x="12" y="20" fill="#7F8C8D" font-family="DejaVu Sans" font-size="16" font-weight="900" letter-spacing="5">МЕДИАТЕКА</text>
+    <text x="10" y="62" fill="#E67E22" font-family="Pacifico" font-size="32">Живое слово</text>
+  </g>
+  <path d="M10 72 Q 100 78, 210 70" stroke="#E67E22" stroke-width="0.8" fill="none" opacity="0.4"/>
+</svg>

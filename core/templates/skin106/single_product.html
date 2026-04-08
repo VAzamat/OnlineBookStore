@@ -6,7 +6,7 @@
 
 {% block titlekeywords %}
     <meta name="keywords" content="о компании Digital Book Sales, купить книги со скидкой, корзина заказов, магазин литературы, оплата книг онлайн, библиотека книг, поиск книг по автору.">
-    <title>{% trans "Digital Book Sales" %}</title>
+    <title>{{product.title}} {% trans "on MediaLibrary" %}</title>
 {% endblock %}
 
 {% block customstyle %}
@@ -21,12 +21,12 @@
         <div class="container">
           <div class="row">
             <div class="text-center">
-              <h1>{% trans "Single-Product" %}</h1>
+              <h1>{{product.title}}</h1>
               <div class="breadcrumbs">
                 <span class="item">
                   <a href="{% url 'core:index' %}">{% trans "Home &gt;" %} </a>
                 </span>
-                <span class="item text-decoration-underline">{% trans "Single-Product" %}</span>
+                <span class="item text-decoration-underline">{% trans "About product" %}</span>
               </div>
             </div>
           </div>
@@ -42,27 +42,25 @@
               <div class="swiper thumb-swiper w-50 swiper-initialized swiper-horizontal swiper-backface-hidden swiper-thumbs">
                 <div class="swiper-wrapper d-flex flex-wrap gap-3 align-content-start" id="swiper-wrapper-8ab46225ef674f110" aria-live="polite" style="transform: translate3d(0px, 0px, 0px);">
                   <div class="swiper-slide bg-white swiper-slide-active swiper-slide-visible swiper-slide-fully-visible swiper-slide-thumb-active" style="width: 91px;" role="group" aria-label="1 / 3">
-                    <img src="{% static 'skin6/images/product-thumbnail-1.png' %}" alt="product-thumb" class="img-fluid border rounded-3">
+                    <img src="/{{product.cover_url}}" alt="product-thumb" class="img-fluid border rounded-3">
                   </div>
+{% for entry in products_related %}
                   <div class="swiper-slide bg-white swiper-slide-next swiper-slide-visible swiper-slide-fully-visible" style="width: 91px;" role="group" aria-label="2 / 3">
-                    <img src="{% static 'skin6/images/product-thumbnail-2.png' %}" alt="product-thumb" class="img-fluid border rounded-3">
+                    <img src="/{{entry.cover_url}}" alt="product-thumb" class="img-fluid border rounded-3">
                   </div>
-                  <div class="swiper-slide bg-white swiper-slide-visible swiper-slide-fully-visible" style="width: 91px;" role="group" aria-label="3 / 3">
-                    <img src="{% static 'skin6/images/product-thumbnail-3.png' %}" alt="product-thumb" class="img-fluid border rounded-3">
-                  </div>
+{% endfor %}
                 </div>
               <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
               <div class="swiper large-swiper border rounded-3 overflow-hidden swiper-fade swiper-initialized swiper-horizontal swiper-watch-progress swiper-backface-hidden">
                 <div class="swiper-wrapper" id="swiper-wrapper-b3d7a3dc7444c99e" aria-live="polite">
                   <div class="swiper-slide bg-white swiper-slide-active swiper-slide-visible swiper-slide-fully-visible" role="group" aria-label="1 / 3" style="transform: translate3d(0px, 0px, 0px); width: 437px; opacity: 1;">
-                    <img src="{% static 'skin6/images/product-large-1.png' %}" alt="single-product" class="img-fluid">
+                    <img src="/{{product.cover_url}}" alt="single-product" class="img-fluid">
                   </div>
+ {% for entry in products_related %}
                   <div class="swiper-slide bg-white swiper-slide-next" role="group" aria-label="2 / 3" style="transform: translate3d(-437px, 0px, 0px); width: 437px; opacity: 0;">
-                    <img src="{% static 'skin6/images/product-large-2.png' %}" alt="single-product" class="img-fluid">
+                    <img src="/{{entry.cover_url}}" alt="single-product" class="img-fluid">
                   </div>
-                  <div class="swiper-slide bg-white" role="group" aria-label="3 / 3" style="transform: translate3d(-874px, 0px, 0px); width: 437px; opacity: 0;">
-                    <img src="{% static 'skin6/images/product-large-3.png' %}" alt="single-product" class="img-fluid">
-                  </div>
+{% endfor %}
                 </div>
               <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
             </div>
@@ -70,10 +68,10 @@
           <div class="col-lg-6">
             <div class="product-info ps-lg-5 pt-3 pt-lg-0">
               <div class="element-header">
-                <h1 class="product-title">{% trans "The Emerald Crown" %}</h1>
+                <h1 class="product-title">{{product.title}}</h1>
                 <div class="product-price d-flex align-items-center mt-2">
-                  <span class="fs-2 fw-light text-primary me-2">$200</span>
-                  <del>$260</del>
+                  <span class="fs-2 fw-light text-primary me-2">{{product.prices}} руб.</span>
+                  <del>{{product.prices}} руб.</del>
                 </div>
                 <div class="rating text-warning d-flex align-items-center mb-2">
                   <svg class="star star-fill">
@@ -93,63 +91,11 @@
                   </svg>
                 </div>
               </div>
-              <p>Justo, cum feugiat imperdiet nulla molestie ac
-vulputate scelerisque amet. Bibendum adipiscing platea blandit sit sed
-quam semper rhoncus.</p>
+              <p>{{product.html_annotation|truncatechars_html:300|safe}}</p>
               <hr>
               <div class="cart-wrap">
-                <div class="color-options product-select my-3">
-                  <div class="color-toggle" data-option-index="0">
-                    <h4 class="item-title text-decoration-underline text-capitalize">{% trans "Color" %}</h4>
-                    <ul class="select-list list-unstyled d-flex mb-0">
-                      <li class="select-item me-3" data-val="Green" title="Green">
-                        <a href="#">{% trans "Gray" %}</a>
-                      </li>
-                      <li class="select-item me-3" data-val="Orange" title="Orange">
-                        <a href="#">{% trans "Blue" %}</a>
-                      </li>
-                      <li class="select-item me-3" data-val="Red" title="Red">
-                        <a href="#">{% trans "White" %}</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="swatch product-select" data-option-index="1">
-                  <h4 class="item-title text-decoration-underline text-capitalize">{% trans "Size" %}</h4>
-                  <ul class="select-list list-unstyled d-flex mb-0">
-                    <li data-value="S" class="select-item me-3">
-                      <a href="#">S</a>
-                    </li>
-                    <li data-value="M" class="select-item me-3">
-                      <a href="#">M</a>
-                    </li>
-                    <li data-value="L" class="select-item me-3">
-                      <a href="#">L</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="product-quantity my-3">
-                  <div class="item-title">
-                    <l>2 in stock</l>
-                  </div>
-                  <div class="stock-button-wrap mt-2 d-flex flex-wrap align-items-center">
-                    <div class="product-quantity">
-                      <div class="input-group product-qty align-items-center" style="max-width: 150px;">
-                        <span class="input-group-btn">
-                          <button type="button" class="bg-white shadow border rounded-3 fw-light quantity-left-minus" data-type="minus" data-field="">
-                            <svg width="16" height="16"><use xlink:href="#minus"></use></svg>
-                          </button>
-                        </span>
-                        <input type="text" id="quantity" name="quantity" class="form-control bg-white shadow border rounded-3 py-2 mx-2 input-number text-center" value="1" min="1" max="100" required="">
-                        <span class="input-group-btn">
-                          <button type="button" class="bg-white shadow border rounded-3 fw-light quantity-right-plus" data-type="plus" data-field="">
-                            <svg width="16" height="16"><use xlink:href="#plus"></use></svg>
-                          </button>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+
+
                 <div class="action-buttons my-3 d-flex flex-wrap gap-3">
                   <a href="#" class="btn">{% trans "Order now" %}</a>
                   <a href="#" class="btn btn-dark">{% trans "Add to cart" %}</a>
@@ -165,37 +111,21 @@ quam semper rhoncus.</p>
                 <div class="meta-item d-flex mb-1">
                   <span class="fw-medium me-2">{% trans "SKU:" %}</span>
                   <ul class="select-list list-unstyled d-flex mb-0">
-                    <li data-value="S" class="select-item">1223</li>
+                    <li data-value="S" class="select-item">{{product.id}}</li>
                   </ul>
                 </div>
                 <div class="meta-item d-flex mb-1">
                   <span class="fw-medium me-2">{% trans "Category:" %}</span>
                   <ul class="select-list list-unstyled d-flex mb-0">
-                    <li data-value="S" class="select-item">
-                      <a href="#">{% trans "Romance" %}</a>,
-                    </li>
-                    <li data-value="S" class="select-item">
-                      <a href="#">{% trans "Sci-Fi" %}</a>,
-                    </li>
-                    <li data-value="S" class="select-item">
-                      <a href="#">{% trans "Fiction" %}</a>
-                    </li>
+                    	{% for entry in product.genres.all %}
+                          <li data-value="S" class="select-item">
+                            <a href="#">{{entry.name}}</a>
+                                {% if not forloop.last %}, {% endif %}
+                          </li>
+                        {% endfor %}
                   </ul>
                 </div>
-                <div class="meta-item d-flex mb-1">
-                  <span class="fw-medium me-2">{% trans "Tags:" %}</span>
-                  <ul class="select-list list-unstyled d-flex mb-0">
-                    <li data-value="S" class="select-item">
-                      <a href="#">{% trans "Revenge" %}</a>,
-                    </li>
-                    <li data-value="S" class="select-item">
-                      <a href="#">{% trans "Vampire" %}</a>,
-                    </li>
-                    <li data-value="S" class="select-item">
-                      <a href="#">{% trans "Life" %}</a>
-                    </li>
-                  </ul>
-                </div>
+
               </div>
             </div>
           </div>
@@ -218,52 +148,36 @@ quam semper rhoncus.</p>
             <div class="tab-content border-bottom py-4" id="nav-tabContent">
               <div class="tab-pane fade active show" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                 <p>{% trans "Product Description" %}</p>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing
-elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut
- turpis. Suspendisse urna viverra non, semper suscipit, posuere a, pede.
- Donec nec justo eget felis facilisis fermentum. Aliquam porttitor
-mauris sit amet orci. Aenean dignissim pellentesque felis. Phasellus
-ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula
-vulputate sem tristique cursus.
-                </p><ul class="fw-light">
-                  <li>{% trans "Donec nec justo eget felis facilisis fermentum." %}</li>
-                  <li>{% trans "Suspendisse urna viverra non, semper suscipit pede." %}</li>
-                  <li>{% trans "Aliquam porttitor mauris sit amet orci." %}</li>
-                </ul>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing
-elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut
- turpis. Suspendisse urna viverra non, semper suscipit, posuere a, pede.
- Donec nec justo eget felis facilisis fermentum. Aliquam porttitor
-mauris sit amet orci. Aenean dignissim pellentesque felis. Phasellus
-ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula
-vulputate sem tristique cursus.</p>
+                <p>
+                  {{product.html_annotation|safe}}
+                </p>
               </div>
               <div class="tab-pane fade" id="nav-information" role="tabpanel" aria-labelledby="nav-information-tab">
-                <p>{% trans "It is Comfortable and Best" %}</p>
-                <p>Duis aute irure dolor in reprehenderit in voluptate
-velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-mollit anim id est laborum. Duis aute irure dolor in reprehenderit in
-voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
- mollit anim id est laborum.</p>
+							<h5>{% trans "Additional information" %}</h5>
+							<table>
+
+							{% for entry in product.bookcontributor_set.all %}
+							  <tr>
+								<td>{{entry.get_role_display}}:</td>
+								<td><a href="{% url 'core:author' %}">  {{entry.contributor.full_name}}</a> </td>
+							  </tr>
+							{% endfor %}
+
+							  <tr>
+								<td>Возрастное ограничение: </td><td>{{product.min_age}}+</td>
+							  </tr>
+							  <tr>
+								<td>Дата выхода: </td><td>{{product.publication_date|date:"d.m.Y"}}</td>
+							  </tr>
+							  <tr>
+								<td>Дата обновления: </td><td>{{product.last_released_at|date:"d.m.Y"}}</td>
+							  </tr>
+
+							</table>
               </div>
               <div class="tab-pane fade" id="nav-shipping" role="tabpanel" aria-labelledby="nav-shipping-tab">
                 <p>{% trans "Returns Policy" %}</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing
-elit. Fusce eros justo, accumsan non dui sit amet. Phasellus semper
-volutpat mi sed imperdiet. Ut odio lectus, vulputate non ex non, mattis
-sollicitudin purus. Mauris consequat justo a enim interdum, in consequat
- dolor accumsan. Nulla iaculis diam purus, ut vehicula leo efficitur at.</p>
-                <p>{% trans "Interdum et malesuada fames ac ante ipsum primis in faucibus. In blandit nunc enim, sit amet pharetra erat aliquet ac." %}</p>
-                <p>{% trans "Shipping" %}</p>
-                <p>Pellentesque ultrices ut sem sit amet lacinia. Sed
-nisi dui, ultrices ut turpis pulvinar. Sed fringilla ex eget lorem
-consectetur, consectetur blandit lacus varius. Duis vel scelerisque
-elit, et vestibulum metus. Integer sit amet tincidunt tortor. Ut lacinia
- ullamcorper massa, a fermentum arcu vehicula ut. Ut efficitur faucibus
-dui Nullam tristique dolor eget turpis consequat varius. Quisque a
-interdum augue. Nam ut nibh mauris.</p>
+                <p></p>
               </div>
               <div class="tab-pane fade" id="nav-review" role="tabpanel" aria-labelledby="nav-review-tab">
                 <div class="review-box review-style d-flex gap-3 flex-column">
@@ -394,270 +308,12 @@ interdum augue. Nam ut nibh mauris.</p>
         </div>
         <div class="swiper product-swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
           <div class="swiper-wrapper" id="swiper-wrapper-837614fb917523d2" aria-live="polite">
-            <div class="swiper-slide swiper-slide-active" style="width: 264px; margin-right: 20px;" role="group" aria-label="1 / 6">
-              <div class="card position-relative p-4 border rounded-3">
-                <div class="position-absolute">
-                  <p class="bg-primary py-1 px-3 fs-6 text-white rounded-2">10% off</p>
-                </div>
-                <img src="{% static 'skin6/images/product-item1.png' %}" class="img-fluid shadow-sm" alt="product item">
-                <h6 class="mt-4 mb-0 fw-bold"><a href="{% url 'core:single_product' %}">{% trans "Secrets of the Alchemist" %}</a></h6>
-                <div class="review-content d-flex">
-                  <p class="my-2 me-2 fs-6 text-black-50">{% trans "Lauren Asher" %}</p>
-
-                  <div class="rating text-warning d-flex align-items-center">
-                    <svg class="star star-fill">
-                      <use xlink:href="#star-fill"></use>
-                    </svg>
-                    <svg class="star star-fill">
-                      <use xlink:href="#star-fill"></use>
-                    </svg>
-                    <svg class="star star-fill">
-                      <use xlink:href="#star-fill"></use>
-                    </svg>
-                    <svg class="star star-fill">
-                      <use xlink:href="#star-fill"></use>
-                    </svg>
-                    <svg class="star star-fill">
-                      <use xlink:href="#star-fill"></use>
-                    </svg>
-                  </div>
-                </div>
-                <span class="price text-primary fw-bold mb-2 fs-5">$870</span>
-                <div class="card-concern position-absolute start-0 end-0 d-flex gap-2">
-                  <button type="button" href="#" class="btn btn-dark" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top">
-                    <svg class="cart">
-                      <use xlink:href="#cart"></use>
-                    </svg>
-                  </button>
-                  <a href="#" class="btn btn-dark">
-                    <span>
-                      <svg class="wishlist">
-                        <use xlink:href="#heart"></use>
-                      </svg>
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide swiper-slide-next" style="width: 264px; margin-right: 20px;" role="group" aria-label="2 / 6">
-              <div class="card position-relative p-4 border rounded-3">
-                <img src="{% static 'skin6/images/product-item2.png' %}" class="img-fluid shadow-sm" alt="product item">
-                <h6 class="mt-4 mb-0 fw-bold"><a href="{% url 'core:single_product' %}">{% trans "Secrets of the Alchemist" %}</a></h6>
-                <div class="review-content d-flex">
-                  <p class="my-2 me-2 fs-6 text-black-50">{% trans "Lauren Asher" %}</p>
-
-                  <div class="rating text-warning d-flex align-items-center">
-                    <svg class="star star-fill">
-                      <use xlink:href="#star-fill"></use>
-                    </svg>
-                    <svg class="star star-fill">
-                      <use xlink:href="#star-fill"></use>
-                    </svg>
-                    <svg class="star star-fill">
-                      <use xlink:href="#star-fill"></use>
-                    </svg>
-                    <svg class="star star-fill">
-                      <use xlink:href="#star-fill"></use>
-                    </svg>
-                    <svg class="star star-fill">
-                      <use xlink:href="#star-fill"></use>
-                    </svg>
-                  </div>
-                </div>
-
-                <span class="price text-primary fw-bold mb-2 fs-5">$870</span>
-                <div class="card-concern position-absolute start-0 end-0 d-flex gap-2">
-                  <button type="button" href="#" class="btn btn-dark" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top">
-                    <svg class="cart">
-                      <use xlink:href="#cart"></use>
-                    </svg>
-                  </button>
-                  <a href="#" class="btn btn-dark">
-                    <span>
-                      <svg class="wishlist">
-                        <use xlink:href="#heart"></use>
-                      </svg>
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide" style="width: 264px; margin-right: 20px;" role="group" aria-label="3 / 6">
-              <div class="card position-relative p-4 border rounded-3">
-                <img src="{% static 'skin6/images/product-item3.png' %}" class="img-fluid shadow-sm" alt="product item">
-                <h6 class="mt-4 mb-0 fw-bold"><a href="{% url 'core:single_product' %}">{% trans "Secrets of the Alchemist" %}</a></h6>
-                <div class="review-content d-flex">
-                  <p class="my-2 me-2 fs-6 text-black-50">{% trans "Lauren Asher" %}</p>
-
-                  <div class="rating text-warning d-flex align-items-center">
-                    <svg class="star star-fill">
-                      <use xlink:href="#star-fill"></use>
-                    </svg>
-                    <svg class="star star-fill">
-                      <use xlink:href="#star-fill"></use>
-                    </svg>
-                    <svg class="star star-fill">
-                      <use xlink:href="#star-fill"></use>
-                    </svg>
-                    <svg class="star star-fill">
-                      <use xlink:href="#star-fill"></use>
-                    </svg>
-                    <svg class="star star-fill">
-                      <use xlink:href="#star-fill"></use>
-                    </svg>
-                  </div>
-                </div>
-
-                <span class="price text-primary fw-bold mb-2 fs-5">$870</span>
-                <div class="card-concern position-absolute start-0 end-0 d-flex gap-2">
-                  <button type="button" href="#" class="btn btn-dark" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top">
-                    <svg class="cart">
-                      <use xlink:href="#cart"></use>
-                    </svg>
-                  </button>
-                  <a href="#" class="btn btn-dark">
-                    <span>
-                      <svg class="wishlist">
-                        <use xlink:href="#heart"></use>
-                      </svg>
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide" style="width: 264px; margin-right: 20px;" role="group" aria-label="4 / 6">
-              <div class="card position-relative p-4 border rounded-3">
-                <div class="position-absolute">
-                  <p class="bg-primary py-1 px-3 fs-6 text-white rounded-2">10% off</p>
-                </div>
-                <img src="{% static 'skin6/images/product-item4.png' %}" class="img-fluid shadow-sm" alt="product item">
-                <h6 class="mt-4 mb-0 fw-bold"><a href="{% url 'core:single_product' %}">{% trans "Secrets of the Alchemist" %}</a></h6>
-                <div class="review-content d-flex">
-                  <p class="my-2 me-2 fs-6 text-black-50">{% trans "Lauren Asher" %}</p>
-
-                  <div class="rating text-warning d-flex align-items-center">
-                    <svg class="star star-fill">
-                      <use xlink:href="#star-fill"></use>
-                    </svg>
-                    <svg class="star star-fill">
-                      <use xlink:href="#star-fill"></use>
-                    </svg>
-                    <svg class="star star-fill">
-                      <use xlink:href="#star-fill"></use>
-                    </svg>
-                    <svg class="star star-fill">
-                      <use xlink:href="#star-fill"></use>
-                    </svg>
-                    <svg class="star star-fill">
-                      <use xlink:href="#star-fill"></use>
-                    </svg>
-                  </div>
-                </div>
-
-                <span class="price text-primary fw-bold mb-2 fs-5">$870</span>
-                <div class="card-concern position-absolute start-0 end-0 d-flex gap-2">
-                  <button type="button" href="#" class="btn btn-dark" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top">
-                    <svg class="cart">
-                      <use xlink:href="#cart"></use>
-                    </svg>
-                  </button>
-                  <a href="#" class="btn btn-dark">
-                    <span>
-                      <svg class="wishlist">
-                        <use xlink:href="#heart"></use>
-                      </svg>
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide" style="width: 264px; margin-right: 20px;" role="group" aria-label="5 / 6">
-              <div class="card position-relative p-4 border rounded-3">
-                <img src="{% static 'skin6/images/product-item5.png' %}" class="img-fluid shadow-sm" alt="product item">
-                <h6 class="mt-4 mb-0 fw-bold"><a href="{% url 'core:single_product' %}">{% trans "Secrets of the Alchemist" %}</a></h6>
-                <div class="review-content d-flex">
-                  <p class="my-2 me-2 fs-6 text-black-50">{% trans "Lauren Asher" %}</p>
-
-                  <div class="rating text-warning d-flex align-items-center">
-                    <svg class="star star-fill">
-                      <use xlink:href="#star-fill"></use>
-                    </svg>
-                    <svg class="star star-fill">
-                      <use xlink:href="#star-fill"></use>
-                    </svg>
-                    <svg class="star star-fill">
-                      <use xlink:href="#star-fill"></use>
-                    </svg>
-                    <svg class="star star-fill">
-                      <use xlink:href="#star-fill"></use>
-                    </svg>
-                    <svg class="star star-fill">
-                      <use xlink:href="#star-fill"></use>
-                    </svg>
-                  </div>
-                </div>
-
-                <span class="price text-primary fw-bold mb-2 fs-5">$870</span>
-                <div class="card-concern position-absolute start-0 end-0 d-flex gap-2">
-                  <button type="button" href="#" class="btn btn-dark" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top">
-                    <svg class="cart">
-                      <use xlink:href="#cart"></use>
-                    </svg>
-                  </button>
-                  <a href="#" class="btn btn-dark">
-                    <span>
-                      <svg class="wishlist">
-                        <use xlink:href="#heart"></use>
-                      </svg>
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide" style="width: 264px; margin-right: 20px;" role="group" aria-label="6 / 6">
-              <div class="card position-relative p-4 border rounded-3">
-                <img src="{% static 'skin6/images/product-item6.png' %}" class="img-fluid shadow-sm" alt="product item">
-                <h6 class="mt-4 mb-0 fw-bold"><a href="{% url 'core:single_product' %}">{% trans "Secrets of the Alchemist" %}</a></h6>
-                <div class="review-content d-flex">
-                  <p class="my-2 me-2 fs-6 text-black-50">{% trans "Lauren Asher" %}</p>
-
-                  <div class="rating text-warning d-flex align-items-center">
-                    <svg class="star star-fill">
-                      <use xlink:href="#star-fill"></use>
-                    </svg>
-                    <svg class="star star-fill">
-                      <use xlink:href="#star-fill"></use>
-                    </svg>
-                    <svg class="star star-fill">
-                      <use xlink:href="#star-fill"></use>
-                    </svg>
-                    <svg class="star star-fill">
-                      <use xlink:href="#star-fill"></use>
-                    </svg>
-                    <svg class="star star-fill">
-                      <use xlink:href="#star-fill"></use>
-                    </svg>
-                  </div>
-                </div>
-
-                <span class="price text-primary fw-bold mb-2 fs-5">$870</span>
-                <div class="card-concern position-absolute start-0 end-0 d-flex gap-2">
-                  <button type="button" href="#" class="btn btn-dark" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top">
-                    <svg class="cart">
-                      <use xlink:href="#cart"></use>
-                    </svg>
-                  </button>
-                  <a href="#" class="btn btn-dark">
-                    <span>
-                      <svg class="wishlist">
-                        <use xlink:href="#heart"></use>
-                      </svg>
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </div>
-
+            {% for entry in products_related %}
+              {% include "skin6/cards/related_card.html" with entry=entry num_iter=forloop.counter num_max=products_related|length %}
+            {% endfor %}
+            {% for entry in products_related %}
+              {% include "skin6/cards/related_card.html" with entry=entry num_iter=forloop.counter num_max=products_related|length %}
+            {% endfor %}
           </div>
         <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
       </div>

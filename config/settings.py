@@ -150,4 +150,4 @@ STATICFILES_DIRS = [
     BASE_DIR / 'static'
 ]
 
-USED_SKIN=("skin2")  # skin1 skin2 or skin3
+USED_SKIN=("skin6")  # skin1 skin2 or skin3
