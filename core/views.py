@@ -12,7 +12,12 @@ def home(request):
     return render(request, 'test_home.html')
 
 def index(request):
-    return render(request, f'{used_skin}/index.html')
+    products_best_selling = Product.objects.get_best_sellers(max_count=10)
+
+    return render(request, f'{used_skin}/index.html',
+                  {'products_best_selling': products_best_selling}
+                  )
+
 
 def shop(request):
     return render(request, f'{used_skin}/shop.html')

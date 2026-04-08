@@ -188,6 +188,15 @@ class BookManager(models.Manager):
     def get_random_featured(self, max_count=3):
         return self.get_queryset().filter(availability=True).order_by('?')[:max_count]
 
+    def get_best_sellers(self, max_count=4):
+        """
+        Возвращает самые популярные книги на основе рейтинга и количества оценок.
+        """
+        return self.get_queryset().filter(
+            availability=True
+        ).order_by('-rating__rated_total_count', '-rating__rated_avg')[:max_count]
+        #).order_by('-livelib_rated_count', '-livelib_rated_avg')[:max_count]
+
 
 
 class Product(Book):

@@ -195,7 +195,7 @@ h4,
 h5,
 h6 {
   font-family: var(--heading-font);
-  text-transform: capitalize;
+  text-transform: none;
   letter-spacing: 0.03em;
   font-weight: 600;
   line-height: 115%;

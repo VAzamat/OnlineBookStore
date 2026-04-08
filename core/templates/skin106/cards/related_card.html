@@ -1,5 +1,11 @@
 <div
-{% if num_iter == 1 %} class="swiper-slide swiper-slide-active" {% else %} class="swiper-slide swiper-slide-next" {% endif %}
+{% if num_iter == 1 %}
+  class="swiper-slide swiper-slide-active"
+{% elif num_iter == 2 %}
+  class="swiper-slide swiper-slide-next"
+{% else %}
+  class="swiper-slide"
+{% endif %}
 style="width: 264px; margin-right: 20px;" role="group" aria-label="{{num_iter}} / {{num_max}}">
   <div class="card position-relative p-4 border rounded-3">
     <div class="position-absolute">
