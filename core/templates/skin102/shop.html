@@ -1,6 +1,6 @@
 {% extends "skin2/base.html" %}
-{% load i18n %}
 
+{% load i18n %}
 {% load static %}
 
 {% block titlekeywords %}
@@ -33,118 +33,11 @@
 	<section class="padding-medium">
 		<div class="container">
 			<div class="row">
+				{% for entry in product_recommendations %}
+					{% include "skin2/cards/shop_card.html" with entry=entry %}
+				{% endfor %}
 
-				<div class="col-md-3">
-					<div class="product-item">
-						<figure class="product-style">
-							<img src="{% static 'skin2/images/tab-item1.jpg' %}" alt="Books" class="product-item">
-							<button type="button" class="add-to-cart" data-product-tile="add-to-cart">{% trans "Add to Cart" %}</button>
-						</figure>
-						<figcaption>
-							<h3>{% trans "Portrait photography" %}</h3>
-							<p>{% trans "Adam Silber" %}</p>
-							<div class="item-price">$ 40.00</div>
-						</figcaption>
-					</div>
-				</div>
 
-				<div class="col-md-3">
-					<div class="product-item">
-						<figure class="product-style">
-							<img src="{% static 'skin2/images/tab-item2.jpg' %}" alt="Books" class="product-item">
-							<button type="button" class="add-to-cart" data-product-tile="add-to-cart">{% trans "Add to Cart" %}</button>
-						</figure>
-						<figcaption>
-							<h3>{% trans "Once upon a time" %}</h3>
-							<p>{% trans "Klien Marry" %}</p>
-							<div class="item-price">$ 35.00</div>
-						</figcaption>
-					</div>
-				</div>
-
-				<div class="col-md-3">
-					<div class="product-item">
-						<figure class="product-style">
-							<img src="{% static 'skin2/images/tab-item3.jpg' %}" alt="Books" class="product-item">
-							<button type="button" class="add-to-cart" data-product-tile="add-to-cart">{% trans "Add to Cart" %}</button>
-						</figure>
-						<figcaption>
-							<h3>{% trans "Tips of simple lifestyle" %}</h3>
-							<p>{% trans "Bratt Smith" %}</p>
-							<div class="item-price">$ 40.00</div>
-						</figcaption>
-					</div>
-				</div>
-
-				<div class="col-md-3">
-					<div class="product-item">
-						<figure class="product-style">
-							<img src="{% static 'skin2/images/tab-item4.jpg' %}" alt="Books" class="product-item">
-							<button type="button" class="add-to-cart" data-product-tile="add-to-cart">{% trans "Add to Cart" %}</button>
-						</figure>
-						<figcaption>
-							<h3>{% trans "Just felt from outside" %}</h3>
-							<p>{% trans "Nicole Wilson" %}</p>
-							<div class="item-price">$ 40.00</div>
-						</figcaption>
-					</div>
-				</div>
-
-				<div class="col-md-3">
-					<div class="product-item">
-						<figure class="product-style">
-							<img src="{% static 'skin2/images/tab-item5.jpg' %}" alt="Books" class="product-item">
-							<button type="button" class="add-to-cart" data-product-tile="add-to-cart">{% trans "Add to Cart" %}</button>
-						</figure>
-						<figcaption>
-							<h3>{% trans "Peaceful Enlightment" %}</h3>
-							<p>{% trans "Marmik Lama" %}</p>
-							<div class="item-price">$ 40.00</div>
-						</figcaption>
-					</div>
-				</div>
-
-				<div class="col-md-3">
-					<div class="product-item">
-						<figure class="product-style">
-							<img src="{% static 'skin2/images/tab-item6.jpg' %}" alt="Books" class="product-item">
-							<button type="button" class="add-to-cart" data-product-tile="add-to-cart">{% trans "Add to Cart" %}</button>
-						</figure>
-						<figcaption>
-							<h3>{% trans "Great travel at desert" %}</h3>
-							<p>{% trans "Sanchit Howdy" %}</p>
-							<div class="item-price">$ 40.00</div>
-						</figcaption>
-					</div>
-				</div>
-
-				<div class="col-md-3">
-					<div class="product-item">
-						<figure class="product-style">
-							<img src="{% static 'skin2/images/tab-item7.jpg' %}" alt="Books" class="product-item">
-							<button type="button" class="add-to-cart" data-product-tile="add-to-cart">{% trans "Add to Cart" %}</button>
-						</figure>
-						<figcaption>
-							<h3>{% trans "Life among the pirates" %}</h3>
-							<p>{% trans "Armor Ramsey" %}</p>
-							<div class="item-price">$ 40.00</div>
-						</figcaption>
-					</div>
-				</div>
-
-				<div class="col-md-3">
-					<div class="product-item">
-						<figure class="product-style">
-							<img src="{% static 'skin2/images/tab-item8.jpg' %}" alt="Books" class="product-item">
-							<button type="button" class="add-to-cart" data-product-tile="add-to-cart">{% trans "Add to Cart" %}</button>
-						</figure>
-						<figcaption>
-							<h3>{% trans "Simple way of piece life" %}</h3>
-							<p>{% trans "Armor Ramsey" %}</p>
-							<div class="item-price">$ 40.00</div>
-						</figcaption>
-					</div>
-				</div>
 
 			</div>
 

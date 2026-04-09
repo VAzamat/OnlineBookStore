@@ -1,0 +1,21 @@
+{% load i18n %}
+<div class="col-md-3">
+    <div class="product-item">
+        <figure class="product-style">
+            <img src="/{{entry.cover_url}}" alt="{{entry.title}}" class="product-item">
+            <button type="button" class="add-to-cart" data-product-tile="add-to-cart">{% trans "Add to Cart" %}</button>
+        </figure>
+        <figcaption>
+            <h3>{{entry.title}}</h3>
+            <p>
+            {% for item in entry.bookcontributor_set.all %}
+                {% if item.role == 'author' %}
+                <a href="{% url 'core:author' %}">{{item.contributor.full_name}}</a>
+                {% endif %}
+            {% endfor %}
+
+            </p>
+            <div class="item-price">{{entry.prices}} руб.</div>
+        </figcaption>
+    </div>
+</div>
