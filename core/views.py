@@ -35,7 +35,12 @@ def index(request):
 
 
 def shop(request):
-    return render(request, f'{used_skin}/shop.html')
+    product_recommendations = Product.objects.get_random_featured(max_count=30)
+    return render(request, f'{used_skin}/shop.html',
+                  {
+                      'product_recommendations': product_recommendations
+                  }
+                  )
 
 def single_product(request, product_slug):
     # Ищем товар по полю slug, которое мы заполнили через pytils
