@@ -46,6 +46,21 @@ def generate_email(first_name, last_name, i=random.randint(1,5)):
     ]
     return random.choice(variants)+random.choice(suffix)+"@"+random.choice(email_domains)
 
+def generate_username(first_name, last_name, i=random.randint(1,3)):
+    f = first_name.lower().replace("'", "")
+    l = last_name.lower().replace("'", "")
+
+    variants = [
+        f"{f}_{l}_{get_random_string(i, '0123456789')}",
+        f"{f[0]}_{l}_{get_random_string(i, 'abcdefghijklmnopqrstuvwxyz')}",
+        f"{f[0]}.{l}_{get_random_string(i, 'abcdefghijklmnopqrstuvwxyz0123456789abcdef')}",
+        f"{l[0]}_{f}_{get_random_string(i, '0123456789')}",
+        f"{l[0]}.{f}_19{get_random_string(2, '0123456789')}",
+        f"{l}-{f}",
+        f"{f}_{l[0]}_{get_random_string(2, '0123456789')}"
+    ]
+    return random.choice(variants)
+
 if not os.path.exists(input_dir):
     print(f"Ошибка: Директория {input_dir} не найдена.")
 else:
@@ -67,7 +82,7 @@ else:
             # Генерируем случайный пароль
             raw_password = get_random_string(12, allowed_chars=password_chars)
 
-            username = fake.unique.user_name()
+            username = generate_username(first_name, last_name) #fake.unique.user_name()
             email = generate_email(first_name, last_name) #fake.unique.email()
 
             # Создаем пользователя
